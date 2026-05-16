@@ -1,0 +1,1 @@
+Caught a MarabouError error. Code: 105, Errno: 0, Message: Matrix multiplication of variable tensors is not supported.

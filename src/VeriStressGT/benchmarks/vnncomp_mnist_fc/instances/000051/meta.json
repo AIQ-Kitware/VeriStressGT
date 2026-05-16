@@ -1,0 +1,22 @@
+{
+  "id": "000051",
+  "construction": "vnncomp.ingested",
+  "seed": null,
+  "paths": {
+    "onnx": "instances/000051/model.onnx",
+    "vnnlib": "instances/000051/spec.vnnlib",
+    "meta": "instances/000051/meta.json"
+  },
+  "sha256": {
+    "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+    "vnnlib": "cd07eaf634ef07a4c91c76be3964663dfd349428132467f3922d5c3db61d1dcd"
+  },
+  "is_robust": null,
+  "ground_truth_source": "vnncomp_unknown",
+  "vnncomp": {
+    "onnx_rel": "onnx/mnist-net_256x4.onnx",
+    "vnnlib_rel": "vnnlib/prop_5_0.05.vnnlib",
+    "timeout_s": 300.0,
+    "source_lineno": 51
+  }
+}

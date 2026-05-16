@@ -1,0 +1,23 @@
+Running analysis with 1 processes, domains = ['con_z'], scorer = better
+
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 2, Remaining: 3
+Safe_volume: 50.0000% |███████████████               | Time: 00:00 s, Done: 3, Remaining: 2
+Safe_volume: 50.0000% |███████████████               | Time: 00:00 s, Done: 3, Remaining: 2
+Safe_volume: 50.0000% |███████████████               | Time: 00:00 s, Done: 4, Remaining: 3
+Safe_volume: 50.0000% |███████████████               | Time: 00:00 s, Done: 5, Remaining: 4
+Safe_volume: 50.0000% |███████████████               | Time: 00:00 s, Done: 6, Remaining: 5
+Safe_volume: 62.5000% |██████████████████▊           | Time: 00:00 s, Done: 7, Remaining: 4
+Safe_volume: 68.7500% |████████████████████▋         | Time: 00:00 s, Done: 8, Remaining: 3
+Safe_volume: 75.0000% |██████████████████████▌       | Time: 00:00 s, Done: 9, Remaining: 2
+Safe_volume: 87.5000% |██████████████████████████▎   | Time: 00:01 s, Done: 9, Remaining: 2
+Safe_volume: 87.5000% |██████████████████████████▎   | Time: 00:01 s, Done: 10, Remaining: 1
+Safe_volume: 87.5000% |██████████████████████████▎   | Time: 00:01 s, Done: 11, Remaining: 2
+Safe_volume: 93.7500% |████████████████████████████▏ | Time: 00:01 s, Done: 12, Remaining: 1
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:01 s, Done: 12, Remaining: 1
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:01 s, Done: 13, Remaining: 0
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:01 s, Done: 13, Remaining: 0
+Result = True, Time = 1.44 s, Safe space = 100.00 %, number of analysis = 13

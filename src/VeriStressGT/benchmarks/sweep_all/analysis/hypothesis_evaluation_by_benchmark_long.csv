@@ -1,0 +1,26 @@
+benchmark,verifier,component,hypothesis_direction,spearman_rho,spearman_pvalue_approx,n_used,n_completed,n_timeout,n_excluded,verdict,verdict_reason
+sweep_all,abcrown,A_tau_local_log,higher is harder,0.15465228873431372,0.02794743979107611,203,177,26,0,AGREES,rho=0.15 matches higher is harder
+sweep_all,abcrown,unstable_frac,higher is harder,0.08692773331327364,0.21665382158628446,203,177,26,0,SILENT,|rho|=0.09 below threshold
+sweep_all,abcrown,effective_grad_dim_mean,higher is harder,0.05050263264685904,0.4728944800970116,203,177,26,0,SILENT,|rho|=0.05 below threshold
+sweep_all,abcrown,margin_sample_min,higher is easier,0.14015854533881666,0.04636793243011911,203,177,26,0,CONTRADICTS,rho=0.14 opposes higher is easier
+sweep_all,abcrown,ibp_relative_gap,higher is harder,-0.06002636913362183,0.3935843434136101,203,177,26,0,SILENT,|rho|=0.06 below threshold
+sweep_all,marabou,A_tau_local_log,higher is harder,-0.16483454677182025,0.035904906922283916,163,127,41,40,CONTRADICTS,rho=-0.16 opposes higher is harder
+sweep_all,marabou,unstable_frac,higher is harder,0.20335646537967939,0.009645010439663478,163,127,41,40,AGREES,rho=0.20 matches higher is harder
+sweep_all,marabou,effective_grad_dim_mean,higher is harder,0.16177145113909516,0.039492722927353764,163,127,41,40,AGREES,rho=0.16 matches higher is harder
+sweep_all,marabou,margin_sample_min,higher is easier,-0.16109636808052155,0.04032313119818054,163,127,41,40,AGREES,rho=-0.16 matches higher is easier
+sweep_all,marabou,ibp_relative_gap,higher is harder,0.5375738347695072,7.84534700787569e-12,163,127,41,40,AGREES,rho=0.54 matches higher is harder
+sweep_all,neuralsat,A_tau_local_log,higher is harder,0.2580168773166396,0.00027294411705807895,200,179,23,3,AGREES,rho=0.26 matches higher is harder
+sweep_all,neuralsat,unstable_frac,higher is harder,0.16787299042185244,0.01787774345126276,200,179,23,3,AGREES,rho=0.17 matches higher is harder
+sweep_all,neuralsat,effective_grad_dim_mean,higher is harder,0.274568158668826,0.0001074299002188172,200,179,23,3,AGREES,rho=0.27 matches higher is harder
+sweep_all,neuralsat,margin_sample_min,higher is easier,0.12235935148851602,0.0843309554802053,200,179,23,3,SILENT,|rho|=0.12 below threshold
+sweep_all,neuralsat,ibp_relative_gap,higher is harder,0.3420039777536779,1.404987405359463e-06,200,179,23,3,AGREES,rho=0.34 matches higher is harder
+sweep_all,nnenum,A_tau_local_log,higher is harder,-0.18031192064784807,0.08542035539247192,92,86,8,111,SILENT,|rho|=0.18 below threshold
+sweep_all,nnenum,unstable_frac,higher is harder,0.44011223167005287,2.6897159649588736e-05,92,86,8,111,AGREES,rho=0.44 matches higher is harder
+sweep_all,nnenum,effective_grad_dim_mean,higher is harder,0.17777812948401192,0.08990565597578679,92,86,8,111,SILENT,|rho|=0.18 below threshold
+sweep_all,nnenum,margin_sample_min,higher is easier,-0.2773062741126875,0.008161132373053239,92,86,8,111,AGREES,rho=-0.28 matches higher is easier
+sweep_all,nnenum,ibp_relative_gap,higher is harder,0.4748444024902175,5.911634849625483e-06,92,86,8,111,AGREES,rho=0.47 matches higher is harder
+sweep_all,pyrat,A_tau_local_log,higher is harder,-0.3285382008277793,1.3865203328932057e-05,176,160,16,27,UNEXPECTED,hypothesis style does not target this verifier
+sweep_all,pyrat,unstable_frac,higher is harder,0.4434329595612604,4.477094892579776e-09,176,160,16,27,AGREES,rho=0.44 matches higher is harder
+sweep_all,pyrat,effective_grad_dim_mean,higher is harder,0.11100826634753243,0.14196816701369047,176,160,16,27,SILENT,|rho|=0.11 below threshold
+sweep_all,pyrat,margin_sample_min,higher is easier,-0.252889054703485,0.0008217276469393617,176,160,16,27,AGREES,rho=-0.25 matches higher is easier
+sweep_all,pyrat,ibp_relative_gap,higher is harder,0.4460547896993905,3.6306179822228602e-09,176,160,16,27,AGREES,rho=0.45 matches higher is harder

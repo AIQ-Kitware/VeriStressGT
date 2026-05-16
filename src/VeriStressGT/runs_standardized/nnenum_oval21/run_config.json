@@ -1,0 +1,16 @@
+{
+  "benchmark": "./benchmarks/oval21",
+  "manifest_construction": "vnncomp.oval21",
+  "verifier": "nnenum",
+  "conda_env": null,
+  "timeout": 360.0,
+  "jobs": 1,
+  "git_commit": "94cf0f9d55b2e129f9d50d221d4c5a9a8eb07e9e",
+  "verifier_args": {
+    "nnenum_python": "python",
+    "nnenum_module": "nnenum.nnenum",
+    "nnenum_timeout": 360,
+    "nnenum_processes": 1,
+    "nnenum_settings": "auto"
+  }
+}

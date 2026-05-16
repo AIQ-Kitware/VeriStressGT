@@ -1,0 +1,1111 @@
+Running analysis with 1 processes, domains = ['con_z'], scorer = better
+
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 2, Remaining: 3
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 3, Remaining: 4
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 4, Remaining: 5
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 4, Remaining: 5
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 5, Remaining: 6
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 6, Remaining: 7
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 7, Remaining: 8
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 8, Remaining: 9
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 9, Remaining: 10
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 9, Remaining: 10
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 10, Remaining: 11
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 11, Remaining: 12
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 12, Remaining: 13
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 13, Remaining: 14
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 14, Remaining: 15
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 14, Remaining: 15
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 15, Remaining: 16
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 16, Remaining: 17
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 17, Remaining: 18
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 18, Remaining: 19
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 19, Remaining: 20
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 19, Remaining: 20
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 20, Remaining: 21
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 21, Remaining: 22
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 22, Remaining: 23
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 23, Remaining: 24
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 24, Remaining: 25
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 24, Remaining: 25
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 25, Remaining: 26
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 26, Remaining: 27
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 27, Remaining: 28
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 28, Remaining: 29
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 29, Remaining: 30
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 29, Remaining: 30
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 30, Remaining: 31
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 31, Remaining: 32
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 32, Remaining: 33
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 33, Remaining: 34
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 34, Remaining: 35
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 34, Remaining: 35
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 35, Remaining: 36
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 36, Remaining: 37
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 37, Remaining: 38
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 38, Remaining: 39
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 39, Remaining: 40
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 39, Remaining: 40
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 40, Remaining: 41
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 41, Remaining: 42
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 42, Remaining: 43
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 43, Remaining: 44
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 43, Remaining: 44
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 44, Remaining: 45
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 45, Remaining: 46
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 46, Remaining: 47
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 47, Remaining: 48
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 48, Remaining: 49
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 48, Remaining: 49
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 49, Remaining: 50
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 50, Remaining: 51
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 51, Remaining: 52
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 52, Remaining: 53
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 53, Remaining: 54
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 53, Remaining: 54
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 54, Remaining: 55
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 55, Remaining: 56
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 56, Remaining: 57
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 57, Remaining: 58
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 57, Remaining: 58
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 58, Remaining: 59
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 59, Remaining: 60
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 60, Remaining: 61
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 61, Remaining: 62
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 61, Remaining: 62
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 62, Remaining: 63
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 63, Remaining: 64
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 64, Remaining: 65
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 65, Remaining: 66
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 65, Remaining: 66
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 66, Remaining: 67
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 67, Remaining: 68
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 68, Remaining: 69
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 69, Remaining: 70
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 69, Remaining: 70
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 70, Remaining: 71
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 71, Remaining: 72
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 72, Remaining: 73
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 72, Remaining: 73
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 73, Remaining: 74
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 74, Remaining: 75
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 75, Remaining: 76
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 76, Remaining: 77
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 76, Remaining: 77
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 77, Remaining: 78
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 78, Remaining: 79
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 79, Remaining: 80
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 79, Remaining: 80
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 80, Remaining: 81
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 81, Remaining: 82
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 82, Remaining: 83
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 82, Remaining: 83
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 83, Remaining: 84
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 84, Remaining: 85
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 85, Remaining: 86
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 85, Remaining: 86
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 86, Remaining: 87
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 87, Remaining: 86
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 88, Remaining: 87
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 89, Remaining: 88
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 89, Remaining: 88
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 90, Remaining: 89
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 91, Remaining: 90
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 92, Remaining: 91
+Safe_volume: 3.1250% |▉                             | Time: 00:02 s, Done: 93, Remaining: 92
+Safe_volume: 3.9062% |█▏                            | Time: 00:02 s, Done: 94, Remaining: 91
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 95, Remaining: 90
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 96, Remaining: 91
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 97, Remaining: 92
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 98, Remaining: 93
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 99, Remaining: 94
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 100, Remaining: 95
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 101, Remaining: 96
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 102, Remaining: 97
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 103, Remaining: 98
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 104, Remaining: 99
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 105, Remaining: 100
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 106, Remaining: 101
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 107, Remaining: 102
+Safe_volume: 4.6875% |█▍                            | Time: 00:02 s, Done: 108, Remaining: 103
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 109, Remaining: 104
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 110, Remaining: 105
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 111, Remaining: 106
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 112, Remaining: 107
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 113, Remaining: 108
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 114, Remaining: 109
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 115, Remaining: 110
+Safe_volume: 4.6875% |█▍                            | Time: 00:03 s, Done: 116, Remaining: 111
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 116, Remaining: 111
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 117, Remaining: 110
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 118, Remaining: 111
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 119, Remaining: 112
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 120, Remaining: 113
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 121, Remaining: 114
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 122, Remaining: 115
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 123, Remaining: 116
+Safe_volume: 6.2500% |█▉                            | Time: 00:03 s, Done: 124, Remaining: 117
+Safe_volume: 7.8125% |██▎                           | Time: 00:03 s, Done: 124, Remaining: 117
+Safe_volume: 7.8125% |██▎                           | Time: 00:03 s, Done: 125, Remaining: 116
+Safe_volume: 7.8125% |██▎                           | Time: 00:03 s, Done: 126, Remaining: 117
+Safe_volume: 7.8125% |██▎                           | Time: 00:03 s, Done: 127, Remaining: 118
+Safe_volume: 7.8125% |██▎                           | Time: 00:03 s, Done: 128, Remaining: 119
+Safe_volume: 7.8125% |██▎                           | Time: 00:03 s, Done: 129, Remaining: 120
+Safe_volume: 8.5938% |██▌                           | Time: 00:03 s, Done: 129, Remaining: 120
+Safe_volume: 8.5938% |██▌                           | Time: 00:03 s, Done: 130, Remaining: 119
+Safe_volume: 8.5938% |██▌                           | Time: 00:03 s, Done: 131, Remaining: 120
+Safe_volume: 8.5938% |██▌                           | Time: 00:03 s, Done: 132, Remaining: 121
+Safe_volume: 8.5938% |██▌                           | Time: 00:03 s, Done: 133, Remaining: 122
+Safe_volume: 8.5938% |██▌                           | Time: 00:03 s, Done: 134, Remaining: 123
+Safe_volume: 8.7891% |██▋                           | Time: 00:03 s, Done: 135, Remaining: 122
+Safe_volume: 8.7891% |██▋                           | Time: 00:03 s, Done: 136, Remaining: 123
+Safe_volume: 9.1797% |██▊                           | Time: 00:03 s, Done: 136, Remaining: 123
+Safe_volume: 9.1797% |██▊                           | Time: 00:03 s, Done: 137, Remaining: 122
+Safe_volume: 9.1797% |██▊                           | Time: 00:03 s, Done: 138, Remaining: 123
+Safe_volume: 9.1797% |██▊                           | Time: 00:03 s, Done: 139, Remaining: 124
+Safe_volume: 9.1797% |██▊                           | Time: 00:03 s, Done: 140, Remaining: 125
+Safe_volume: 9.1797% |██▊                           | Time: 00:03 s, Done: 141, Remaining: 126
+Safe_volume: 9.2773% |██▊                           | Time: 00:03 s, Done: 142, Remaining: 125
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 143, Remaining: 126
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 144, Remaining: 127
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 145, Remaining: 128
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 146, Remaining: 129
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 147, Remaining: 130
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 148, Remaining: 131
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 149, Remaining: 132
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 150, Remaining: 133
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 151, Remaining: 134
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 152, Remaining: 135
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 153, Remaining: 136
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 154, Remaining: 137
+Safe_volume: 9.2773% |██▊                           | Time: 00:04 s, Done: 155, Remaining: 138
+Safe_volume: 12.4023% |███▋                          | Time: 00:04 s, Done: 155, Remaining: 138
+Safe_volume: 12.4023% |███▋                          | Time: 00:04 s, Done: 156, Remaining: 137
+Safe_volume: 15.5273% |████▋                         | Time: 00:04 s, Done: 157, Remaining: 136
+Safe_volume: 15.5273% |████▋                         | Time: 00:04 s, Done: 158, Remaining: 137
+Safe_volume: 15.7227% |████▋                         | Time: 00:04 s, Done: 159, Remaining: 136
+Safe_volume: 15.7227% |████▋                         | Time: 00:04 s, Done: 159, Remaining: 136
+Safe_volume: 15.7227% |████▋                         | Time: 00:04 s, Done: 160, Remaining: 137
+Safe_volume: 15.7227% |████▋                         | Time: 00:04 s, Done: 161, Remaining: 138
+Safe_volume: 15.7227% |████▋                         | Time: 00:04 s, Done: 162, Remaining: 139
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 163, Remaining: 138
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 164, Remaining: 139
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 165, Remaining: 140
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 166, Remaining: 141
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 167, Remaining: 142
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 168, Remaining: 143
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 169, Remaining: 144
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 170, Remaining: 145
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 171, Remaining: 146
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 172, Remaining: 147
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 173, Remaining: 148
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 174, Remaining: 149
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 175, Remaining: 150
+Safe_volume: 15.9180% |████▊                         | Time: 00:04 s, Done: 176, Remaining: 151
+Safe_volume: 16.6992% |█████                         | Time: 00:05 s, Done: 177, Remaining: 150
+Safe_volume: 16.6992% |█████                         | Time: 00:05 s, Done: 178, Remaining: 151
+Safe_volume: 16.6992% |█████                         | Time: 00:05 s, Done: 179, Remaining: 152
+Safe_volume: 16.6992% |█████                         | Time: 00:05 s, Done: 180, Remaining: 153
+Safe_volume: 16.6992% |█████                         | Time: 00:05 s, Done: 181, Remaining: 154
+Safe_volume: 16.6992% |█████                         | Time: 00:05 s, Done: 182, Remaining: 155
+Safe_volume: 19.8242% |█████▉                        | Time: 00:05 s, Done: 182, Remaining: 155
+Safe_volume: 19.8242% |█████▉                        | Time: 00:05 s, Done: 183, Remaining: 154
+Safe_volume: 19.8242% |█████▉                        | Time: 00:05 s, Done: 184, Remaining: 155
+Safe_volume: 19.8242% |█████▉                        | Time: 00:05 s, Done: 185, Remaining: 156
+Safe_volume: 20.6055% |██████▏                       | Time: 00:05 s, Done: 186, Remaining: 155
+Safe_volume: 21.3867% |██████▍                       | Time: 00:05 s, Done: 186, Remaining: 155
+Safe_volume: 21.3867% |██████▍                       | Time: 00:05 s, Done: 187, Remaining: 154
+Safe_volume: 21.3867% |██████▍                       | Time: 00:05 s, Done: 188, Remaining: 155
+Safe_volume: 21.3867% |██████▍                       | Time: 00:05 s, Done: 189, Remaining: 156
+Safe_volume: 21.3867% |██████▍                       | Time: 00:05 s, Done: 190, Remaining: 157
+Safe_volume: 21.3867% |██████▍                       | Time: 00:05 s, Done: 191, Remaining: 158
+Safe_volume: 21.3867% |██████▍                       | Time: 00:05 s, Done: 192, Remaining: 159
+Safe_volume: 22.9492% |██████▉                       | Time: 00:05 s, Done: 192, Remaining: 159
+Safe_volume: 22.9492% |██████▉                       | Time: 00:05 s, Done: 193, Remaining: 158
+Safe_volume: 22.9492% |██████▉                       | Time: 00:05 s, Done: 194, Remaining: 159
+Safe_volume: 24.5117% |███████▎                      | Time: 00:05 s, Done: 195, Remaining: 158
+Safe_volume: 24.5117% |███████▎                      | Time: 00:05 s, Done: 196, Remaining: 159
+Safe_volume: 24.5117% |███████▎                      | Time: 00:05 s, Done: 196, Remaining: 159
+Safe_volume: 24.5117% |███████▎                      | Time: 00:05 s, Done: 197, Remaining: 160
+Safe_volume: 24.6094% |███████▍                      | Time: 00:05 s, Done: 198, Remaining: 159
+Safe_volume: 24.6094% |███████▍                      | Time: 00:05 s, Done: 199, Remaining: 160
+Safe_volume: 24.6094% |███████▍                      | Time: 00:05 s, Done: 200, Remaining: 161
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 201, Remaining: 160
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 202, Remaining: 161
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 203, Remaining: 162
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 204, Remaining: 163
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 205, Remaining: 164
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 206, Remaining: 165
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 207, Remaining: 166
+Safe_volume: 25.3906% |███████▌                      | Time: 00:05 s, Done: 208, Remaining: 167
+Safe_volume: 26.9531% |████████                      | Time: 00:05 s, Done: 208, Remaining: 167
+Safe_volume: 26.9531% |████████                      | Time: 00:05 s, Done: 209, Remaining: 166
+Safe_volume: 26.9531% |████████                      | Time: 00:05 s, Done: 210, Remaining: 167
+Safe_volume: 26.9531% |████████                      | Time: 00:05 s, Done: 211, Remaining: 168
+Safe_volume: 27.0020% |████████                      | Time: 00:06 s, Done: 212, Remaining: 167
+Safe_volume: 27.0020% |████████                      | Time: 00:06 s, Done: 213, Remaining: 168
+Safe_volume: 27.0020% |████████                      | Time: 00:06 s, Done: 214, Remaining: 169
+Safe_volume: 27.0020% |████████                      | Time: 00:06 s, Done: 215, Remaining: 170
+Safe_volume: 27.0264% |████████                      | Time: 00:06 s, Done: 216, Remaining: 169
+Safe_volume: 27.0264% |████████                      | Time: 00:06 s, Done: 217, Remaining: 170
+Safe_volume: 27.1240% |████████▏                     | Time: 00:06 s, Done: 218, Remaining: 169
+Safe_volume: 27.1240% |████████▏                     | Time: 00:06 s, Done: 219, Remaining: 170
+Safe_volume: 27.1240% |████████▏                     | Time: 00:06 s, Done: 220, Remaining: 171
+Safe_volume: 27.1240% |████████▏                     | Time: 00:06 s, Done: 221, Remaining: 172
+Safe_volume: 27.1240% |████████▏                     | Time: 00:06 s, Done: 222, Remaining: 173
+Safe_volume: 27.9053% |████████▎                     | Time: 00:06 s, Done: 222, Remaining: 173
+Safe_volume: 27.9053% |████████▎                     | Time: 00:06 s, Done: 223, Remaining: 172
+Safe_volume: 31.0303% |█████████▎                    | Time: 00:06 s, Done: 224, Remaining: 171
+Safe_volume: 34.1553% |██████████▏                   | Time: 00:06 s, Done: 225, Remaining: 170
+Safe_volume: 34.1553% |██████████▏                   | Time: 00:06 s, Done: 226, Remaining: 171
+Safe_volume: 34.1553% |██████████▏                   | Time: 00:06 s, Done: 226, Remaining: 171
+Safe_volume: 34.1553% |██████████▏                   | Time: 00:06 s, Done: 227, Remaining: 172
+Safe_volume: 34.2529% |██████████▎                   | Time: 00:06 s, Done: 228, Remaining: 171
+Safe_volume: 34.2529% |██████████▎                   | Time: 00:06 s, Done: 229, Remaining: 172
+Safe_volume: 34.2529% |██████████▎                   | Time: 00:06 s, Done: 230, Remaining: 173
+Safe_volume: 34.3018% |██████████▎                   | Time: 00:06 s, Done: 231, Remaining: 172
+Safe_volume: 34.3018% |██████████▎                   | Time: 00:06 s, Done: 232, Remaining: 173
+Safe_volume: 34.3018% |██████████▎                   | Time: 00:06 s, Done: 233, Remaining: 174
+Safe_volume: 34.3018% |██████████▎                   | Time: 00:06 s, Done: 234, Remaining: 175
+Safe_volume: 34.4971% |██████████▎                   | Time: 00:06 s, Done: 235, Remaining: 174
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 236, Remaining: 173
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 237, Remaining: 174
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 238, Remaining: 175
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 239, Remaining: 176
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 240, Remaining: 177
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 241, Remaining: 178
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 242, Remaining: 179
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:06 s, Done: 243, Remaining: 180
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:07 s, Done: 244, Remaining: 181
+Safe_volume: 34.5215% |██████████▎                   | Time: 00:07 s, Done: 245, Remaining: 182
+Safe_volume: 34.6191% |██████████▍                   | Time: 00:07 s, Done: 246, Remaining: 181
+Safe_volume: 34.6191% |██████████▍                   | Time: 00:07 s, Done: 247, Remaining: 182
+Safe_volume: 34.8145% |██████████▍                   | Time: 00:07 s, Done: 248, Remaining: 181
+Safe_volume: 34.8145% |██████████▍                   | Time: 00:07 s, Done: 249, Remaining: 182
+Safe_volume: 34.8145% |██████████▍                   | Time: 00:07 s, Done: 250, Remaining: 183
+Safe_volume: 34.8145% |██████████▍                   | Time: 00:07 s, Done: 251, Remaining: 184
+Safe_volume: 34.8145% |██████████▍                   | Time: 00:07 s, Done: 252, Remaining: 185
+Safe_volume: 34.8145% |██████████▍                   | Time: 00:07 s, Done: 253, Remaining: 186
+Safe_volume: 34.9121% |██████████▍                   | Time: 00:07 s, Done: 254, Remaining: 185
+Safe_volume: 34.9121% |██████████▍                   | Time: 00:07 s, Done: 255, Remaining: 186
+Safe_volume: 34.9121% |██████████▍                   | Time: 00:07 s, Done: 256, Remaining: 187
+Safe_volume: 35.3027% |██████████▌                   | Time: 00:07 s, Done: 257, Remaining: 186
+Safe_volume: 35.3149% |██████████▌                   | Time: 00:07 s, Done: 258, Remaining: 185
+Safe_volume: 35.3149% |██████████▌                   | Time: 00:07 s, Done: 259, Remaining: 186
+Safe_volume: 35.3149% |██████████▌                   | Time: 00:07 s, Done: 260, Remaining: 187
+Safe_volume: 35.3149% |██████████▌                   | Time: 00:07 s, Done: 261, Remaining: 188
+Safe_volume: 35.3149% |██████████▌                   | Time: 00:07 s, Done: 262, Remaining: 189
+Safe_volume: 36.0962% |██████████▊                   | Time: 00:07 s, Done: 263, Remaining: 188
+Safe_volume: 36.0962% |██████████▊                   | Time: 00:07 s, Done: 264, Remaining: 189
+Safe_volume: 36.0962% |██████████▊                   | Time: 00:07 s, Done: 265, Remaining: 190
+Safe_volume: 36.0962% |██████████▊                   | Time: 00:07 s, Done: 266, Remaining: 191
+Safe_volume: 36.0962% |██████████▊                   | Time: 00:07 s, Done: 267, Remaining: 192
+Safe_volume: 36.1206% |██████████▊                   | Time: 00:07 s, Done: 268, Remaining: 191
+Safe_volume: 36.1206% |██████████▊                   | Time: 00:07 s, Done: 269, Remaining: 192
+Safe_volume: 36.1206% |██████████▊                   | Time: 00:07 s, Done: 270, Remaining: 193
+Safe_volume: 36.1694% |██████████▊                   | Time: 00:08 s, Done: 271, Remaining: 192
+Safe_volume: 36.1694% |██████████▊                   | Time: 00:08 s, Done: 272, Remaining: 193
+Safe_volume: 36.1694% |██████████▊                   | Time: 00:08 s, Done: 273, Remaining: 194
+Safe_volume: 36.1694% |██████████▊                   | Time: 00:08 s, Done: 274, Remaining: 195
+Safe_volume: 36.3647% |██████████▉                   | Time: 00:08 s, Done: 275, Remaining: 194
+Safe_volume: 36.3647% |██████████▉                   | Time: 00:08 s, Done: 276, Remaining: 195
+Safe_volume: 36.3647% |██████████▉                   | Time: 00:08 s, Done: 277, Remaining: 196
+Safe_volume: 36.3708% |██████████▉                   | Time: 00:08 s, Done: 278, Remaining: 195
+Safe_volume: 36.3770% |██████████▉                   | Time: 00:08 s, Done: 279, Remaining: 194
+Safe_volume: 36.3770% |██████████▉                   | Time: 00:08 s, Done: 280, Remaining: 195
+Safe_volume: 36.4014% |██████████▉                   | Time: 00:08 s, Done: 281, Remaining: 194
+Safe_volume: 36.7920% |███████████                   | Time: 00:08 s, Done: 282, Remaining: 193
+Safe_volume: 37.1826% |███████████▏                  | Time: 00:08 s, Done: 283, Remaining: 192
+Safe_volume: 37.1826% |███████████▏                  | Time: 00:08 s, Done: 284, Remaining: 193
+Safe_volume: 37.1826% |███████████▏                  | Time: 00:08 s, Done: 285, Remaining: 194
+Safe_volume: 37.1826% |███████████▏                  | Time: 00:08 s, Done: 286, Remaining: 195
+Safe_volume: 37.2314% |███████████▏                  | Time: 00:08 s, Done: 287, Remaining: 194
+Safe_volume: 37.6221% |███████████▎                  | Time: 00:08 s, Done: 288, Remaining: 193
+Safe_volume: 38.0127% |███████████▍                  | Time: 00:08 s, Done: 289, Remaining: 192
+Safe_volume: 38.0127% |███████████▍                  | Time: 00:08 s, Done: 290, Remaining: 193
+Safe_volume: 38.0127% |███████████▍                  | Time: 00:08 s, Done: 291, Remaining: 194
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:08 s, Done: 292, Remaining: 193
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:08 s, Done: 293, Remaining: 194
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:08 s, Done: 294, Remaining: 195
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:08 s, Done: 295, Remaining: 196
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:08 s, Done: 296, Remaining: 197
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:08 s, Done: 297, Remaining: 198
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:09 s, Done: 298, Remaining: 199
+Safe_volume: 38.4033% |███████████▌                  | Time: 00:09 s, Done: 299, Remaining: 200
+Safe_volume: 38.4277% |███████████▌                  | Time: 00:09 s, Done: 300, Remaining: 199
+Safe_volume: 38.4521% |███████████▌                  | Time: 00:09 s, Done: 301, Remaining: 198
+Safe_volume: 39.2334% |███████████▊                  | Time: 00:09 s, Done: 302, Remaining: 197
+Safe_volume: 40.0146% |████████████                  | Time: 00:09 s, Done: 302, Remaining: 197
+Safe_volume: 40.0146% |████████████                  | Time: 00:09 s, Done: 303, Remaining: 196
+Safe_volume: 40.0146% |████████████                  | Time: 00:09 s, Done: 304, Remaining: 197
+Safe_volume: 40.0146% |████████████                  | Time: 00:09 s, Done: 305, Remaining: 198
+Safe_volume: 40.0391% |████████████                  | Time: 00:09 s, Done: 306, Remaining: 197
+Safe_volume: 40.0635% |████████████                  | Time: 00:09 s, Done: 307, Remaining: 196
+Safe_volume: 40.0696% |████████████                  | Time: 00:09 s, Done: 308, Remaining: 195
+Safe_volume: 40.0757% |████████████                  | Time: 00:09 s, Done: 309, Remaining: 194
+Safe_volume: 40.0757% |████████████                  | Time: 00:09 s, Done: 310, Remaining: 195
+Safe_volume: 40.1001% |████████████                  | Time: 00:09 s, Done: 311, Remaining: 194
+Safe_volume: 40.1001% |████████████                  | Time: 00:09 s, Done: 312, Remaining: 195
+Safe_volume: 40.1001% |████████████                  | Time: 00:09 s, Done: 313, Remaining: 196
+Safe_volume: 40.1001% |████████████                  | Time: 00:09 s, Done: 314, Remaining: 197
+Safe_volume: 40.1245% |████████████                  | Time: 00:09 s, Done: 315, Remaining: 196
+Safe_volume: 40.1245% |████████████                  | Time: 00:09 s, Done: 316, Remaining: 197
+Safe_volume: 40.1245% |████████████                  | Time: 00:09 s, Done: 317, Remaining: 198
+Safe_volume: 40.1733% |████████████                  | Time: 00:09 s, Done: 318, Remaining: 197
+Safe_volume: 40.1733% |████████████                  | Time: 00:09 s, Done: 319, Remaining: 198
+Safe_volume: 40.1733% |████████████                  | Time: 00:09 s, Done: 320, Remaining: 199
+Safe_volume: 40.1733% |████████████                  | Time: 00:09 s, Done: 321, Remaining: 200
+Safe_volume: 40.1733% |████████████                  | Time: 00:09 s, Done: 322, Remaining: 201
+Safe_volume: 40.1855% |████████████                  | Time: 00:09 s, Done: 323, Remaining: 200
+Safe_volume: 40.1855% |████████████                  | Time: 00:09 s, Done: 324, Remaining: 201
+Safe_volume: 40.1855% |████████████                  | Time: 00:09 s, Done: 325, Remaining: 202
+Safe_volume: 40.1978% |████████████                  | Time: 00:10 s, Done: 326, Remaining: 201
+Safe_volume: 40.1978% |████████████                  | Time: 00:10 s, Done: 327, Remaining: 202
+Safe_volume: 40.1978% |████████████                  | Time: 00:10 s, Done: 328, Remaining: 203
+Safe_volume: 40.2954% |████████████                  | Time: 00:10 s, Done: 328, Remaining: 203
+Safe_volume: 40.2954% |████████████                  | Time: 00:10 s, Done: 329, Remaining: 202
+Safe_volume: 40.3198% |████████████                  | Time: 00:10 s, Done: 330, Remaining: 201
+Safe_volume: 40.3442% |████████████                  | Time: 00:10 s, Done: 331, Remaining: 200
+Safe_volume: 40.3442% |████████████                  | Time: 00:10 s, Done: 332, Remaining: 201
+Safe_volume: 40.3687% |████████████                  | Time: 00:10 s, Done: 332, Remaining: 201
+Safe_volume: 40.3687% |████████████                  | Time: 00:10 s, Done: 333, Remaining: 200
+Safe_volume: 40.4663% |████████████▏                 | Time: 00:10 s, Done: 334, Remaining: 199
+Safe_volume: 40.4663% |████████████▏                 | Time: 00:10 s, Done: 335, Remaining: 200
+Safe_volume: 40.4724% |████████████▏                 | Time: 00:10 s, Done: 336, Remaining: 199
+Safe_volume: 40.4785% |████████████▏                 | Time: 00:10 s, Done: 336, Remaining: 199
+Safe_volume: 40.4785% |████████████▏                 | Time: 00:10 s, Done: 337, Remaining: 198
+Safe_volume: 40.4785% |████████████▏                 | Time: 00:10 s, Done: 338, Remaining: 199
+Safe_volume: 40.4785% |████████████▏                 | Time: 00:10 s, Done: 339, Remaining: 200
+Safe_volume: 40.5762% |████████████▏                 | Time: 00:10 s, Done: 340, Remaining: 199
+Safe_volume: 40.6738% |████████████▏                 | Time: 00:10 s, Done: 340, Remaining: 199
+Safe_volume: 40.6738% |████████████▏                 | Time: 00:10 s, Done: 341, Remaining: 198
+Safe_volume: 40.6860% |████████████▏                 | Time: 00:10 s, Done: 342, Remaining: 197
+Safe_volume: 40.6982% |████████████▏                 | Time: 00:10 s, Done: 343, Remaining: 196
+Safe_volume: 40.6982% |████████████▏                 | Time: 00:10 s, Done: 344, Remaining: 197
+Safe_volume: 40.6982% |████████████▏                 | Time: 00:10 s, Done: 345, Remaining: 198
+Safe_volume: 40.6982% |████████████▏                 | Time: 00:10 s, Done: 346, Remaining: 199
+Safe_volume: 41.4795% |████████████▍                 | Time: 00:10 s, Done: 346, Remaining: 199
+Safe_volume: 41.4795% |████████████▍                 | Time: 00:10 s, Done: 347, Remaining: 198
+Safe_volume: 41.4795% |████████████▍                 | Time: 00:10 s, Done: 348, Remaining: 199
+Safe_volume: 41.4795% |████████████▍                 | Time: 00:10 s, Done: 349, Remaining: 200
+Safe_volume: 41.4856% |████████████▍                 | Time: 00:10 s, Done: 350, Remaining: 199
+Safe_volume: 41.4917% |████████████▍                 | Time: 00:10 s, Done: 351, Remaining: 198
+Safe_volume: 41.5405% |████████████▍                 | Time: 00:10 s, Done: 352, Remaining: 197
+Safe_volume: 41.5894% |████████████▍                 | Time: 00:10 s, Done: 353, Remaining: 196
+Safe_volume: 41.5894% |████████████▍                 | Time: 00:10 s, Done: 354, Remaining: 197
+Safe_volume: 41.6138% |████████████▍                 | Time: 00:10 s, Done: 355, Remaining: 196
+Safe_volume: 41.8091% |████████████▌                 | Time: 00:11 s, Done: 356, Remaining: 195
+Safe_volume: 41.8091% |████████████▌                 | Time: 00:11 s, Done: 357, Remaining: 196
+Safe_volume: 41.8091% |████████████▌                 | Time: 00:11 s, Done: 358, Remaining: 197
+Safe_volume: 41.9067% |████████████▌                 | Time: 00:11 s, Done: 359, Remaining: 196
+Safe_volume: 41.9067% |████████████▌                 | Time: 00:11 s, Done: 360, Remaining: 197
+Safe_volume: 41.9067% |████████████▌                 | Time: 00:11 s, Done: 361, Remaining: 198
+Safe_volume: 42.1021% |████████████▋                 | Time: 00:11 s, Done: 361, Remaining: 198
+Safe_volume: 42.1021% |████████████▋                 | Time: 00:11 s, Done: 362, Remaining: 197
+Safe_volume: 42.2974% |████████████▋                 | Time: 00:11 s, Done: 363, Remaining: 196
+Safe_volume: 42.2974% |████████████▋                 | Time: 00:11 s, Done: 364, Remaining: 197
+Safe_volume: 42.2974% |████████████▋                 | Time: 00:11 s, Done: 365, Remaining: 198
+Safe_volume: 42.2974% |████████████▋                 | Time: 00:11 s, Done: 365, Remaining: 198
+Safe_volume: 42.2974% |████████████▋                 | Time: 00:11 s, Done: 366, Remaining: 199
+Safe_volume: 42.3462% |████████████▋                 | Time: 00:11 s, Done: 367, Remaining: 198
+Safe_volume: 42.3523% |████████████▋                 | Time: 00:11 s, Done: 368, Remaining: 197
+Safe_volume: 42.3584% |████████████▋                 | Time: 00:11 s, Done: 369, Remaining: 196
+Safe_volume: 42.3706% |████████████▋                 | Time: 00:11 s, Done: 370, Remaining: 195
+Safe_volume: 42.3706% |████████████▋                 | Time: 00:11 s, Done: 371, Remaining: 196
+Safe_volume: 43.1519% |████████████▉                 | Time: 00:11 s, Done: 371, Remaining: 196
+Safe_volume: 43.1519% |████████████▉                 | Time: 00:11 s, Done: 372, Remaining: 195
+Safe_volume: 43.9331% |█████████████▏                | Time: 00:11 s, Done: 373, Remaining: 194
+Safe_volume: 43.9331% |█████████████▏                | Time: 00:11 s, Done: 374, Remaining: 195
+Safe_volume: 43.9331% |█████████████▏                | Time: 00:11 s, Done: 374, Remaining: 195
+Safe_volume: 43.9331% |█████████████▏                | Time: 00:11 s, Done: 375, Remaining: 196
+Safe_volume: 43.9331% |█████████████▏                | Time: 00:11 s, Done: 376, Remaining: 197
+Safe_volume: 44.0308% |█████████████▏                | Time: 00:11 s, Done: 377, Remaining: 196
+Safe_volume: 44.0308% |█████████████▏                | Time: 00:11 s, Done: 378, Remaining: 197
+Safe_volume: 44.0796% |█████████████▏                | Time: 00:11 s, Done: 379, Remaining: 196
+Safe_volume: 44.0796% |█████████████▏                | Time: 00:11 s, Done: 380, Remaining: 197
+Safe_volume: 44.0918% |█████████████▏                | Time: 00:11 s, Done: 381, Remaining: 196
+Safe_volume: 44.0918% |█████████████▏                | Time: 00:11 s, Done: 382, Remaining: 197
+Safe_volume: 47.2168% |██████████████▏               | Time: 00:11 s, Done: 382, Remaining: 197
+Safe_volume: 47.2168% |██████████████▏               | Time: 00:11 s, Done: 383, Remaining: 196
+Safe_volume: 47.2168% |██████████████▏               | Time: 00:11 s, Done: 384, Remaining: 197
+Safe_volume: 47.2168% |██████████████▏               | Time: 00:11 s, Done: 385, Remaining: 198
+Safe_volume: 47.2290% |██████████████▏               | Time: 00:12 s, Done: 386, Remaining: 197
+Safe_volume: 47.2290% |██████████████▏               | Time: 00:12 s, Done: 387, Remaining: 198
+Safe_volume: 47.2290% |██████████████▏               | Time: 00:12 s, Done: 388, Remaining: 199
+Safe_volume: 47.2290% |██████████████▏               | Time: 00:12 s, Done: 389, Remaining: 200
+Safe_volume: 48.0103% |██████████████▍               | Time: 00:12 s, Done: 390, Remaining: 199
+Safe_volume: 48.7915% |██████████████▋               | Time: 00:12 s, Done: 390, Remaining: 199
+Safe_volume: 48.7915% |██████████████▋               | Time: 00:12 s, Done: 391, Remaining: 198
+Safe_volume: 48.7915% |██████████████▋               | Time: 00:12 s, Done: 392, Remaining: 199
+Safe_volume: 48.7915% |██████████████▋               | Time: 00:12 s, Done: 393, Remaining: 200
+Safe_volume: 50.3540% |███████████████               | Time: 00:12 s, Done: 394, Remaining: 199
+Safe_volume: 51.9165% |███████████████▌              | Time: 00:12 s, Done: 394, Remaining: 199
+Safe_volume: 51.9165% |███████████████▌              | Time: 00:12 s, Done: 395, Remaining: 198
+Safe_volume: 51.9287% |███████████████▌              | Time: 00:12 s, Done: 396, Remaining: 197
+Safe_volume: 51.9409% |███████████████▌              | Time: 00:12 s, Done: 397, Remaining: 196
+Safe_volume: 51.9897% |███████████████▌              | Time: 00:12 s, Done: 398, Remaining: 195
+Safe_volume: 51.9897% |███████████████▌              | Time: 00:12 s, Done: 399, Remaining: 196
+Safe_volume: 52.0142% |███████████████▌              | Time: 00:12 s, Done: 400, Remaining: 195
+Safe_volume: 52.0142% |███████████████▌              | Time: 00:12 s, Done: 401, Remaining: 196
+Safe_volume: 52.0142% |███████████████▌              | Time: 00:12 s, Done: 402, Remaining: 197
+Safe_volume: 52.0142% |███████████████▌              | Time: 00:12 s, Done: 403, Remaining: 198
+Safe_volume: 52.0142% |███████████████▌              | Time: 00:12 s, Done: 404, Remaining: 199
+Safe_volume: 52.0142% |███████████████▌              | Time: 00:12 s, Done: 405, Remaining: 200
+Safe_volume: 52.0142% |███████████████▌              | Time: 00:12 s, Done: 406, Remaining: 201
+Safe_volume: 52.2095% |███████████████▋              | Time: 00:12 s, Done: 407, Remaining: 200
+Safe_volume: 52.2583% |███████████████▋              | Time: 00:12 s, Done: 408, Remaining: 199
+Safe_volume: 52.3071% |███████████████▋              | Time: 00:12 s, Done: 409, Remaining: 198
+Safe_volume: 52.6978% |███████████████▊              | Time: 00:12 s, Done: 410, Remaining: 197
+Safe_volume: 52.6978% |███████████████▊              | Time: 00:12 s, Done: 411, Remaining: 198
+Safe_volume: 52.7100% |███████████████▊              | Time: 00:12 s, Done: 412, Remaining: 197
+Safe_volume: 52.7222% |███████████████▊              | Time: 00:12 s, Done: 413, Remaining: 196
+Safe_volume: 52.7283% |███████████████▊              | Time: 00:12 s, Done: 414, Remaining: 195
+Safe_volume: 52.7283% |███████████████▊              | Time: 00:12 s, Done: 415, Remaining: 196
+Safe_volume: 52.8259% |███████████████▊              | Time: 00:12 s, Done: 416, Remaining: 195
+Safe_volume: 52.8259% |███████████████▊              | Time: 00:12 s, Done: 417, Remaining: 196
+Safe_volume: 52.8259% |███████████████▊              | Time: 00:12 s, Done: 418, Remaining: 197
+Safe_volume: 53.6072% |████████████████              | Time: 00:12 s, Done: 419, Remaining: 196
+Safe_volume: 53.6560% |████████████████              | Time: 00:13 s, Done: 420, Remaining: 195
+Safe_volume: 53.6560% |████████████████              | Time: 00:13 s, Done: 421, Remaining: 196
+Safe_volume: 53.6804% |████████████████              | Time: 00:13 s, Done: 422, Remaining: 195
+Safe_volume: 53.6804% |████████████████              | Time: 00:13 s, Done: 423, Remaining: 196
+Safe_volume: 53.6804% |████████████████              | Time: 00:13 s, Done: 424, Remaining: 197
+Safe_volume: 53.7292% |████████████████              | Time: 00:13 s, Done: 425, Remaining: 196
+Safe_volume: 53.7781% |████████████████▏             | Time: 00:13 s, Done: 426, Remaining: 195
+Safe_volume: 53.7781% |████████████████▏             | Time: 00:13 s, Done: 427, Remaining: 196
+Safe_volume: 53.7903% |████████████████▏             | Time: 00:13 s, Done: 428, Remaining: 195
+Safe_volume: 53.8025% |████████████████▏             | Time: 00:13 s, Done: 429, Remaining: 194
+Safe_volume: 53.8269% |████████████████▏             | Time: 00:13 s, Done: 430, Remaining: 193
+Safe_volume: 53.8269% |████████████████▏             | Time: 00:13 s, Done: 431, Remaining: 194
+Safe_volume: 53.8330% |████████████████▏             | Time: 00:13 s, Done: 432, Remaining: 193
+Safe_volume: 53.8391% |████████████████▏             | Time: 00:13 s, Done: 433, Remaining: 192
+Safe_volume: 53.8513% |████████████████▏             | Time: 00:13 s, Done: 434, Remaining: 191
+Safe_volume: 53.8635% |████████████████▏             | Time: 00:13 s, Done: 435, Remaining: 190
+Safe_volume: 53.8635% |████████████████▏             | Time: 00:13 s, Done: 436, Remaining: 191
+Safe_volume: 53.9612% |████████████████▏             | Time: 00:13 s, Done: 437, Remaining: 190
+Safe_volume: 53.9612% |████████████████▏             | Time: 00:13 s, Done: 438, Remaining: 191
+Safe_volume: 53.9612% |████████████████▏             | Time: 00:13 s, Done: 439, Remaining: 192
+Safe_volume: 53.9856% |████████████████▏             | Time: 00:13 s, Done: 440, Remaining: 191
+Safe_volume: 53.9856% |████████████████▏             | Time: 00:13 s, Done: 441, Remaining: 192
+Safe_volume: 54.0344% |████████████████▏             | Time: 00:13 s, Done: 442, Remaining: 191
+Safe_volume: 54.0344% |████████████████▏             | Time: 00:13 s, Done: 443, Remaining: 192
+Safe_volume: 54.0344% |████████████████▏             | Time: 00:13 s, Done: 444, Remaining: 193
+Safe_volume: 54.0344% |████████████████▏             | Time: 00:13 s, Done: 445, Remaining: 194
+Safe_volume: 54.0833% |████████████████▏             | Time: 00:13 s, Done: 446, Remaining: 193
+Safe_volume: 54.1321% |████████████████▏             | Time: 00:13 s, Done: 447, Remaining: 192
+Safe_volume: 54.1321% |████████████████▏             | Time: 00:13 s, Done: 448, Remaining: 193
+Safe_volume: 54.1321% |████████████████▏             | Time: 00:13 s, Done: 449, Remaining: 194
+Safe_volume: 54.1809% |████████████████▎             | Time: 00:13 s, Done: 450, Remaining: 193
+Safe_volume: 54.1809% |████████████████▎             | Time: 00:13 s, Done: 451, Remaining: 194
+Safe_volume: 54.2053% |████████████████▎             | Time: 00:13 s, Done: 452, Remaining: 193
+Safe_volume: 54.2053% |████████████████▎             | Time: 00:13 s, Done: 453, Remaining: 194
+Safe_volume: 54.2297% |████████████████▎             | Time: 00:13 s, Done: 454, Remaining: 193
+Safe_volume: 54.2297% |████████████████▎             | Time: 00:13 s, Done: 455, Remaining: 194
+Safe_volume: 54.2297% |████████████████▎             | Time: 00:14 s, Done: 456, Remaining: 195
+Safe_volume: 54.2542% |████████████████▎             | Time: 00:14 s, Done: 457, Remaining: 194
+Safe_volume: 54.2542% |████████████████▎             | Time: 00:14 s, Done: 458, Remaining: 195
+Safe_volume: 54.2786% |████████████████▎             | Time: 00:14 s, Done: 459, Remaining: 194
+Safe_volume: 54.2786% |████████████████▎             | Time: 00:14 s, Done: 460, Remaining: 195
+Safe_volume: 54.3030% |████████████████▎             | Time: 00:14 s, Done: 461, Remaining: 194
+Safe_volume: 54.4006% |████████████████▎             | Time: 00:14 s, Done: 462, Remaining: 193
+Safe_volume: 54.4983% |████████████████▎             | Time: 00:14 s, Done: 463, Remaining: 192
+Safe_volume: 56.0608% |████████████████▊             | Time: 00:14 s, Done: 463, Remaining: 192
+Safe_volume: 56.0608% |████████████████▊             | Time: 00:14 s, Done: 464, Remaining: 191
+Safe_volume: 57.6233% |█████████████████▎            | Time: 00:14 s, Done: 465, Remaining: 190
+Safe_volume: 57.6233% |█████████████████▎            | Time: 00:14 s, Done: 466, Remaining: 191
+Safe_volume: 60.7483% |██████████████████▏           | Time: 00:14 s, Done: 467, Remaining: 190
+Safe_volume: 60.7544% |██████████████████▏           | Time: 00:14 s, Done: 468, Remaining: 189
+Safe_volume: 60.7605% |██████████████████▏           | Time: 00:14 s, Done: 468, Remaining: 189
+Safe_volume: 60.7605% |██████████████████▏           | Time: 00:14 s, Done: 469, Remaining: 188
+Safe_volume: 60.7605% |██████████████████▏           | Time: 00:14 s, Done: 470, Remaining: 189
+Safe_volume: 60.7605% |██████████████████▏           | Time: 00:14 s, Done: 471, Remaining: 190
+Safe_volume: 60.9558% |██████████████████▎           | Time: 00:14 s, Done: 472, Remaining: 189
+Safe_volume: 61.1511% |██████████████████▎           | Time: 00:14 s, Done: 473, Remaining: 188
+Safe_volume: 61.1511% |██████████████████▎           | Time: 00:14 s, Done: 474, Remaining: 189
+Safe_volume: 61.1511% |██████████████████▎           | Time: 00:14 s, Done: 475, Remaining: 190
+Safe_volume: 61.1755% |██████████████████▎           | Time: 00:14 s, Done: 476, Remaining: 189
+Safe_volume: 61.1755% |██████████████████▎           | Time: 00:14 s, Done: 477, Remaining: 190
+Safe_volume: 61.1755% |██████████████████▎           | Time: 00:14 s, Done: 478, Remaining: 191
+Safe_volume: 61.1755% |██████████████████▎           | Time: 00:14 s, Done: 479, Remaining: 192
+Safe_volume: 61.2244% |██████████████████▎           | Time: 00:14 s, Done: 480, Remaining: 191
+Safe_volume: 61.2732% |██████████████████▍           | Time: 00:14 s, Done: 481, Remaining: 190
+Safe_volume: 61.2793% |██████████████████▍           | Time: 00:14 s, Done: 482, Remaining: 189
+Safe_volume: 61.2854% |██████████████████▍           | Time: 00:14 s, Done: 483, Remaining: 188
+Safe_volume: 61.4807% |██████████████████▍           | Time: 00:14 s, Done: 484, Remaining: 187
+Safe_volume: 61.6760% |██████████████████▌           | Time: 00:14 s, Done: 485, Remaining: 186
+Safe_volume: 61.7004% |██████████████████▌           | Time: 00:14 s, Done: 486, Remaining: 185
+Safe_volume: 61.7249% |██████████████████▌           | Time: 00:14 s, Done: 487, Remaining: 184
+Safe_volume: 61.7249% |██████████████████▌           | Time: 00:14 s, Done: 488, Remaining: 185
+Safe_volume: 61.7249% |██████████████████▌           | Time: 00:14 s, Done: 489, Remaining: 186
+Safe_volume: 61.7249% |██████████████████▌           | Time: 00:14 s, Done: 490, Remaining: 187
+Safe_volume: 62.1155% |██████████████████▋           | Time: 00:14 s, Done: 491, Remaining: 186
+Safe_volume: 62.1155% |██████████████████▋           | Time: 00:14 s, Done: 492, Remaining: 187
+Safe_volume: 62.1399% |██████████████████▋           | Time: 00:14 s, Done: 493, Remaining: 186
+Safe_volume: 62.2375% |██████████████████▋           | Time: 00:15 s, Done: 494, Remaining: 185
+Safe_volume: 62.2375% |██████████████████▋           | Time: 00:15 s, Done: 495, Remaining: 186
+Safe_volume: 62.2375% |██████████████████▋           | Time: 00:15 s, Done: 496, Remaining: 187
+Safe_volume: 62.2375% |██████████████████▋           | Time: 00:15 s, Done: 497, Remaining: 188
+Safe_volume: 62.2498% |██████████████████▋           | Time: 00:15 s, Done: 498, Remaining: 187
+Safe_volume: 62.2498% |██████████████████▋           | Time: 00:15 s, Done: 499, Remaining: 188
+Safe_volume: 62.2498% |██████████████████▋           | Time: 00:15 s, Done: 500, Remaining: 189
+Safe_volume: 62.2498% |██████████████████▋           | Time: 00:15 s, Done: 501, Remaining: 190
+Safe_volume: 62.2498% |██████████████████▋           | Time: 00:15 s, Done: 502, Remaining: 191
+Safe_volume: 62.2498% |██████████████████▋           | Time: 00:15 s, Done: 503, Remaining: 192
+Safe_volume: 62.2498% |██████████████████▋           | Time: 00:15 s, Done: 504, Remaining: 193
+Safe_volume: 62.2620% |██████████████████▋           | Time: 00:15 s, Done: 505, Remaining: 192
+Safe_volume: 62.3108% |██████████████████▋           | Time: 00:15 s, Done: 506, Remaining: 191
+Safe_volume: 62.3596% |██████████████████▋           | Time: 00:15 s, Done: 507, Remaining: 190
+Safe_volume: 62.3657% |██████████████████▋           | Time: 00:15 s, Done: 508, Remaining: 189
+Safe_volume: 62.3718% |██████████████████▋           | Time: 00:15 s, Done: 509, Remaining: 188
+Safe_volume: 62.5671% |██████████████████▊           | Time: 00:15 s, Done: 510, Remaining: 187
+Safe_volume: 62.7625% |██████████████████▊           | Time: 00:15 s, Done: 511, Remaining: 186
+Safe_volume: 62.7686% |██████████████████▊           | Time: 00:15 s, Done: 512, Remaining: 185
+Safe_volume: 62.7747% |██████████████████▊           | Time: 00:15 s, Done: 513, Remaining: 184
+Safe_volume: 62.7747% |██████████████████▊           | Time: 00:15 s, Done: 514, Remaining: 185
+Safe_volume: 63.1653% |██████████████████▉           | Time: 00:15 s, Done: 515, Remaining: 184
+Safe_volume: 63.2629% |██████████████████▉           | Time: 00:15 s, Done: 516, Remaining: 183
+Safe_volume: 63.2629% |██████████████████▉           | Time: 00:15 s, Done: 517, Remaining: 184
+Safe_volume: 63.2629% |██████████████████▉           | Time: 00:15 s, Done: 518, Remaining: 185
+Safe_volume: 63.2629% |██████████████████▉           | Time: 00:15 s, Done: 519, Remaining: 186
+Safe_volume: 63.2660% |██████████████████▉           | Time: 00:15 s, Done: 520, Remaining: 185
+Safe_volume: 63.2660% |██████████████████▉           | Time: 00:15 s, Done: 521, Remaining: 186
+Safe_volume: 63.2782% |██████████████████▉           | Time: 00:15 s, Done: 522, Remaining: 185
+Safe_volume: 63.2904% |██████████████████▉           | Time: 00:15 s, Done: 523, Remaining: 184
+Safe_volume: 63.3026% |██████████████████▉           | Time: 00:15 s, Done: 524, Remaining: 183
+Safe_volume: 63.3148% |██████████████████▉           | Time: 00:15 s, Done: 525, Remaining: 182
+Safe_volume: 63.3392% |███████████████████           | Time: 00:15 s, Done: 526, Remaining: 181
+Safe_volume: 63.3392% |███████████████████           | Time: 00:15 s, Done: 527, Remaining: 182
+Safe_volume: 63.3392% |███████████████████           | Time: 00:15 s, Done: 528, Remaining: 183
+Safe_volume: 63.3392% |███████████████████           | Time: 00:15 s, Done: 529, Remaining: 184
+Safe_volume: 63.3514% |███████████████████           | Time: 00:15 s, Done: 530, Remaining: 183
+Safe_volume: 63.3636% |███████████████████           | Time: 00:16 s, Done: 531, Remaining: 182
+Safe_volume: 63.3636% |███████████████████           | Time: 00:16 s, Done: 532, Remaining: 183
+Safe_volume: 63.7543% |███████████████████▏          | Time: 00:16 s, Done: 533, Remaining: 182
+Safe_volume: 63.7787% |███████████████████▏          | Time: 00:16 s, Done: 534, Remaining: 181
+Safe_volume: 63.7787% |███████████████████▏          | Time: 00:16 s, Done: 535, Remaining: 182
+Safe_volume: 63.7848% |███████████████████▏          | Time: 00:16 s, Done: 536, Remaining: 181
+Safe_volume: 63.7848% |███████████████████▏          | Time: 00:16 s, Done: 537, Remaining: 182
+Safe_volume: 63.7848% |███████████████████▏          | Time: 00:16 s, Done: 538, Remaining: 183
+Safe_volume: 63.7848% |███████████████████▏          | Time: 00:16 s, Done: 539, Remaining: 184
+Safe_volume: 63.8336% |███████████████████▏          | Time: 00:16 s, Done: 540, Remaining: 183
+Safe_volume: 63.8824% |███████████████████▏          | Time: 00:16 s, Done: 541, Remaining: 182
+Safe_volume: 63.9069% |███████████████████▏          | Time: 00:16 s, Done: 542, Remaining: 181
+Safe_volume: 63.9069% |███████████████████▏          | Time: 00:16 s, Done: 543, Remaining: 182
+Safe_volume: 63.9084% |███████████████████▏          | Time: 00:16 s, Done: 544, Remaining: 181
+Safe_volume: 63.9084% |███████████████████▏          | Time: 00:16 s, Done: 545, Remaining: 182
+Safe_volume: 63.9572% |███████████████████▏          | Time: 00:16 s, Done: 546, Remaining: 181
+Safe_volume: 64.0060% |███████████████████▏          | Time: 00:16 s, Done: 547, Remaining: 180
+Safe_volume: 64.0182% |███████████████████▏          | Time: 00:16 s, Done: 548, Remaining: 179
+Safe_volume: 64.0182% |███████████████████▏          | Time: 00:16 s, Done: 549, Remaining: 180
+Safe_volume: 64.0427% |███████████████████▏          | Time: 00:16 s, Done: 550, Remaining: 179
+Safe_volume: 64.0427% |███████████████████▏          | Time: 00:16 s, Done: 551, Remaining: 180
+Safe_volume: 64.0549% |███████████████████▏          | Time: 00:16 s, Done: 552, Remaining: 179
+Safe_volume: 64.0671% |███████████████████▏          | Time: 00:16 s, Done: 553, Remaining: 178
+Safe_volume: 64.1647% |███████████████████▏          | Time: 00:16 s, Done: 554, Remaining: 177
+Safe_volume: 64.2624% |███████████████████▎          | Time: 00:16 s, Done: 555, Remaining: 176
+Safe_volume: 64.2624% |███████████████████▎          | Time: 00:16 s, Done: 556, Remaining: 177
+Safe_volume: 64.2746% |███████████████████▎          | Time: 00:16 s, Done: 557, Remaining: 176
+Safe_volume: 65.8371% |███████████████████▊          | Time: 00:16 s, Done: 557, Remaining: 176
+Safe_volume: 65.8371% |███████████████████▊          | Time: 00:16 s, Done: 558, Remaining: 175
+Safe_volume: 67.3996% |████████████████████▏         | Time: 00:16 s, Done: 559, Remaining: 174
+Safe_volume: 67.3996% |████████████████████▏         | Time: 00:16 s, Done: 560, Remaining: 175
+Safe_volume: 67.3996% |████████████████████▏         | Time: 00:16 s, Done: 561, Remaining: 176
+Safe_volume: 67.4118% |████████████████████▏         | Time: 00:16 s, Done: 561, Remaining: 176
+Safe_volume: 67.4118% |████████████████████▏         | Time: 00:16 s, Done: 562, Remaining: 175
+Safe_volume: 67.4118% |████████████████████▏         | Time: 00:16 s, Done: 563, Remaining: 176
+Safe_volume: 67.8024% |████████████████████▎         | Time: 00:16 s, Done: 564, Remaining: 175
+Safe_volume: 68.1931% |████████████████████▍         | Time: 00:16 s, Done: 565, Remaining: 174
+Safe_volume: 68.1931% |████████████████████▍         | Time: 00:16 s, Done: 566, Remaining: 175
+Safe_volume: 68.2053% |████████████████████▍         | Time: 00:16 s, Done: 567, Remaining: 174
+Safe_volume: 68.3029% |████████████████████▍         | Time: 00:16 s, Done: 568, Remaining: 173
+Safe_volume: 68.4006% |████████████████████▌         | Time: 00:17 s, Done: 569, Remaining: 172
+Safe_volume: 68.4006% |████████████████████▌         | Time: 00:17 s, Done: 570, Remaining: 173
+Safe_volume: 68.4006% |████████████████████▌         | Time: 00:17 s, Done: 571, Remaining: 174
+Safe_volume: 68.4250% |████████████████████▌         | Time: 00:17 s, Done: 572, Remaining: 173
+Safe_volume: 68.4494% |████████████████████▌         | Time: 00:17 s, Done: 573, Remaining: 172
+Safe_volume: 68.4494% |████████████████████▌         | Time: 00:17 s, Done: 574, Remaining: 173
+Safe_volume: 68.4738% |████████████████████▌         | Time: 00:17 s, Done: 575, Remaining: 172
+Safe_volume: 68.4799% |████████████████████▌         | Time: 00:17 s, Done: 576, Remaining: 171
+Safe_volume: 68.4799% |████████████████████▌         | Time: 00:17 s, Done: 577, Remaining: 172
+Safe_volume: 68.4799% |████████████████████▌         | Time: 00:17 s, Done: 578, Remaining: 173
+Safe_volume: 68.5287% |████████████████████▌         | Time: 00:17 s, Done: 579, Remaining: 172
+Safe_volume: 68.5349% |████████████████████▌         | Time: 00:17 s, Done: 580, Remaining: 171
+Safe_volume: 68.5349% |████████████████████▌         | Time: 00:17 s, Done: 581, Remaining: 172
+Safe_volume: 68.5837% |████████████████████▌         | Time: 00:17 s, Done: 582, Remaining: 171
+Safe_volume: 68.6325% |████████████████████▌         | Time: 00:17 s, Done: 583, Remaining: 170
+Safe_volume: 68.6569% |████████████████████▌         | Time: 00:17 s, Done: 584, Remaining: 169
+Safe_volume: 68.6569% |████████████████████▌         | Time: 00:17 s, Done: 585, Remaining: 170
+Safe_volume: 68.6569% |████████████████████▌         | Time: 00:17 s, Done: 586, Remaining: 171
+Safe_volume: 68.6569% |████████████████████▌         | Time: 00:17 s, Done: 587, Remaining: 172
+Safe_volume: 68.7546% |████████████████████▋         | Time: 00:17 s, Done: 588, Remaining: 171
+Safe_volume: 68.8522% |████████████████████▋         | Time: 00:17 s, Done: 588, Remaining: 171
+Safe_volume: 68.8522% |████████████████████▋         | Time: 00:17 s, Done: 589, Remaining: 170
+Safe_volume: 68.9011% |████████████████████▋         | Time: 00:17 s, Done: 590, Remaining: 169
+Safe_volume: 68.9499% |████████████████████▋         | Time: 00:17 s, Done: 591, Remaining: 168
+Safe_volume: 68.9743% |████████████████████▋         | Time: 00:17 s, Done: 592, Remaining: 167
+Safe_volume: 68.9743% |████████████████████▋         | Time: 00:17 s, Done: 593, Remaining: 168
+Safe_volume: 68.9743% |████████████████████▋         | Time: 00:17 s, Done: 594, Remaining: 169
+Safe_volume: 69.7556% |████████████████████▉         | Time: 00:17 s, Done: 594, Remaining: 169
+Safe_volume: 69.7556% |████████████████████▉         | Time: 00:17 s, Done: 595, Remaining: 168
+Safe_volume: 69.7571% |████████████████████▉         | Time: 00:17 s, Done: 596, Remaining: 167
+Safe_volume: 69.7571% |████████████████████▉         | Time: 00:17 s, Done: 597, Remaining: 168
+Safe_volume: 69.7632% |████████████████████▉         | Time: 00:17 s, Done: 598, Remaining: 167
+Safe_volume: 69.7693% |████████████████████▉         | Time: 00:17 s, Done: 599, Remaining: 166
+Safe_volume: 69.7693% |████████████████████▉         | Time: 00:17 s, Done: 600, Remaining: 167
+Safe_volume: 69.7693% |████████████████████▉         | Time: 00:17 s, Done: 601, Remaining: 168
+Safe_volume: 69.7693% |████████████████████▉         | Time: 00:17 s, Done: 602, Remaining: 169
+Safe_volume: 69.8669% |████████████████████▉         | Time: 00:17 s, Done: 603, Remaining: 168
+Safe_volume: 69.8669% |████████████████████▉         | Time: 00:17 s, Done: 604, Remaining: 169
+Safe_volume: 69.8669% |████████████████████▉         | Time: 00:17 s, Done: 605, Remaining: 170
+Safe_volume: 69.8669% |████████████████████▉         | Time: 00:18 s, Done: 606, Remaining: 171
+Safe_volume: 69.8730% |████████████████████▉         | Time: 00:18 s, Done: 607, Remaining: 170
+Safe_volume: 69.8730% |████████████████████▉         | Time: 00:18 s, Done: 608, Remaining: 171
+Safe_volume: 69.8975% |████████████████████▉         | Time: 00:18 s, Done: 609, Remaining: 170
+Safe_volume: 69.9463% |████████████████████▉         | Time: 00:18 s, Done: 610, Remaining: 169
+Safe_volume: 69.9463% |████████████████████▉         | Time: 00:18 s, Done: 611, Remaining: 170
+Safe_volume: 69.9471% |████████████████████▉         | Time: 00:18 s, Done: 612, Remaining: 169
+Safe_volume: 69.9478% |████████████████████▉         | Time: 00:18 s, Done: 613, Remaining: 168
+Safe_volume: 69.9478% |████████████████████▉         | Time: 00:18 s, Done: 614, Remaining: 169
+Safe_volume: 69.9722% |████████████████████▉         | Time: 00:18 s, Done: 615, Remaining: 168
+Safe_volume: 69.9722% |████████████████████▉         | Time: 00:18 s, Done: 616, Remaining: 169
+Safe_volume: 69.9844% |████████████████████▉         | Time: 00:18 s, Done: 617, Remaining: 168
+Safe_volume: 70.0089% |█████████████████████         | Time: 00:18 s, Done: 618, Remaining: 167
+Safe_volume: 70.0089% |█████████████████████         | Time: 00:18 s, Done: 619, Remaining: 168
+Safe_volume: 70.0089% |█████████████████████         | Time: 00:18 s, Done: 620, Remaining: 169
+Safe_volume: 70.0089% |█████████████████████         | Time: 00:18 s, Done: 621, Remaining: 170
+Safe_volume: 70.0211% |█████████████████████         | Time: 00:18 s, Done: 622, Remaining: 169
+Safe_volume: 70.0333% |█████████████████████         | Time: 00:18 s, Done: 623, Remaining: 168
+Safe_volume: 70.0333% |█████████████████████         | Time: 00:18 s, Done: 624, Remaining: 169
+Safe_volume: 70.0333% |█████████████████████         | Time: 00:18 s, Done: 625, Remaining: 170
+Safe_volume: 70.0333% |█████████████████████         | Time: 00:18 s, Done: 626, Remaining: 171
+Safe_volume: 70.1309% |█████████████████████         | Time: 00:18 s, Done: 627, Remaining: 170
+Safe_volume: 70.1370% |█████████████████████         | Time: 00:18 s, Done: 628, Remaining: 169
+Safe_volume: 70.1431% |█████████████████████         | Time: 00:18 s, Done: 629, Remaining: 168
+Safe_volume: 70.1920% |█████████████████████         | Time: 00:18 s, Done: 630, Remaining: 167
+Safe_volume: 70.1920% |█████████████████████         | Time: 00:18 s, Done: 631, Remaining: 168
+Safe_volume: 70.2042% |█████████████████████         | Time: 00:18 s, Done: 632, Remaining: 167
+Safe_volume: 70.2164% |█████████████████████         | Time: 00:18 s, Done: 633, Remaining: 166
+Safe_volume: 70.2164% |█████████████████████         | Time: 00:18 s, Done: 634, Remaining: 167
+Safe_volume: 70.2164% |█████████████████████         | Time: 00:18 s, Done: 635, Remaining: 168
+Safe_volume: 70.2179% |█████████████████████         | Time: 00:18 s, Done: 636, Remaining: 167
+Safe_volume: 70.2179% |█████████████████████         | Time: 00:18 s, Done: 637, Remaining: 168
+Safe_volume: 70.2240% |█████████████████████         | Time: 00:18 s, Done: 638, Remaining: 167
+Safe_volume: 70.2301% |█████████████████████         | Time: 00:18 s, Done: 639, Remaining: 166
+Safe_volume: 70.2332% |█████████████████████         | Time: 00:18 s, Done: 640, Remaining: 165
+Safe_volume: 70.2362% |█████████████████████         | Time: 00:18 s, Done: 641, Remaining: 164
+Safe_volume: 70.6268% |█████████████████████▏        | Time: 00:18 s, Done: 641, Remaining: 164
+Safe_volume: 70.6268% |█████████████████████▏        | Time: 00:18 s, Done: 642, Remaining: 163
+Safe_volume: 71.0175% |█████████████████████▎        | Time: 00:19 s, Done: 643, Remaining: 162
+Safe_volume: 71.0663% |█████████████████████▎        | Time: 00:19 s, Done: 644, Remaining: 161
+Safe_volume: 71.1151% |█████████████████████▎        | Time: 00:19 s, Done: 645, Remaining: 160
+Safe_volume: 71.1151% |█████████████████████▎        | Time: 00:19 s, Done: 645, Remaining: 160
+Safe_volume: 71.1151% |█████████████████████▎        | Time: 00:19 s, Done: 646, Remaining: 161
+Safe_volume: 71.1151% |█████████████████████▎        | Time: 00:19 s, Done: 647, Remaining: 162
+Safe_volume: 71.1212% |█████████████████████▎        | Time: 00:19 s, Done: 648, Remaining: 161
+Safe_volume: 71.1212% |█████████████████████▎        | Time: 00:19 s, Done: 649, Remaining: 162
+Safe_volume: 71.1212% |█████████████████████▎        | Time: 00:19 s, Done: 650, Remaining: 163
+Safe_volume: 71.1212% |█████████████████████▎        | Time: 00:19 s, Done: 651, Remaining: 164
+Safe_volume: 71.3165% |█████████████████████▍        | Time: 00:19 s, Done: 652, Remaining: 163
+Safe_volume: 71.5118% |█████████████████████▍        | Time: 00:19 s, Done: 653, Remaining: 162
+Safe_volume: 71.5607% |█████████████████████▍        | Time: 00:19 s, Done: 654, Remaining: 161
+Safe_volume: 71.5607% |█████████████████████▍        | Time: 00:19 s, Done: 655, Remaining: 162
+Safe_volume: 71.5729% |█████████████████████▍        | Time: 00:19 s, Done: 656, Remaining: 161
+Safe_volume: 71.5851% |█████████████████████▍        | Time: 00:19 s, Done: 657, Remaining: 160
+Safe_volume: 71.5973% |█████████████████████▍        | Time: 00:19 s, Done: 657, Remaining: 160
+Safe_volume: 71.5973% |█████████████████████▍        | Time: 00:19 s, Done: 658, Remaining: 159
+Safe_volume: 71.6095% |█████████████████████▍        | Time: 00:19 s, Done: 659, Remaining: 158
+Safe_volume: 72.3907% |█████████████████████▋        | Time: 00:19 s, Done: 660, Remaining: 157
+Safe_volume: 73.1720% |█████████████████████▉        | Time: 00:19 s, Done: 661, Remaining: 156
+Safe_volume: 73.1720% |█████████████████████▉        | Time: 00:19 s, Done: 661, Remaining: 156
+Safe_volume: 73.1720% |█████████████████████▉        | Time: 00:19 s, Done: 662, Remaining: 157
+Safe_volume: 73.3673% |██████████████████████        | Time: 00:19 s, Done: 663, Remaining: 156
+Safe_volume: 73.3673% |██████████████████████        | Time: 00:19 s, Done: 664, Remaining: 157
+Safe_volume: 73.3673% |██████████████████████        | Time: 00:19 s, Done: 665, Remaining: 158
+Safe_volume: 73.4161% |██████████████████████        | Time: 00:19 s, Done: 666, Remaining: 157
+Safe_volume: 73.4650% |██████████████████████        | Time: 00:19 s, Done: 667, Remaining: 156
+Safe_volume: 73.4657% |██████████████████████        | Time: 00:19 s, Done: 668, Remaining: 155
+Safe_volume: 73.4665% |██████████████████████        | Time: 00:19 s, Done: 669, Remaining: 154
+Safe_volume: 73.4787% |██████████████████████        | Time: 00:19 s, Done: 670, Remaining: 153
+Safe_volume: 73.4909% |██████████████████████        | Time: 00:19 s, Done: 671, Remaining: 152
+Safe_volume: 73.6862% |██████████████████████        | Time: 00:19 s, Done: 672, Remaining: 151
+Safe_volume: 73.8815% |██████████████████████▏       | Time: 00:19 s, Done: 673, Remaining: 150
+Safe_volume: 73.8846% |██████████████████████▏       | Time: 00:19 s, Done: 674, Remaining: 149
+Safe_volume: 73.8876% |██████████████████████▏       | Time: 00:19 s, Done: 675, Remaining: 148
+Safe_volume: 73.8876% |██████████████████████▏       | Time: 00:19 s, Done: 676, Remaining: 149
+Safe_volume: 73.8998% |██████████████████████▏       | Time: 00:19 s, Done: 677, Remaining: 148
+Safe_volume: 73.9029% |██████████████████████▏       | Time: 00:19 s, Done: 678, Remaining: 147
+Safe_volume: 73.9059% |██████████████████████▏       | Time: 00:19 s, Done: 679, Remaining: 146
+Safe_volume: 73.9548% |██████████████████████▏       | Time: 00:19 s, Done: 680, Remaining: 145
+Safe_volume: 73.9548% |██████████████████████▏       | Time: 00:20 s, Done: 680, Remaining: 145
+Safe_volume: 73.9548% |██████████████████████▏       | Time: 00:20 s, Done: 681, Remaining: 146
+Safe_volume: 73.9548% |██████████████████████▏       | Time: 00:20 s, Done: 682, Remaining: 147
+Safe_volume: 73.9548% |██████████████████████▏       | Time: 00:20 s, Done: 683, Remaining: 148
+Safe_volume: 73.9548% |██████████████████████▏       | Time: 00:20 s, Done: 684, Remaining: 149
+Safe_volume: 74.3454% |██████████████████████▎       | Time: 00:20 s, Done: 684, Remaining: 149
+Safe_volume: 74.3454% |██████████████████████▎       | Time: 00:20 s, Done: 685, Remaining: 148
+Safe_volume: 74.3576% |██████████████████████▎       | Time: 00:20 s, Done: 686, Remaining: 147
+Safe_volume: 74.3698% |██████████████████████▎       | Time: 00:20 s, Done: 687, Remaining: 146
+Safe_volume: 74.3759% |██████████████████████▎       | Time: 00:20 s, Done: 688, Remaining: 145
+Safe_volume: 74.3759% |██████████████████████▎       | Time: 00:20 s, Done: 689, Remaining: 146
+Safe_volume: 74.5712% |██████████████████████▎       | Time: 00:20 s, Done: 689, Remaining: 146
+Safe_volume: 74.5712% |██████████████████████▎       | Time: 00:20 s, Done: 690, Remaining: 145
+Safe_volume: 74.5712% |██████████████████████▎       | Time: 00:20 s, Done: 691, Remaining: 146
+Safe_volume: 74.5712% |██████████████████████▎       | Time: 00:20 s, Done: 692, Remaining: 147
+Safe_volume: 74.5834% |██████████████████████▍       | Time: 00:20 s, Done: 693, Remaining: 146
+Safe_volume: 74.5834% |██████████████████████▍       | Time: 00:20 s, Done: 694, Remaining: 147
+Safe_volume: 74.9741% |██████████████████████▍       | Time: 00:20 s, Done: 694, Remaining: 147
+Safe_volume: 74.9741% |██████████████████████▍       | Time: 00:20 s, Done: 695, Remaining: 146
+Safe_volume: 74.9985% |██████████████████████▍       | Time: 00:20 s, Done: 696, Remaining: 145
+Safe_volume: 74.9985% |██████████████████████▍       | Time: 00:20 s, Done: 697, Remaining: 146
+Safe_volume: 74.9985% |██████████████████████▍       | Time: 00:20 s, Done: 698, Remaining: 147
+Safe_volume: 75.0229% |██████████████████████▌       | Time: 00:20 s, Done: 699, Remaining: 146
+Safe_volume: 75.0229% |██████████████████████▌       | Time: 00:20 s, Done: 700, Remaining: 147
+Safe_volume: 75.0229% |██████████████████████▌       | Time: 00:20 s, Done: 701, Remaining: 148
+Safe_volume: 75.1205% |██████████████████████▌       | Time: 00:20 s, Done: 702, Remaining: 147
+Safe_volume: 75.2182% |██████████████████████▌       | Time: 00:20 s, Done: 703, Remaining: 146
+Safe_volume: 75.2182% |██████████████████████▌       | Time: 00:20 s, Done: 704, Remaining: 147
+Safe_volume: 75.2182% |██████████████████████▌       | Time: 00:20 s, Done: 705, Remaining: 148
+Safe_volume: 75.2426% |██████████████████████▌       | Time: 00:20 s, Done: 706, Remaining: 147
+Safe_volume: 75.2670% |██████████████████████▌       | Time: 00:20 s, Done: 706, Remaining: 147
+Safe_volume: 75.2670% |██████████████████████▌       | Time: 00:20 s, Done: 707, Remaining: 146
+Safe_volume: 75.2792% |██████████████████████▌       | Time: 00:20 s, Done: 708, Remaining: 145
+Safe_volume: 75.2914% |██████████████████████▌       | Time: 00:20 s, Done: 709, Remaining: 144
+Safe_volume: 75.2914% |██████████████████████▌       | Time: 00:20 s, Done: 710, Remaining: 145
+Safe_volume: 75.2914% |██████████████████████▌       | Time: 00:20 s, Done: 711, Remaining: 146
+Safe_volume: 75.2914% |██████████████████████▌       | Time: 00:20 s, Done: 712, Remaining: 147
+Safe_volume: 75.3403% |██████████████████████▌       | Time: 00:20 s, Done: 713, Remaining: 146
+Safe_volume: 75.3403% |██████████████████████▌       | Time: 00:20 s, Done: 714, Remaining: 147
+Safe_volume: 75.3410% |██████████████████████▌       | Time: 00:20 s, Done: 715, Remaining: 146
+Safe_volume: 75.3654% |██████████████████████▌       | Time: 00:21 s, Done: 715, Remaining: 146
+Safe_volume: 75.3654% |██████████████████████▌       | Time: 00:21 s, Done: 716, Remaining: 145
+Safe_volume: 75.3654% |██████████████████████▌       | Time: 00:21 s, Done: 717, Remaining: 146
+Safe_volume: 75.3777% |██████████████████████▌       | Time: 00:21 s, Done: 718, Remaining: 145
+Safe_volume: 75.3899% |██████████████████████▌       | Time: 00:21 s, Done: 719, Remaining: 144
+Safe_volume: 75.3899% |██████████████████████▌       | Time: 00:21 s, Done: 720, Remaining: 145
+Safe_volume: 75.3899% |██████████████████████▌       | Time: 00:21 s, Done: 721, Remaining: 146
+Safe_volume: 75.3914% |██████████████████████▌       | Time: 00:21 s, Done: 722, Remaining: 145
+Safe_volume: 75.3914% |██████████████████████▌       | Time: 00:21 s, Done: 723, Remaining: 146
+Safe_volume: 75.7820% |██████████████████████▋       | Time: 00:21 s, Done: 723, Remaining: 146
+Safe_volume: 75.7820% |██████████████████████▋       | Time: 00:21 s, Done: 724, Remaining: 145
+Safe_volume: 76.1726% |██████████████████████▊       | Time: 00:21 s, Done: 725, Remaining: 144
+Safe_volume: 76.1757% |██████████████████████▊       | Time: 00:21 s, Done: 726, Remaining: 143
+Safe_volume: 76.1787% |██████████████████████▊       | Time: 00:21 s, Done: 727, Remaining: 142
+Safe_volume: 76.1909% |██████████████████████▊       | Time: 00:21 s, Done: 727, Remaining: 142
+Safe_volume: 76.1909% |██████████████████████▊       | Time: 00:21 s, Done: 728, Remaining: 141
+Safe_volume: 76.2032% |██████████████████████▊       | Time: 00:21 s, Done: 729, Remaining: 140
+Safe_volume: 77.7657% |███████████████████████▎      | Time: 00:21 s, Done: 730, Remaining: 139
+Safe_volume: 79.3282% |███████████████████████▊      | Time: 00:21 s, Done: 731, Remaining: 138
+Safe_volume: 79.3526% |███████████████████████▊      | Time: 00:21 s, Done: 732, Remaining: 137
+Safe_volume: 79.3770% |███████████████████████▊      | Time: 00:21 s, Done: 732, Remaining: 137
+Safe_volume: 79.3770% |███████████████████████▊      | Time: 00:21 s, Done: 733, Remaining: 136
+Safe_volume: 79.3892% |███████████████████████▊      | Time: 00:21 s, Done: 734, Remaining: 135
+Safe_volume: 79.4014% |███████████████████████▊      | Time: 00:21 s, Done: 735, Remaining: 134
+Safe_volume: 79.4075% |███████████████████████▊      | Time: 00:21 s, Done: 736, Remaining: 133
+Safe_volume: 79.4136% |███████████████████████▊      | Time: 00:21 s, Done: 737, Remaining: 132
+Safe_volume: 79.5113% |███████████████████████▊      | Time: 00:21 s, Done: 738, Remaining: 131
+Safe_volume: 79.6089% |███████████████████████▉      | Time: 00:21 s, Done: 739, Remaining: 130
+Safe_volume: 79.6104% |███████████████████████▉      | Time: 00:21 s, Done: 740, Remaining: 129
+Safe_volume: 79.6104% |███████████████████████▉      | Time: 00:21 s, Done: 741, Remaining: 130
+Safe_volume: 79.7081% |███████████████████████▉      | Time: 00:21 s, Done: 742, Remaining: 129
+Safe_volume: 79.8058% |███████████████████████▉      | Time: 00:21 s, Done: 743, Remaining: 128
+Safe_volume: 80.1964% |████████████████████████      | Time: 00:21 s, Done: 744, Remaining: 127
+Safe_volume: 80.5870% |████████████████████████▏     | Time: 00:21 s, Done: 745, Remaining: 126
+Safe_volume: 80.6114% |████████████████████████▏     | Time: 00:21 s, Done: 746, Remaining: 125
+Safe_volume: 80.6358% |████████████████████████▏     | Time: 00:21 s, Done: 747, Remaining: 124
+Safe_volume: 80.6358% |████████████████████████▏     | Time: 00:21 s, Done: 748, Remaining: 125
+Safe_volume: 80.6847% |████████████████████████▏     | Time: 00:21 s, Done: 749, Remaining: 124
+Safe_volume: 80.7091% |████████████████████████▏     | Time: 00:21 s, Done: 750, Remaining: 123
+Safe_volume: 80.7335% |████████████████████████▏     | Time: 00:21 s, Done: 751, Remaining: 122
+Safe_volume: 80.9288% |████████████████████████▎     | Time: 00:21 s, Done: 752, Remaining: 121
+Safe_volume: 81.1241% |████████████████████████▎     | Time: 00:21 s, Done: 753, Remaining: 120
+Safe_volume: 81.1729% |████████████████████████▎     | Time: 00:21 s, Done: 754, Remaining: 119
+Safe_volume: 81.2218% |████████████████████████▎     | Time: 00:22 s, Done: 755, Remaining: 118
+Safe_volume: 81.2462% |████████████████████████▎     | Time: 00:22 s, Done: 756, Remaining: 117
+Safe_volume: 81.2706% |████████████████████████▍     | Time: 00:22 s, Done: 757, Remaining: 116
+Safe_volume: 81.2706% |████████████████████████▍     | Time: 00:22 s, Done: 758, Remaining: 117
+Safe_volume: 81.3194% |████████████████████████▍     | Time: 00:22 s, Done: 759, Remaining: 116
+Safe_volume: 81.4171% |████████████████████████▍     | Time: 00:22 s, Done: 760, Remaining: 115
+Safe_volume: 81.5147% |████████████████████████▍     | Time: 00:22 s, Done: 761, Remaining: 114
+Safe_volume: 81.5147% |████████████████████████▍     | Time: 00:22 s, Done: 762, Remaining: 115
+Safe_volume: 81.5147% |████████████████████████▍     | Time: 00:22 s, Done: 763, Remaining: 116
+Safe_volume: 81.7101% |████████████████████████▌     | Time: 00:22 s, Done: 764, Remaining: 115
+Safe_volume: 81.9054% |████████████████████████▌     | Time: 00:22 s, Done: 765, Remaining: 114
+Safe_volume: 81.9084% |████████████████████████▌     | Time: 00:22 s, Done: 766, Remaining: 113
+Safe_volume: 81.9115% |████████████████████████▌     | Time: 00:22 s, Done: 767, Remaining: 112
+Safe_volume: 82.0091% |████████████████████████▌     | Time: 00:22 s, Done: 768, Remaining: 111
+Safe_volume: 82.1068% |████████████████████████▋     | Time: 00:22 s, Done: 768, Remaining: 111
+Safe_volume: 82.1068% |████████████████████████▋     | Time: 00:22 s, Done: 769, Remaining: 110
+Safe_volume: 82.1190% |████████████████████████▋     | Time: 00:22 s, Done: 770, Remaining: 109
+Safe_volume: 82.1190% |████████████████████████▋     | Time: 00:22 s, Done: 771, Remaining: 110
+Safe_volume: 82.1678% |████████████████████████▋     | Time: 00:22 s, Done: 772, Remaining: 109
+Safe_volume: 82.2166% |████████████████████████▋     | Time: 00:22 s, Done: 773, Remaining: 108
+Safe_volume: 82.2166% |████████████████████████▋     | Time: 00:22 s, Done: 774, Remaining: 109
+Safe_volume: 82.2166% |████████████████████████▋     | Time: 00:22 s, Done: 775, Remaining: 110
+Safe_volume: 82.2174% |████████████████████████▋     | Time: 00:22 s, Done: 776, Remaining: 109
+Safe_volume: 82.2182% |████████████████████████▋     | Time: 00:22 s, Done: 777, Remaining: 108
+Safe_volume: 82.2426% |████████████████████████▋     | Time: 00:22 s, Done: 778, Remaining: 107
+Safe_volume: 82.2426% |████████████████████████▋     | Time: 00:22 s, Done: 779, Remaining: 108
+Safe_volume: 83.0238% |████████████████████████▉     | Time: 00:22 s, Done: 779, Remaining: 108
+Safe_volume: 83.0238% |████████████████████████▉     | Time: 00:22 s, Done: 780, Remaining: 107
+Safe_volume: 83.8051% |█████████████████████████▏    | Time: 00:22 s, Done: 781, Remaining: 106
+Safe_volume: 83.8051% |█████████████████████████▏    | Time: 00:22 s, Done: 782, Remaining: 107
+Safe_volume: 84.0004% |█████████████████████████▏    | Time: 00:22 s, Done: 783, Remaining: 106
+Safe_volume: 84.1957% |█████████████████████████▎    | Time: 00:22 s, Done: 784, Remaining: 105
+Safe_volume: 84.3910% |█████████████████████████▎    | Time: 00:22 s, Done: 784, Remaining: 105
+Safe_volume: 84.3910% |█████████████████████████▎    | Time: 00:22 s, Done: 785, Remaining: 104
+Safe_volume: 84.4887% |█████████████████████████▎    | Time: 00:22 s, Done: 786, Remaining: 103
+Safe_volume: 84.4887% |█████████████████████████▎    | Time: 00:22 s, Done: 787, Remaining: 104
+Safe_volume: 84.4894% |█████████████████████████▎    | Time: 00:22 s, Done: 788, Remaining: 103
+Safe_volume: 84.4902% |█████████████████████████▎    | Time: 00:22 s, Done: 789, Remaining: 102
+Safe_volume: 84.4902% |█████████████████████████▎    | Time: 00:22 s, Done: 790, Remaining: 103
+Safe_volume: 84.5024% |█████████████████████████▎    | Time: 00:22 s, Done: 791, Remaining: 102
+Safe_volume: 84.5268% |█████████████████████████▎    | Time: 00:22 s, Done: 792, Remaining: 101
+Safe_volume: 84.5512% |█████████████████████████▎    | Time: 00:22 s, Done: 793, Remaining: 100
+Safe_volume: 84.6489% |█████████████████████████▍    | Time: 00:22 s, Done: 794, Remaining: 99 
+Safe_volume: 84.6489% |█████████████████████████▍    | Time: 00:23 s, Done: 795, Remaining: 100
+Safe_volume: 84.7466% |█████████████████████████▍    | Time: 00:23 s, Done: 796, Remaining: 99 
+Safe_volume: 84.8442% |█████████████████████████▍    | Time: 00:23 s, Done: 797, Remaining: 98
+Safe_volume: 84.8457% |█████████████████████████▍    | Time: 00:23 s, Done: 798, Remaining: 97
+Safe_volume: 84.8457% |█████████████████████████▍    | Time: 00:23 s, Done: 799, Remaining: 98
+Safe_volume: 84.8473% |█████████████████████████▍    | Time: 00:23 s, Done: 800, Remaining: 97
+Safe_volume: 84.8473% |█████████████████████████▍    | Time: 00:23 s, Done: 801, Remaining: 98
+Safe_volume: 84.8476% |█████████████████████████▍    | Time: 00:23 s, Done: 802, Remaining: 97
+Safe_volume: 84.8480% |█████████████████████████▍    | Time: 00:23 s, Done: 803, Remaining: 96
+Safe_volume: 85.0433% |█████████████████████████▌    | Time: 00:23 s, Done: 804, Remaining: 95
+Safe_volume: 85.2386% |█████████████████████████▌    | Time: 00:23 s, Done: 805, Remaining: 94
+Safe_volume: 85.3363% |█████████████████████████▌    | Time: 00:23 s, Done: 806, Remaining: 93
+Safe_volume: 85.4340% |█████████████████████████▋    | Time: 00:23 s, Done: 807, Remaining: 92
+Safe_volume: 85.4401% |█████████████████████████▋    | Time: 00:23 s, Done: 808, Remaining: 91
+Safe_volume: 85.4462% |█████████████████████████▋    | Time: 00:23 s, Done: 809, Remaining: 90
+Safe_volume: 85.4462% |█████████████████████████▋    | Time: 00:23 s, Done: 810, Remaining: 91
+Safe_volume: 85.4462% |█████████████████████████▋    | Time: 00:23 s, Done: 811, Remaining: 92
+Safe_volume: 85.4706% |█████████████████████████▋    | Time: 00:23 s, Done: 812, Remaining: 91
+Safe_volume: 85.4950% |█████████████████████████▋    | Time: 00:23 s, Done: 813, Remaining: 90
+Safe_volume: 85.5194% |█████████████████████████▋    | Time: 00:23 s, Done: 813, Remaining: 90
+Safe_volume: 85.5194% |█████████████████████████▋    | Time: 00:23 s, Done: 814, Remaining: 89
+Safe_volume: 85.5438% |█████████████████████████▋    | Time: 00:23 s, Done: 815, Remaining: 88
+Safe_volume: 85.5682% |█████████████████████████▋    | Time: 00:23 s, Done: 816, Remaining: 87
+Safe_volume: 85.5927% |█████████████████████████▋    | Time: 00:23 s, Done: 817, Remaining: 86
+Safe_volume: 85.5988% |█████████████████████████▋    | Time: 00:23 s, Done: 818, Remaining: 85
+Safe_volume: 85.5988% |█████████████████████████▋    | Time: 00:23 s, Done: 819, Remaining: 86
+Safe_volume: 85.5988% |█████████████████████████▋    | Time: 00:23 s, Done: 820, Remaining: 87
+Safe_volume: 85.5988% |█████████████████████████▋    | Time: 00:23 s, Done: 821, Remaining: 88
+Safe_volume: 85.6003% |█████████████████████████▋    | Time: 00:23 s, Done: 822, Remaining: 87
+Safe_volume: 85.6003% |█████████████████████████▋    | Time: 00:23 s, Done: 823, Remaining: 88
+Safe_volume: 85.6003% |█████████████████████████▋    | Time: 00:23 s, Done: 824, Remaining: 89
+Safe_volume: 85.6033% |█████████████████████████▋    | Time: 00:23 s, Done: 825, Remaining: 88
+Safe_volume: 85.6033% |█████████████████████████▋    | Time: 00:23 s, Done: 826, Remaining: 89
+Safe_volume: 87.1658% |██████████████████████████▏   | Time: 00:23 s, Done: 826, Remaining: 89
+Safe_volume: 87.1658% |██████████████████████████▏   | Time: 00:23 s, Done: 827, Remaining: 88
+Safe_volume: 87.1666% |██████████████████████████▏   | Time: 00:23 s, Done: 828, Remaining: 87
+Safe_volume: 87.1666% |██████████████████████████▏   | Time: 00:23 s, Done: 829, Remaining: 88
+Safe_volume: 87.1788% |██████████████████████████▏   | Time: 00:23 s, Done: 830, Remaining: 87
+Safe_volume: 87.1910% |██████████████████████████▏   | Time: 00:23 s, Done: 831, Remaining: 86
+Safe_volume: 87.1925% |██████████████████████████▏   | Time: 00:23 s, Done: 832, Remaining: 85
+Safe_volume: 87.1925% |██████████████████████████▏   | Time: 00:23 s, Done: 833, Remaining: 86
+Safe_volume: 87.2902% |██████████████████████████▏   | Time: 00:23 s, Done: 834, Remaining: 85
+Safe_volume: 87.3878% |██████████████████████████▏   | Time: 00:24 s, Done: 835, Remaining: 84
+Safe_volume: 87.3940% |██████████████████████████▏   | Time: 00:24 s, Done: 836, Remaining: 83
+Safe_volume: 87.4001% |██████████████████████████▏   | Time: 00:24 s, Done: 837, Remaining: 82
+Safe_volume: 87.4001% |██████████████████████████▏   | Time: 00:24 s, Done: 838, Remaining: 83
+Safe_volume: 87.4123% |██████████████████████████▏   | Time: 00:24 s, Done: 839, Remaining: 82
+Safe_volume: 87.4367% |██████████████████████████▏   | Time: 00:24 s, Done: 840, Remaining: 81
+Safe_volume: 87.4611% |██████████████████████████▏   | Time: 00:24 s, Done: 841, Remaining: 80
+Safe_volume: 89.0236% |██████████████████████████▋   | Time: 00:24 s, Done: 841, Remaining: 80
+Safe_volume: 89.0236% |██████████████████████████▋   | Time: 00:24 s, Done: 842, Remaining: 79
+Safe_volume: 90.5861% |███████████████████████████▏  | Time: 00:24 s, Done: 843, Remaining: 78
+Safe_volume: 90.5861% |███████████████████████████▏  | Time: 00:24 s, Done: 844, Remaining: 79
+Safe_volume: 90.5869% |███████████████████████████▏  | Time: 00:24 s, Done: 845, Remaining: 78
+Safe_volume: 90.5884% |███████████████████████████▏  | Time: 00:24 s, Done: 846, Remaining: 77
+Safe_volume: 90.5884% |███████████████████████████▏  | Time: 00:24 s, Done: 846, Remaining: 77
+Safe_volume: 90.5884% |███████████████████████████▏  | Time: 00:24 s, Done: 847, Remaining: 78
+Safe_volume: 90.6860% |███████████████████████████▏  | Time: 00:24 s, Done: 848, Remaining: 77
+Safe_volume: 90.7837% |███████████████████████████▏  | Time: 00:24 s, Done: 849, Remaining: 76
+Safe_volume: 90.7852% |███████████████████████████▏  | Time: 00:24 s, Done: 850, Remaining: 75
+Safe_volume: 90.7852% |███████████████████████████▏  | Time: 00:24 s, Done: 851, Remaining: 76
+Safe_volume: 90.8340% |███████████████████████████▎  | Time: 00:24 s, Done: 852, Remaining: 75
+Safe_volume: 90.8829% |███████████████████████████▎  | Time: 00:24 s, Done: 853, Remaining: 74
+Safe_volume: 90.9073% |███████████████████████████▎  | Time: 00:24 s, Done: 854, Remaining: 73
+Safe_volume: 90.9317% |███████████████████████████▎  | Time: 00:24 s, Done: 855, Remaining: 72
+Safe_volume: 90.9378% |███████████████████████████▎  | Time: 00:24 s, Done: 856, Remaining: 71
+Safe_volume: 90.9378% |███████████████████████████▎  | Time: 00:24 s, Done: 857, Remaining: 72
+Safe_volume: 91.0355% |███████████████████████████▎  | Time: 00:24 s, Done: 858, Remaining: 71
+Safe_volume: 91.1331% |███████████████████████████▎  | Time: 00:24 s, Done: 859, Remaining: 70
+Safe_volume: 91.1331% |███████████████████████████▎  | Time: 00:24 s, Done: 860, Remaining: 71
+Safe_volume: 91.1819% |███████████████████████████▎  | Time: 00:24 s, Done: 861, Remaining: 70
+Safe_volume: 91.1819% |███████████████████████████▎  | Time: 00:24 s, Done: 862, Remaining: 71
+Safe_volume: 91.3773% |███████████████████████████▍  | Time: 00:24 s, Done: 863, Remaining: 70
+Safe_volume: 91.4261% |███████████████████████████▍  | Time: 00:24 s, Done: 864, Remaining: 69
+Safe_volume: 91.4261% |███████████████████████████▍  | Time: 00:24 s, Done: 865, Remaining: 70
+Safe_volume: 91.4291% |███████████████████████████▍  | Time: 00:24 s, Done: 866, Remaining: 69
+Safe_volume: 91.4322% |███████████████████████████▍  | Time: 00:24 s, Done: 867, Remaining: 68
+Safe_volume: 91.4566% |███████████████████████████▍  | Time: 00:24 s, Done: 868, Remaining: 67
+Safe_volume: 91.4810% |███████████████████████████▍  | Time: 00:24 s, Done: 869, Remaining: 66
+Safe_volume: 91.6763% |███████████████████████████▌  | Time: 00:24 s, Done: 870, Remaining: 65
+Safe_volume: 91.8716% |███████████████████████████▌  | Time: 00:24 s, Done: 871, Remaining: 64
+Safe_volume: 91.8747% |███████████████████████████▌  | Time: 00:24 s, Done: 872, Remaining: 63
+Safe_volume: 91.8747% |███████████████████████████▌  | Time: 00:24 s, Done: 873, Remaining: 64
+Safe_volume: 91.8755% |███████████████████████████▌  | Time: 00:24 s, Done: 874, Remaining: 63
+Safe_volume: 91.8762% |███████████████████████████▌  | Time: 00:25 s, Done: 875, Remaining: 62
+Safe_volume: 91.9739% |███████████████████████████▌  | Time: 00:25 s, Done: 876, Remaining: 61
+Safe_volume: 92.0715% |███████████████████████████▌  | Time: 00:25 s, Done: 876, Remaining: 61
+Safe_volume: 92.0715% |███████████████████████████▌  | Time: 00:25 s, Done: 877, Remaining: 60
+Safe_volume: 92.0719% |███████████████████████████▌  | Time: 00:25 s, Done: 878, Remaining: 59
+Safe_volume: 92.0719% |███████████████████████████▌  | Time: 00:25 s, Done: 879, Remaining: 60
+Safe_volume: 92.0734% |███████████████████████████▌  | Time: 00:25 s, Done: 880, Remaining: 59
+Safe_volume: 92.0734% |███████████████████████████▌  | Time: 00:25 s, Done: 881, Remaining: 60
+Safe_volume: 92.0734% |███████████████████████████▌  | Time: 00:25 s, Done: 882, Remaining: 61
+Safe_volume: 92.0742% |███████████████████████████▌  | Time: 00:25 s, Done: 883, Remaining: 60
+Safe_volume: 92.0742% |███████████████████████████▌  | Time: 00:25 s, Done: 884, Remaining: 61
+Safe_volume: 92.0986% |███████████████████████████▋  | Time: 00:25 s, Done: 885, Remaining: 60
+Safe_volume: 92.1230% |███████████████████████████▋  | Time: 00:25 s, Done: 886, Remaining: 59
+Safe_volume: 92.1474% |███████████████████████████▋  | Time: 00:25 s, Done: 887, Remaining: 58
+Safe_volume: 92.1535% |███████████████████████████▋  | Time: 00:25 s, Done: 888, Remaining: 57
+Safe_volume: 92.1535% |███████████████████████████▋  | Time: 00:25 s, Done: 889, Remaining: 58
+Safe_volume: 92.1551% |███████████████████████████▋  | Time: 00:25 s, Done: 890, Remaining: 57
+Safe_volume: 92.1551% |███████████████████████████▋  | Time: 00:25 s, Done: 891, Remaining: 58
+Safe_volume: 92.1581% |███████████████████████████▋  | Time: 00:25 s, Done: 892, Remaining: 57
+Safe_volume: 92.1612% |███████████████████████████▋  | Time: 00:25 s, Done: 893, Remaining: 56
+Safe_volume: 92.9424% |███████████████████████████▉  | Time: 00:25 s, Done: 893, Remaining: 56
+Safe_volume: 92.9424% |███████████████████████████▉  | Time: 00:25 s, Done: 894, Remaining: 55
+Safe_volume: 93.7237% |████████████████████████████  | Time: 00:25 s, Done: 895, Remaining: 54
+Safe_volume: 93.7481% |████████████████████████████  | Time: 00:25 s, Done: 896, Remaining: 53
+Safe_volume: 93.7481% |████████████████████████████  | Time: 00:25 s, Done: 897, Remaining: 54
+Safe_volume: 93.7725% |████████████████████████████▏ | Time: 00:25 s, Done: 897, Remaining: 54
+Safe_volume: 93.7725% |████████████████████████████▏ | Time: 00:25 s, Done: 898, Remaining: 53
+Safe_volume: 93.7969% |████████████████████████████▏ | Time: 00:25 s, Done: 899, Remaining: 52
+Safe_volume: 93.7977% |████████████████████████████▏ | Time: 00:25 s, Done: 900, Remaining: 51
+Safe_volume: 93.7984% |████████████████████████████▏ | Time: 00:25 s, Done: 901, Remaining: 50
+Safe_volume: 93.7992% |████████████████████████████▏ | Time: 00:25 s, Done: 902, Remaining: 49
+Safe_volume: 93.8000% |████████████████████████████▏ | Time: 00:25 s, Done: 903, Remaining: 48
+Safe_volume: 93.8000% |████████████████████████████▏ | Time: 00:25 s, Done: 904, Remaining: 49
+Safe_volume: 93.8002% |████████████████████████████▏ | Time: 00:25 s, Done: 905, Remaining: 48
+Safe_volume: 94.1908% |████████████████████████████▎ | Time: 00:25 s, Done: 906, Remaining: 47
+Safe_volume: 94.5814% |████████████████████████████▎ | Time: 00:25 s, Done: 907, Remaining: 46
+Safe_volume: 94.6058% |████████████████████████████▍ | Time: 00:25 s, Done: 907, Remaining: 46
+Safe_volume: 94.6058% |████████████████████████████▍ | Time: 00:25 s, Done: 908, Remaining: 45
+Safe_volume: 94.6302% |████████████████████████████▍ | Time: 00:25 s, Done: 909, Remaining: 44
+Safe_volume: 94.6306% |████████████████████████████▍ | Time: 00:25 s, Done: 910, Remaining: 43
+Safe_volume: 94.6306% |████████████████████████████▍ | Time: 00:25 s, Done: 911, Remaining: 44
+Safe_volume: 94.6550% |████████████████████████████▍ | Time: 00:25 s, Done: 912, Remaining: 43
+Safe_volume: 94.6795% |████████████████████████████▍ | Time: 00:25 s, Done: 913, Remaining: 42
+Safe_volume: 96.2420% |████████████████████████████▊ | Time: 00:25 s, Done: 913, Remaining: 42
+Safe_volume: 96.2420% |████████████████████████████▊ | Time: 00:25 s, Done: 914, Remaining: 41
+Safe_volume: 97.8045% |█████████████████████████████▎| Time: 00:25 s, Done: 915, Remaining: 40
+Safe_volume: 97.8060% |█████████████████████████████▎| Time: 00:26 s, Done: 916, Remaining: 39
+Safe_volume: 97.8075% |█████████████████████████████▎| Time: 00:26 s, Done: 917, Remaining: 38
+Safe_volume: 97.8077% |█████████████████████████████▎| Time: 00:26 s, Done: 917, Remaining: 38
+Safe_volume: 97.8077% |█████████████████████████████▎| Time: 00:26 s, Done: 918, Remaining: 37
+Safe_volume: 97.8079% |█████████████████████████████▎| Time: 00:26 s, Done: 919, Remaining: 36
+Safe_volume: 97.9055% |█████████████████████████████▎| Time: 00:26 s, Done: 920, Remaining: 35
+Safe_volume: 98.0032% |█████████████████████████████▍| Time: 00:26 s, Done: 921, Remaining: 34
+Safe_volume: 98.0276% |█████████████████████████████▍| Time: 00:26 s, Done: 922, Remaining: 33
+Safe_volume: 98.0520% |█████████████████████████████▍| Time: 00:26 s, Done: 923, Remaining: 32
+Safe_volume: 98.0551% |█████████████████████████████▍| Time: 00:26 s, Done: 924, Remaining: 31
+Safe_volume: 98.0581% |█████████████████████████████▍| Time: 00:26 s, Done: 925, Remaining: 30
+Safe_volume: 98.0589% |█████████████████████████████▍| Time: 00:26 s, Done: 926, Remaining: 29
+Safe_volume: 98.0589% |█████████████████████████████▍| Time: 00:26 s, Done: 927, Remaining: 30
+Safe_volume: 98.0589% |█████████████████████████████▍| Time: 00:26 s, Done: 928, Remaining: 31
+Safe_volume: 98.0597% |█████████████████████████████▍| Time: 00:26 s, Done: 929, Remaining: 30
+Safe_volume: 98.0600% |█████████████████████████████▍| Time: 00:26 s, Done: 930, Remaining: 29
+Safe_volume: 98.0600% |█████████████████████████████▍| Time: 00:26 s, Done: 931, Remaining: 30
+Safe_volume: 98.0602% |█████████████████████████████▍| Time: 00:26 s, Done: 932, Remaining: 29
+Safe_volume: 98.0602% |█████████████████████████████▍| Time: 00:26 s, Done: 933, Remaining: 30
+Safe_volume: 98.0724% |█████████████████████████████▍| Time: 00:26 s, Done: 934, Remaining: 29
+Safe_volume: 98.0846% |█████████████████████████████▍| Time: 00:26 s, Done: 935, Remaining: 28
+Safe_volume: 98.8659% |█████████████████████████████▋| Time: 00:26 s, Done: 936, Remaining: 27
+Safe_volume: 99.6471% |█████████████████████████████▉| Time: 00:26 s, Done: 936, Remaining: 27
+Safe_volume: 99.6471% |█████████████████████████████▉| Time: 00:26 s, Done: 937, Remaining: 26
+Safe_volume: 99.6471% |█████████████████████████████▉| Time: 00:26 s, Done: 938, Remaining: 27
+Safe_volume: 99.6471% |█████████████████████████████▉| Time: 00:26 s, Done: 939, Remaining: 28
+Safe_volume: 99.6471% |█████████████████████████████▉| Time: 00:26 s, Done: 940, Remaining: 29
+Safe_volume: 99.6475% |█████████████████████████████▉| Time: 00:26 s, Done: 941, Remaining: 28
+Safe_volume: 99.6506% |█████████████████████████████▉| Time: 00:26 s, Done: 942, Remaining: 27
+Safe_volume: 99.6536% |█████████████████████████████▉| Time: 00:26 s, Done: 943, Remaining: 26
+Safe_volume: 99.6536% |█████████████████████████████▉| Time: 00:26 s, Done: 944, Remaining: 27
+Safe_volume: 99.6537% |█████████████████████████████▉| Time: 00:26 s, Done: 945, Remaining: 26
+Safe_volume: 99.6537% |█████████████████████████████▉| Time: 00:26 s, Done: 946, Remaining: 27
+Safe_volume: 99.6537% |█████████████████████████████▉| Time: 00:26 s, Done: 947, Remaining: 28
+Safe_volume: 99.6659% |█████████████████████████████▉| Time: 00:26 s, Done: 948, Remaining: 27
+Safe_volume: 99.6781% |█████████████████████████████▉| Time: 00:26 s, Done: 949, Remaining: 26
+Safe_volume: 99.6842% |█████████████████████████████▉| Time: 00:26 s, Done: 950, Remaining: 25
+Safe_volume: 99.6903% |█████████████████████████████▉| Time: 00:26 s, Done: 951, Remaining: 24
+Safe_volume: 99.6919% |█████████████████████████████▉| Time: 00:26 s, Done: 952, Remaining: 23
+Safe_volume: 99.6934% |█████████████████████████████▉| Time: 00:26 s, Done: 953, Remaining: 22
+Safe_volume: 99.7178% |█████████████████████████████▉| Time: 00:26 s, Done: 954, Remaining: 21
+Safe_volume: 99.7422% |█████████████████████████████▉| Time: 00:26 s, Done: 955, Remaining: 20
+Safe_volume: 99.7666% |█████████████████████████████▉| Time: 00:26 s, Done: 956, Remaining: 19
+Safe_volume: 99.7910% |█████████████████████████████▉| Time: 00:26 s, Done: 957, Remaining: 18
+Safe_volume: 99.7914% |█████████████████████████████▉| Time: 00:27 s, Done: 958, Remaining: 17
+Safe_volume: 99.7914% |█████████████████████████████▉| Time: 00:27 s, Done: 959, Remaining: 18
+Safe_volume: 99.7916% |█████████████████████████████▉| Time: 00:27 s, Done: 960, Remaining: 17
+Safe_volume: 99.7918% |█████████████████████████████▉| Time: 00:27 s, Done: 961, Remaining: 16
+Safe_volume: 99.7920% |█████████████████████████████▉| Time: 00:27 s, Done: 962, Remaining: 15
+Safe_volume: 99.7920% |█████████████████████████████▉| Time: 00:27 s, Done: 963, Remaining: 16
+Safe_volume: 99.7981% |█████████████████████████████▉| Time: 00:27 s, Done: 964, Remaining: 15
+Safe_volume: 99.8042% |█████████████████████████████▉| Time: 00:27 s, Done: 965, Remaining: 14
+Safe_volume: 99.8043% |█████████████████████████████▉| Time: 00:27 s, Done: 966, Remaining: 13
+Safe_volume: 99.8044% |█████████████████████████████▉| Time: 00:27 s, Done: 967, Remaining: 12
+Safe_volume: 99.8532% |█████████████████████████████▉| Time: 00:27 s, Done: 968, Remaining: 11
+Safe_volume: 99.9021% |█████████████████████████████▉| Time: 00:27 s, Done: 969, Remaining: 10
+Safe_volume: 99.9021% |█████████████████████████████▉| Time: 00:27 s, Done: 970, Remaining: 11
+Safe_volume: 99.9021% |█████████████████████████████▉| Time: 00:27 s, Done: 971, Remaining: 12
+Safe_volume: 99.9021% |█████████████████████████████▉| Time: 00:27 s, Done: 972, Remaining: 13
+Safe_volume: 99.9021% |█████████████████████████████▉| Time: 00:27 s, Done: 973, Remaining: 14
+Safe_volume: 99.9509% |█████████████████████████████▉| Time: 00:27 s, Done: 974, Remaining: 13
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 975, Remaining: 12
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 976, Remaining: 11
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 977, Remaining: 12
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 978, Remaining: 11
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 979, Remaining: 12
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 980, Remaining: 13
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 981, Remaining: 12
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 982, Remaining: 13
+Safe_volume: 99.9997% |█████████████████████████████▉| Time: 00:27 s, Done: 983, Remaining: 12
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 984, Remaining: 11
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 985, Remaining: 12
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 986, Remaining: 13
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 987, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 988, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 989, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 990, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 991, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 992, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 993, Remaining: 16
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 994, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 995, Remaining: 16
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 996, Remaining: 17
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 997, Remaining: 18
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 998, Remaining: 19
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 999, Remaining: 18
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1000, Remaining: 19
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1001, Remaining: 18
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1002, Remaining: 19
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1003, Remaining: 18
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1004, Remaining: 19
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1005, Remaining: 18
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1006, Remaining: 19
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:27 s, Done: 1007, Remaining: 18
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1008, Remaining: 17
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1009, Remaining: 16
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1010, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1011, Remaining: 16
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1012, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1013, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1014, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1015, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1016, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1017, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1018, Remaining: 13
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1019, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1020, Remaining: 15
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1021, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1022, Remaining: 13
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1023, Remaining: 14
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1024, Remaining: 13
+Safe_volume: 99.9998% |█████████████████████████████▉| Time: 00:28 s, Done: 1024, Remaining: 13
+Result = Unknown, Time = 28.33 s, Safe space = 100.00 %, number of analysis = 1025
+Output Bounds = 
+[(-0.314, -0.050), (-0.421, -0.146), (-0.271, 0.001), (-0.370, -0.054)]

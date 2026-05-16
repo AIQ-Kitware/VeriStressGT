@@ -1,0 +1,692 @@
+matched last Result: unsat
+INFO     00:17:37     [tensor_storage.py:70] Hugepage enabled for branch-and-bound domains.
+Configurations:
+
+general:
+  device: cpu
+  seed: 100
+  conv_mode: patches
+  deterministic: false
+  double_fp: false
+  loss_reduction_func: sum
+  sparse_alpha: true
+  sparse_interm: true
+  save_adv_example: true
+  verify_onnxruntime_output: false
+  eval_adv_example: false
+  onnx_adv_example: false
+  show_adv_example: false
+  precompile_jit: false
+  reset_seed_after_precompile: false
+  prepare_only: false
+  complete_verifier: bab
+  enable_incomplete_verification: true
+  csv_name: null
+  results_file: out.txt
+  root_path: ''
+  deterministic_opt: false
+  graph_optimizer: 'Customized("custom_graph_optimizer", "default_optimizer")'
+  buffer_has_batchdim: false
+  save_output: false
+  output_file: out.pkl
+  return_optimized_model: false
+  store_all_specs_on_cpu: false
+  adhoc_tuning: null
+model:
+  name: null
+  path: null
+  onnx_path: ./benchmarks/sweep_all/instances/meap3/model.onnx
+  onnx_path_prefix: ''
+  cache_onnx_conversion: false
+  debug_onnx: false
+  onnx_quirks: null
+  input_shape: null
+  onnx_loader: default_onnx_and_vnnlib_loader
+  onnx_optimization_flags: []
+  onnx_vnnlib_joint_optimization_flags: none
+  check_optimized: false
+  flatten_final_output: false
+  optimize_graph: null
+  with_jacobian: false
+  bound_opts: null
+data:
+  start: 0
+  end: 10000
+  select_instance: null
+  num_outputs: 10
+  mean: 0.0
+  std: 1.0
+  pkl_path: null
+  dataset: null
+  data_filter_path: null
+  data_idx_file: null
+specification:
+  type: lp
+  robustness_type: verified-acc
+  norm: .inf
+  epsilon: null
+  epsilon_min: 0.0
+  vnnlib_path: ./benchmarks/sweep_all/instances/meap3/spec.vnnlib
+  vnnlib_path_prefix: ''
+  shrink_eps: null
+  rhs_offset: null
+solver:
+  batch_size: 2048
+  auto_enlarge_batch_size: true
+  batched_crown_auto_enlarge_max_vram_ratio: 0.9
+  min_batch_size_ratio: 0.1
+  use_float64_in_last_iteration: false
+  early_stop_patience: 10
+  start_save_best: 0.5
+  bound_prop_method: alpha-crown
+  init_bound_prop_method: same
+  prune_after_crown: true
+  optimize_disjuncts_separately: false
+  build_batch_size: 1000000
+  skip_with_refined_bound: true
+  forward_before_compute_bounds: false
+  crown:
+    batch_size: 1000000000
+    max_crown_size: 1000000000
+    activation_bound_option: adaptive
+    compare_crown_with_ibp: false
+  alpha-crown:
+    alpha: true
+    lr_alpha: 0.1
+    iteration: 100
+    share_alphas: false
+    lr_decay: 0.98
+    full_conv_alpha: true
+    max_coeff_mul: .inf
+    matmul_share_alphas: false
+    disable_optimization: []
+    max_time: 1000000000.0
+    alpha_dtype: float16
+    input_split_alpha_iteration: 5
+    input_split_lr_alpha: 0.05
+  invprop:
+    apply_output_constraints_to: []
+    tighten_input_bounds: false
+    best_of_oc_and_no_oc: false
+    directly_optimize: []
+    oc_lr: 0.1
+    share_gammas: false
+  beta-crown:
+    lr_alpha: 0.01
+    lr_beta: 0.03
+    lr_decay: 0.98
+    optimizer: adam
+    iteration: 50
+    beta: true
+    beta_warmup: true
+    enable_opt_interm_bounds: false
+    all_node_split_LP: false
+  forward:
+    refine: false
+    max_dim: 10000
+    reset_threshold: 1.0
+  mip:
+    unstable_neuron_threshold: 0
+    parallel_solvers: null
+    solver_threads: 1
+    refine_neuron_timeout: 15
+    refine_neuron_time_percentage: 0.8
+    early_stop: true
+    adv_warmup: true
+    mip_solver: gurobi
+    skip_unsafe: false
+    topk_filter: 1.0
+    sliding_window: -1
+    extra_constraint: false
+    refine_neuron_timeout_increasement: 0
+    timeout_neuron_percentage: 0.3
+    remaining_timeout_threshold: 1
+    remove_unstable_neurons: false
+    formulation: mip
+    output_cut: false
+bab:
+  max_domains: .inf
+  decision_thresh: 0
+  timeout: 999999.0
+  timeout_scale: 1
+  max_iterations: -1
+  override_timeout: null
+  get_upper_bound: false
+  pruning_in_iteration: true
+  pruning_in_iteration_ratio: 0.2
+  sort_targets: false
+  batched_domain_list: true
+  optimized_interm: ''
+  interm_transfer: true
+  recompute_interm: false
+  sort_domain_interval: -1
+  vanilla_crown: false
+  tree_traversal: depth_first
+  hugetensor_allocator: true
+  cut:
+    enabled: false
+    cuts_path: null
+    bab_cut: false
+    lp_cut: false
+    lr: 0.01
+    lr_decay: 1.0
+    iteration: 100
+    bab_iteration: -1
+    early_stop_patience: -1
+    lr_beta: 0.02
+    number_cuts: 50
+    topk_cuts_in_filter: 1000
+    batch_size_primal: 100
+    max_num: 1000000000
+    patches_cut: false
+    cplex_cuts: false
+    cplex_cuts_wait: 0
+    cplex_cuts_revpickup: true
+    cut_reference_bounds: true
+    fix_intermediate_bounds: false
+    manual_cuts: null
+    biccos:
+      enabled: false
+      auto_param: true
+      constraint_strengthening: true
+      drop_ratio: 0.5
+      max_infer_iter: 20
+      max_domain: 10000.0
+      heuristic: neuron_influence_score
+      save_cuts: false
+      multi_tree_branching:
+        enabled: false
+        restore_best_tree: true
+        keep_n_best_domains: 50
+        target_batch_size: 200
+        iterations: 3
+  clip_n_verify:
+    rearrange_constraints: false
+    alpha_crown: false
+    prune: false
+    final_layer: false
+    clip_input_domain:
+      enabled: false
+      clip_type: relaxed
+      clip_neuron_selection_type: ratio
+      clip_neuron_selection_value: -1.0
+      clip_iterations: 1
+      clip_calculate_volume_metrics: false
+    clip_interm_domain:
+      enabled: false
+      with_input: false
+      clip_in_alpha_crown: false
+      topk_objective: 20
+  branching:
+    method: kfsb
+    candidates: 3
+    reduceop: min
+    enable_intermediate_bound_opt: false
+    branching_input_and_activation: false
+    branching_input_and_activation_order: [input, relu]
+    branching_input_iterations: 30
+    branching_relu_iterations: 50
+    nonlinear_split:
+      method: bbps
+      disable: false
+      branching_point_method: uniform
+      num_branches: 2
+      filter: false
+      filter_beta: false
+      filter_clamp: false
+      filter_batch_size: 10000
+      filter_iterations: 25
+      relu_only: false
+      loose_tanh_threshold: null
+      branching_point:
+        db_path: branching_points.pt
+        num_iterations: 1000
+        batch_size: 1000000
+        range_l: -5.0
+        range_u: 5.0
+        log_interval: 100
+        step_size_1d: 0.01
+        step_size: 0.2
+    input_split:
+      split_hint: null
+      enable: false
+      reorder_bab: false
+      input_dim_threshold: 20
+      adv_check: 0
+      split_partitions: 2
+      sb_margin_weight: 1.0
+      sb_sum: false
+      sb_primary_spec: null
+      bf_backup_thresh: -1
+      bf_rhs_offset: 0
+      bf_iters: 1000000000.0
+      bf_batch_size: 100000
+      bf_zero_crossing_score: false
+      touch_zero_score: 0
+      ibp_enhancement: true
+      compare_with_old_bounds: true
+      update_rhs_with_attack: false
+      sb_coeff_thresh: 0.001
+      sort_index: null
+      sort_descending: true
+      show_progress: false
+      presplit_domains: null
+      skip_getting_worst_domain: false
+  attack:
+    enabled: false
+    beam_candidates: 8
+    beam_depth: 7
+    max_dive_fix_ratio: 0.8
+    min_local_free_ratio: 0.2
+    mip_start_iteration: 5
+    mip_timeout: 30.0
+    adv_pool_threshold: null
+    refined_mip_attacker: false
+    refined_batch_size: null
+attack:
+  general_attack: true
+  pgd_order: input_bab
+  pgd_steps: 100
+  pgd_restarts: 30
+  pgd_batch_size: 100000000
+  pgd_early_stop: true
+  pgd_lr_decay: 0.99
+  pgd_alpha: auto
+  pgd_alpha_scale: false
+  pgd_loss_mode: null
+  pgd_restart_when_stuck: false
+  enable_mip_attack: false
+  adv_saver: default_adv_saver
+  adv_verifier: default_adv_verifier
+  early_stop_condition: default_early_stop_condition
+  adv_example_finalizer: default_adv_example_finalizer
+  pgd_loss: default_pgd_loss
+  cex_path: ./test_cex.txt
+  attack_mode: PGD
+  attack_tolerance: 0.0
+  attack_func: attack_with_general_specs
+  gama_lambda: 10.0
+  gama_decay: 0.9
+  input_split:
+    pgd_steps: 100
+    pgd_restarts: 30
+    pgd_alpha: auto
+  input_split_check_adv:
+    enabled: auto
+    pgd_steps: 5
+    pgd_restarts: 5
+    pgd_alpha: auto
+    max_num_domains: 10
+debug:
+  view_model: false
+  lp_test: null
+  rescale_vnnlib_ptb: null
+  test_optimized_bounds: false
+  test_optimized_bounds_after_n_iterations: 0
+  print_verbose_decisions: false
+  biccos_mip_sanity_check: false
+  sanity_check: 0
+  z_split_enabled: false
+  save_minimal_config: null
+  save_minimal_config_omit_keys: []
+
+Experiments at Thu Apr 30 00:17:37 2026 on tacheles
+Internal results will be saved to out.txt.
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 0, vnnlib ID: 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Using onnx ./benchmarks/sweep_all/instances/meap3/model.onnx
+Using vnnlib ./benchmarks/sweep_all/instances/meap3/spec.vnnlib
+Precompiled vnnlib file found at ./benchmarks/sweep_all/instances/meap3/spec.vnnlib.compiled
+Loading onnx ./benchmarks/sweep_all/instances/meap3/model.onnx with quirks {}
+Finished onnx model loading in 0.0142 seconds
+Finished vnnlib processing in 0.000772 seconds
+Model: BoundedModule(
+  (/0): BoundInput(name=/0, inputs=[], perturbed=True)
+  (/61): BoundParams(name=/61, inputs=[], perturbed=False)
+  (/62): BoundParams(name=/62, inputs=[], perturbed=False)
+  (/63): BoundParams(name=/63, inputs=[], perturbed=False)
+  (/64): BoundParams(name=/64, inputs=[], perturbed=False)
+  (/65): BoundParams(name=/65, inputs=[], perturbed=False)
+  (/66): BoundParams(name=/66, inputs=[], perturbed=False)
+  (/67): BoundParams(name=/67, inputs=[], perturbed=False)
+  (/68): BoundParams(name=/68, inputs=[], perturbed=False)
+  (/69): BoundParams(name=/69, inputs=[], perturbed=False)
+  (/70): BoundParams(name=/70, inputs=[], perturbed=False)
+  (/71): BoundParams(name=/71, inputs=[], perturbed=False)
+  (/72): BoundParams(name=/72, inputs=[], perturbed=False)
+  (/73): BoundParams(name=/73, inputs=[], perturbed=False)
+  (/74): BoundParams(name=/74, inputs=[], perturbed=False)
+  (/75): BoundParams(name=/75, inputs=[], perturbed=False)
+  (/76): BoundParams(name=/76, inputs=[], perturbed=False)
+  (/77): BoundParams(name=/77, inputs=[], perturbed=False)
+  (/78): BoundParams(name=/78, inputs=[], perturbed=False)
+  (/79): BoundParams(name=/79, inputs=[], perturbed=False)
+  (/80): BoundParams(name=/80, inputs=[], perturbed=False)
+  (/81): BoundParams(name=/81, inputs=[], perturbed=False)
+  (/82): BoundParams(name=/82, inputs=[], perturbed=False)
+  (/83): BoundParams(name=/83, inputs=[], perturbed=False)
+  (/84): BoundParams(name=/84, inputs=[], perturbed=False)
+  (/85): BoundParams(name=/85, inputs=[], perturbed=False)
+  (/86): BoundParams(name=/86, inputs=[], perturbed=False)
+  (/87): BoundParams(name=/87, inputs=[], perturbed=False)
+  (/88): BoundParams(name=/88, inputs=[], perturbed=False)
+  (/89): BoundParams(name=/89, inputs=[], perturbed=False)
+  (/90): BoundParams(name=/90, inputs=[], perturbed=False)
+  (/91): BoundParams(name=/91, inputs=[], perturbed=False)
+  (/92): BoundParams(name=/92, inputs=[], perturbed=False)
+  (/93): BoundParams(name=/93, inputs=[], perturbed=False)
+  (/94): BoundParams(name=/94, inputs=[], perturbed=False)
+  (/95): BoundParams(name=/95, inputs=[], perturbed=False)
+  (/96): BoundParams(name=/96, inputs=[], perturbed=False)
+  (/97): BoundParams(name=/97, inputs=[], perturbed=False)
+  (/98): BoundParams(name=/98, inputs=[], perturbed=False)
+  (/99): BoundParams(name=/99, inputs=[], perturbed=False)
+  (/100): BoundParams(name=/100, inputs=[], perturbed=False)
+  (/input): BoundLinear(name=/input, inputs=[/0, /61, /62], perturbed=True)
+  (/102): BoundRelu(name=/102, inputs=[/input], perturbed=True)
+  (/103): BoundLinear(name=/103, inputs=[/102, /63, /64], perturbed=True)
+  (/104): BoundLinear(name=/104, inputs=[/102, /65, /66], perturbed=True)
+  (/105): BoundLinear(name=/105, inputs=[/102, /67, /68], perturbed=True)
+  (/106): BoundAdd(name=/106, inputs=[/103, /105], perturbed=True)
+  (/107): BoundRelu(name=/107, inputs=[/106], perturbed=True)
+  (/108): BoundAdd(name=/108, inputs=[/107, /104], perturbed=True)
+  (/109): BoundLinear(name=/109, inputs=[/108, /69, /70], perturbed=True)
+  (/110): BoundLinear(name=/110, inputs=[/108, /71, /72], perturbed=True)
+  (/111): BoundAdd(name=/111, inputs=[/109, /110], perturbed=True)
+  (/112): BoundRelu(name=/112, inputs=[/111], perturbed=True)
+  (/113): BoundLinear(name=/113, inputs=[/112, /73, /74], perturbed=True)
+  (/114): BoundAdd(name=/114, inputs=[/109, /113], perturbed=True)
+  (/115): BoundLinear(name=/115, inputs=[/114, /75, /76], perturbed=True)
+  (/116): BoundLinear(name=/116, inputs=[/114, /77, /78], perturbed=True)
+  (/117): BoundAdd(name=/117, inputs=[/115, /116], perturbed=True)
+  (/118): BoundRelu(name=/118, inputs=[/117], perturbed=True)
+  (/119): BoundLinear(name=/119, inputs=[/118, /79, /80], perturbed=True)
+  (/120): BoundAdd(name=/120, inputs=[/115, /119], perturbed=True)
+  (/121): BoundLinear(name=/121, inputs=[/120, /81, /82], perturbed=True)
+  (/122): BoundLinear(name=/122, inputs=[/120, /83, /84], perturbed=True)
+  (/123): BoundAdd(name=/123, inputs=[/121, /122], perturbed=True)
+  (/124): BoundRelu(name=/124, inputs=[/123], perturbed=True)
+  (/125): BoundLinear(name=/125, inputs=[/124, /85, /86], perturbed=True)
+  (/126): BoundAdd(name=/126, inputs=[/121, /125], perturbed=True)
+  (/127): BoundLinear(name=/127, inputs=[/126, /87, /88], perturbed=True)
+  (/128): BoundLinear(name=/128, inputs=[/126, /89, /90], perturbed=True)
+  (/129): BoundAdd(name=/129, inputs=[/127, /128], perturbed=True)
+  (/130): BoundRelu(name=/130, inputs=[/129], perturbed=True)
+  (/131): BoundLinear(name=/131, inputs=[/130, /91, /92], perturbed=True)
+  (/132): BoundAdd(name=/132, inputs=[/127, /131], perturbed=True)
+  (/133): BoundLinear(name=/133, inputs=[/132, /93, /94], perturbed=True)
+  (/134): BoundLinear(name=/134, inputs=[/132, /95, /96], perturbed=True)
+  (/135): BoundAdd(name=/135, inputs=[/133, /134], perturbed=True)
+  (/136): BoundRelu(name=/136, inputs=[/135], perturbed=True)
+  (/137): BoundLinear(name=/137, inputs=[/136, /97, /98], perturbed=True)
+  (/138): BoundAdd(name=/138, inputs=[/133, /137], perturbed=True)
+  (/139): BoundLinear(name=/139, inputs=[/138, /99, /100], perturbed=True)
+)
+Original output in the first batch: tensor([[0.00100000, 0.00000000, 0.00000000, 0.00000000, 0.00000000, 0.00000000,
+         0.00000000, 0.00000000, 0.00000000, 0.00000000]])
+Split layers:
+Nonlinear functions:
+   BoundRelu(name=/102, inputs=[/input], perturbed=True)
+   BoundRelu(name=/107, inputs=[/106], perturbed=True)
+   BoundRelu(name=/112, inputs=[/111], perturbed=True)
+   BoundRelu(name=/118, inputs=[/117], perturbed=True)
+   BoundRelu(name=/124, inputs=[/123], perturbed=True)
+   BoundRelu(name=/130, inputs=[/129], perturbed=True)
+   BoundRelu(name=/136, inputs=[/135], perturbed=True)
+build batch [1/1]
+layer /102 using full alpha with shape torch.Size([64]); unstable size 62; total size 64 ([1, 64])
+layer /102 start_node /106 using full alpha [2, 32, 1, 64] with unstable size None total_size 32 output_shape torch.Size([32])
+layer /102 start_node /111 using full alpha [2, 16, 1, 64] with unstable size None total_size 16 output_shape torch.Size([16])
+layer /102 start_node /117 using full alpha [2, 8, 1, 64] with unstable size None total_size 8 output_shape torch.Size([8])
+layer /102 start_node /123 using full alpha [2, 4, 1, 64] with unstable size None total_size 4 output_shape torch.Size([4])
+layer /102 start_node /129 using full alpha [2, 2, 1, 64] with unstable size None total_size 2 output_shape torch.Size([2])
+layer /102 start_node /135 using full alpha [2, 1, 1, 64] with unstable size None total_size 1 output_shape torch.Size([1])
+layer /102 start_node /139 using full alpha [2, 9, 1, 64] with unstable size None total_size 9 output_shape 9
+layer /107 using full alpha with shape torch.Size([32]); unstable size 31; total size 32 ([1, 32])
+layer /107 start_node /111 using full alpha [2, 16, 1, 32] with unstable size None total_size 16 output_shape torch.Size([16])
+layer /107 start_node /117 using full alpha [2, 8, 1, 32] with unstable size None total_size 8 output_shape torch.Size([8])
+layer /107 start_node /123 using full alpha [2, 4, 1, 32] with unstable size None total_size 4 output_shape torch.Size([4])
+layer /107 start_node /129 using full alpha [2, 2, 1, 32] with unstable size None total_size 2 output_shape torch.Size([2])
+layer /107 start_node /135 using full alpha [2, 1, 1, 32] with unstable size None total_size 1 output_shape torch.Size([1])
+layer /107 start_node /139 using full alpha [2, 9, 1, 32] with unstable size None total_size 9 output_shape 9
+layer /112 using full alpha with shape torch.Size([16]); unstable size 16; total size 16 ([1, 16])
+layer /112 start_node /117 using full alpha [2, 8, 1, 16] with unstable size None total_size 8 output_shape torch.Size([8])
+layer /112 start_node /123 using full alpha [2, 4, 1, 16] with unstable size None total_size 4 output_shape torch.Size([4])
+layer /112 start_node /129 using full alpha [2, 2, 1, 16] with unstable size None total_size 2 output_shape torch.Size([2])
+layer /112 start_node /135 using full alpha [2, 1, 1, 16] with unstable size None total_size 1 output_shape torch.Size([1])
+layer /112 start_node /139 using full alpha [2, 9, 1, 16] with unstable size None total_size 9 output_shape 9
+layer /118 using full alpha with shape torch.Size([8]); unstable size 8; total size 8 ([1, 8])
+layer /118 start_node /123 using full alpha [2, 4, 1, 8] with unstable size None total_size 4 output_shape torch.Size([4])
+layer /118 start_node /129 using full alpha [2, 2, 1, 8] with unstable size None total_size 2 output_shape torch.Size([2])
+layer /118 start_node /135 using full alpha [2, 1, 1, 8] with unstable size None total_size 1 output_shape torch.Size([1])
+layer /118 start_node /139 using full alpha [2, 9, 1, 8] with unstable size None total_size 9 output_shape 9
+layer /124 using full alpha with shape torch.Size([4]); unstable size 4; total size 4 ([1, 4])
+layer /124 start_node /129 using full alpha [2, 2, 1, 4] with unstable size None total_size 2 output_shape torch.Size([2])
+layer /124 start_node /135 using full alpha [2, 1, 1, 4] with unstable size None total_size 1 output_shape torch.Size([1])
+layer /124 start_node /139 using full alpha [2, 9, 1, 4] with unstable size None total_size 9 output_shape 9
+layer /130 using full alpha with shape torch.Size([2]); unstable size 2; total size 2 ([1, 2])
+layer /130 start_node /135 using full alpha [2, 1, 1, 2] with unstable size None total_size 1 output_shape torch.Size([1])
+layer /130 start_node /139 using full alpha [2, 9, 1, 2] with unstable size None total_size 9 output_shape 9
+layer /136 using full alpha with shape torch.Size([1]); unstable size 1; total size 1 ([1, 1])
+layer /136 start_node /139 using full alpha [2, 9, 1, 1] with unstable size None total_size 9 output_shape 9
+Optimizable variables initialized.
+initial CROWN bounds (first 10 items): [-0.28650012612342834, -0.28650012612342834, -0.28650012612342834, -0.28650012612342834, -0.28650012612342834, -0.28650012612342834, -0.28650012612342834, -0.28650012612342834, -0.28650012612342834]
+prune_after_crown optimization in use
+  original spec size = torch.Size([1, 9])
+  pruned spec size = torch.Size([1, 9])
+Using alpha-CROWN to initialize bounds.
+best_l after optimization: -1.1900743246078491
+alpha/beta optimization time: 6.976621866226196
+initial alpha-crown bounds (first 10 items): [-0.1322304755449295, -0.1322304755449295, -0.1322304755449295, -0.1322304755449295, -0.1322304755449295, -0.1322304755449295, -0.1322304755449295, -0.1322304755449295, -0.1322304755449295]
+Global lower bound: -0.1322304755449295
+torch.Size([1, 9])
+0 / 9 OR specs are verified.
+Verified OR indices (first 10 items): []
+Verified OR lbs (first 10 items): []
+Unverified OR indices (first 10 items): [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Unverified OR lbs (first 10 items): [[-0.1322304755449295], [-0.1322304755449295], [-0.1322304755449295], [-0.1322304755449295], [-0.1322304755449295], [-0.1322304755449295], [-0.1322304755449295], [-0.1322304755449295], [-0.1322304755449295]]
+###### Verifying property Instance 0 ######
+Batch size: 9
+First 10 spec matrices
+C: tensor([[[ 1., -1.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.]],
+
+        [[ 1.,  0., -1.,  0.,  0.,  0.,  0.,  0.,  0.,  0.]],
+
+        [[ 1.,  0.,  0., -1.,  0.,  0.,  0.,  0.,  0.,  0.]],
+
+        [[ 1.,  0.,  0.,  0., -1.,  0.,  0.,  0.,  0.,  0.]],
+
+        [[ 1.,  0.,  0.,  0.,  0., -1.,  0.,  0.,  0.,  0.]],
+
+        [[ 1.,  0.,  0.,  0.,  0.,  0., -1.,  0.,  0.,  0.]],
+
+        [[ 1.,  0.,  0.,  0.,  0.,  0.,  0., -1.,  0.,  0.]],
+
+        [[ 1.,  0.,  0.,  0.,  0.,  0.,  0.,  0., -1.,  0.]],
+
+        [[ 1.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0., -1.]]])
+RHS: tensor([[0.],
+        [0.],
+        [0.],
+        [0.],
+        [0.],
+        [0.],
+        [0.],
+        [0.],
+        [0.]])
+OR spec sizes: tensor([1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=torch.int32)
+Remaining timeout: 999991.6379423141
+Model prediction is: tensor([0.00100000, 0.00000000, 0.00000000, 0.00000000, 0.00000000, 0.00000000,
+        0.00000000, 0.00000000, 0.00000000, 0.00000000])
+Activation BaB batch 1/1 
+build_with_refined_bounds batch [1/1]
+Optimizable variables initialized.
+all alpha initialized
+directly get lb and ub from refined bounds
+c shape: torch.Size([9, 1, 10])
+lA shapes: [torch.Size([9, 1, 64]), torch.Size([9, 1, 32]), torch.Size([9, 1, 16]), torch.Size([9, 1, 8]), torch.Size([9, 1, 4]), torch.Size([9, 1, 2]), torch.Size([9, 1, 1])]
+torch.Size([9, 1])
+(alpha-)CROWN with fixed intermediate bounds: tensor([[-0.13223048],
+        [-0.13223048],
+        [-0.13223048],
+        [-0.13223048],
+        [-0.13223048],
+        [-0.13223048],
+        [-0.13223048],
+        [-0.13223048],
+        [-0.13223048]]) tensor([[inf],
+        [inf],
+        [inf],
+        [inf],
+        [inf],
+        [inf],
+        [inf],
+        [inf],
+        [inf]])
+Intermediate layers: /input,/106,/111,/117,/123,/129,/135
+Keeping alphas for these layers: ['/139']
+Node /102 input 0: size torch.Size([64]) unstable 62
+Node /107 input 0: size torch.Size([32]) unstable 31
+Node /112 input 0: size torch.Size([16]) unstable 16
+Node /118 input 0: size torch.Size([8]) unstable 8
+Node /124 input 0: size torch.Size([4]) unstable 4
+Node /130 input 0: size torch.Size([2]) unstable 2
+Node /136 input 0: size torch.Size([1]) unstable 1
+-----------------
+# of unstable neurons: 124
+-----------------
+
+BaB round 1
+batch: 9
+splitting decisions: 
+split level 0: [/135, 0] [/135, 0] [/135, 0] [/135, 0] [/135, 0] [/135, 0] [/135, 0] [/135, 0] [/135, 0] 
+split level 1: [/129, 1] [/129, 1] [/129, 1] [/129, 1] [/129, 1] [/129, 1] [/129, 1] [/129, 1] [/129, 1] 
+split level 2: [/129, 0] [/129, 0] [/129, 0] [/129, 0] [/129, 0] [/129, 0] [/129, 0] [/129, 0] [/129, 0] 
+split level 3: [/123, 1] [/123, 1] [/123, 1] [/123, 1] [/123, 1] [/123, 1] [/123, 1] [/123, 1] [/123, 1] 
+best_l after optimization: -5.951916217803955
+beta sum per layer: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+alpha/beta optimization time: 10.279423713684082
+pruning_in_iteration open status: False
+ratio of positive domain = 0 / 144 = 0.0
+pruning-in-iteration extra time: 9.512901306152344e-05
+torch.Size([144, 1])
+Time: prepare 0.0062    bound 10.2834    transfer 0.0002    finalize 0.0719    func 10.3619    
+Accumulated time: func 10.3619    prepare 0.0073    bound 10.2834    transfer 0.0002    finalize 0.0719    
+max lb tensor(-0.02438775) min lb tensor(-0.04717658)
+Number of Verified Splits: 0 of 144
+Current worst splitting domains lb-rhs (depth):
+-0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), -0.04718 (4), 
+Length of domains: 144
+Current (lb-rhs): -0.04717658460140228
+144 domains visited
+Time: pickout 0.2371    decision 0.0964    set_bounds 0.0172    solve 10.3633    add 0.1628    
+Accumulated time: pickout 0.2371    decision 0.0964    set_bounds 0.0172    solve 10.3633    add 0.1628    
+Cumulative time: 10.920876741409302
+
+BaB round 2
+batch: 144
+splitting decisions: 
+split level 0: [/123, 0] [/123, 0] [/123, 0] [/123, 0] [/123, 0] [/123, 0] [/123, 0] [/123, 0] [/123, 0] [/123, 2] 
+best_l after optimization: -5.899835586547852
+beta sum per layer: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+alpha/beta optimization time: 20.06424307823181
+pruning_in_iteration open status: False
+ratio of positive domain = 0 / 288 = 0.0
+pruning-in-iteration extra time: 9.298324584960938e-05
+torch.Size([288, 1])
+Time: prepare 0.0317    bound 20.0755    transfer 0.0001    finalize 0.1075    func 20.2150    
+Accumulated time: func 30.5769    prepare 0.1976    bound 30.3589    transfer 0.0003    finalize 0.1793    
+max lb tensor(-0.00915854) min lb tensor(-0.02439642)
+Number of Verified Splits: 0 of 288
+Current worst splitting domains lb-rhs (depth):
+-0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02440 (5), -0.02439 (5), -0.02439 (5), 
+Length of domains: 288
+Current (lb-rhs): -0.024396423250436783
+432 domains visited
+Time: pickout 0.1527    decision 2.4796    set_bounds 0.0248    solve 20.2163    add 0.2428    
+Accumulated time: pickout 0.3898    decision 2.5760    set_bounds 0.0420    solve 30.5796    add 0.4057    
+Cumulative time: 34.053229331970215
+
+BaB round 3
+batch: 288
+splitting decisions: 
+split level 0: [/117, 1] [/117, 1] [/117, 1] [/117, 1] [/117, 1] [/117, 1] [/117, 1] [/117, 1] [/117, 1] [/117, 5] 
+Early stop at 10th iter due to 10 iterations no improvement!
+best_l after optimization: -3.9079442024230957
+beta sum per layer: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+alpha/beta optimization time: 14.428954124450684
+pruning_in_iteration open status: True
+ratio of positive domain = 144 / 576 = 0.25
+pruning-in-iteration extra time: 3.005089044570923
+torch.Size([576, 1])
+Time: prepare 0.0705    bound 14.4346    transfer 0.0784    finalize 0.1282    func 14.7120    
+Accumulated time: func 45.2888    prepare 0.4256    bound 44.7936    transfer 0.0787    finalize 0.3075    
+max lb tensor(9.99999975e-05) min lb tensor(-0.00917848)
+Number of Verified Splits: 144 of 576
+Current worst splitting domains lb-rhs (depth):
+-0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), -0.00918 (6), 
+Length of domains: 432
+Current (lb-rhs): -0.009178475476801395
+1008 domains visited
+Time: pickout 0.3483    decision 4.1039    set_bounds 0.0755    solve 14.7135    add 0.1746    
+Accumulated time: pickout 0.7381    decision 6.6799    set_bounds 0.1174    solve 45.2931    add 0.5803    
+Cumulative time: 53.48673677444458
+
+BaB round 4
+batch: 432
+splitting decisions: 
+split level 0: [/111, 3] [/111, 3] [/111, 3] [/111, 3] [/111, 3] [/111, 3] [/111, 3] [/111, 3] [/111, 3] [/111, 11] 
+
+all verified at 0th iter
+best_l after optimization: 1.090735673904419
+beta sum per layer: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+alpha/beta optimization time: 0.868596076965332
+pruning_in_iteration open status: False
+ratio of positive domain = 864 / 864 = 1.0
+pruning-in-iteration extra time: 8.702278137207031e-05
+torch.Size([864, 1])
+Time: prepare 0.1639    bound 0.9327    transfer 0.0001    finalize 0.1551    func 1.2520    
+Accumulated time: func 46.5408    prepare 0.7457    bound 45.7263    transfer 0.0788    finalize 0.4626    
+max lb tensor(0.00734832) min lb tensor(0.00098047)
+Number of Verified Splits: 864 of 864
+Length of domains: 0
+No domains left, verification finished!
+Current (lb-rhs): 1.0000000116860974e-07
+1872 domains visited
+Time: pickout 0.3986    decision 3.3270    set_bounds 0.0764    solve 1.2534    add 0.0001    
+Accumulated time: pickout 1.1367    decision 10.0068    set_bounds 0.1939    solve 46.5465    add 0.5804    
+Cumulative time: 58.5488007068634
+
+Result: unsat
+Time: 65.91644072532654
+/anaconda3/envs/alpha-beta-crown/lib/python3.11/site-packages/onnx2pytorch/convert/layer.py:29: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  layer.weight.data = torch.from_numpy(numpy_helper.to_array(weight))
+/anaconda3/envs/alpha-beta-crown/lib/python3.11/site-packages/onnx2pytorch/convert/model.py:151: UserWarning: Using experimental implementation that allows 'batch_size > 1'.Batchnorm layers could potentially produce false outputs.
+  warnings.warn(
+[0;93m2026-04-30 00:17:37.288200827 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'out.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288218643 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_3.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288223216 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_even'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288226827 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288230351 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288233773 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd_neg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288237144 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_4.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288240379 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288243736 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288247000 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288250231 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288253446 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288256771 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_4'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288259904 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_4'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288263004 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288266177 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_0.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288269606 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_1.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288276884 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288281051 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'pairs.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 00:17:37.288284467 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_2.Wneg'. It is not used by any node and should be removed from the model.[m
+/anaconda3/envs/alpha-beta-crown/lib/python3.11/site-packages/onnx2pytorch/utils.py:21: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  return value.ndim == 0 or value.shape == torch.Size([1])
+/anaconda3/envs/alpha-beta-crown/lib/python3.11/site-packages/onnx2pytorch/operations/add.py:34: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  elif all(x == 1 for x in input[0].shape):
+
+
+

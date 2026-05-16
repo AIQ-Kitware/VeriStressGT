@@ -1,0 +1,15 @@
+{
+  "benchmark": "./benchmarks/vnncomp_mnist_fc",
+  "manifest_construction": null,
+  "verifier": "neuralsat",
+  "conda_env": null,
+  "timeout": 240.0,
+  "jobs": 1,
+  "git_commit": "a5c16df057d8831cb17931939c16b2dfdb1011b1",
+  "verifier_args": {
+    "neuralsat_root": null,
+    "neuralsat_python": "python",
+    "neuralsat_force_split": "hidden",
+    "device": "cuda"
+  }
+}

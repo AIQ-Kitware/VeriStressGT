@@ -1,0 +1,30 @@
+{
+  "id": "ep5",
+  "construction": "mlp_relu.embedded_projection",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/ep5/model.onnx",
+    "vnnlib": "instances/ep5/spec.vnnlib",
+    "meta": "instances/ep5/meta.json"
+  },
+  "sha256": {
+    "onnx": "9d7426ec7a030c673d597ad0e6694d5ca4de1248bd3d816ab3fc8d3f7935f090",
+    "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+  },
+  "args": {
+    "seed": 0,
+    "input_dim": 100,
+    "wide-layers": 50,
+    "output_dim": 10,
+    "epsilon": 0.1,
+    "hidden_dims": null,
+    "num_layers": 5,
+    "width": 256,
+    "wide_layers": 0,
+    "wide_width": 1000,
+    "scale": null,
+    "eta": 0.0,
+    "onnx_path": "benchmarks/sweep_all_marabou/instances/ep5/model.onnx",
+    "vnnlib_path": "benchmarks/sweep_all_marabou/instances/ep5/spec.vnnlib"
+  }
+}

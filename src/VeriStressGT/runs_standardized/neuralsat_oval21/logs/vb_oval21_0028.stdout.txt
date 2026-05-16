@@ -1,0 +1,96 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-01-29
+
+ [!] GlobalSettings:
+	- use_restart                             : True
+	- use_mip_tightening                      : True
+	- use_attack                              : True
+	- attack_interval                         : 10
+	- use_mip_verify                          : True
+	- input_splitting_threshold               : 0.5
+	- hidden_splitting_threshold              : 0.01
+	- safety_num_input_perturbed              : 200
+	- skip_preprocess                         : False
+	- use_save_reasoning_step                 : False
+	- max_iterations                          : 1000000000.0
+	- skip_initial_worst_bound                : -1000000.0
+	- max_domains                             : 1000000000.0
+	- use_decompose                           : False
+	- restart_current_hidden_branches         : 2000
+	- restart_visited_hidden_branches         : 20000
+	- restart_current_input_branches          : 20000
+	- restart_visited_input_branches          : 200000
+	- restart_max_runtime                     : 60.0
+	- restart_max_runtime_percentage          : 0.4
+	- mip_tightening_patience                 : 10
+	- mip_tightening_timeout_per_neuron       : 15.0
+	- mip_tightening_topk                     : 64
+	- use_gpu_tightening                      : False
+	- gpu_tightening_current_hidden_branches  : 1000
+	- gpu_tightening_visited_hidden_branches  : 5000
+	- gpu_tightening_timeout                  : 10.0
+	- gpu_tightening_patience                 : 10
+	- gpu_tightening_topk                     : 500
+	- use_mip_attack                          : False
+	- mip_verify_threshold                    : 2
+	- share_alphas                            : False
+	- backward_batch_size                     : inf
+	- forward_max_dim                         : 10000
+	- forward_dynamic                         : False
+	- use_decompose_incomplete                : False
+	- init_abstraction_method                 : crown-optimized
+	- subverifier_decision_method             : smart
+	- verify_candidate_batch                  : 3
+	- verify_last_timeout                     : 200.0
+	- verify_interm_timeout                   : 20.0
+	- sequential_batch                        : 100
+	- use_sequential_abstract_forward         : False
+	- verify_extra_opts                       : {'sparse_intermediate_bounds': True}
+	- verify_splitting_strategy               : hidden
+	- use_extra_substitution                  : False
+	- verify_max_iteration                    : 4
+	- verify_candidate_num                    : 128
+	- verify_interpolate_factor               : 0.5
+
+ConvertModel(
+  (Conv_13): Conv2d(3, 8, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (Relu_14): ReLU()
+  (Conv_15): Conv2d(8, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (Relu_16): ReLU()
+  (Conv_17): Conv2d(8, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (Relu_18): ReLU()
+  (Conv_19): Conv2d(8, 8, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (Relu_20): ReLU()
+  (Flatten_21): Flatten(start_dim=1, end_dim=-1)
+  (Gemm_22): Linear(in_features=512, out_features=100, bias=True)
+  (Relu_23): ReLU()
+  (Gemm_24): Linear(in_features=100, out_features=10, bias=True)
+)
+INFO     14:35:20     [!] Input shape: (1, 3, 32, 32)
+INFO     14:35:20     [!] Output shape: (1, 10)
+INFO     14:35:20     [!] VNNLIB: 3072 inputs, 10 outputs
+INFO     14:35:20     [Failed] RandomAttack(seed=611, device=cpu)
+Attacking PGD F32 iterations=100000 restarts=20 timeout=19.909547090530396 cs.shape=torch.Size([9, 1, 10]) rhs.shape=torch.Size([9, 1])
+INFO     14:35:40     [Failed] PGDAttack(seed=556, device=cpu)
+INFO     14:35:40     [!] eps=0.085984, perturbed=3072
+INFO     14:35:40     [_preprocess] _init_abstractor
+DEBUG    14:35:40     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+DEBUG    14:35:40     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     14:35:40     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+INFO     14:35:40     Initial bounds (first 10): tensor([ 2.8979e+00,  2.4609e+00,  1.3891e+00,  1.1637e-01,  1.3349e+00,
+         3.1651e-01,  4.9106e-01, -1.9524e-03,  1.2174e+00])
+INFO     14:35:40     Remain 1 objectives
+[!] Found unsupported layer: <class 'torch.nn.modules.conv.Conv2d'>
+INFO     14:35:40     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     14:35:40     [_setup_restart] _init_abstractor
+DEBUG    14:35:41     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+DEBUG    14:35:41     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     14:35:41     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+INFO     14:35:41     Try batch size 1000
+INFO     14:35:41     Initial bounds (first 10): tensor([-0.0020])
+INFO     14:35:41     Initial optimized bounds (first 10): tensor([0.0018])
+INFO     14:35:41     Verified: 1 	 Remain: 0
+INFO     14:35:41     [!] Iterations: 0
+INFO     14:35:41     [!] Result: unsat
+INFO     14:35:41     [!] Runtime: 21.3945
+unsat,21.3945

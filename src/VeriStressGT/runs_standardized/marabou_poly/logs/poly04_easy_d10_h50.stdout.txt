@@ -1,0 +1,1 @@
+Network: ./benchmarks/polynomial_stress_22/instances/poly04_easy_d10_h50/model.onnx

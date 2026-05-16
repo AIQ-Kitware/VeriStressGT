@@ -1,0 +1,54 @@
+Running single-threaded
+(0.8 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+Overapprox Round 1/3 has 1 set(s)
+Layer 1/11: FullyConnectedLayer (zono shape: (256, 814))... 0.003 sec
+Layer 2/11: ReluLayer (zono shape: (256, 814))... 0.002 sec
+Layer 3/11: FullyConnectedLayer (zono shape: (256, 852))... 0.002 sec
+Layer 4/11: ReluLayer (zono shape: (256, 852))... 0.001 sec
+Layer 5/11: FullyConnectedLayer (zono shape: (256, 870))... 0.002 sec
+Layer 6/11: ReluLayer (zono shape: (256, 870))... 0.001 sec
+Layer 7/11: FullyConnectedLayer (zono shape: (256, 882))... 0.049 sec
+Layer 8/11: ReluLayer (zono shape: (256, 882))... 0.001 sec
+Layer 9/11: FullyConnectedLayer (zono shape: (256, 882))... 0.002 sec
+Layer 10/11: ReluLayer (zono shape: (256, 882))... 0.024 sec
+Layer 11/11: FullyConnectedLayer (zono shape: (256, 884))... 0.016 sec
+(0.9 sec) Q: 0, Sets: 1/1  (100.0%) ETA: 0.0 sec (expected 1 stars)   
+
+
+
+Total Stars: 1 (0 exact, 1 approx)
+Runtime: 0.9 sec
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is SAFE
+Enumerate_network Time (1 calls): 1.05 sec
+  From_init_box Time (1 calls): 0.36 sec (34.2%)
+    Make bm Time (1 calls): 0.35 sec (97.7%)
+    Star Time (1 calls): 0.01 sec (1.8%)
+    Other (From_init_box): 0.00 sec (0.5%)
+  Propagate_up_to_split Time (1 calls): 0.03 sec (2.7%)
+  Push_init Time (1 calls): 0.00 sec (0.0%)
+  Run workers Time (1 calls): 0.11 sec (10.3%)
+    Worker_func Time (1 calls): 0.11 sec (99.9%)
+      Get_global_queue Time (2 calls): 0.00 sec (0.0%)
+      Update_shared_variables Time (2 calls): 0.00 sec (0.2%)
+      Print_progress Time (2 calls): 0.00 sec (0.2%)
+      Do_overapprox_rounds Time (1 calls): 0.11 sec (99.1%)
+        Execute fully connected Time (6 calls): 0.00 sec (0.3%)
+        Execute relu Time (5 calls): 0.00 sec (0.1%)
+        Assign_zeros Time (6 calls): 0.00 sec (0.3%)
+        Relu_update Time (5 calls): 0.00 sec (0.8%)
+        Stack_new_generators Time (5 calls): 0.00 sec (1.2%)
+        Transform_linear Time (6 calls): 0.01 sec (9.8%)
+        Zono.box_bounds Time (5 calls): 0.00 sec (3.8%)
+        Make_split_indices Time (5 calls): 0.00 sec (0.2%)
+        Sort_splits Time (5 calls): 0.00 sec (0.2%)
+        Overapprox_check_round Time (1 calls): 0.00 sec (1.4%)
+        Other (Do_overapprox_rounds): 0.09 sec (82.0%)
+      Post_loop Time (1 calls): 0.00 sec (0.1%)
+      Other (Worker_func): 0.00 sec (0.4%)
+    Other (Run workers): 0.00 sec (0.1%)
+  Other (Enumerate_network): 0.56 sec (52.9%)

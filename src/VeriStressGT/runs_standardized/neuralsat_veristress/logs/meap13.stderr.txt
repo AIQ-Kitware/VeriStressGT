@@ -1,0 +1,38 @@
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[0;93m2026-04-30 08:27:22.960227183 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'pairs.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:22.960257084 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_0.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:22.960263183 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:22.960268140 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd_neg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:22.960272652 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:22.960277142 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_even'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:22.960281461 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:22.960285700 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'out.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097910508 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'pairs.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097935871 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_0.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097942080 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097946947 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd_neg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097951507 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097956212 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_even'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097960632 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 08:27:23.097964882 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'out.W'. It is not used by any node and should be removed from the model.[m
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 178, in _verify_with_restart
+    status = self._verify_one(
+  File "<@beartype(verifier.verifier.Verifier._verify_one) at 0x7f6418f27a30>", line 94, in _verify_one
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 303, in _verify_one
+    self._parallel_dpll()
+  File "<@beartype(verifier.verifier.Verifier._parallel_dpll) at 0x7f6418f27f40>", line 33, in _parallel_dpll
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 451, in _parallel_dpll
+    decisions = self.decision(self.abstractor, pruned_ret)
+  File "<@beartype(heuristic.decision_heuristics.DecisionHeuristic.__call__) at 0x7f6418e43760>", line 75, in __call__
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "./verifiers/neuralsat/src/heuristic/decision_heuristics.py", line 73, in __call__
+    return self.smart_hidden_branching(
+  File "<@beartype(heuristic.decision_heuristics.DecisionHeuristic.smart_hidden_branching) at 0x7f6418e43be0>", line 74, in smart_hidden_branching
+  File "./verifiers/neuralsat/src/heuristic/decision_heuristics.py", line 211, in smart_hidden_branching
+    topk_scores = torch.topk(torch.cat(scores, dim=1), topk)
+RuntimeError: selected index k out of range

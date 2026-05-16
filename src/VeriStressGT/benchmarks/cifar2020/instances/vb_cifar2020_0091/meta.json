@@ -1,0 +1,14 @@
+{
+  "id": "vb_cifar2020_0091",
+  "construction": "vnncomp.cifar2020",
+  "source_benchmark": "cifar2020",
+  "source_onnx": "onnx/cifar10_8_255_simplified.onnx",
+  "source_vnnlib": "vnnlib/cifar10_spec_idx_15_eps_0.03137_n1.vnnlib",
+  "args": {
+    "onnx_basename": "cifar10_8_255_simplified.onnx",
+    "vnnlib_basename": "cifar10_spec_idx_15_eps_0.03137_n1.vnnlib",
+    "epsilon": 0.03137,
+    "spec_index": 15
+  },
+  "vnncomp_timeout_s": 300.0
+}

@@ -1,0 +1,165 @@
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 178, in _verify_with_restart
+    status = self._verify_one(
+  File "<@beartype(verifier.verifier.Verifier._verify_one) at 0x7fd8b4a5fa30>", line 94, in _verify_one
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 303, in _verify_one
+    self._parallel_dpll()
+  File "<@beartype(verifier.verifier.Verifier._parallel_dpll) at 0x7fd8b4a5ff40>", line 33, in _parallel_dpll
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 451, in _parallel_dpll
+    decisions = self.decision(self.abstractor, pruned_ret)
+  File "<@beartype(heuristic.decision_heuristics.DecisionHeuristic.__call__) at 0x7fd8b4b73760>", line 75, in __call__
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "./verifiers/neuralsat/src/heuristic/decision_heuristics.py", line 50, in __call__
+    return self.naive_hidden_branching(
+  File "<@beartype(heuristic.decision_heuristics.DecisionHeuristic.naive_hidden_branching) at 0x7fd8b4bbc1f0>", line 92, in naive_hidden_branching
+  File "./verifiers/neuralsat/src/heuristic/decision_heuristics.py", line 386, in naive_hidden_branching
+    assert (best_scores_all.values >= 0.0).all(), f'{best_scores_all.values=}'
+AssertionError: best_scores_all.values=tensor([[ 0.0377],
+        [ 0.0377],
+        [ 0.0377],
+        [ 0.0377],
+        [ 0.0061],
+        [-0.0013],
+        [ 0.0061],
+        [ 0.0023],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0508],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583],
+        [ 0.0583]])
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/main.py", line 101, in <module>
+    status = verifier.verify(objectives, timeout=timeout, force_split=args.force_split)
+  File "<@beartype(verifier.verifier.Verifier.verify) at 0x7fd8b4a5f370>", line 113, in verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 73, in verify
+    self.status = self._verify(
+  File "<@beartype(verifier.verifier.Verifier._verify) at 0x7fd8b4a5f5b0>", line 113, in _verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 124, in _verify
+    status = self._verify_with_restart(
+  File "<@beartype(verifier.verifier.Verifier._verify_with_restart) at 0x7fd8b4a5f7f0>", line 132, in _verify_with_restart
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 205, in _verify_with_restart
+    raise NotImplementedError('Unknown error')
+NotImplementedError: Unknown error

@@ -1,0 +1,8 @@
+Running analysis with 1 processes, domains = ['con_z'], scorer = better
+
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:01 s, Done: 2, Remaining: 3
+Safe_volume: 0.0000% |                              | Time: 00:02 s, Done: 2, Remaining: 3

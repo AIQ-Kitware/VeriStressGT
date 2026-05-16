@@ -1,0 +1,384 @@
+Network: ./benchmarks/sweep_all/instances/meap11/model.onnx
+Property: ./benchmarks/sweep_all/instances/meap11/spec.vnnlib
+
+Engine::processInputQuery: Input query (before preprocessing): 197 equations, 360 variables
+Engine::processInputQuery: Input query (after preprocessing): 196 equations, 365 variables
+
+Input bounds:
+	x0: [  0.0764,   0.2764] 
+	x1: [ -0.0600,   0.1400] 
+	x2: [ -0.0021,   0.1979] 
+	x3: [  0.1241,   0.3241] 
+	x4: [  0.0868,   0.2868] 
+	x5: [ -0.1977,   0.0023] 
+	x6: [ -0.0050,   0.1950] 
+	x7: [ -0.1151,   0.0849] 
+	x8: [ -0.1103,   0.0897] 
+	x9: [ -0.0589,   0.1411] 
+	x10: [ -0.0856,   0.1144] 
+	x11: [  0.0454,   0.2454] 
+	x12: [ -0.0239,   0.1761] 
+	x13: [ -0.0878,   0.1122] 
+	x14: [ -0.0556,   0.1444] 
+	x15: [ -0.0666,   0.1334] 
+	x16: [  0.0494,   0.2494] 
+	x17: [ -0.1205,   0.0795] 
+	x18: [ -0.0687,   0.1313] 
+	x19: [ -0.1854,   0.0146] 
+	x20: [ -0.3553,  -0.1553] 
+	x21: [ -0.0346,   0.1654] 
+	x22: [ -0.0136,   0.1864] 
+	x23: [ -0.1742,   0.0258] 
+	x24: [  0.1270,   0.3270] 
+	x25: [ -0.2454,  -0.0454] 
+	x26: [ -0.0954,   0.1046] 
+	x27: [ -0.1187,   0.0813] 
+	x28: [  0.0533,   0.2533] 
+	x29: [  0.0469,   0.2469] 
+	x30: [ -0.0845,   0.1155] 
+	x31: [ -0.0622,   0.1378] 
+	x32: [ -0.1888,   0.0112] 
+	x33: [ -0.2981,  -0.0981] 
+	x34: [ -0.1348,   0.0652] 
+	x35: [ -0.0844,   0.1156] 
+	x36: [  0.0230,   0.2230] 
+	x37: [  0.0202,   0.2202] 
+	x38: [ -0.1387,   0.0613] 
+	x39: [ -0.1302,   0.0698] 
+	x40: [ -0.2049,  -0.0049] 
+	x41: [ -0.2420,  -0.0420] 
+	x42: [ -0.2706,  -0.0706] 
+	x43: [  0.0951,   0.2951] 
+	x44: [ -0.1510,   0.0490] 
+	x45: [ -0.1438,   0.0562] 
+	x46: [ -0.2253,  -0.0253] 
+	x47: [ -0.0223,   0.1777] 
+	x48: [ -0.2614,  -0.0614] 
+	x49: [ -0.1213,   0.0787] 
+	x50: [ -0.1895,   0.0105] 
+	x51: [ -0.0613,   0.1387] 
+	x52: [ -0.1511,   0.0489] 
+	x53: [ -0.2181,  -0.0181] 
+	x54: [ -0.1028,   0.0972] 
+	x55: [ -0.0572,   0.1428] 
+	x56: [ -0.0933,   0.1067] 
+	x57: [ -0.0698,   0.1302] 
+	x58: [ -0.1634,   0.0366] 
+	x59: [ -0.1363,   0.0637] 
+	x60: [ -0.1672,   0.0328] 
+	x61: [ -0.1360,   0.0640] 
+	x62: [ -0.1813,   0.0187] 
+	x63: [ -0.2726,  -0.0726] 
+	x64: [ -0.0823,   0.1177] 
+	x65: [ -0.1402,   0.0598] 
+	x66: [ -0.2630,  -0.0630] 
+	x67: [ -0.0537,   0.1463] 
+	x68: [ -0.1907,   0.0093] 
+	x69: [ -0.0948,   0.1052] 
+	x70: [ -0.0271,   0.1729] 
+	x71: [ -0.0871,   0.1129] 
+	x72: [  0.0139,   0.2139] 
+	x73: [ -0.2235,  -0.0235] 
+	x74: [ -0.0598,   0.1402] 
+	x75: [ -0.1685,   0.0315] 
+	x76: [ -0.1871,   0.0129] 
+	x77: [ -0.1579,   0.0421] 
+	x78: [ -0.1312,   0.0688] 
+	x79: [ -0.0944,   0.1056] 
+	x80: [ -0.2165,  -0.0165] 
+	x81: [ -0.0099,   0.1901] 
+	x82: [ -0.0534,   0.1466] 
+	x83: [ -0.2536,  -0.0536] 
+	x84: [  0.0488,   0.2488] 
+	x85: [  0.0896,   0.2896] 
+	x86: [  0.0179,   0.2179] 
+	x87: [ -0.1180,   0.0820] 
+	x88: [ -0.2071,  -0.0071] 
+	x89: [  0.0054,   0.2054] 
+	x90: [ -0.1403,   0.0597] 
+	x91: [  0.0222,   0.2222] 
+	x92: [ -0.0792,   0.1208] 
+	x93: [ -0.0023,   0.1977] 
+	x94: [ -0.0644,   0.1356] 
+	x95: [ -0.0293,   0.1707] 
+	x96: [ -0.0989,   0.1011] 
+	x97: [  0.0786,   0.2786] 
+	x98: [ -0.0873,   0.1127] 
+	x99: [ -0.0598,   0.1402] 
+
+Branching heuristics set to PseudoImpact
+
+Engine::solve: Initial statistics
+
+18:16:06 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 47 milli (00:00:00)
+		Main loop: 0 milli (00:00:00)
+		Preprocessing time: 26 milli (00:00:00)
+		Unknown: 21 milli (00:00:00)
+	Breakdown for main loop:
+		[0.00%] Simplex steps: 0 milli
+		[0.00%] Explicit-basis bound tightening: 0 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.00%] Degradation checking: 0 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.00%] Statistics handling: 0 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 0 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 0 milli
+		[0.00%] Search Tree Handler : 0 milli
+		[0.00%] Symbolic Bound Tightening: 9 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] Unaccounted for: 0 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 8
+	Number of eliminated variables: 76
+	Number of constraints removed due to variable elimination: 3
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 1
+		0 iterations were simplex steps. Total time: 0 milli. Average: 0.00 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 61 / 61
+		Constraints disabled by valid splits: 0. By Search-Tree--originated splits: 0
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000000000. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 0
+		Real pivots: 0. Degenerate: 0 (0.00%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.00 milli
+	Total number of fake pivots performed: 0
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 196, N = 561
+	--- Search Tree Handler Statistics ---
+	Total depth is 0. Total visited states: 1. Number of splits: 0. Number of pops: 0
+	Max stack depth: 0
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 0.
+		Number of rows examined by row tightener: 0. Consequent tightenings: 0
+		Number of explicit basis matrices examined by row tightener: 0. Consequent tightenings: 0
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 378. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 2
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 0.
+	Number of resets to reference space: 1. Avg. iterations per reset: 0
+	--- SBT ---
+	Number of tightened bounds: 102
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 0. Number of accepted update: 0 [0.00%]
+	Total time (% of local search time) updating SoI phase pattern : 0 milli [0.00%]
+	Total time obtaining current assignment: 0 milli [0.00%]
+	Total time getting SoI phase pattern : 0 milli [0.00%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 0 / 0
+		[0.00%] Pre-Push hook: 0 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 0 milli
+		[0.00%] Pop : 0 milli
+		[0.00%] Total context-switching time: 0 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+	Number of lemmas: 0
+	Number of lemmas used in proof minimization: 0
+
+---
+
+Engine::solve: sat assignment found
+
+18:16:06 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 133 milli (00:00:00)
+		Main loop: 85 milli (00:00:00)
+		Preprocessing time: 26 milli (00:00:00)
+		Unknown: 21 milli (00:00:00)
+	Breakdown for main loop:
+		[29.73%] Simplex steps: 25 milli
+		[5.08%] Explicit-basis bound tightening: 4 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.20%] Degradation checking: 0 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.00%] Statistics handling: 0 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.02%] Valid case splits: 0 milli. Average per split: 0.00 milli
+		[0.04%] Applying stored bound-tightening: 0 milli
+		[0.18%] Search Tree Handler : 0 milli
+		[68.47%] Symbolic Bound Tightening: 58 milli
+		[14.03%] SoI-based local search: 11 milli
+		[0.00%] SoI-based local search: 0 milli
+		[21689038428365976.00%] Unaccounted for: 0 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 8
+	Number of eliminated variables: 76
+	Number of constraints removed due to variable elimination: 3
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 246
+		232 iterations were simplex steps. Total time: 25 milli. Average: 0.11 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 56 / 61
+		Constraints disabled by valid splits: 0. By Search-Tree--originated splits: 5
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000000000. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 68.
+	Unstable pivots performed anyway: 6
+	--- Tableau Statistics ---
+	Total number of pivots performed: 215
+		Real pivots: 176. Degenerate: 39 (18.14%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.02 milli
+	Total number of fake pivots performed: 1
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 196, N = 561
+	--- Search Tree Handler Statistics ---
+	Total depth is 5. Total visited states: 6. Number of splits: 5. Number of pops: 0
+	Max stack depth: 5
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 8.
+		Number of rows examined by row tightener: 215. Consequent tightenings: 0
+		Number of explicit basis matrices examined by row tightener: 1. Consequent tightenings: 24
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 763. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 11
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 278.
+	Number of resets to reference space: 1. Avg. iterations per reset: 278
+	--- SBT ---
+	Number of tightened bounds: 110
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 0. Number of accepted update: 6 [0.00%]
+	Total time (% of local search time) updating SoI phase pattern : 725 milli [6.08%]
+	Total time obtaining current assignment: 1055 milli [8.84%]
+	Total time getting SoI phase pattern : 408 milli [0.48%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 5 / 0
+		[0.14%] Pre-Push hook: 0 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 0 milli
+		[0.00%] Pop : 0 milli
+		[0.14%] Total context-switching time: 0 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+	Number of lemmas: 0
+	Number of lemmas used in proof minimization: 0
+sat
+Input assignment:
+	x0 = 0.076405
+	x1 = -0.059984
+	x2 = -0.002126
+	x3 = 0.124089
+	x4 = 0.086756
+	x5 = -0.197728
+	x6 = -0.004991
+	x7 = -0.115136
+	x8 = -0.110322
+	x9 = -0.058940
+	x10 = -0.085596
+	x11 = 0.045427
+	x12 = -0.023896
+	x13 = -0.087832
+	x14 = -0.055614
+	x15 = -0.066633
+	x16 = 0.049408
+	x17 = -0.120516
+	x18 = 0.131307
+	x19 = -0.185410
+	x20 = -0.355299
+	x21 = -0.034638
+	x22 = -0.013556
+	x23 = -0.030520
+	x24 = 0.326975
+	x25 = -0.245437
+	x26 = -0.095424
+	x27 = -0.118718
+	x28 = 0.053278
+	x29 = 0.115908
+	x30 = 0.115495
+	x31 = -0.062184
+	x32 = -0.083633
+	x33 = -0.298080
+	x34 = -0.134791
+	x35 = 0.027807
+	x36 = 0.023029
+	x37 = 0.020238
+	x38 = -0.138733
+	x39 = -0.130230
+	x40 = -0.204855
+	x41 = -0.242002
+	x42 = -0.270627
+	x43 = 0.295078
+	x44 = -0.150965
+	x45 = -0.143807
+	x46 = -0.225280
+	x47 = 0.177749
+	x48 = -0.261390
+	x49 = -0.010277
+	x50 = -0.189547
+	x51 = -0.061310
+	x52 = -0.151081
+	x53 = -0.218063
+	x54 = -0.027208
+	x55 = -0.057167
+	x56 = -0.093348
+	x57 = 0.068521
+	x58 = -0.163432
+	x59 = -0.136274
+	x60 = -0.167246
+	x61 = -0.135955
+	x62 = -0.181315
+	x63 = -0.272628
+	x64 = -0.082257
+	x65 = -0.140178
+	x66 = -0.157133
+	x67 = -0.053722
+	x68 = -0.069552
+	x69 = 0.105195
+	x70 = -0.027091
+	x71 = -0.087102
+	x72 = 0.013940
+	x73 = -0.223483
+	x74 = -0.059766
+	x75 = 0.031519
+	x76 = -0.187080
+	x77 = -0.157885
+	x78 = -0.131155
+	x79 = -0.094383
+	x80 = -0.216515
+	x81 = -0.009917
+	x82 = 0.094848
+	x83 = -0.253624
+	x84 = 0.048825
+	x85 = 0.089589
+	x86 = 0.017878
+	x87 = 0.073309
+	x88 = -0.207075
+	x89 = 0.005445
+	x90 = -0.140318
+	x91 = 0.022244
+	x92 = -0.079173
+	x93 = -0.002336
+	x94 = 0.135637
+	x95 = 0.170657
+	x96 = -0.098950
+	x97 = 0.078587
+	x98 = -0.087309
+	x99 = -0.059801
+
+Output:
+	y0 = 0.000000
+	y1 = 0.000000
+	y2 = 0.000000
+	y3 = 0.000000
+	y4 = 0.000000
+	y5 = 0.000000
+	y6 = 0.000000
+	y7 = 0.000000
+	y8 = 0.000000
+	y9 = 0.000000
+

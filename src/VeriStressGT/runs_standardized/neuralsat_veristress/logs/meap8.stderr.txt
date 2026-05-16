@@ -1,0 +1,38 @@
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[0;93m2026-04-30 07:44:45.176310433 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_0.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176342239 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176348718 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd_neg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176353711 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176358325 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176363151 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176368076 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176372912 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_even'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176377302 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176381918 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_1.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176386506 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176390985 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176395431 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176400297 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_2.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176404774 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_3.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176409541 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'out.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.176413963 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'pairs.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367086175 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_0.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367115924 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367123604 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd_neg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367129823 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367135809 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367142063 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367148445 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367154475 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_even'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367160359 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367166410 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_1.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367172842 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367178699 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367184560 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367190710 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_2.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367196570 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_3.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367202758 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'out.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 07:44:45.367208689 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'pairs.W'. It is not used by any node and should be removed from the model.[m

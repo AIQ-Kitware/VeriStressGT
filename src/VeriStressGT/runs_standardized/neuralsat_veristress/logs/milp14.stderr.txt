@@ -1,0 +1,30 @@
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 110, in _verify
+    status, self.adv = mip_verifier.verify(
+  File "./verifiers/neuralsat/src/verifier/mip_solver.py", line 44, in verify
+    status, adv = self.verify_one(objective=objective, timeout=timeout)
+  File "./verifiers/neuralsat/src/verifier/mip_solver.py", line 91, in verify_one
+    if check_solution(self.net, adv, cs, rhs, input_lower, input_upper):
+  File "<@beartype(helper.misc.check.check_solution) at 0x7f93b7b91fc0>", line 126, in check_solution
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "./verifiers/neuralsat/src/helper/misc/check.py", line 13, in check_solution
+    assert torch.all(data_min <= new_adv) and torch.all(new_adv <= data_max)
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/main.py", line 101, in <module>
+    status = verifier.verify(objectives, timeout=timeout, force_split=args.force_split)
+  File "<@beartype(verifier.verifier.Verifier.verify) at 0x7f93b7aa3370>", line 113, in verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 73, in verify
+    self.status = self._verify(
+  File "<@beartype(verifier.verifier.Verifier._verify) at 0x7f93b7aa35b0>", line 113, in _verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 120, in _verify
+    raise NotImplementedError('Unknown MIP solver error')
+NotImplementedError: Unknown MIP solver error

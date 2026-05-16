@@ -1,0 +1,27 @@
+{
+  "id": "ld18",
+  "construction": "attention.linear_dominance",
+  "seed": 6,
+  "paths": {
+    "onnx": "instances/ld18/model.onnx",
+    "vnnlib": "instances/ld18/spec.vnnlib",
+    "meta": "instances/ld18/meta.json"
+  },
+  "sha256": {
+    "onnx": "c85c0c4a45fcfc467d02e9e7acdded85f3a669dba7f08983f3ff06e5b07294ee",
+    "vnnlib": "b35370aad34cb0c74851633c4158adb4d7977459cec4b1ea2bf8ceed41d0dfc3"
+  },
+  "args": {
+    "seed": 6,
+    "n": 4,
+    "d": 4,
+    "d_v": 4,
+    "num_classes": 10,
+    "gate_scale": 0.8,
+    "noise_scale": 0.3,
+    "epsilon": 0.05,
+    "margin_factor": 2.0,
+    "onnx_path": "benchmarks/ep/instances/ld18/model.onnx",
+    "vnnlib_path": "benchmarks/ep/instances/ld18/spec.vnnlib"
+  }
+}

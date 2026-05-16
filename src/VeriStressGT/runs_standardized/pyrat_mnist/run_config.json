@@ -1,0 +1,22 @@
+{
+  "benchmark": ".//benchmarks/vnncomp_mnist_fc",
+  "manifest_construction": null,
+  "verifier": "pyrat",
+  "conda_env": null,
+  "timeout": 360.0,
+  "jobs": 1,
+  "git_commit": "94cf0f9d55b2e129f9d50d221d4c5a9a8eb07e9e",
+  "verifier_args": {
+    "pyrat_bin": "pyrat",
+    "pyrat_device": "cpu",
+    "pyrat_library": "torch",
+    "pyrat_domains": [
+      "con_z"
+    ],
+    "pyrat_timeout": null,
+    "pyrat_split_relu": true,
+    "pyrat_split": false,
+    "pyrat_split_heuristic": "better",
+    "pyrat_extra": null
+  }
+}

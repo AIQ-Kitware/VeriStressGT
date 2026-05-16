@@ -1,0 +1,2003 @@
+{
+  "name": "vnncomp_mnist_fc",
+  "created_at": "2026-04-16T17:58:12.536819Z",
+  "git_commit": "ac970c9360423840f9f83a294cff55672fda454c",
+  "common": {
+    "onnx_name": "model.onnx",
+    "vnnlib_name": "spec.vnnlib",
+    "meta_name": "meta.json"
+  },
+  "mode": "vnncomp_ingest",
+  "source": {
+    "kind": "vnncomp",
+    "src_dir": "./vnncomp2022_benchmarks/benchmarks/mnist_fc",
+    "instances_csv": "./vnncomp2022_benchmarks/benchmarks/mnist_fc/instances.csv",
+    "instances_csv_sha256": "df84da71cbd256283493bd37d7c0a90e8eadd7ccb67407fb523b696b2622e65f",
+    "num_rows_total": 90,
+    "num_rows_ingested": 90,
+    "max_instances": null,
+    "max_timeout": null
+  },
+  "instances": [
+    {
+      "id": "000001",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000001/model.onnx",
+        "vnnlib": "instances/000001/spec.vnnlib",
+        "meta": "instances/000001/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "a0be32e969b2e897532d393b2947934f2d90be6964458208eca794b5102e083e"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_0_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 1
+      }
+    },
+    {
+      "id": "000002",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000002/model.onnx",
+        "vnnlib": "instances/000002/spec.vnnlib",
+        "meta": "instances/000002/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "4906103ee8ed62bc8edec8674bf1b312f6d1fd1ea2da5c50b2b192f2f5c9cc06"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_1_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 2
+      }
+    },
+    {
+      "id": "000003",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000003/model.onnx",
+        "vnnlib": "instances/000003/spec.vnnlib",
+        "meta": "instances/000003/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "abddeb443d36d3136d82868405700aa9c85bc06abec0d698ab5b226ae945d2ad"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_2_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 3
+      }
+    },
+    {
+      "id": "000004",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000004/model.onnx",
+        "vnnlib": "instances/000004/spec.vnnlib",
+        "meta": "instances/000004/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "18648e43f2d7e1e073ac4ecfeedb30a375cacb750445472ca196f9b2239390db"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_3_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 4
+      }
+    },
+    {
+      "id": "000005",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000005/model.onnx",
+        "vnnlib": "instances/000005/spec.vnnlib",
+        "meta": "instances/000005/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "508b382a110757273bd6ca81eb9bf74b0aa8b5798781c69beb7fb51f9be58a11"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_4_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 5
+      }
+    },
+    {
+      "id": "000006",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000006/model.onnx",
+        "vnnlib": "instances/000006/spec.vnnlib",
+        "meta": "instances/000006/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "7c122ea1bc46ee7ecb9405169c9c806b2b3973cb47fb1af0c9ef88ea869d4dec"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_5_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 6
+      }
+    },
+    {
+      "id": "000007",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000007/model.onnx",
+        "vnnlib": "instances/000007/spec.vnnlib",
+        "meta": "instances/000007/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "ef50a4a008cdb6d6ea4a377b71d9a53c3a8487249301f5fdae09e7d0c6ff49a0"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_6_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 7
+      }
+    },
+    {
+      "id": "000008",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000008/model.onnx",
+        "vnnlib": "instances/000008/spec.vnnlib",
+        "meta": "instances/000008/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "1febf057d69b07196a1aef9e521696e0b9ec075f5ce7e402143061cdd705bd23"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_7_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 8
+      }
+    },
+    {
+      "id": "000009",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000009/model.onnx",
+        "vnnlib": "instances/000009/spec.vnnlib",
+        "meta": "instances/000009/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "587c700b1a26da54c537a3b972d66c2359fcf0374175982d0be6d7d708f73a1a"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_8_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 9
+      }
+    },
+    {
+      "id": "000010",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000010/model.onnx",
+        "vnnlib": "instances/000010/spec.vnnlib",
+        "meta": "instances/000010/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "64ddf6b449b004faee37ed23e0a9a7575ac2a8e3950cbf5b2aa21fee4e13ea21"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_9_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 10
+      }
+    },
+    {
+      "id": "000011",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000011/model.onnx",
+        "vnnlib": "instances/000011/spec.vnnlib",
+        "meta": "instances/000011/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "18296f70402541323bb09fc7ab60014c3a20ddfbff2ecc0cb9b26b47dde23839"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_10_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 11
+      }
+    },
+    {
+      "id": "000012",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000012/model.onnx",
+        "vnnlib": "instances/000012/spec.vnnlib",
+        "meta": "instances/000012/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "63950cbc41cd3d98638d576cbbe40d2e035f29fdec0f7c860f823d923d3a3fe9"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_11_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 12
+      }
+    },
+    {
+      "id": "000013",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000013/model.onnx",
+        "vnnlib": "instances/000013/spec.vnnlib",
+        "meta": "instances/000013/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "ba93f5de1d23f91fa778b5a01b95178a6e45711e6807b9241cad684051de7d6a"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_12_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 13
+      }
+    },
+    {
+      "id": "000014",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000014/model.onnx",
+        "vnnlib": "instances/000014/spec.vnnlib",
+        "meta": "instances/000014/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "b0ea896e58487a3f4b09a51f6df65c3cd680a458234f6c2e66c2295e6d6240d0"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_13_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 14
+      }
+    },
+    {
+      "id": "000015",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000015/model.onnx",
+        "vnnlib": "instances/000015/spec.vnnlib",
+        "meta": "instances/000015/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "6c39bb4f2cb2d3f4ca421ed7ae9acef024feaaf99a1155b1759080a6ccd84345"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_14_0.03.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 15
+      }
+    },
+    {
+      "id": "000016",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000016/model.onnx",
+        "vnnlib": "instances/000016/spec.vnnlib",
+        "meta": "instances/000016/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "416607f816dd9ad8de206c67bcd071586caedfea44caae991936db2fb524541b"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_0_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 16
+      }
+    },
+    {
+      "id": "000017",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000017/model.onnx",
+        "vnnlib": "instances/000017/spec.vnnlib",
+        "meta": "instances/000017/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "077b631a1222f01afb0ae3efee2f47b1be788657cd6fd2fbd4ad8ca24869604d"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_1_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 17
+      }
+    },
+    {
+      "id": "000018",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000018/model.onnx",
+        "vnnlib": "instances/000018/spec.vnnlib",
+        "meta": "instances/000018/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "78e8dd378b42f5e8e7854e2352e89e551501a0d890f06d55cccfdf61f71b3584"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_2_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 18
+      }
+    },
+    {
+      "id": "000019",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000019/model.onnx",
+        "vnnlib": "instances/000019/spec.vnnlib",
+        "meta": "instances/000019/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "a4d470000b6180a8196a3cfc704bfc92ccfcfa9e7e3892a0c7ad21a5f04a2d84"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_3_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 19
+      }
+    },
+    {
+      "id": "000020",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000020/model.onnx",
+        "vnnlib": "instances/000020/spec.vnnlib",
+        "meta": "instances/000020/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "8cac1d8183554eb87653e2ab9f6a92f829725a375f05fa92d2fcde1b3fc2daec"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_4_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 20
+      }
+    },
+    {
+      "id": "000021",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000021/model.onnx",
+        "vnnlib": "instances/000021/spec.vnnlib",
+        "meta": "instances/000021/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "cd07eaf634ef07a4c91c76be3964663dfd349428132467f3922d5c3db61d1dcd"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_5_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 21
+      }
+    },
+    {
+      "id": "000022",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000022/model.onnx",
+        "vnnlib": "instances/000022/spec.vnnlib",
+        "meta": "instances/000022/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "e2c2961f76ccf6b5c1104beb5c57fcfbe5aeeebdee4f88964b912228db0d4306"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_6_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 22
+      }
+    },
+    {
+      "id": "000023",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000023/model.onnx",
+        "vnnlib": "instances/000023/spec.vnnlib",
+        "meta": "instances/000023/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "4e01bd29e2056eb4ebe4800f2879dbf4a22dcdd3028931f6c78cacdf9a866929"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_7_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 23
+      }
+    },
+    {
+      "id": "000024",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000024/model.onnx",
+        "vnnlib": "instances/000024/spec.vnnlib",
+        "meta": "instances/000024/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "5cc7924e16e4ee9e9cdc232ddfc9ceaf15fdd63a0993c7d12ee94de0e3a6ff78"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_8_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 24
+      }
+    },
+    {
+      "id": "000025",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000025/model.onnx",
+        "vnnlib": "instances/000025/spec.vnnlib",
+        "meta": "instances/000025/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "dab448979d2db52a1971986867046346152051a948bd5b67ce2eed04e7f7b927"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_9_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 25
+      }
+    },
+    {
+      "id": "000026",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000026/model.onnx",
+        "vnnlib": "instances/000026/spec.vnnlib",
+        "meta": "instances/000026/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "b8775ca051a21d8e45eae4c0483dab4029dd4f0d2f434bde98bbb0b786f74bb7"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_10_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 26
+      }
+    },
+    {
+      "id": "000027",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000027/model.onnx",
+        "vnnlib": "instances/000027/spec.vnnlib",
+        "meta": "instances/000027/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "a400588eb9fbf3141b2d7af011ad63e530c1be0a1f912b79e860952cacc3656c"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_11_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 27
+      }
+    },
+    {
+      "id": "000028",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000028/model.onnx",
+        "vnnlib": "instances/000028/spec.vnnlib",
+        "meta": "instances/000028/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "8836e60d2e97c64601a5019f3449bca0e0df537c83f47905a0ac8d873a5cf4d4"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_12_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 28
+      }
+    },
+    {
+      "id": "000029",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000029/model.onnx",
+        "vnnlib": "instances/000029/spec.vnnlib",
+        "meta": "instances/000029/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "3e44ec46342a73a2e13b67ab38c4fcf9a23ca9767c08d57cd0eae5d0fbf918b8"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_13_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 29
+      }
+    },
+    {
+      "id": "000030",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000030/model.onnx",
+        "vnnlib": "instances/000030/spec.vnnlib",
+        "meta": "instances/000030/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a5c9730d60bbf1f9b030e731b438436581efd7c00a28ab683c1ec4b6d3449c4",
+        "vnnlib": "cd899cc4a12d2a6cf3d486cbf50a04d6a5e5ec12d3a047e250e1f7745e85e62f"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x2.onnx",
+        "vnnlib_rel": "vnnlib/prop_14_0.05.vnnlib",
+        "timeout_s": 120.0,
+        "source_lineno": 30
+      }
+    },
+    {
+      "id": "000031",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000031/model.onnx",
+        "vnnlib": "instances/000031/spec.vnnlib",
+        "meta": "instances/000031/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "a0be32e969b2e897532d393b2947934f2d90be6964458208eca794b5102e083e"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_0_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 31
+      }
+    },
+    {
+      "id": "000032",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000032/model.onnx",
+        "vnnlib": "instances/000032/spec.vnnlib",
+        "meta": "instances/000032/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "4906103ee8ed62bc8edec8674bf1b312f6d1fd1ea2da5c50b2b192f2f5c9cc06"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_1_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 32
+      }
+    },
+    {
+      "id": "000033",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000033/model.onnx",
+        "vnnlib": "instances/000033/spec.vnnlib",
+        "meta": "instances/000033/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "abddeb443d36d3136d82868405700aa9c85bc06abec0d698ab5b226ae945d2ad"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_2_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 33
+      }
+    },
+    {
+      "id": "000034",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000034/model.onnx",
+        "vnnlib": "instances/000034/spec.vnnlib",
+        "meta": "instances/000034/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "18648e43f2d7e1e073ac4ecfeedb30a375cacb750445472ca196f9b2239390db"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_3_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 34
+      }
+    },
+    {
+      "id": "000035",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000035/model.onnx",
+        "vnnlib": "instances/000035/spec.vnnlib",
+        "meta": "instances/000035/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "508b382a110757273bd6ca81eb9bf74b0aa8b5798781c69beb7fb51f9be58a11"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_4_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 35
+      }
+    },
+    {
+      "id": "000036",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000036/model.onnx",
+        "vnnlib": "instances/000036/spec.vnnlib",
+        "meta": "instances/000036/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "7c122ea1bc46ee7ecb9405169c9c806b2b3973cb47fb1af0c9ef88ea869d4dec"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_5_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 36
+      }
+    },
+    {
+      "id": "000037",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000037/model.onnx",
+        "vnnlib": "instances/000037/spec.vnnlib",
+        "meta": "instances/000037/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "ef50a4a008cdb6d6ea4a377b71d9a53c3a8487249301f5fdae09e7d0c6ff49a0"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_6_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 37
+      }
+    },
+    {
+      "id": "000038",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000038/model.onnx",
+        "vnnlib": "instances/000038/spec.vnnlib",
+        "meta": "instances/000038/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "1febf057d69b07196a1aef9e521696e0b9ec075f5ce7e402143061cdd705bd23"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_7_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 38
+      }
+    },
+    {
+      "id": "000039",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000039/model.onnx",
+        "vnnlib": "instances/000039/spec.vnnlib",
+        "meta": "instances/000039/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "587c700b1a26da54c537a3b972d66c2359fcf0374175982d0be6d7d708f73a1a"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_8_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 39
+      }
+    },
+    {
+      "id": "000040",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000040/model.onnx",
+        "vnnlib": "instances/000040/spec.vnnlib",
+        "meta": "instances/000040/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "64ddf6b449b004faee37ed23e0a9a7575ac2a8e3950cbf5b2aa21fee4e13ea21"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_9_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 40
+      }
+    },
+    {
+      "id": "000041",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000041/model.onnx",
+        "vnnlib": "instances/000041/spec.vnnlib",
+        "meta": "instances/000041/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "18296f70402541323bb09fc7ab60014c3a20ddfbff2ecc0cb9b26b47dde23839"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_10_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 41
+      }
+    },
+    {
+      "id": "000042",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000042/model.onnx",
+        "vnnlib": "instances/000042/spec.vnnlib",
+        "meta": "instances/000042/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "63950cbc41cd3d98638d576cbbe40d2e035f29fdec0f7c860f823d923d3a3fe9"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_11_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 42
+      }
+    },
+    {
+      "id": "000043",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000043/model.onnx",
+        "vnnlib": "instances/000043/spec.vnnlib",
+        "meta": "instances/000043/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "ba93f5de1d23f91fa778b5a01b95178a6e45711e6807b9241cad684051de7d6a"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_12_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 43
+      }
+    },
+    {
+      "id": "000044",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000044/model.onnx",
+        "vnnlib": "instances/000044/spec.vnnlib",
+        "meta": "instances/000044/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "b0ea896e58487a3f4b09a51f6df65c3cd680a458234f6c2e66c2295e6d6240d0"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_13_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 44
+      }
+    },
+    {
+      "id": "000045",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000045/model.onnx",
+        "vnnlib": "instances/000045/spec.vnnlib",
+        "meta": "instances/000045/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "6c39bb4f2cb2d3f4ca421ed7ae9acef024feaaf99a1155b1759080a6ccd84345"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_14_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 45
+      }
+    },
+    {
+      "id": "000046",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000046/model.onnx",
+        "vnnlib": "instances/000046/spec.vnnlib",
+        "meta": "instances/000046/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "416607f816dd9ad8de206c67bcd071586caedfea44caae991936db2fb524541b"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_0_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 46
+      }
+    },
+    {
+      "id": "000047",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000047/model.onnx",
+        "vnnlib": "instances/000047/spec.vnnlib",
+        "meta": "instances/000047/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "077b631a1222f01afb0ae3efee2f47b1be788657cd6fd2fbd4ad8ca24869604d"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_1_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 47
+      }
+    },
+    {
+      "id": "000048",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000048/model.onnx",
+        "vnnlib": "instances/000048/spec.vnnlib",
+        "meta": "instances/000048/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "78e8dd378b42f5e8e7854e2352e89e551501a0d890f06d55cccfdf61f71b3584"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_2_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 48
+      }
+    },
+    {
+      "id": "000049",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000049/model.onnx",
+        "vnnlib": "instances/000049/spec.vnnlib",
+        "meta": "instances/000049/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "a4d470000b6180a8196a3cfc704bfc92ccfcfa9e7e3892a0c7ad21a5f04a2d84"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_3_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 49
+      }
+    },
+    {
+      "id": "000050",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000050/model.onnx",
+        "vnnlib": "instances/000050/spec.vnnlib",
+        "meta": "instances/000050/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "8cac1d8183554eb87653e2ab9f6a92f829725a375f05fa92d2fcde1b3fc2daec"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_4_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 50
+      }
+    },
+    {
+      "id": "000051",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000051/model.onnx",
+        "vnnlib": "instances/000051/spec.vnnlib",
+        "meta": "instances/000051/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "cd07eaf634ef07a4c91c76be3964663dfd349428132467f3922d5c3db61d1dcd"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_5_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 51
+      }
+    },
+    {
+      "id": "000052",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000052/model.onnx",
+        "vnnlib": "instances/000052/spec.vnnlib",
+        "meta": "instances/000052/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "e2c2961f76ccf6b5c1104beb5c57fcfbe5aeeebdee4f88964b912228db0d4306"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_6_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 52
+      }
+    },
+    {
+      "id": "000053",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000053/model.onnx",
+        "vnnlib": "instances/000053/spec.vnnlib",
+        "meta": "instances/000053/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "4e01bd29e2056eb4ebe4800f2879dbf4a22dcdd3028931f6c78cacdf9a866929"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_7_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 53
+      }
+    },
+    {
+      "id": "000054",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000054/model.onnx",
+        "vnnlib": "instances/000054/spec.vnnlib",
+        "meta": "instances/000054/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "5cc7924e16e4ee9e9cdc232ddfc9ceaf15fdd63a0993c7d12ee94de0e3a6ff78"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_8_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 54
+      }
+    },
+    {
+      "id": "000055",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000055/model.onnx",
+        "vnnlib": "instances/000055/spec.vnnlib",
+        "meta": "instances/000055/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "dab448979d2db52a1971986867046346152051a948bd5b67ce2eed04e7f7b927"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_9_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 55
+      }
+    },
+    {
+      "id": "000056",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000056/model.onnx",
+        "vnnlib": "instances/000056/spec.vnnlib",
+        "meta": "instances/000056/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "b8775ca051a21d8e45eae4c0483dab4029dd4f0d2f434bde98bbb0b786f74bb7"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_10_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 56
+      }
+    },
+    {
+      "id": "000057",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000057/model.onnx",
+        "vnnlib": "instances/000057/spec.vnnlib",
+        "meta": "instances/000057/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "a400588eb9fbf3141b2d7af011ad63e530c1be0a1f912b79e860952cacc3656c"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_11_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 57
+      }
+    },
+    {
+      "id": "000058",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000058/model.onnx",
+        "vnnlib": "instances/000058/spec.vnnlib",
+        "meta": "instances/000058/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "8836e60d2e97c64601a5019f3449bca0e0df537c83f47905a0ac8d873a5cf4d4"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_12_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 58
+      }
+    },
+    {
+      "id": "000059",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000059/model.onnx",
+        "vnnlib": "instances/000059/spec.vnnlib",
+        "meta": "instances/000059/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "3e44ec46342a73a2e13b67ab38c4fcf9a23ca9767c08d57cd0eae5d0fbf918b8"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_13_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 59
+      }
+    },
+    {
+      "id": "000060",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000060/model.onnx",
+        "vnnlib": "instances/000060/spec.vnnlib",
+        "meta": "instances/000060/meta.json"
+      },
+      "sha256": {
+        "onnx": "fb53b4745b5882be61325ec24908f9fb036010cd79c99c20bb0b75e3b359acae",
+        "vnnlib": "cd899cc4a12d2a6cf3d486cbf50a04d6a5e5ec12d3a047e250e1f7745e85e62f"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x4.onnx",
+        "vnnlib_rel": "vnnlib/prop_14_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 60
+      }
+    },
+    {
+      "id": "000061",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000061/model.onnx",
+        "vnnlib": "instances/000061/spec.vnnlib",
+        "meta": "instances/000061/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "a0be32e969b2e897532d393b2947934f2d90be6964458208eca794b5102e083e"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_0_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 61
+      }
+    },
+    {
+      "id": "000062",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000062/model.onnx",
+        "vnnlib": "instances/000062/spec.vnnlib",
+        "meta": "instances/000062/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "4906103ee8ed62bc8edec8674bf1b312f6d1fd1ea2da5c50b2b192f2f5c9cc06"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_1_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 62
+      }
+    },
+    {
+      "id": "000063",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000063/model.onnx",
+        "vnnlib": "instances/000063/spec.vnnlib",
+        "meta": "instances/000063/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "abddeb443d36d3136d82868405700aa9c85bc06abec0d698ab5b226ae945d2ad"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_2_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 63
+      }
+    },
+    {
+      "id": "000064",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000064/model.onnx",
+        "vnnlib": "instances/000064/spec.vnnlib",
+        "meta": "instances/000064/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "18648e43f2d7e1e073ac4ecfeedb30a375cacb750445472ca196f9b2239390db"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_3_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 64
+      }
+    },
+    {
+      "id": "000065",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000065/model.onnx",
+        "vnnlib": "instances/000065/spec.vnnlib",
+        "meta": "instances/000065/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "508b382a110757273bd6ca81eb9bf74b0aa8b5798781c69beb7fb51f9be58a11"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_4_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 65
+      }
+    },
+    {
+      "id": "000066",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000066/model.onnx",
+        "vnnlib": "instances/000066/spec.vnnlib",
+        "meta": "instances/000066/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "7c122ea1bc46ee7ecb9405169c9c806b2b3973cb47fb1af0c9ef88ea869d4dec"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_5_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 66
+      }
+    },
+    {
+      "id": "000067",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000067/model.onnx",
+        "vnnlib": "instances/000067/spec.vnnlib",
+        "meta": "instances/000067/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "ef50a4a008cdb6d6ea4a377b71d9a53c3a8487249301f5fdae09e7d0c6ff49a0"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_6_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 67
+      }
+    },
+    {
+      "id": "000068",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000068/model.onnx",
+        "vnnlib": "instances/000068/spec.vnnlib",
+        "meta": "instances/000068/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "1febf057d69b07196a1aef9e521696e0b9ec075f5ce7e402143061cdd705bd23"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_7_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 68
+      }
+    },
+    {
+      "id": "000069",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000069/model.onnx",
+        "vnnlib": "instances/000069/spec.vnnlib",
+        "meta": "instances/000069/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "587c700b1a26da54c537a3b972d66c2359fcf0374175982d0be6d7d708f73a1a"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_8_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 69
+      }
+    },
+    {
+      "id": "000070",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000070/model.onnx",
+        "vnnlib": "instances/000070/spec.vnnlib",
+        "meta": "instances/000070/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "64ddf6b449b004faee37ed23e0a9a7575ac2a8e3950cbf5b2aa21fee4e13ea21"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_9_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 70
+      }
+    },
+    {
+      "id": "000071",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000071/model.onnx",
+        "vnnlib": "instances/000071/spec.vnnlib",
+        "meta": "instances/000071/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "18296f70402541323bb09fc7ab60014c3a20ddfbff2ecc0cb9b26b47dde23839"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_10_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 71
+      }
+    },
+    {
+      "id": "000072",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000072/model.onnx",
+        "vnnlib": "instances/000072/spec.vnnlib",
+        "meta": "instances/000072/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "63950cbc41cd3d98638d576cbbe40d2e035f29fdec0f7c860f823d923d3a3fe9"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_11_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 72
+      }
+    },
+    {
+      "id": "000073",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000073/model.onnx",
+        "vnnlib": "instances/000073/spec.vnnlib",
+        "meta": "instances/000073/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "ba93f5de1d23f91fa778b5a01b95178a6e45711e6807b9241cad684051de7d6a"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_12_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 73
+      }
+    },
+    {
+      "id": "000074",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000074/model.onnx",
+        "vnnlib": "instances/000074/spec.vnnlib",
+        "meta": "instances/000074/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "b0ea896e58487a3f4b09a51f6df65c3cd680a458234f6c2e66c2295e6d6240d0"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_13_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 74
+      }
+    },
+    {
+      "id": "000075",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000075/model.onnx",
+        "vnnlib": "instances/000075/spec.vnnlib",
+        "meta": "instances/000075/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "6c39bb4f2cb2d3f4ca421ed7ae9acef024feaaf99a1155b1759080a6ccd84345"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_14_0.03.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 75
+      }
+    },
+    {
+      "id": "000076",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000076/model.onnx",
+        "vnnlib": "instances/000076/spec.vnnlib",
+        "meta": "instances/000076/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "416607f816dd9ad8de206c67bcd071586caedfea44caae991936db2fb524541b"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_0_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 76
+      }
+    },
+    {
+      "id": "000077",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000077/model.onnx",
+        "vnnlib": "instances/000077/spec.vnnlib",
+        "meta": "instances/000077/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "077b631a1222f01afb0ae3efee2f47b1be788657cd6fd2fbd4ad8ca24869604d"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_1_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 77
+      }
+    },
+    {
+      "id": "000078",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000078/model.onnx",
+        "vnnlib": "instances/000078/spec.vnnlib",
+        "meta": "instances/000078/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "78e8dd378b42f5e8e7854e2352e89e551501a0d890f06d55cccfdf61f71b3584"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_2_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 78
+      }
+    },
+    {
+      "id": "000079",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000079/model.onnx",
+        "vnnlib": "instances/000079/spec.vnnlib",
+        "meta": "instances/000079/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "a4d470000b6180a8196a3cfc704bfc92ccfcfa9e7e3892a0c7ad21a5f04a2d84"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_3_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 79
+      }
+    },
+    {
+      "id": "000080",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000080/model.onnx",
+        "vnnlib": "instances/000080/spec.vnnlib",
+        "meta": "instances/000080/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "8cac1d8183554eb87653e2ab9f6a92f829725a375f05fa92d2fcde1b3fc2daec"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_4_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 80
+      }
+    },
+    {
+      "id": "000081",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000081/model.onnx",
+        "vnnlib": "instances/000081/spec.vnnlib",
+        "meta": "instances/000081/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "cd07eaf634ef07a4c91c76be3964663dfd349428132467f3922d5c3db61d1dcd"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_5_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 81
+      }
+    },
+    {
+      "id": "000082",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000082/model.onnx",
+        "vnnlib": "instances/000082/spec.vnnlib",
+        "meta": "instances/000082/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "e2c2961f76ccf6b5c1104beb5c57fcfbe5aeeebdee4f88964b912228db0d4306"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_6_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 82
+      }
+    },
+    {
+      "id": "000083",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000083/model.onnx",
+        "vnnlib": "instances/000083/spec.vnnlib",
+        "meta": "instances/000083/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "4e01bd29e2056eb4ebe4800f2879dbf4a22dcdd3028931f6c78cacdf9a866929"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_7_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 83
+      }
+    },
+    {
+      "id": "000084",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000084/model.onnx",
+        "vnnlib": "instances/000084/spec.vnnlib",
+        "meta": "instances/000084/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "5cc7924e16e4ee9e9cdc232ddfc9ceaf15fdd63a0993c7d12ee94de0e3a6ff78"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_8_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 84
+      }
+    },
+    {
+      "id": "000085",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000085/model.onnx",
+        "vnnlib": "instances/000085/spec.vnnlib",
+        "meta": "instances/000085/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "dab448979d2db52a1971986867046346152051a948bd5b67ce2eed04e7f7b927"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_9_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 85
+      }
+    },
+    {
+      "id": "000086",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000086/model.onnx",
+        "vnnlib": "instances/000086/spec.vnnlib",
+        "meta": "instances/000086/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "b8775ca051a21d8e45eae4c0483dab4029dd4f0d2f434bde98bbb0b786f74bb7"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_10_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 86
+      }
+    },
+    {
+      "id": "000087",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000087/model.onnx",
+        "vnnlib": "instances/000087/spec.vnnlib",
+        "meta": "instances/000087/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "a400588eb9fbf3141b2d7af011ad63e530c1be0a1f912b79e860952cacc3656c"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_11_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 87
+      }
+    },
+    {
+      "id": "000088",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000088/model.onnx",
+        "vnnlib": "instances/000088/spec.vnnlib",
+        "meta": "instances/000088/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "8836e60d2e97c64601a5019f3449bca0e0df537c83f47905a0ac8d873a5cf4d4"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_12_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 88
+      }
+    },
+    {
+      "id": "000089",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000089/model.onnx",
+        "vnnlib": "instances/000089/spec.vnnlib",
+        "meta": "instances/000089/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "3e44ec46342a73a2e13b67ab38c4fcf9a23ca9767c08d57cd0eae5d0fbf918b8"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_13_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 89
+      }
+    },
+    {
+      "id": "000090",
+      "construction": "vnncomp.ingested",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/000090/model.onnx",
+        "vnnlib": "instances/000090/spec.vnnlib",
+        "meta": "instances/000090/meta.json"
+      },
+      "sha256": {
+        "onnx": "295c175d7b477b2f05dd4787bcabacf8c10d02d7d4b31f8682ea0d8844c6b0a6",
+        "vnnlib": "cd899cc4a12d2a6cf3d486cbf50a04d6a5e5ec12d3a047e250e1f7745e85e62f"
+      },
+      "is_robust": null,
+      "ground_truth_source": "vnncomp_unknown",
+      "vnncomp": {
+        "onnx_rel": "onnx/mnist-net_256x6.onnx",
+        "vnnlib_rel": "vnnlib/prop_14_0.05.vnnlib",
+        "timeout_s": 300.0,
+        "source_lineno": 90
+      }
+    }
+  ]
+}

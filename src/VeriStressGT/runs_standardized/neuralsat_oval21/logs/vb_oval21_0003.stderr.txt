@@ -1,0 +1,56 @@
+/miniconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/miniconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/miniconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/miniconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/miniconda3/envs/VeriStressGT/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/miniconda3/envs/VeriStressGT/lib/python3.10/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "./verifiers/neuralsat/src/abstractor/auto_LiRPA/stabilization.py", line 117, in _mip_solver_worker
+    model = MULTIPROCESS_MODEL.copy()
+AttributeError: 'NoneType' object has no attribute 'copy'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 178, in _verify_with_restart
+    status = self._verify_one(
+  File "<@beartype(verifier.verifier.Verifier._verify_one) at 0x10f27a560>", line 94, in _verify_one
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 303, in _verify_one
+    self._parallel_dpll()
+  File "<@beartype(verifier.verifier.Verifier._parallel_dpll) at 0x10f27aa70>", line 33, in _parallel_dpll
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 413, in _parallel_dpll
+    self.milp_tightener(
+  File "./verifiers/neuralsat/src/tightener/cpu_tightener.py", line 104, in __call__
+    unified_lower_bounds_refined, unified_upper_bounds_refined, num_neuron_refined, unstable_to_stable_neurons = self.abstractor.net.stabilize(
+  File "./verifiers/neuralsat/src/abstractor/auto_LiRPA/stabilization.py", line 166, in stabilize
+    solver_result = pool.map(_mip_solver_worker, candidates, chunksize=1)
+  File "/miniconda3/envs/VeriStressGT/lib/python3.10/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/miniconda3/envs/VeriStressGT/lib/python3.10/multiprocessing/pool.py", line 774, in get
+    raise self._value
+AttributeError: 'NoneType' object has no attribute 'copy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/main.py", line 101, in <module>
+    status = verifier.verify(objectives, timeout=timeout, force_split=args.force_split)
+  File "<@beartype(verifier.verifier.Verifier.verify) at 0x10f279ea0>", line 113, in verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 73, in verify
+    self.status = self._verify(
+  File "<@beartype(verifier.verifier.Verifier._verify) at 0x10f27a0e0>", line 113, in _verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 124, in _verify
+    status = self._verify_with_restart(
+  File "<@beartype(verifier.verifier.Verifier._verify_with_restart) at 0x10f27a320>", line 132, in _verify_with_restart
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 205, in _verify_with_restart
+    raise NotImplementedError('Unknown error')
+NotImplementedError: Unknown error

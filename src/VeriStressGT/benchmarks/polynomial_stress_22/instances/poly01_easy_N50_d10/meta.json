@@ -1,0 +1,50 @@
+{
+  "id": "poly01_easy_N50_d10",
+  "construction": "polynomial.algebraic_boundary",
+  "seed": 101,
+  "paths": {
+    "onnx": "instances/poly01_easy_N50_d10/model.onnx",
+    "vnnlib": "instances/poly01_easy_N50_d10/spec.vnnlib",
+    "meta": "instances/poly01_easy_N50_d10/meta.json"
+  },
+  "sha256": {
+    "onnx": "6bdba22bb5de940acc9645cc915a5dff5006b7b2dc6c1ba15f8078df40976fea",
+    "vnnlib": "b7f798ec55862377edacbc6ab2b11c34b2e4731f8237592bfcce1bc85a5c4fbf"
+  },
+  "args": {
+    "input_dim": 50,
+    "hidden_dim": 100,
+    "degree": 10,
+    "num_outputs": 2,
+    "init_mode": "fanin",
+    "eps_normal": 0.02,
+    "delta_prime": 0.005,
+    "num_lines": 1400,
+    "center_scale": 2.0,
+    "line_t_min": -10.0,
+    "line_t_max": 10.0,
+    "line_grid_points": 240,
+    "boundary_tol": 1e-06,
+    "boundary_rel_tol": 1e-10,
+    "unique_tol": 0.0001,
+    "max_candidates": 5,
+    "candidate_margin_tol": 1e-08,
+    "grad_tol": 1e-12,
+    "nbc_num_restarts": 50,
+    "nbc_max_iter": 500,
+    "nbc_boundary_tol": 1e-10,
+    "nbc_ftol": 1e-15,
+    "nbc_gtol": 1e-10,
+    "weight_scale": 1.0,
+    "bias_scale": 1.0,
+    "output_weight_scale": 1.0,
+    "output_bias_scale": 1.0,
+    "bias_base_scale": 0.1,
+    "output_bias_base_scale": 0.1,
+    "opset": 13,
+    "quiet": true,
+    "seed": 101,
+    "onnx_path": "benchmarks/polynomial_stress_22/instances/poly01_easy_N50_d10/model.onnx",
+    "vnnlib_path": "benchmarks/polynomial_stress_22/instances/poly01_easy_N50_d10/spec.vnnlib"
+  }
+}

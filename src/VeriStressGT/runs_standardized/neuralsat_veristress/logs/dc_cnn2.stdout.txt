@@ -1,0 +1,84 @@
+Restricted license - for non-production use only - expires 2027-11-29
+
+ [!] GlobalSettings:
+	- use_restart                             : True
+	- use_mip_tightening                      : True
+	- use_attack                              : True
+	- attack_interval                         : 10
+	- use_mip_verify                          : True
+	- input_splitting_threshold               : 0.5
+	- hidden_splitting_threshold              : 0.01
+	- safety_num_input_perturbed              : 200
+	- skip_preprocess                         : False
+	- use_save_reasoning_step                 : False
+	- max_iterations                          : 1000000000.0
+	- skip_initial_worst_bound                : -1000000.0
+	- max_domains                             : 1000000000.0
+	- use_decompose                           : False
+	- restart_current_hidden_branches         : 2000
+	- restart_visited_hidden_branches         : 20000
+	- restart_current_input_branches          : 20000
+	- restart_visited_input_branches          : 200000
+	- restart_max_runtime                     : 60.0
+	- restart_max_runtime_percentage          : 0.4
+	- mip_tightening_patience                 : 10
+	- mip_tightening_timeout_per_neuron       : 15.0
+	- mip_tightening_topk                     : 64
+	- use_gpu_tightening                      : False
+	- gpu_tightening_current_hidden_branches  : 1000
+	- gpu_tightening_visited_hidden_branches  : 5000
+	- gpu_tightening_timeout                  : 10.0
+	- gpu_tightening_patience                 : 10
+	- gpu_tightening_topk                     : 500
+	- use_mip_attack                          : False
+	- mip_verify_threshold                    : 2
+	- share_alphas                            : False
+	- backward_batch_size                     : inf
+	- forward_max_dim                         : 10000
+	- forward_dynamic                         : False
+	- use_decompose_incomplete                : False
+	- init_abstraction_method                 : crown-optimized
+	- subverifier_decision_method             : smart
+	- verify_candidate_batch                  : 3
+	- verify_last_timeout                     : 200.0
+	- verify_interm_timeout                   : 20.0
+	- sequential_batch                        : 100
+	- use_sequential_abstract_forward         : False
+	- verify_extra_opts                       : {'sparse_intermediate_bounds': True}
+	- verify_splitting_strategy               : hidden
+	- use_extra_substitution                  : False
+	- verify_max_iteration                    : 4
+	- verify_candidate_num                    : 128
+	- verify_interpolate_factor               : 0.5
+
+ConvertModel(
+  (Constant_/Constant_output_0): Constant(constant=tensor([-1,  1,  8,  8]))
+  (Reshape_/Reshape_output_0): Reshape(shape=None)
+  (Conv_/core/input_proj/Conv_output_0): Conv2d(1, 16, kernel_size=(1, 1), stride=(1, 1))
+  (Relu_/core/Relu_output_0): ReLU()
+  (Conv_/core/convs.0/Conv_output_0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (Relu_/core/relus.0/Relu_output_0): ReLU()
+  (Conv_/core/convs.1/Conv_output_0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (Relu_/core/relus.1/Relu_output_0): ReLU()
+  (Conv_/core/convs.2/Conv_output_0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (Relu_/core/relus.2/Relu_output_0): ReLU()
+  (Conv_/core/convs.3/Conv_output_0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (Relu_/core/relus.3/Relu_output_0): ReLU()
+  (Flatten_/core/flatten/Flatten_output_0): Flatten(start_dim=1, end_dim=-1)
+  (Gemm_output): Linear(in_features=1024, out_features=10, bias=True)
+)
+INFO     11:03:20     [!] Input shape: (1, 64)
+INFO     11:03:20     [!] Output shape: (1, 10)
+INFO     11:03:20     [!] VNNLIB: 64 inputs, 10 outputs
+INFO     11:04:02     [Failed] RandomAttack(seed=245, device=cpu)
+INFO     11:04:02     [!] eps=0.040000, perturbed=64
+INFO     11:04:02     [_preprocess] _init_abstractor
+DEBUG    11:04:04     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+DEBUG    11:04:04     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     11:04:51     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+INFO     11:05:34     Initial bounds (first 10): tensor([0.4720, 0.4720, 0.4720, 0.4720, 0.4720, 0.4720, 0.4720, 0.4720, 0.4720])
+INFO     11:05:34     Remain 0 objectives
+INFO     11:05:34     [!] Iterations: 0
+INFO     11:05:34     [!] Result: unsat
+INFO     11:05:34     [!] Runtime: 136.8661
+unsat,136.8661

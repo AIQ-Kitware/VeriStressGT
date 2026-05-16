@@ -1,0 +1,1 @@
+Network: ./benchmarks/polynomial_stress_22/instances/poly19_delta5e4/model.onnx

@@ -1,0 +1,1 @@
+Network: ./benchmarks/sweep_all/instances/fp16/model.onnx

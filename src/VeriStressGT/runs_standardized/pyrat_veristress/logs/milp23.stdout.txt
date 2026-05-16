@@ -1,0 +1,45 @@
+Running analysis with 1 processes, domains = ['con_z'], scorer = better
+
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 2, Remaining: 3
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 2, Remaining: 3
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 3, Remaining: 4
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 4, Remaining: 5
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 5, Remaining: 4
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 6, Remaining: 5
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 6, Remaining: 5
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 7, Remaining: 6
+Safe_volume: 50.0000% |███████████████               | Time: 00:00 s, Done: 8, Remaining: 5
+Safe_volume: 75.0000% |██████████████████████▌       | Time: 00:00 s, Done: 9, Remaining: 4
+Safe_volume: 81.2500% |████████████████████████▍     | Time: 00:00 s, Done: 10, Remaining: 3
+Safe_volume: 81.2500% |████████████████████████▍     | Time: 00:00 s, Done: 10, Remaining: 3
+Safe_volume: 81.2500% |████████████████████████▍     | Time: 00:00 s, Done: 11, Remaining: 4
+Safe_volume: 84.3750% |█████████████████████████▎    | Time: 00:00 s, Done: 12, Remaining: 3
+Safe_volume: 87.5000% |██████████████████████████▎   | Time: 00:00 s, Done: 13, Remaining: 2
+Safe_volume: 93.7500% |████████████████████████████▏ | Time: 00:00 s, Done: 14, Remaining: 1
+Safe_volume: 93.7500% |████████████████████████████▏ | Time: 00:00 s, Done: 15, Remaining: 2
+Safe_volume: 93.7500% |████████████████████████████▏ | Time: 00:00 s, Done: 16, Remaining: 3
+Safe_volume: 96.8750% |█████████████████████████████ | Time: 00:00 s, Done: 17, Remaining: 2
+Safe_volume: 98.4375% |█████████████████████████████▌| Time: 00:00 s, Done: 18, Remaining: 1
+Safe_volume: 98.4375% |█████████████████████████████▌| Time: 00:00 s, Done: 19, Remaining: 2
+Safe_volume: 98.4375% |█████████████████████████████▌| Time: 00:00 s, Done: 20, Remaining: 3
+Safe_volume: 99.2188% |█████████████████████████████▊| Time: 00:00 s, Done: 21, Remaining: 2
+Safe_volume: 99.2188% |█████████████████████████████▊| Time: 00:00 s, Done: 22, Remaining: 3
+Safe_volume: 99.6094% |█████████████████████████████▉| Time: 00:00 s, Done: 23, Remaining: 2
+Safe_volume: 99.8047% |█████████████████████████████▉| Time: 00:00 s, Done: 24, Remaining: 1
+Safe_volume: 99.8047% |█████████████████████████████▉| Time: 00:00 s, Done: 25, Remaining: 2
+Safe_volume: 99.8047% |█████████████████████████████▉| Time: 00:00 s, Done: 26, Remaining: 3
+Safe_volume: 99.8047% |█████████████████████████████▉| Time: 00:00 s, Done: 27, Remaining: 4
+Safe_volume: 99.8047% |█████████████████████████████▉| Time: 00:00 s, Done: 28, Remaining: 5
+Safe_volume: 99.8535% |█████████████████████████████▉| Time: 00:00 s, Done: 29, Remaining: 4
+Safe_volume: 99.8535% |█████████████████████████████▉| Time: 00:01 s, Done: 30, Remaining: 5
+Safe_volume: 99.8535% |█████████████████████████████▉| Time: 00:01 s, Done: 31, Remaining: 6
+Safe_volume: 99.8657% |█████████████████████████████▉| Time: 00:01 s, Done: 32, Remaining: 5
+Safe_volume: 99.8779% |█████████████████████████████▉| Time: 00:01 s, Done: 33, Remaining: 4
+Safe_volume: 99.8901% |█████████████████████████████▉| Time: 00:01 s, Done: 34, Remaining: 3
+Safe_volume: 99.9023% |█████████████████████████████▉| Time: 00:01 s, Done: 35, Remaining: 2
+Safe_volume: 99.9512% |█████████████████████████████▉| Time: 00:01 s, Done: 36, Remaining: 1
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:01 s, Done: 37, Remaining: 0
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:01 s, Done: 37, Remaining: 0
+Result = True, Time = 1.24 s, Safe space = 100.00 %, number of analysis = 37

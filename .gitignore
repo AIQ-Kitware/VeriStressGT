@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.swp
+.venv/
+.env
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Artifacts
+*.onnx
+*.pt
+*.npy
+*.npz
+
+# Keep toy example assets tracked
+!examples/toy_weights.pt
+!examples/toy_instance.npz
+!examples/toy_spec.vnnlib

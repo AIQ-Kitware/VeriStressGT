@@ -1,0 +1,11 @@
+{
+  "total": 90,
+  "by_status": {
+    "ERROR": 2,
+    "SAT": 2,
+    "TIMEOUT": 36,
+    "UNKNOWN": 3,
+    "UNSAT": 47
+  },
+  "avg_wall_time_s": 152.99515456623502
+}

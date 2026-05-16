@@ -1,0 +1,40 @@
+Running single-threaded
+(0.9 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+(1.1 sec) Q: 0, Sets: 0/14  (0.0%) ETA: - (expected 1 stars)   
+(1.2 sec) Q: 0, Sets: 2/17  (0.024%) ETA: 1.335 hr (expected 8192 stars)   
+(1.3 sec) Q: 0, Sets: 10/23  (0.049%) ETA: 45.6 min (expected 20480 stars)   
+(1.4 sec) Q: 0, Sets: 10/27  (0.049%) ETA: 49.43 min (expected 20480 stars)   
+(1.6 sec) Q: 0, Sets: 10/30  (0.049%) ETA: 53.45 min (expected 20480 stars)   
+(1.7 sec) Q: 0, Sets: 22/35  (0.085%) ETA: 32.62 min (expected 25746 stars)   
+(1.8 sec) Q: 0, Sets: 22/39  (0.085%) ETA: 35.18 min (expected 25746 stars)   
+(1.9 sec) Q: 0, Sets: 22/41  (0.085%) ETA: 37.72 min (expected 25746 stars)   
+(2.1 sec) Q: 0, Sets: 22/45  (0.085%) ETA: 40.37 min (expected 25746 stars)   
+(2.2 sec) Q: 0, Sets: 22/47  (0.085%) ETA: 43.12 min (expected 25746 stars)   
+(2.3 sec) Q: 0, Sets: 22/51  (0.085%) ETA: 45.63 min (expected 25746 stars)   
+(2.5 sec) Q: 0, Sets: 22/53  (0.085%) ETA: 48.26 min (expected 25746 stars)   
+(2.6 sec) Q: 0, Sets: 35/56  (0.085%) ETA: 50.24 min (expected 40957 stars)   
+(2.7 sec) Q: 0, Sets: 45/59  (0.092%) ETA: 49.63 min (expected 49152 stars)   
+(2.8 sec) Q: 0, Sets: 45/61  (0.092%) ETA: 51.58 min (expected 49152 stars)   
+(2.9 sec) Q: 0, Sets: 45/63  (0.092%) ETA: 53.61 min (expected 49152 stars)   
+(3.1 sec) Q: 0, Sets: 45/65  (0.092%) ETA: 55.69 min (expected 49152 stars)   
+(3.2 sec) Q: 0, Sets: 45/67  (0.092%) ETA: 57.7 min (expected 49152 stars)   
+(3.3 sec) Q: 0, Sets: 45/69  (0.092%) ETA: 59.66 min (expected 49152 stars)   
+(3.4 sec) Q: 0, Sets: 45/71  (0.092%) ETA: 1.027 hr (expected 49152 stars)   
+(3.5 sec) Q: 0, Sets: 45/72  (0.092%) ETA: 1.058 hr (expected 49152 stars)   
+(3.6 sec) Q: 0, Sets: 45/76  (0.092%) ETA: 1.102 hr (expected 49152 stars)   
+(3.8 sec) Q: 0, Sets: 45/78  (0.092%) ETA: 1.143 hr (expected 49152 stars)   
+(3.9 sec) Q: 0, Sets: 45/82  (0.092%) ETA: 1.173 hr (expected 49152 stars)   
+(4.0 sec) Q: 0, Sets: 72/87  (0.098%) ETA: 1.133 hr (expected 73728 stars)   
+(4.1 sec) Q: 0, Sets: 73/89  (0.101%) ETA: 1.132 hr (expected 72487 stars)   
+(4.2 sec) Q: 0, Sets: 73/94  (0.101%) ETA: 1.164 hr (expected 72487 stars)   
+(4.3 sec) Q: 0, Sets: 73/97  (0.101%) ETA: 1.192 hr (expected 72487 stars)   
+
+
+Total Stars: 97 (0 exact, 97 approx)
+Runtime: 4.3 sec
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is SAFE

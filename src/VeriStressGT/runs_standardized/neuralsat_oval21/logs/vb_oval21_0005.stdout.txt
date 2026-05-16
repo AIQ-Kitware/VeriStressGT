@@ -1,0 +1,109 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2027-01-29
+
+ [!] GlobalSettings:
+	- use_restart                             : True
+	- use_mip_tightening                      : True
+	- use_attack                              : True
+	- attack_interval                         : 10
+	- use_mip_verify                          : True
+	- input_splitting_threshold               : 0.5
+	- hidden_splitting_threshold              : 0.01
+	- safety_num_input_perturbed              : 200
+	- skip_preprocess                         : False
+	- use_save_reasoning_step                 : False
+	- max_iterations                          : 1000000000.0
+	- skip_initial_worst_bound                : -1000000.0
+	- max_domains                             : 1000000000.0
+	- use_decompose                           : False
+	- restart_current_hidden_branches         : 2000
+	- restart_visited_hidden_branches         : 20000
+	- restart_current_input_branches          : 20000
+	- restart_visited_input_branches          : 200000
+	- restart_max_runtime                     : 60.0
+	- restart_max_runtime_percentage          : 0.4
+	- mip_tightening_patience                 : 10
+	- mip_tightening_timeout_per_neuron       : 15.0
+	- mip_tightening_topk                     : 64
+	- use_gpu_tightening                      : False
+	- gpu_tightening_current_hidden_branches  : 1000
+	- gpu_tightening_visited_hidden_branches  : 5000
+	- gpu_tightening_timeout                  : 10.0
+	- gpu_tightening_patience                 : 10
+	- gpu_tightening_topk                     : 500
+	- use_mip_attack                          : False
+	- mip_verify_threshold                    : 2
+	- share_alphas                            : False
+	- backward_batch_size                     : inf
+	- forward_max_dim                         : 10000
+	- forward_dynamic                         : False
+	- use_decompose_incomplete                : False
+	- init_abstraction_method                 : crown-optimized
+	- subverifier_decision_method             : smart
+	- verify_candidate_batch                  : 3
+	- verify_last_timeout                     : 200.0
+	- verify_interm_timeout                   : 20.0
+	- sequential_batch                        : 100
+	- use_sequential_abstract_forward         : False
+	- verify_extra_opts                       : {'sparse_intermediate_bounds': True}
+	- verify_splitting_strategy               : hidden
+	- use_extra_substitution                  : False
+	- verify_max_iteration                    : 4
+	- verify_candidate_num                    : 128
+	- verify_interpolate_factor               : 0.5
+
+ConvertModel(
+  (Conv_9): Conv2d(3, 8, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (Relu_10): ReLU()
+  (Conv_11): Conv2d(8, 16, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (Relu_12): ReLU()
+  (Flatten_13): Flatten(start_dim=1, end_dim=-1)
+  (Gemm_14): Linear(in_features=1024, out_features=100, bias=True)
+  (Relu_15): ReLU()
+  (Gemm_16): Linear(in_features=100, out_features=10, bias=True)
+)
+INFO     13:21:50     [!] Input shape: (1, 3, 32, 32)
+INFO     13:21:50     [!] Output shape: (1, 10)
+INFO     13:21:50     [!] VNNLIB: 3072 inputs, 10 outputs
+INFO     13:21:51     [Failed] RandomAttack(seed=26, device=cpu)
+Attacking PGD F32 iterations=100000 restarts=20 timeout=19.947782039642334 cs.shape=torch.Size([9, 1, 10]) rhs.shape=torch.Size([9, 1])
+INFO     13:22:11     [Failed] PGDAttack(seed=765, device=cpu)
+INFO     13:22:11     [!] eps=0.103413, perturbed=3072
+INFO     13:22:11     [_preprocess] _init_abstractor
+DEBUG    13:22:11     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+DEBUG    13:22:11     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     13:22:11     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+INFO     13:22:11     Initial bounds (first 10): tensor([-0.2267,  2.4342,  0.9712,  2.1779,  1.0648,  2.5543,  2.4485,  2.5402,
+         2.5566])
+INFO     13:22:11     Remain 1 objectives
+[!] Found unsupported layer: <class 'torch.nn.modules.conv.Conv2d'>
+INFO     13:22:11     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     13:22:11     [_setup_restart] _init_abstractor
+DEBUG    13:22:11     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+DEBUG    13:22:11     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     13:22:11     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+INFO     13:22:11     Try batch size 1000
+INFO     13:22:11     Initial bounds (first 10): tensor([-0.2267])
+INFO     13:22:14     Initial optimized bounds (first 10): tensor([-0.1552])
+INFO     13:22:14     [Hidden splitting]     Iteration: 1          Remaining: 1          Visited: 2          Bound: -0.145873       Time elapsed (s): 23.53      Iteration elapsed (s): 0.14       CPU Tightening patience: 0/10        Unstable neurons: 297       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:14     [Hidden splitting]     Iteration: 2          Remaining: 2          Visited: 3          Bound: -0.107916       Time elapsed (s): 23.62      Iteration elapsed (s): 0.10       CPU Tightening patience: 0/10        Unstable neurons: 296       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:14     [Hidden splitting]     Iteration: 3          Remaining: 4          Visited: 5          Bound: -0.057210       Time elapsed (s): 23.73      Iteration elapsed (s): 0.11       CPU Tightening patience: 0/10        Unstable neurons: 295       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:14     [Hidden splitting]     Iteration: 4          Remaining: 6          Visited: 9          Bound: -0.044134       Time elapsed (s): 23.86      Iteration elapsed (s): 0.13       CPU Tightening patience: 0/10        Unstable neurons: 294       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:15     [Hidden splitting]     Iteration: 5          Remaining: 8          Visited: 15         Bound: -0.041040       Time elapsed (s): 24.16      Iteration elapsed (s): 0.30       CPU Tightening patience: 0/10        Unstable neurons: 293       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:15     [Hidden splitting]     Iteration: 6          Remaining: 11         Visited: 23         Bound: -0.029047       Time elapsed (s): 24.33      Iteration elapsed (s): 0.18       CPU Tightening patience: 0/10        Unstable neurons: 292       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:15     [Hidden splitting]     Iteration: 7          Remaining: 11         Visited: 34         Bound: -0.018439       Time elapsed (s): 24.54      Iteration elapsed (s): 0.21       CPU Tightening patience: 0/10        Unstable neurons: 291       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:15     [Hidden splitting]     Iteration: 8          Remaining: 10         Visited: 45         Bound: -0.017517       Time elapsed (s): 24.76      Iteration elapsed (s): 0.22       CPU Tightening patience: 0/10        Unstable neurons: 290       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:16     [Hidden splitting]     Iteration: 9          Remaining: 8          Visited: 55         Bound: -0.016282       Time elapsed (s): 24.97      Iteration elapsed (s): 0.21       CPU Tightening patience: 0/10        Unstable neurons: 289       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:16     [Hidden splitting]     Iteration: 10         Remaining: 8          Visited: 63         Bound: -0.012518       Time elapsed (s): 25.15      Iteration elapsed (s): 0.18       CPU Tightening patience: 0/10        Unstable neurons: 288       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:16     [Hidden splitting]     Iteration: 11         Remaining: 7          Visited: 71         Bound: -0.010136       Time elapsed (s): 25.63      Iteration elapsed (s): 0.48       CPU Tightening patience: 0/10        Unstable neurons: 287       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:16     [Hidden splitting]     Iteration: 12         Remaining: 6          Visited: 78         Bound: -0.008141       Time elapsed (s): 25.80      Iteration elapsed (s): 0.17       CPU Tightening patience: 0/10        Unstable neurons: 286       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:17     [Hidden splitting]     Iteration: 13         Remaining: 5          Visited: 84         Bound: -0.007159       Time elapsed (s): 25.95      Iteration elapsed (s): 0.15       CPU Tightening patience: 0/10        Unstable neurons: 285       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:17     [Hidden splitting]     Iteration: 14         Remaining: 2          Visited: 89         Bound: -0.003428       Time elapsed (s): 26.10      Iteration elapsed (s): 0.15       CPU Tightening patience: 0/10        Unstable neurons: 284       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:17     [Hidden splitting]     Iteration: 15         Remaining: 2          Visited: 91         Bound: -0.002367       Time elapsed (s): 26.18      Iteration elapsed (s): 0.08       CPU Tightening patience: 0/10        Unstable neurons: 283       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:17     [Hidden splitting]     Iteration: 16         Remaining: 1          Visited: 93         Bound: -0.001051       Time elapsed (s): 26.25      Iteration elapsed (s): 0.08       CPU Tightening patience: 0/10        Unstable neurons: 282       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:17     [Hidden splitting]     Iteration: 17         Remaining: 0          Visited: 94         Bound: 0.000001        Time elapsed (s): 26.28      Iteration elapsed (s): 0.03       CPU Tightening patience: 0/10        Unstable neurons: 281       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:22:17     Verified: 1 	 Remain: 0
+INFO     13:22:17     [!] Iterations: 17
+INFO     13:22:17     [!] Result: unsat
+INFO     13:22:17     [!] Runtime: 26.4426
+unsat,26.4426

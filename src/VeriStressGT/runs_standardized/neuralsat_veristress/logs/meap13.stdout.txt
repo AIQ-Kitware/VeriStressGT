@@ -1,0 +1,154 @@
+Restricted license - for non-production use only - expires 2027-11-29
+
+ [!] GlobalSettings:
+	- use_restart                             : True
+	- use_mip_tightening                      : True
+	- use_attack                              : True
+	- attack_interval                         : 10
+	- use_mip_verify                          : True
+	- input_splitting_threshold               : 0.5
+	- hidden_splitting_threshold              : 0.01
+	- safety_num_input_perturbed              : 200
+	- skip_preprocess                         : False
+	- use_save_reasoning_step                 : False
+	- max_iterations                          : 1000000000.0
+	- skip_initial_worst_bound                : -1000000.0
+	- max_domains                             : 1000000000.0
+	- use_decompose                           : False
+	- restart_current_hidden_branches         : 2000
+	- restart_visited_hidden_branches         : 20000
+	- restart_current_input_branches          : 20000
+	- restart_visited_input_branches          : 200000
+	- restart_max_runtime                     : 60.0
+	- restart_max_runtime_percentage          : 0.4
+	- mip_tightening_patience                 : 10
+	- mip_tightening_timeout_per_neuron       : 15.0
+	- mip_tightening_topk                     : 64
+	- use_gpu_tightening                      : False
+	- gpu_tightening_current_hidden_branches  : 1000
+	- gpu_tightening_visited_hidden_branches  : 5000
+	- gpu_tightening_timeout                  : 10.0
+	- gpu_tightening_patience                 : 10
+	- gpu_tightening_topk                     : 500
+	- use_mip_attack                          : False
+	- mip_verify_threshold                    : 2
+	- share_alphas                            : False
+	- backward_batch_size                     : inf
+	- forward_max_dim                         : 10000
+	- forward_dynamic                         : False
+	- use_decompose_incomplete                : False
+	- init_abstraction_method                 : crown-optimized
+	- subverifier_decision_method             : smart
+	- verify_candidate_batch                  : 3
+	- verify_last_timeout                     : 200.0
+	- verify_interm_timeout                   : 20.0
+	- sequential_batch                        : 100
+	- use_sequential_abstract_forward         : False
+	- verify_extra_opts                       : {'sparse_intermediate_bounds': True}
+	- verify_splitting_strategy               : hidden
+	- use_extra_substitution                  : False
+	- verify_max_iteration                    : 4
+	- verify_candidate_num                    : 128
+	- verify_interpolate_factor               : 0.5
+
+ConvertModel(
+  (Gemm_add): Linear(in_features=100, out_features=4, bias=True)
+  (Relu_relu): ReLU()
+  (Gemm_matmul_1): Linear(in_features=4, out_features=2, bias=True)
+  (Gemm_matmul_2): Linear(in_features=4, out_features=2, bias=True)
+  (Gemm_matmul_3): Linear(in_features=4, out_features=2, bias=True)
+  (Add_add_1): Add()
+  (Relu_relu_1): ReLU()
+  (Add_add_2): Add()
+  (Gemm_matmul_4): Linear(in_features=2, out_features=1, bias=True)
+  (Gemm_matmul_5): Linear(in_features=2, out_features=1, bias=True)
+  (Add_add_3): Add()
+  (Relu_relu_2): ReLU()
+  (Gemm_matmul_6): Linear(in_features=1, out_features=1, bias=True)
+  (Add_add_4): Add()
+  (Gemm_output): Linear(in_features=1, out_features=10, bias=True)
+)
+INFO     08:27:23     [!] Input shape: (1, 100)
+INFO     08:27:23     [!] Output shape: (1, 10)
+INFO     08:27:23     [!] VNNLIB: 100 inputs, 10 outputs
+INFO     08:27:27     [Failed] RandomAttack(seed=149, device=cpu)
+Attacking PGD F32 iterations=100000 restarts=20 timeout=15.588499784469604 cs.shape=torch.Size([9, 1, 10]) rhs.shape=torch.Size([9, 1])
+INFO     08:27:45     [Failed] PGDAttack(seed=963, device=cpu)
+INFO     08:27:45     [!] eps=0.200000, perturbed=100
+INFO     08:27:45     [_preprocess] _init_abstractor
+DEBUG    08:27:46     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+DEBUG    08:27:46     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     08:27:47     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+INFO     08:27:47     Initial bounds (first 10): tensor([-0.0238, -0.0238, -0.0238, -0.0238, -0.0238, -0.0238, -0.0238, -0.0238,
+        -0.0238])
+INFO     08:27:47     Remain 9 objectives
+[!] Found unsupported layer: <class 'helper.network.onnx2pytorch.operations.add.Add'>
+INFO     08:27:47     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:27:47     [_setup_restart] _init_abstractor
+DEBUG    08:27:48     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+DEBUG    08:27:48     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     08:27:50     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+INFO     08:27:50     Try batch size 1000
+INFO     08:27:50     Initial bounds (first 10): tensor([-0.0239, -0.0239, -0.0239, -0.0239, -0.0239, -0.0239, -0.0239, -0.0239,
+        -0.0239])
+INFO     08:27:55     Initial optimized bounds (first 10): tensor([-0.0086, -0.0086, -0.0086, -0.0086, -0.0086, -0.0086, -0.0086, -0.0086,
+        -0.0086])
+DEBUG    08:27:56     [!] RuntimeError exception
+INFO     08:27:56     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:27:56     Try batch size 1000
+INFO     08:27:56     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:28:04     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:28:06     [Hidden splitting]     Iteration: 1          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 43.21      Iteration elapsed (s): 1.58       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:28:08     Verified: 1 	 Remain: 8
+INFO     08:28:08     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:28:08     Try batch size 1000
+INFO     08:28:08     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:28:16     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:28:17     [Hidden splitting]     Iteration: 2          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 53.86      Iteration elapsed (s): 0.99       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:28:18     Verified: 1 	 Remain: 7
+INFO     08:28:18     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:28:18     Try batch size 1000
+INFO     08:28:18     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:28:26     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:28:27     [Hidden splitting]     Iteration: 3          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 63.69      Iteration elapsed (s): 0.91       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:28:28     Verified: 1 	 Remain: 6
+INFO     08:28:28     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:28:28     Try batch size 1000
+INFO     08:28:28     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:28:36     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:28:37     [Hidden splitting]     Iteration: 4          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 74.19      Iteration elapsed (s): 1.10       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:28:39     Verified: 1 	 Remain: 5
+INFO     08:28:39     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:28:39     Try batch size 1000
+INFO     08:28:39     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:28:46     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:28:48     [Hidden splitting]     Iteration: 5          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 84.75      Iteration elapsed (s): 1.07       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:28:49     Verified: 1 	 Remain: 4
+INFO     08:28:49     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:28:49     Try batch size 1000
+INFO     08:28:49     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:28:57     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:28:58     [Hidden splitting]     Iteration: 6          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 95.56      Iteration elapsed (s): 0.98       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:29:00     Verified: 1 	 Remain: 3
+INFO     08:29:00     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:29:00     Try batch size 1000
+INFO     08:29:00     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:29:08     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:29:09     [Hidden splitting]     Iteration: 7          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 106.11     Iteration elapsed (s): 1.08       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:29:10     Verified: 1 	 Remain: 2
+INFO     08:29:10     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:29:10     Try batch size 1000
+INFO     08:29:11     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:29:18     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:29:19     [Hidden splitting]     Iteration: 8          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 116.29     Iteration elapsed (s): 0.92       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:29:22     Verified: 1 	 Remain: 1
+INFO     08:29:22     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     08:29:22     Try batch size 1000
+INFO     08:29:22     Initial bounds (first 10): tensor([-0.0238])
+INFO     08:29:30     Initial optimized bounds (first 10): tensor([-0.0085])
+INFO     08:29:30     [Hidden splitting]     Iteration: 9          Remaining: 0          Visited: 2          Bound: 0.000001        Time elapsed (s): 127.67     Iteration elapsed (s): 0.91       CPU Tightening patience: 0/10        Unstable neurons: 4         GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     08:29:32     Verified: 1 	 Remain: 0
+INFO     08:29:32     [!] Iterations: 9
+INFO     08:29:32     [!] Result: unsat
+INFO     08:29:32     [!] Runtime: 129.8053
+unsat,129.8053

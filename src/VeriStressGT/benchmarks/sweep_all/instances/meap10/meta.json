@@ -1,0 +1,26 @@
+{
+  "id": "meap10",
+  "construction": "mlp_relu.meap",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/meap10/model.onnx",
+    "vnnlib": "instances/meap10/spec.vnnlib",
+    "meta": "instances/meap10/meta.json"
+  },
+  "sha256": {
+    "onnx": "4cb12dcae3cef4ca6027663c8a01baa506da779acd14a40ca91676003fe5e4f4",
+    "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+  },
+  "args": {
+    "seed": 0,
+    "input_dim": 100,
+    "num_classes": 10,
+    "num_pairs": 16,
+    "epsilon": 0.1,
+    "gamma": 0.0001,
+    "weight_scale": 2.0,
+    "label": 0,
+    "onnx_path": "benchmarks/ep/instances/meap10/model.onnx",
+    "vnnlib_path": "benchmarks/ep/instances/meap10/spec.vnnlib"
+  }
+}

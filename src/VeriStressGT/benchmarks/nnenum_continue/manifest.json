@@ -1,0 +1,1595 @@
+{
+  "name": "nnenum_continue",
+  "created_at": "2026-04-14T17:24:22.050529Z",
+  "git_commit": "a5c16df057d8831cb17931939c16b2dfdb1011b1",
+  "common": {
+    "onnx_name": "model.onnx",
+    "vnnlib_name": "spec.vnnlib",
+    "meta_name": "meta.json"
+  },
+  "mode": "spec",
+  "instances": [
+    {
+      "id": "ep1",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep1/model.onnx",
+        "vnnlib": "instances/ep1/spec.vnnlib",
+        "meta": "instances/ep1/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 1,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep2",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep2/model.onnx",
+        "vnnlib": "instances/ep2/spec.vnnlib",
+        "meta": "instances/ep2/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 5,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep3",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep3/model.onnx",
+        "vnnlib": "instances/ep3/spec.vnnlib",
+        "meta": "instances/ep3/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 10,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep4",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep4/model.onnx",
+        "vnnlib": "instances/ep4/spec.vnnlib",
+        "meta": "instances/ep4/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 20,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep5",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep5/model.onnx",
+        "vnnlib": "instances/ep5/spec.vnnlib",
+        "meta": "instances/ep5/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 50,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_1",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_1/model.onnx",
+        "vnnlib": "instances/pb_cnn_1/spec.vnnlib",
+        "meta": "instances/pb_cnn_1/meta.json"
+      },
+      "sha256": {
+        "onnx": "5185cf71891cb65288841fda37be4f5e887aa17bdf052da34fd17c55f6fdab62",
+        "vnnlib": "66e1a28e6c9875f46eb0f81dc4bf78452620908e342f8fa6ad88aed50249ed7c"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 2,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_2",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_2/model.onnx",
+        "vnnlib": "instances/pb_cnn_2/spec.vnnlib",
+        "meta": "instances/pb_cnn_2/meta.json"
+      },
+      "sha256": {
+        "onnx": "8297395f3a4eeac21512bfcca7e1f767ff421029caf988e24dd1180b4b9d0934",
+        "vnnlib": "15c52c8b8e72eddbc9d1d18c81ea740e6c277292e25a1b2946e6b16fe7134a26"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 4,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_3",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_3/model.onnx",
+        "vnnlib": "instances/pb_cnn_3/spec.vnnlib",
+        "meta": "instances/pb_cnn_3/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_4",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_4/model.onnx",
+        "vnnlib": "instances/pb_cnn_4/spec.vnnlib",
+        "meta": "instances/pb_cnn_4/meta.json"
+      },
+      "sha256": {
+        "onnx": "7c302b5155f03ae82fc616b6deadbe09bd047cfa5758be192fe3915fd1a266a5",
+        "vnnlib": "0cec7befd16112b8c998e5bae80692c6874cd0cdc2659163317caacd59e2acb8"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 16,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_5",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_5/model.onnx",
+        "vnnlib": "instances/pb_cnn_5/spec.vnnlib",
+        "meta": "instances/pb_cnn_5/meta.json"
+      },
+      "sha256": {
+        "onnx": "2c90ce779789a4f8670fb47827cd916d558b09b4fcc6a7dea6b119121c72a109",
+        "vnnlib": "abda2b2e4c87a3b62ccedf1e30dade189fe1c548271b93270e595524578cc3e9"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 32,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_6",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_6/model.onnx",
+        "vnnlib": "instances/pb_cnn_6/spec.vnnlib",
+        "meta": "instances/pb_cnn_6/meta.json"
+      },
+      "sha256": {
+        "onnx": "d99c507f94a4045c755148559c7efc1405cf82e2869a2e8b48cec9ca496fa567",
+        "vnnlib": "b40d7c7f46e2209ddfaee16de6961714e5c5f0b47c63e67d367edb7d02aa6fdc"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 2,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_7",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_7/model.onnx",
+        "vnnlib": "instances/pb_cnn_7/spec.vnnlib",
+        "meta": "instances/pb_cnn_7/meta.json"
+      },
+      "sha256": {
+        "onnx": "08ad6855d639dd2041b59c0662ea59539221b6efddc10f45c822b9ec0e07b024",
+        "vnnlib": "48adb5f3cc95f8048b2d86b02f860cee9b3f9c056fcf473907997f2d2842d2a9"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 4,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_8",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_8/model.onnx",
+        "vnnlib": "instances/pb_cnn_8/spec.vnnlib",
+        "meta": "instances/pb_cnn_8/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_9",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_9/model.onnx",
+        "vnnlib": "instances/pb_cnn_9/spec.vnnlib",
+        "meta": "instances/pb_cnn_9/meta.json"
+      },
+      "sha256": {
+        "onnx": "6ea833f050764768ea89f5a8101d5fb80950bb8c6412bcca2b8387409d6c4c65",
+        "vnnlib": "d6aa8d0803d15b8d67578dccd87820257b6ccd80156760d2b11766476b7c8a5f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 16,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_10",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_10/model.onnx",
+        "vnnlib": "instances/pb_cnn_10/spec.vnnlib",
+        "meta": "instances/pb_cnn_10/meta.json"
+      },
+      "sha256": {
+        "onnx": "ce594e6d0ec97d6d74748555bb23ca3a60ca9414478a78c46f446d0006c1c9b2",
+        "vnnlib": "d33fa350f2d006ff54c14f1f45c4e206f3d5019d6501e931979afba8b421dcf5"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 32,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_11",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_11/model.onnx",
+        "vnnlib": "instances/pb_cnn_11/spec.vnnlib",
+        "meta": "instances/pb_cnn_11/meta.json"
+      },
+      "sha256": {
+        "onnx": "223f37b689d37fa3ecbcf087847ee320d8f7e01c7e4c5c9757a51b33af72de2c",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 1.0,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_12",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_12/model.onnx",
+        "vnnlib": "instances/pb_cnn_12/spec.vnnlib",
+        "meta": "instances/pb_cnn_12/meta.json"
+      },
+      "sha256": {
+        "onnx": "415a8f0f81482da0df95a0f089ba915d1c295f7b0f7008c054d12a280407157b",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.5,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_13",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_13/model.onnx",
+        "vnnlib": "instances/pb_cnn_13/spec.vnnlib",
+        "meta": "instances/pb_cnn_13/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_14",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_14/model.onnx",
+        "vnnlib": "instances/pb_cnn_14/spec.vnnlib",
+        "meta": "instances/pb_cnn_14/meta.json"
+      },
+      "sha256": {
+        "onnx": "60e8ec4c05883cf10699fc4a42697c016de42a2ae547e9aa3d70a257e2668c9c",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.05,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_15",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_15/model.onnx",
+        "vnnlib": "instances/pb_cnn_15/spec.vnnlib",
+        "meta": "instances/pb_cnn_15/meta.json"
+      },
+      "sha256": {
+        "onnx": "7938b024ab97057f9140d5ae1e4c48c572b5f32a0e0e4e9b3756001885857644",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.001,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_15/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_15/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_16",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_16/model.onnx",
+        "vnnlib": "instances/pb_cnn_16/spec.vnnlib",
+        "meta": "instances/pb_cnn_16/meta.json"
+      },
+      "sha256": {
+        "onnx": "69d05bdee461f01532dccb04964dc7bee9dcb40ddf486813e21dd832b7afc41a",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 1.0,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_16/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_16/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_17",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_17/model.onnx",
+        "vnnlib": "instances/pb_cnn_17/spec.vnnlib",
+        "meta": "instances/pb_cnn_17/meta.json"
+      },
+      "sha256": {
+        "onnx": "ff2bcc40adaf9d484923c74cd5106f314a5b65f918f560aaf40f50599b435061",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.5,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_17/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_17/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_18",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_18/model.onnx",
+        "vnnlib": "instances/pb_cnn_18/spec.vnnlib",
+        "meta": "instances/pb_cnn_18/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_18/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_18/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_19",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_19/model.onnx",
+        "vnnlib": "instances/pb_cnn_19/spec.vnnlib",
+        "meta": "instances/pb_cnn_19/meta.json"
+      },
+      "sha256": {
+        "onnx": "9f1724198c00c874448a8b40f9152a1d047d0ea7e690e8934b64ff829d278998",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.05,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_19/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_19/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_20",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_20/model.onnx",
+        "vnnlib": "instances/pb_cnn_20/spec.vnnlib",
+        "meta": "instances/pb_cnn_20/meta.json"
+      },
+      "sha256": {
+        "onnx": "6e1c54d63ca39314d8b5fda42344e799af7c087f7f57f158a133c6cc666e1d04",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": "1e-3",
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_20/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_20/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_21",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_21/model.onnx",
+        "vnnlib": "instances/pb_cnn_21/spec.vnnlib",
+        "meta": "instances/pb_cnn_21/meta.json"
+      },
+      "sha256": {
+        "onnx": "f06e89b6b8011d6a42e48458dfc73288b0536c0f3dca17cb3998611e748c17b6",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.005,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_21/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_21/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_22",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_22/model.onnx",
+        "vnnlib": "instances/pb_cnn_22/spec.vnnlib",
+        "meta": "instances/pb_cnn_22/meta.json"
+      },
+      "sha256": {
+        "onnx": "b84fad9175a6367ab2033fb277f043d203525b0e350d0ebe704e177582761e4e",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.01,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_22/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_22/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_23",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_23/model.onnx",
+        "vnnlib": "instances/pb_cnn_23/spec.vnnlib",
+        "meta": "instances/pb_cnn_23/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_23/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_23/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_24",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_24/model.onnx",
+        "vnnlib": "instances/pb_cnn_24/spec.vnnlib",
+        "meta": "instances/pb_cnn_24/meta.json"
+      },
+      "sha256": {
+        "onnx": "85ee73fd34744db4a33862f028e3b4c1f26cc4255f127d19c6607054877e8df4",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.05,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_24/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_24/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_25",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_25/model.onnx",
+        "vnnlib": "instances/pb_cnn_25/spec.vnnlib",
+        "meta": "instances/pb_cnn_25/meta.json"
+      },
+      "sha256": {
+        "onnx": "5d2e9a8e7a49a34224eed7fa28ee5d362276bf923bf87384925965d5c1e74fa6",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_25/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_25/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_26",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_26/model.onnx",
+        "vnnlib": "instances/pb_cnn_26/spec.vnnlib",
+        "meta": "instances/pb_cnn_26/meta.json"
+      },
+      "sha256": {
+        "onnx": "f823bdff600280c1cfd210bb099f5d372a0f7ed10252532f5ebac7fe8eb44187",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.005,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_26/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_26/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_27",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_27/model.onnx",
+        "vnnlib": "instances/pb_cnn_27/spec.vnnlib",
+        "meta": "instances/pb_cnn_27/meta.json"
+      },
+      "sha256": {
+        "onnx": "8854a10aa28cfb70a372cf162e1ed2cc123b3ece42598fedc43d6440f451d0d7",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.01,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_27/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_27/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_28",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_28/model.onnx",
+        "vnnlib": "instances/pb_cnn_28/spec.vnnlib",
+        "meta": "instances/pb_cnn_28/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_28/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_28/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_29",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_29/model.onnx",
+        "vnnlib": "instances/pb_cnn_29/spec.vnnlib",
+        "meta": "instances/pb_cnn_29/meta.json"
+      },
+      "sha256": {
+        "onnx": "a6060ae992d365e9153daad21bec1372b99cf6361baed8a0827be31bbcf29961",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.05,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_29/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_29/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_30",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_30/model.onnx",
+        "vnnlib": "instances/pb_cnn_30/spec.vnnlib",
+        "meta": "instances/pb_cnn_30/meta.json"
+      },
+      "sha256": {
+        "onnx": "23562bb742c86e36e172d506881b091dbda59cfe95bda66ff00664320f098117",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_30/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_30/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_31",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_31/model.onnx",
+        "vnnlib": "instances/pb_cnn_31/spec.vnnlib",
+        "meta": "instances/pb_cnn_31/meta.json"
+      },
+      "sha256": {
+        "onnx": "ef97ca92f835861ec91bcb1edf92185677c837fa1562a1d529fc4516bf654baa",
+        "vnnlib": "7a7dd6ba211d27cf7c02b6313833246fe76f2137b96300e542c040aec44d4260"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_31/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_31/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_32",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_32/model.onnx",
+        "vnnlib": "instances/pb_cnn_32/spec.vnnlib",
+        "meta": "instances/pb_cnn_32/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 2,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_32/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_32/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_33",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_33/model.onnx",
+        "vnnlib": "instances/pb_cnn_33/spec.vnnlib",
+        "meta": "instances/pb_cnn_33/meta.json"
+      },
+      "sha256": {
+        "onnx": "a7a29966ce799cf823bdf7597d014cbfc019ebff54618ea69f0bfc50365cfa3a",
+        "vnnlib": "1967670424f05db0de05ddd2c744e14463666402211854d4d4d4bc126c1b35f8"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 3,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_33/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_33/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_34",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_34/model.onnx",
+        "vnnlib": "instances/pb_cnn_34/spec.vnnlib",
+        "meta": "instances/pb_cnn_34/meta.json"
+      },
+      "sha256": {
+        "onnx": "af92169a2669ee20d7fdb2cbe0715e911c97e64bb4fe161c62169ce04e9322e4",
+        "vnnlib": "fb663a0778f5e8f8d58d9035746888152428954894c8894f367e4fcb0c212a7e"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 4,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_34/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_34/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_35",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_35/model.onnx",
+        "vnnlib": "instances/pb_cnn_35/spec.vnnlib",
+        "meta": "instances/pb_cnn_35/meta.json"
+      },
+      "sha256": {
+        "onnx": "bb8d1a4595ec7169b04f4acb0588ccd71106a6fac5d2d4c2d4847370a1f9912e",
+        "vnnlib": "71a81bf8db212d937da16ab680db8115dea06068dd48f330acb37af1fdecc1a6"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_35/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_35/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_36",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_36/model.onnx",
+        "vnnlib": "instances/pb_cnn_36/spec.vnnlib",
+        "meta": "instances/pb_cnn_36/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 2,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_36/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_36/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_37",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_37/model.onnx",
+        "vnnlib": "instances/pb_cnn_37/spec.vnnlib",
+        "meta": "instances/pb_cnn_37/meta.json"
+      },
+      "sha256": {
+        "onnx": "ed2e334cfbe0629fe0c095908f15c6b5cba5e1f0cb1945eed263e3cdfa25a501",
+        "vnnlib": "0a8ba59f3ad348647357608a4a1896300f0c19afe3af4df5e73a9d1ea7fd76b1"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 3,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_37/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_37/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_38",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_38/model.onnx",
+        "vnnlib": "instances/pb_cnn_38/spec.vnnlib",
+        "meta": "instances/pb_cnn_38/meta.json"
+      },
+      "sha256": {
+        "onnx": "17369d9b1ad70d3bf5fd4614a71ac12990a3320e2b561c87f42b887d5149b5f3",
+        "vnnlib": "c3ab2b180ae02766bed4acc8ca4631c52ee0fa6a0b214dce329f2ece9fcbaf44"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 4,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_38/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_38/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_39",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_39/model.onnx",
+        "vnnlib": "instances/pb_cnn_39/spec.vnnlib",
+        "meta": "instances/pb_cnn_39/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 4,
+        "width": 4,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_39/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_39/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_40",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_40/model.onnx",
+        "vnnlib": "instances/pb_cnn_40/spec.vnnlib",
+        "meta": "instances/pb_cnn_40/meta.json"
+      },
+      "sha256": {
+        "onnx": "5f4d017037030c3399eaeae4cf3b4d6a17568cc908490c46e586044568fdd347",
+        "vnnlib": "c366e3f19f6b19cc5f249b5740f59a0a550718808474f831a32369bb3cb6a289"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 8,
+        "width": 8,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_40/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_40/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_41",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_41/model.onnx",
+        "vnnlib": "instances/pb_cnn_41/spec.vnnlib",
+        "meta": "instances/pb_cnn_41/meta.json"
+      },
+      "sha256": {
+        "onnx": "1add65954e3264b9c83f127dacc3f01711de0043b26724905ccdf5e582f99f06",
+        "vnnlib": "2ca5522e728dd597989b8834bfd74b753a538dd31359837a4f9a3fc42561a55e"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 12,
+        "width": 12,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_41/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_41/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_42",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_42/model.onnx",
+        "vnnlib": "instances/pb_cnn_42/spec.vnnlib",
+        "meta": "instances/pb_cnn_42/meta.json"
+      },
+      "sha256": {
+        "onnx": "5e93dc76182142f68829018883fc2d247a51fa335fd2a8c498ed73eb03491ac6",
+        "vnnlib": "9bbbbfff1994c9fdc492e854ff85fd17c47683222e05ad9bfa2b234c3a29ddb0"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 16,
+        "width": 16,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_42/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_42/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_43",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_43/model.onnx",
+        "vnnlib": "instances/pb_cnn_43/spec.vnnlib",
+        "meta": "instances/pb_cnn_43/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 4,
+        "width": 4,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_43/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_43/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_44",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_44/model.onnx",
+        "vnnlib": "instances/pb_cnn_44/spec.vnnlib",
+        "meta": "instances/pb_cnn_44/meta.json"
+      },
+      "sha256": {
+        "onnx": "c5c85d979f8481c7b87b206b8f4efb259ceb3251849ac4d525f51e0f4b6ee9aa",
+        "vnnlib": "caffe38f2a63f6bcf2ab87764b005b2aae8e412557d8d0857df91c0f85617047"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 8,
+        "width": 8,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_44/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_44/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_45",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_45/model.onnx",
+        "vnnlib": "instances/pb_cnn_45/spec.vnnlib",
+        "meta": "instances/pb_cnn_45/meta.json"
+      },
+      "sha256": {
+        "onnx": "407f558531ee9f8b649ee87dbb84affa93a696dab8c751a66b5bbb69f506142a",
+        "vnnlib": "06cc294506ef61d8205cdccd43d7cb4483d87d73000c5963e023038de576987f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 12,
+        "width": 12,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_45/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_45/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_46",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_46/model.onnx",
+        "vnnlib": "instances/pb_cnn_46/spec.vnnlib",
+        "meta": "instances/pb_cnn_46/meta.json"
+      },
+      "sha256": {
+        "onnx": "e643501755a16727f39d1f6d8ef46c37ff764f878d6d206da7a9aa694a9e4929",
+        "vnnlib": "afa90fcd4cfafc706c2b9f80ce4a24b8ebf92c57925e18d488647e11ad59856c"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 16,
+        "width": 16,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_46/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_46/spec.vnnlib"
+      }
+    }
+  ],
+  "spec_path": "configs/nnenum_continue.yaml",
+  "spec": {
+    "defaults": {
+      "seed": 0
+    }
+  }
+}

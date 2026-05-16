@@ -1,0 +1,962 @@
+name: sweep_all
+defaults:
+  seed: 0
+instances:
+- id: meap1
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 2
+    epsilon: 0.1
+    gamma: 0.001
+- id: meap2
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.1
+    gamma: 0.001
+- id: meap3
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 32
+    epsilon: 0.1
+    gamma: 0.001
+- id: meap4
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 128
+    epsilon: 0.1
+    gamma: 0.001
+- id: meap5
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.05
+    gamma: 0.001
+- id: meap6
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.1
+    gamma: 0.001
+- id: meap7
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.25
+    gamma: 0.001
+- id: meap8
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.5
+    gamma: 0.001
+- id: meap9
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.1
+    gamma: 0.001
+- id: meap10
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.1
+    gamma: 0.0001
+- id: meap11
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.1
+    gamma: 0.00001
+- id: meap12
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.1
+    gamma: 1
+- id: meap13
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 2
+    epsilon: 0.1
+    gamma: 0.001
+- id: meap14
+  construction: mlp_relu.meap
+  seed: 0
+  args:
+    input_dim: 100
+    num_classes: 10
+    num_pairs: 16
+    epsilon: 0.1
+    gamma: 100
+
+- { id: milp1,      construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5 } }
+- { id: milp2,      construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9 } }
+- { id: milp3,      construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99 } }
+- { id: milp4,     construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp5,    construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9999 } }
+- { id: milp6,   construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99999 } }
+- { id: milp7, construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9999999 } }
+
+- { id: milp8,      construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5 } }
+- { id: milp9,      construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9 } }
+- { id: milp10,      construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99 } }
+- { id: milp11,     construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp12,    construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9999 } }
+- { id: milp13,   construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99999 } }
+- { id: milp14, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9999999 } }
+
+- { id: milp15,      construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5 } }
+- { id: milp16,      construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9 } }
+- { id: milp17,      construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99 } }
+- { id: milp18,     construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp19,    construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9999 } }
+- { id: milp20,   construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99999 } }
+- { id: milp21, construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9999999 } }
+
+- { id: milp22,   construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 5,   h2: 5,   num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp23,  construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 10,  h2: 10,  num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp24,  construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20,  h2: 20,  num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp25,  construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 50,  h2: 50,  num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp26, construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 100, h2: 100, num_outputs: 5, epsilon_frac: 0.999 } }
+
+- { id: milp27,   construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 5,   h2: 5,   num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp28,  construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 10,  h2: 10,  num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp29,  construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20,  h2: 20,  num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp30,  construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 50,  h2: 50,  num_outputs: 5, epsilon_frac: 0.999 } }
+- { id: milp31, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 100, h2: 100, num_outputs: 5, epsilon_frac: 0.999 } }
+
+- id: rc1
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: .0001
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc2
+  construction: mlp_relu.corners
+  seed: 2
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: .0001
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc3
+  construction: mlp_relu.corners
+  seed: 
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: .0001
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc4
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: .01
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc5
+  construction: mlp_relu.corners
+  seed: 2
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: .01
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc6
+  construction: mlp_relu.corners
+  seed: 3
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: .01
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc7
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 1
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc8
+  construction: mlp_relu.corners
+  seed: 2
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 1
+    num_hinges: 16
+    epsilon: 0.2
+
+- id: rc9
+  construction: mlp_relu.corners
+  seed: 3
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 1
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc10
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 100
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc11
+  construction: mlp_relu.corners
+  seed: 2
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 100
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc12
+  construction: mlp_relu.corners
+  seed: 3
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 100
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc13
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 10000
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc14
+  construction: mlp_relu.corners
+  seed: 2
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 10000
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc15
+  construction: mlp_relu.corners
+  seed: 3
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 10000
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc16
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 1000000
+    num_hinges: 16
+    epsilon: 0.2
+
+- id: rc17
+  construction: mlp_relu.corners
+  seed: 2
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 1000000
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc18
+  construction: mlp_relu.corners
+  seed: 3
+  args:
+    input_dim: 100
+    num_outputs: 10
+    hinge_l1: 1000000
+    num_hinges: 16
+    epsilon: 0.2
+
+- id: rc19
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    num_hinges: 16
+    epsilon: 0.2
+- id: rc20
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    num_hinges: 256
+    epsilon: 0.2
+- id: rc21
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    num_hinges: 1024
+    epsilon: 0.2
+- id: rc22
+  construction: mlp_relu.corners
+  seed: 1
+  args:
+    input_dim: 100
+    num_outputs: 10
+    num_hinges: 4096
+    epsilon: 0.2
+- id: ep1
+  construction: mlp_relu.embedded_projection
+  seed: 0
+  args:
+    input_dim: 100
+    wide-layers: 1
+    output_dim: 10
+    epsilon: 0.1
+- id: ep2
+  construction: mlp_relu.embedded_projection
+  seed: 0
+  args:
+    input_dim: 100
+    wide-layers: 5
+    output_dim: 10
+    epsilon: 0.1
+- id: ep3
+  construction: mlp_relu.embedded_projection
+  seed: 0
+  args:
+    input_dim: 100
+    wide-layers: 10
+    output_dim: 10
+    epsilon: 0.1
+
+- id: ep4
+  construction: mlp_relu.embedded_projection
+  seed: 0
+  args:
+    input_dim: 100
+    wide-layers: 20
+    output_dim: 10
+    epsilon: 0.1
+- id: ep5
+  construction: mlp_relu.embedded_projection
+  seed: 0
+  args:
+    input_dim: 100
+    wide-layers: 50
+    output_dim: 10
+    epsilon: 0.1
+
+- { id: dc_cnn1, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 2,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn2, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 4,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn3, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn4, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 8,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn5, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 10, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+
+- { id: dc_cnn6, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 2,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn7, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 4,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn8, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn9, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 8,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn10, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 10, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+
+- { id: dc_cnn11, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.70, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn12, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.80, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn13, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn14, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.95, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn15, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.98, margin: 0.001, bias_instability_frac: 0.40 } }
+
+- { id: dc_cnn16, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.70, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn17, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.80, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn18, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn19, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.95, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn20, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.98, margin: 0.001, bias_instability_frac： 0.40 } }
+
+
+- { id: dc_cnn21, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.1,   bias_instability_frac: 0.40 } }
+- { id: dc_cnn22, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.01,  bias_instability_frac: 0.40 } }
+- { id: dc_cnn23, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn24, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.0005, bias_instability_frac: 0.40 } }
+- { id: dc_cnn25, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.0001, bias_instability_frac: 0.40 } }
+
+- { id: dc_cnn26, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.1,   bias_instability_frac: 0.40 } }
+- { id: dc_cnn27, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.01,  bias_instability_frac: 0.40 } }
+- { id: dc_cnn28, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn29, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.0005, bias_instability_frac: 0.40 } }
+- { id: dc_cnn30, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.0001, bias_instability_frac: 0.40 } }
+
+- { id: dc_cnn31, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.10 } }
+- { id: dc_cnn32, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.25 } }
+- { id: dc_cnn33, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn34, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.55 } }
+- { id: dc_cnn35, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.70 } }
+
+- { id: dc_cnn36, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.10 } }
+- { id: dc_cnn37, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.25 } }
+- { id: dc_cnn38, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn39, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.55 } }
+- { id: dc_cnn40, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.70 } }
+
+- { id: dc_cnn41,  construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 4,  contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn42,  construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 8,  contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn43, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn44, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 32, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn45, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6, channels: 64, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+
+- { id: dc_cnn46,  construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 4,  contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn47,  construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 8,  contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn48, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn49, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 32, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+- { id: dc_cnn50, construction: cnn.deep_contractive_cnn, seed: 1, args: { depth: 6, channels: 64, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+
+
+- { id: pb_cnn_1,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 2,  margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_2,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 4,  margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_3,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8,  margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_4,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 16, margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_5,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 32, margin: 0.1, delta: 0.025 } }
+
+- { id: pb_cnn_6,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 2,  margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_7,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 4,  margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_8,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8,  margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_9,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 16, margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_10,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 32, margin: 0.1, delta: 0.025 } }
+
+- { id: pb_cnn_11,    construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 1.0,   delta: 0.025 } }
+- { id: pb_cnn_12,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.5,   delta: 0.025 } }
+- { id: pb_cnn_13,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1,  delta: 0.025 } }
+- { id: pb_cnn_14,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: .05,  delta: 0.025 } }
+- { id: pb_cnn_15,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: .001,  delta: 0.025 } }
+
+- { id: pb_cnn_16,    construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 1.0,   delta: 0.025 } }
+- { id: pb_cnn_17,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.5,   delta: 0.025 } }
+- { id: pb_cnn_18,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1,  delta: 0.025 } }
+- { id: pb_cnn_19,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: .05,  delta: 0.025 } }
+- { id: pb_cnn_20,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 1e-3,  delta: 0.025 } }
+
+- { id: pb_cnn_21,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.005 } }
+- { id: pb_cnn_22,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.01 } }
+- { id: pb_cnn_23,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_24,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.05 } }
+- { id: pb_cnn_25,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.1 } }
+
+- { id: pb_cnn_26,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.005 } }
+- { id: pb_cnn_27,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.01 } }
+- { id: pb_cnn_28,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025 } }
+- { id: pb_cnn_29,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.05 } }
+- { id: pb_cnn_30,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.1 } }
+
+- { id: pb_cnn_31,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 1 } }
+- { id: pb_cnn_32,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 2 } }
+- { id: pb_cnn_33,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 3 } }
+- { id: pb_cnn_34,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 4 } }
+
+- { id: pb_cnn_35,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 1 } }
+- { id: pb_cnn_36,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 2 } }
+- { id: pb_cnn_37,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 3 } }
+- { id: pb_cnn_38,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, num_backbone_layers: 4 } }
+
+- { id: pb_cnn_39,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 4,  width: 4 } }
+- { id: pb_cnn_40,   construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 8,  width: 8 } }
+- { id: pb_cnn_41,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 12, width: 12 } }
+- { id: pb_cnn_42,  construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 16, width: 16 } }
+
+- { id: pb_cnn_43,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 4,  width: 4 } }
+- { id: pb_cnn_44,   construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 8,  width: 8 } }
+- { id: pb_cnn_45,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 12, width: 12 } }
+- { id: pb_cnn_46,  construction: cnn.cnn_paired_bias, seed: 1, args: { num_pairs: 8, margin: 0.1, delta: 0.025, height: 16, width: 16 } }
+
+- id: ld1
+  construction: attention.linear_dominance
+  seed: 1
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.02
+    margin_factor: 2.0
+
+- id: ld2
+  construction: attention.linear_dominance
+  seed: 1
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld3
+  construction: attention.linear_dominance
+  seed: 1
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.08
+    margin_factor: 2.0
+
+- id: ld4
+  construction: attention.linear_dominance
+  seed: 2
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 1.1
+
+- id: ld5
+  construction: attention.linear_dominance
+  seed: 2
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 1.5
+
+- id: ld6
+  construction: attention.linear_dominance
+  seed: 2
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 3.0
+
+- id: ld7
+  construction: attention.linear_dominance
+  seed: 3
+  args:
+    n: 2
+    d: 2
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld8
+  construction: attention.linear_dominance
+  seed: 3
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld9
+  construction: attention.linear_dominance
+  seed: 3
+  args:
+    n: 6
+    d: 6
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld10
+  construction: attention.linear_dominance
+  seed: 4
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld11
+  construction: attention.linear_dominance
+  seed: 4
+  args:
+    n: 4
+    d: 8
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld12
+  construction: attention.linear_dominance
+  seed: 4
+  args:
+    n: 4
+    d: 12
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld13
+  construction: attention.linear_dominance
+  seed: 5
+  args:
+    n: 4
+    d: 4
+    d_v: 2
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld14
+  construction: attention.linear_dominance
+  seed: 5
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld15
+  construction: attention.linear_dominance
+  seed: 5
+  args:
+    n: 4
+    d: 4
+    d_v: 8
+    num_classes: 10
+    gate_scale: 0.5
+    noise_scale: 0.2
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld16
+  construction: attention.linear_dominance
+  seed: 6
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.30
+    noise_scale: 0.10
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld17
+  construction: attention.linear_dominance
+  seed: 6
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.50
+    noise_scale: 0.20
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: ld18
+  construction: attention.linear_dominance
+  seed: 6
+  args:
+    n: 4
+    d: 4
+    d_v: 4
+    num_classes: 10
+    gate_scale: 0.80
+    noise_scale: 0.30
+    epsilon: 0.05
+    margin_factor: 2.0
+
+- id: fp1
+  construction: attention.fixed_pattern
+  seed: 1
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.0005
+    margin_slack: 1.05
+
+- id: fp2
+  construction: attention.fixed_pattern
+  seed: 1
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.001
+    margin_slack: 1.05
+
+- id: fp3
+  construction: attention.fixed_pattern
+  seed: 1
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.01
+    margin_slack: 1.05
+
+- id: fp4
+  construction: attention.fixed_pattern
+  seed: 2
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 2.0
+    epsilon: 0.01
+    margin_slack: 1.05
+
+- id: fp5
+  construction: attention.fixed_pattern
+  seed: 2
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.01
+    margin_slack: 1.05
+
+- id: fp6
+  construction: attention.fixed_pattern
+  seed: 2
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 10.0
+    epsilon: 0.01
+    margin_slack: 1.05
+
+- id: fp7
+  construction: attention.fixed_pattern
+  seed: 3
+  args:
+    n: 2
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.001
+    margin_slack: 1.05
+
+- id: fp8
+  construction: attention.fixed_pattern
+  seed: 3
+  args:
+    n: 8
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.001
+    margin_slack: 1.05
+
+- id: fp9
+  construction: attention.fixed_pattern
+  seed: 3
+  args:
+    n: 32
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.001
+    margin_slack: 1.05
+
+- id: fp10
+  construction: attention.fixed_pattern
+  seed: 4
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.001
+    margin_slack: 1.05
+
+- id: fp11
+  construction: attention.fixed_pattern
+  seed: 4
+  args:
+    n: 16
+    d: 8
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.001
+    margin_slack: 1.05
+
+- id: fp12
+  construction: attention.fixed_pattern
+  seed: 4
+  args:
+    n: 16
+    d: 16
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.001
+    margin_slack: 1.05
+
+- id: fp13
+  construction: attention.fixed_pattern
+  seed: 5
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.01
+    margin_slack: 5.0   # easy
+
+- id: fp14
+  construction: attention.fixed_pattern
+  seed: 5
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.01
+    margin_slack: 2.0   # medium
+
+
+- id: fp15
+  construction: attention.fixed_pattern
+  seed: 5
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.01
+    margin_slack: 1.1  # hard (near boundary)
+
+- id: fp16
+  construction: attention.fixed_pattern
+  seed: 5
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.01
+    margin_slack: 1.001  # hard (near boundary)
+
+- id: fp17
+  construction: attention.fixed_pattern
+  seed: 5
+  args:
+    n: 16
+    d: 4
+    d_v: 8
+    num_classes: 50
+    alpha: 5.0
+    epsilon: 0.01
+    margin_slack: 1.00001  # hard (near boundary)

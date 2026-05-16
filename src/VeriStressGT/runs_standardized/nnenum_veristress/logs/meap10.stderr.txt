@@ -1,0 +1,46 @@
+[0;93m2026-04-30 20:34:15.774727801 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_0.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774754018 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774760257 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd_neg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774765072 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774769344 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_1'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774773681 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_3'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774778083 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774782195 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_even'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774786292 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.Oneg_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774790395 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_1.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774794748 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_0'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774798703 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.E_2'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774802725 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'sel.W_odd'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774807097 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_2.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774811117 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'mintree.neg_3.Wneg'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774815433 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'out.W'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-04-30 20:34:15.774819503 [W:onnxruntime:, graph.cc:4198 CleanUnusedInitializersAndNodeArgs] Removing initializer 'pairs.W'. It is not used by any node and should be removed from the model.[m
+Traceback (most recent call last):
+  File "./verifiers/nnenum/src/nnenum/nnenum.py", line 126, in main
+    network = load_onnx_network_optimized(onnx_filename)
+  File "./verifiers/nnenum/src/nnenum/onnx_network.py", line 368, in load_onnx_network_optimized
+    cur_node = find_node_with_input(graph, cur_input_name)
+  File "./verifiers/nnenum/src/nnenum/onnx_network.py", line 159, in find_node_with_input
+    assert rv is None, f"multiple onnx nodes accept network input {input_name}"
+AssertionError: multiple onnx nodes accept network input relu
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "./verifiers/nnenum/src/nnenum/nnenum.py", line 186, in <module>
+    main()
+  File "./verifiers/nnenum/src/nnenum/nnenum.py", line 129, in main
+    network = load_onnx_network(onnx_filename)
+  File "./verifiers/nnenum/src/nnenum/onnx_network.py", line 785, in load_onnx_network
+    submodel = stan_select_model_inputs_outputs(model, dtype, prev_input, end_node, io_shapes)
+  File "./verifiers/nnenum/src/nnenum/onnx_network.py", line 546, in stan_select_model_inputs_outputs
+    onnx_model = make_model_with_graph(model, graph)
+  File "./verifiers/nnenum/src/nnenum/onnx_network.py", line 628, in make_model_with_graph
+    onnx.checker.check_model(onnx_model, full_check=True)
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/onnx/checker.py", line 179, in check_model
+    C.check_model(
+onnx.onnx_cpp2py_export.checker.ValidationError: Graph must be in single static assignment (SSA) form, however 'relu_1' has been used as output names multiple times.

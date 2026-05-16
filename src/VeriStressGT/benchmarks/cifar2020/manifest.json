@@ -1,0 +1,3459 @@
+{
+  "benchmark_name": "vnncomp22_cifar2020",
+  "source": "./vnncomp2022_benchmarks/benchmarks/cifar2020",
+  "construction": "vnncomp.cifar2020",
+  "n_instances": 203,
+  "instances": [
+    {
+      "id": "vb_cifar2020_0000",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0000/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0000/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0000/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_0_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 0
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0001",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0001/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0001/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0001/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_1_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 1
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0002",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0002/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0002/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0002/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_2_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 2
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0003",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0003/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0003/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0003/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_3_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 3
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0004",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0004/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0004/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0004/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_4_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 4
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0005",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0005/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0005/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0005/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_5_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 5
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0006",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0006/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0006/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0006/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_6_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 6
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0007",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0007/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0007/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0007/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_8_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 8
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0008",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0008/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0008/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0008/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_9_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 9
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0009",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0009/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0009/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0009/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_10_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 10
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0010",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0010/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0010/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0010/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_11_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 11
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0011",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0011/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0011/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0011/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_12_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 12
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0012",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0012/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0012/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0012/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_13_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 13
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0013",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0013/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0013/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0013/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_14_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 14
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0014",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0014/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0014/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0014/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_15_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 15
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0015",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0015/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0015/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0015/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_16_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 16
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0016",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0016/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0016/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0016/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_17_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 17
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0017",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0017/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0017/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0017/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_18_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 18
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0018",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0018/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0018/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0018/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_19_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 19
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0019",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0019/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0019/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0019/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_20_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 20
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0020",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0020/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0020/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0020/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_21_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 21
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0021",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0021/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0021/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0021/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_23_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 23
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0022",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0022/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0022/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0022/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_25_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 25
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0023",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0023/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0023/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0023/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_26_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 26
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0024",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0024/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0024/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0024/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_27_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 27
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0025",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0025/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0025/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0025/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_28_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 28
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0026",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0026/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0026/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0026/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_29_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 29
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0027",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0027/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0027/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0027/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_30_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 30
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0028",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0028/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0028/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0028/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_31_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 31
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0029",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0029/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0029/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0029/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_32_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 32
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0030",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0030/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0030/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0030/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_33_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 33
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0031",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0031/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0031/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0031/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_34_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 34
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0032",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0032/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0032/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0032/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_36_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 36
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0033",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0033/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0033/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0033/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_37_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 37
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0034",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0034/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0034/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0034/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_38_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 38
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0035",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0035/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0035/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0035/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_39_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 39
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0036",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0036/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0036/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0036/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_40_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 40
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0037",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0037/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0037/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0037/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_41_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 41
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0038",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0038/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0038/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0038/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_42_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 42
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0039",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0039/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0039/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0039/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_43_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 43
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0040",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0040/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0040/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0040/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_44_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 44
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0041",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0041/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0041/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0041/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_45_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 45
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0042",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0042/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0042/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0042/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_46_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 46
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0043",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0043/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0043/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0043/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_48_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 48
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0044",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0044/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0044/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0044/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_50_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 50
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0045",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0045/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0045/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0045/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_51_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 51
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0046",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0046/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0046/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0046/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_53_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 53
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0047",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0047/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0047/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0047/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_54_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 54
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0048",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0048/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0048/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0048/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_55_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 55
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0049",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0049/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0049/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0049/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_60_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 60
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0050",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0050/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0050/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0050/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_62_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 62
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0051",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0051/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0051/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0051/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_64_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 64
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0052",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0052/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0052/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0052/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_65_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 65
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0053",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0053/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0053/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0053/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_66_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 66
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0054",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0054/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0054/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0054/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_67_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 67
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0055",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0055/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0055/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0055/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_68_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 68
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0056",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0056/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0056/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0056/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_71_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 71
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0057",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0057/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0057/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0057/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_72_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 72
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0058",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0058/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0058/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0058/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_73_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 73
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0059",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0059/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0059/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0059/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_74_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 74
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0060",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0060/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0060/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0060/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_75_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 75
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0061",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0061/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0061/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0061/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_76_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 76
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0062",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0062/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0062/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0062/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_77_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 77
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0063",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0063/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0063/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0063/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_78_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 78
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0064",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0064/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0064/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0064/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_79_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 79
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0065",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0065/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0065/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0065/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_80_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 80
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0066",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0066/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0066/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0066/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_81_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 81
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0067",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0067/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0067/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0067/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_82_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 82
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0068",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0068/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0068/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0068/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_83_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 83
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0069",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0069/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0069/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0069/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_84_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 84
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0070",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0070/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0070/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0070/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_86_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 86
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0071",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0071/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0071/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0071/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_88_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 88
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0072",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0072/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0072/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0072/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_89_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 89
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0073",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0073/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0073/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0073/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_90_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 90
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0074",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0074/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0074/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0074/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_92_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 92
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0075",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0075/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0075/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0075/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_93_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 93
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0076",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0076/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0076/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0076/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_94_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 94
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0077",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0077/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0077/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0077/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_95_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 95
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0078",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0078/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0078/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0078/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_96_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 96
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0079",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0079/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0079/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0079/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_97_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 97
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0080",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0080/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0080/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0080/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_98_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 98
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0081",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0081/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0081/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0081/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_2_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_99_eps_0.00784_n1.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 99
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0082",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0082/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0082/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0082/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_1_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 1
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0083",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0083/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0083/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0083/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_2_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 2
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0084",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0084/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0084/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0084/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_4_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 4
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0085",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0085/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0085/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0085/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_5_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 5
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0086",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0086/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0086/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0086/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_9_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 9
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0087",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0087/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0087/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0087/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_10_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 10
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0088",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0088/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0088/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0088/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_11_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 11
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0089",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0089/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0089/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0089/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_13_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 13
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0090",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0090/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0090/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0090/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_14_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 14
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0091",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0091/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0091/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0091/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_15_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 15
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0092",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0092/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0092/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0092/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_16_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 16
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0093",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0093/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0093/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0093/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_18_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 18
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0094",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0094/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0094/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0094/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_19_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 19
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0095",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0095/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0095/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0095/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_21_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 21
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0096",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0096/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0096/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0096/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_23_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 23
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0097",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0097/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0097/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0097/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_28_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 28
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0098",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0098/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0098/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0098/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_29_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 29
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0099",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0099/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0099/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0099/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_30_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 30
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0100",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0100/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0100/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0100/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_32_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 32
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0101",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0101/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0101/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0101/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_33_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 33
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0102",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0102/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0102/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0102/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_34_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 34
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0103",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0103/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0103/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0103/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_38_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 38
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0104",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0104/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0104/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0104/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_39_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 39
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0105",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0105/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0105/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0105/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_41_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 41
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0106",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0106/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0106/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0106/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_44_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 44
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0107",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0107/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0107/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0107/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_45_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 45
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0108",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0108/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0108/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0108/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_49_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 49
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0109",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0109/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0109/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0109/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_50_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 50
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0110",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0110/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0110/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0110/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_51_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 51
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0111",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0111/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0111/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0111/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_54_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 54
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0112",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0112/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0112/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0112/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_55_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 55
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0113",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0113/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0113/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0113/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_60_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 60
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0114",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0114/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0114/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0114/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_64_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 64
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0115",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0115/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0115/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0115/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_66_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 66
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0116",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0116/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0116/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0116/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_67_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 67
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0117",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0117/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0117/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0117/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_71_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 71
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0118",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0118/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0118/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0118/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_72_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 72
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0119",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0119/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0119/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0119/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_73_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 73
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0120",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0120/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0120/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0120/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_74_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 74
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0121",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0121/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0121/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0121/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_76_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 76
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0122",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0122/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0122/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0122/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_79_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 79
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0123",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0123/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0123/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0123/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_80_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 80
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0124",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0124/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0124/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0124/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_81_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 81
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0125",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0125/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0125/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0125/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_82_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 82
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0126",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0126/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0126/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0126/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_83_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 83
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0127",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0127/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0127/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0127/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_84_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 84
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0128",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0128/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0128/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0128/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_86_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 86
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0129",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0129/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0129/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0129/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_88_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 88
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0130",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0130/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0130/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0130/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_89_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 89
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0131",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0131/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0131/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0131/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_90_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 90
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0132",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0132/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0132/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0132/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_92_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 92
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0133",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0133/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0133/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0133/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_95_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 95
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0134",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0134/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0134/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0134/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_96_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 96
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0135",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0135/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0135/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0135/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_97_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 97
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0136",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0136/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0136/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0136/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_98_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 98
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0137",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0137/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0137/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0137/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar10_8_255_simplified.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_99_eps_0.03137_n1.vnnlib",
+        "epsilon": 0.03137,
+        "spec_index": 99
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0138",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0138/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0138/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0138/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_1_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 1
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0139",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0139/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0139/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0139/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_2_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 2
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0140",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0140/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0140/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0140/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_3_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 3
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0141",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0141/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0141/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0141/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_4_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 4
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0142",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0142/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0142/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0142/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_5_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 5
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0143",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0143/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0143/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0143/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_9_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 9
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0144",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0144/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0144/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0144/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_10_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 10
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0145",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0145/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0145/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0145/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_11_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 11
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0146",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0146/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0146/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0146/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_13_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 13
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0147",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0147/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0147/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0147/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_14_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 14
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0148",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0148/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0148/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0148/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_15_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 15
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0149",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0149/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0149/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0149/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_18_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 18
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0150",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0150/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0150/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0150/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_19_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 19
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0151",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0151/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0151/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0151/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_20_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 20
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0152",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0152/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0152/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0152/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_21_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 21
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0153",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0153/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0153/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0153/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_23_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 23
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0154",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0154/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0154/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0154/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_28_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 28
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0155",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0155/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0155/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0155/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_29_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 29
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0156",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0156/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0156/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0156/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_30_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 30
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0157",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0157/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0157/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0157/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_32_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 32
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0158",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0158/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0158/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0158/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_33_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 33
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0159",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0159/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0159/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0159/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_34_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 34
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0160",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0160/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0160/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0160/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_37_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 37
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0161",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0161/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0161/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0161/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_38_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 38
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0162",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0162/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0162/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0162/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_39_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 39
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0163",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0163/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0163/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0163/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_40_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 40
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0164",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0164/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0164/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0164/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_41_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 41
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0165",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0165/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0165/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0165/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_43_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 43
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0166",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0166/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0166/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0166/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_44_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 44
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0167",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0167/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0167/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0167/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_45_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 45
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0168",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0168/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0168/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0168/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_50_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 50
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0169",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0169/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0169/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0169/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_51_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 51
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0170",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0170/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0170/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0170/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_52_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 52
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0171",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0171/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0171/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0171/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_54_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 54
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0172",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0172/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0172/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0172/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_55_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 55
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0173",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0173/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0173/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0173/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_60_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 60
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0174",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0174/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0174/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0174/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_61_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 61
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0175",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0175/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0175/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0175/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_62_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 62
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0176",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0176/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0176/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0176/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_64_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 64
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0177",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0177/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0177/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0177/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_66_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 66
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0178",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0178/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0178/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0178/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_67_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 67
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0179",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0179/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0179/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0179/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_71_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 71
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0180",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0180/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0180/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0180/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_72_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 72
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0181",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0181/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0181/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0181/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_73_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 73
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0182",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0182/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0182/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0182/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_75_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 75
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0183",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0183/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0183/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0183/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_76_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 76
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0184",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0184/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0184/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0184/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_78_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 78
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0185",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0185/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0185/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0185/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_79_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 79
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0186",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0186/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0186/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0186/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_80_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 80
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0187",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0187/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0187/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0187/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_81_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 81
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0188",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0188/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0188/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0188/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_82_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 82
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0189",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0189/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0189/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0189/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_83_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 83
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0190",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0190/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0190/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0190/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_84_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 84
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0191",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0191/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0191/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0191/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_86_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 86
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0192",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0192/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0192/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0192/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_88_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 88
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0193",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0193/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0193/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0193/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_89_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 89
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0194",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0194/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0194/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0194/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_90_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 90
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0195",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0195/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0195/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0195/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_92_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 92
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0196",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0196/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0196/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0196/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_93_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 93
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0197",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0197/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0197/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0197/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_94_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 94
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0198",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0198/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0198/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0198/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_95_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 95
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0199",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0199/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0199/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0199/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_96_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 96
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0200",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0200/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0200/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0200/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_97_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 97
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0201",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0201/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0201/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0201/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_98_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 98
+      },
+      "vnncomp_timeout_s": 300.0
+    },
+    {
+      "id": "vb_cifar2020_0202",
+      "seed": null,
+      "construction": "vnncomp.cifar2020",
+      "paths": {
+        "onnx": "instances/vb_cifar2020_0202/model.onnx",
+        "vnnlib": "instances/vb_cifar2020_0202/spec.vnnlib",
+        "meta": "instances/vb_cifar2020_0202/meta.json"
+      },
+      "args": {
+        "onnx_basename": "convBigRELU__PGD.onnx",
+        "vnnlib_basename": "cifar10_spec_idx_99_eps_0.00784.vnnlib",
+        "epsilon": 0.00784,
+        "spec_index": 99
+      },
+      "vnncomp_timeout_s": 300.0
+    }
+  ]
+}

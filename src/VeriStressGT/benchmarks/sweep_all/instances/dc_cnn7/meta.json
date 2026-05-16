@@ -1,0 +1,32 @@
+{
+  "id": "dc_cnn7",
+  "construction": "cnn.deep_contractive_cnn",
+  "seed": 1,
+  "paths": {
+    "onnx": "instances/dc_cnn7/model.onnx",
+    "vnnlib": "instances/dc_cnn7/spec.vnnlib",
+    "meta": "instances/dc_cnn7/meta.json"
+  },
+  "sha256": {
+    "onnx": "d15d64d0434ee6ed657fa6adaa2821690653f30c11e29c547750760f9a8df6d0",
+    "vnnlib": "a0cb70ec5d0f33023b532fa54a1f26e178fef0ce6e57673f8809f75d83b7b1bb"
+  },
+  "args": {
+    "seed": 1,
+    "depth": 4,
+    "channels": 16,
+    "contraction_rate": 0.9,
+    "margin": 0.001,
+    "bias_instability_frac": 0.4,
+    "epsilon": 0.02,
+    "in_channels": 1,
+    "height": 8,
+    "width": 8,
+    "kernel_size": 3,
+    "num_classes": 10,
+    "label": 0,
+    "n_verify_samples": 20000,
+    "onnx_path": "benchmarks/ep/instances/dc_cnn7/model.onnx",
+    "vnnlib_path": "benchmarks/ep/instances/dc_cnn7/spec.vnnlib"
+  }
+}

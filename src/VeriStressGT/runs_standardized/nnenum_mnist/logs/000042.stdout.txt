@@ -1,0 +1,49 @@
+Running single-threaded
+(0.6 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+Overapprox Round 1/3 has 1 set(s)
+Layer 1/7: FullyConnectedLayer (zono shape: (256, 808))... 0.003 sec
+Layer 2/7: ReluLayer (zono shape: (256, 808))... 0.002 sec
+Layer 3/7: FullyConnectedLayer (zono shape: (256, 840))... 0.026 sec
+Layer 4/7: ReluLayer (zono shape: (256, 840))... 0.001 sec
+Layer 5/7: FullyConnectedLayer (zono shape: (256, 840))... 0.002 sec
+Layer 6/7: ReluLayer (zono shape: (256, 840))... 0.001 sec
+Layer 7/7: FullyConnectedLayer (zono shape: (256, 840))... 0.0 sec
+
+
+
+Total Stars: 1 (0 exact, 1 approx)
+Runtime: 0.7 sec
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is SAFE
+Enumerate_network Time (1 calls): 0.71 sec
+  From_init_box Time (1 calls): 0.20 sec (27.7%)
+    Make bm Time (1 calls): 0.19 sec (95.5%)
+    Star Time (1 calls): 0.01 sec (3.8%)
+    Other (From_init_box): 0.00 sec (0.7%)
+  Propagate_up_to_split Time (1 calls): 0.01 sec (1.2%)
+  Push_init Time (1 calls): 0.00 sec (0.0%)
+  Run workers Time (1 calls): 0.04 sec (5.6%)
+    Worker_func Time (1 calls): 0.04 sec (99.7%)
+      Get_global_queue Time (2 calls): 0.00 sec (0.1%)
+      Update_shared_variables Time (2 calls): 0.00 sec (0.4%)
+      Print_progress Time (1 calls): 0.00 sec (0.3%)
+      Do_overapprox_rounds Time (1 calls): 0.04 sec (98.1%)
+        Execute fully connected Time (4 calls): 0.00 sec (0.6%)
+        Execute relu Time (3 calls): 0.00 sec (0.2%)
+        Assign_zeros Time (4 calls): 0.00 sec (0.6%)
+        Relu_update Time (2 calls): 0.00 sec (1.2%)
+        Stack_new_generators Time (2 calls): 0.00 sec (2.4%)
+        Transform_linear Time (4 calls): 0.03 sec (80.1%)
+        Zono.box_bounds Time (3 calls): 0.00 sec (5.1%)
+        Make_split_indices Time (3 calls): 0.00 sec (0.3%)
+        Sort_splits Time (3 calls): 0.00 sec (0.3%)
+        Overapprox_check_round Time (1 calls): 0.00 sec (2.5%)
+        Other (Do_overapprox_rounds): 0.00 sec (6.7%)
+      Post_loop Time (1 calls): 0.00 sec (0.3%)
+      Other (Worker_func): 0.00 sec (0.8%)
+    Other (Run workers): 0.00 sec (0.3%)
+  Other (Enumerate_network): 0.46 sec (65.6%)

@@ -1,0 +1,85 @@
+Running single-threaded
+(1.6 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+Overapprox Round 1/3 has 1 set(s)
+Layer 1/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 3507))... 0.079 sec
+Layer 2/9: ReluLayer (zono shape: (2048, 3507))... 0.079 sec
+Layer 3/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 4193))... 0.09 sec
+Layer 4/9: ReluLayer (zono shape: (2048, 4193))... 0.083 sec
+Layer 5/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 4672))... 0.073 sec
+Layer 6/9: ReluLayer (zono shape: (512, 4672))... 0.014 sec
+Layer 7/9: LinearOnnxSubnetworkLayer (zono shape: (512, 4835))... 0.064 sec
+Layer 8/9: ReluLayer (zono shape: (100, 4835))... 0.003 sec
+Layer 9/9: LinearOnnxSubnetworkLayer (zono shape: (100, 4896))... 0.035 sec
+Overapprox Round 2/3 has 3 set(s)
+Layer 1/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 3507))... 0.208 sec
+Layer 2/9: ReluLayer (zono shape: (2048, 3507))... 0.199 sec
+Layer 3/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 4157))... 0.25 sec
+Layer 4/9: ReluLayer (zono shape: (2048, 4157))... 0.218 sec
+Layer 5/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 4596))... 0.222 sec
+Layer 6/9: ReluLayer (zono shape: (512, 4596))... 0.038 sec
+Layer 7/9: LinearOnnxSubnetworkLayer (zono shape: (512, 4753))... 0.187 sec
+Layer 8/9: ReluLayer (zono shape: (100, 4753))... 0.007 sec
+Layer 9/9: LinearOnnxSubnetworkLayer (zono shape: (100, 4814))... 0.102 sec
+Overapprox Round 3/3 has 4 set(s)
+Layer 1/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 3507))... 0.284 sec
+Layer 2/9: ReluLayer (zono shape: (2048, 3507))...
+Using LP to check 650/2048 potential ReLU splits... 7.596 sec
+Layer 3/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 4138))... 0.647 sec
+Layer 4/9: ReluLayer (zono shape: (2048, 4138))...
+Using LP to check 435/2048 potential ReLU splits... 17.115 sec
+Layer 5/9: LinearOnnxSubnetworkLayer (zono shape: (2048, 4521))... 0.316 sec
+Layer 6/9: ReluLayer (zono shape: (512, 4521))...
+Using LP to check 151/512 potential ReLU splits... 23.057 sec
+Layer 7/9: LinearOnnxSubnetworkLayer (zono shape: (512, 4643))... 0.241 sec
+Layer 8/9: ReluLayer (zono shape: (100, 4643))...
+Using LP to check 58/100 potential ReLU splits... 99.604 sec
+Layer 9/9: LinearOnnxSubnetworkLayer (zono shape: (100, 4693))... 0.138 sec
+(2.71 min) Q: 0, Sets: 1/1  (100.0%) ETA: 0.0 sec (expected 1 stars)   
+
+
+
+Total Stars: 1 (0 exact, 1 approx)
+Runtime: 2.71 min (162.78 sec)
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is SAFE
+Enumerate_network Time (1 calls): 162.78 sec
+  From_init_box Time (1 calls): 0.56 sec (0.3%)
+  Propagate_up_to_split Time (1 calls): 0.09 sec (0.1%)
+  Push_init Time (1 calls): 0.00 sec (0.0%)
+  Run workers Time (1 calls): 161.17 sec (99.0%)
+    Worker_func Time (1 calls): 161.17 sec (100.0%)
+      Get_global_queue Time (2 calls): 0.00 sec (0.0%)
+      Update_shared_variables Time (2 calls): 0.00 sec (0.0%)
+      Print_progress Time (2 calls): 0.00 sec (0.0%)
+      Do_overapprox_rounds Time (1 calls): 161.17 sec (100.0%)
+        Execute relu Time (4 calls): 0.00 sec (0.0%)
+        Assign_zeros Time (35 calls): 0.23 sec (0.1%)
+        Relu_update Time (35 calls): 0.16 sec (0.1%)
+        Stack_new_generators Time (35 calls): 0.45 sec (0.3%)
+        Transform_linear Time (15 calls): 2.94 sec (1.8%)
+        Zono.box_bounds Time (28 calls): 0.33 sec (0.2%)
+        Make_split_indices Time (16 calls): 0.00 sec (0.0%)
+        Sort_splits Time (12 calls): 0.00 sec (0.0%)
+        Overapprox_check_round Time (3 calls): 8.64 sec (5.4%)
+          Zono_might_violate_spec Time (17 calls): 0.01 sec (0.1%)
+          Get_violation_star Time (2 calls): 8.63 sec (99.8%)
+            Glp_copy_prob Time (2 calls): 0.10 sec (1.2%)
+            Copy init bm bias Time (2 calls): 0.03 sec (0.4%)
+            Add_dense_row Time (2 calls): 0.01 sec (0.1%)
+            Other (Get_violation_star): 8.49 sec (98.4%)
+          Other (Overapprox_check_round): 0.01 sec (0.1%)
+        Glp_copy_prob Time (1 calls): 0.00 sec (0.0%)
+        Copy init bm bias Time (1 calls): 0.02 sec (0.0%)
+        Execute_relus_overapprox Time (5 calls): 6.72 sec (4.2%)
+        Update_bounds_lp Time (4 calls): 141.46 sec (87.8%)
+          Minimize_output Time (1294 calls): 141.44 sec (100.0%)
+          Other (Update_bounds_lp): 0.02 sec (0.0%)
+        Other (Do_overapprox_rounds): 0.22 sec (0.1%)
+      Post_loop Time (1 calls): 0.00 sec (0.0%)
+      Other (Worker_func): 0.00 sec (0.0%)
+    Other (Run workers): 0.00 sec (0.0%)
+  Other (Enumerate_network): 0.96 sec (0.6%)

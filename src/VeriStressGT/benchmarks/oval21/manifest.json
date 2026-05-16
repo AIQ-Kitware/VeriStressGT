@@ -1,0 +1,518 @@
+{
+  "benchmark_name": "vnncomp22_oval21",
+  "source": "./vnncomp2022_benchmarks/benchmarks/oval21",
+  "construction": "vnncomp.oval21",
+  "n_instances": 30,
+  "instances": [
+    {
+      "id": "vb_oval21_0000",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0000/model.onnx",
+        "vnnlib": "instances/vb_oval21_0000/spec.vnnlib",
+        "meta": "instances/vb_oval21_0000/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img8194-eps0.018300653594771243.vnnlib",
+        "epsilon": 0.018300653594771243,
+        "spec_index": 8194
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0001",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0001/model.onnx",
+        "vnnlib": "instances/vb_oval21_0001/spec.vnnlib",
+        "meta": "instances/vb_oval21_0001/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img2578-eps0.021176470588235297.vnnlib",
+        "epsilon": 0.021176470588235297,
+        "spec_index": 2578
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0002",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0002/model.onnx",
+        "vnnlib": "instances/vb_oval21_0002/spec.vnnlib",
+        "meta": "instances/vb_oval21_0002/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img4763-eps0.024705882352941175.vnnlib",
+        "epsilon": 0.024705882352941175,
+        "spec_index": 4763
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0003",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0003/model.onnx",
+        "vnnlib": "instances/vb_oval21_0003/spec.vnnlib",
+        "meta": "instances/vb_oval21_0003/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img9410-eps0.043137254901960784.vnnlib",
+        "epsilon": 0.043137254901960784,
+        "spec_index": 9410
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0004",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0004/model.onnx",
+        "vnnlib": "instances/vb_oval21_0004/spec.vnnlib",
+        "meta": "instances/vb_oval21_0004/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img8095-eps0.010457516339869282.vnnlib",
+        "epsilon": 0.010457516339869282,
+        "spec_index": 8095
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0005",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0005/model.onnx",
+        "vnnlib": "instances/vb_oval21_0005/spec.vnnlib",
+        "meta": "instances/vb_oval21_0005/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img8717-eps0.011633986928104577.vnnlib",
+        "epsilon": 0.011633986928104577,
+        "spec_index": 8717
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0006",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0006/model.onnx",
+        "vnnlib": "instances/vb_oval21_0006/spec.vnnlib",
+        "meta": "instances/vb_oval21_0006/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img6767-eps0.020000000000000004.vnnlib",
+        "epsilon": 0.020000000000000004,
+        "spec_index": 6767
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0007",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0007/model.onnx",
+        "vnnlib": "instances/vb_oval21_0007/spec.vnnlib",
+        "meta": "instances/vb_oval21_0007/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img3161-eps0.018562091503267972.vnnlib",
+        "epsilon": 0.018562091503267972,
+        "spec_index": 3161
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0008",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0008/model.onnx",
+        "vnnlib": "instances/vb_oval21_0008/spec.vnnlib",
+        "meta": "instances/vb_oval21_0008/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img876-eps0.024836601307189544.vnnlib",
+        "epsilon": 0.024836601307189544,
+        "spec_index": 876
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0009",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0009/model.onnx",
+        "vnnlib": "instances/vb_oval21_0009/spec.vnnlib",
+        "meta": "instances/vb_oval21_0009/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_base_kw.onnx",
+        "vnnlib_basename": "cifar_base_kw-img3568-eps0.030457516339869282.vnnlib",
+        "epsilon": 0.030457516339869282,
+        "spec_index": 3568
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0010",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0010/model.onnx",
+        "vnnlib": "instances/vb_oval21_0010/spec.vnnlib",
+        "meta": "instances/vb_oval21_0010/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img6432-eps0.034771241830065365.vnnlib",
+        "epsilon": 0.034771241830065365,
+        "spec_index": 6432
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0011",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0011/model.onnx",
+        "vnnlib": "instances/vb_oval21_0011/spec.vnnlib",
+        "meta": "instances/vb_oval21_0011/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img7564-eps0.04183006535947713.vnnlib",
+        "epsilon": 0.04183006535947713,
+        "spec_index": 7564
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0012",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0012/model.onnx",
+        "vnnlib": "instances/vb_oval21_0012/spec.vnnlib",
+        "meta": "instances/vb_oval21_0012/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img8517-eps0.006928104575163399.vnnlib",
+        "epsilon": 0.006928104575163399,
+        "spec_index": 8517
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0013",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0013/model.onnx",
+        "vnnlib": "instances/vb_oval21_0013/spec.vnnlib",
+        "meta": "instances/vb_oval21_0013/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img2732-eps0.04967320261437909.vnnlib",
+        "epsilon": 0.04967320261437909,
+        "spec_index": 2732
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0014",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0014/model.onnx",
+        "vnnlib": "instances/vb_oval21_0014/spec.vnnlib",
+        "meta": "instances/vb_oval21_0014/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img1909-eps0.0033986928104575162.vnnlib",
+        "epsilon": 0.0033986928104575162,
+        "spec_index": 1909
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0015",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0015/model.onnx",
+        "vnnlib": "instances/vb_oval21_0015/spec.vnnlib",
+        "meta": "instances/vb_oval21_0015/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img5989-eps0.028235294117647063.vnnlib",
+        "epsilon": 0.028235294117647063,
+        "spec_index": 5989
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0016",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0016/model.onnx",
+        "vnnlib": "instances/vb_oval21_0016/spec.vnnlib",
+        "meta": "instances/vb_oval21_0016/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img9916-eps0.053202614379084974.vnnlib",
+        "epsilon": 0.053202614379084974,
+        "spec_index": 9916
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0017",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0017/model.onnx",
+        "vnnlib": "instances/vb_oval21_0017/spec.vnnlib",
+        "meta": "instances/vb_oval21_0017/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img3478-eps0.004313725490196079.vnnlib",
+        "epsilon": 0.004313725490196079,
+        "spec_index": 3478
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0018",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0018/model.onnx",
+        "vnnlib": "instances/vb_oval21_0018/spec.vnnlib",
+        "meta": "instances/vb_oval21_0018/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img9062-eps0.0014379084967320263.vnnlib",
+        "epsilon": 0.0014379084967320263,
+        "spec_index": 9062
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0019",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0019/model.onnx",
+        "vnnlib": "instances/vb_oval21_0019/spec.vnnlib",
+        "meta": "instances/vb_oval21_0019/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_wide_kw.onnx",
+        "vnnlib_basename": "cifar_wide_kw-img3458-eps0.022875816993464054.vnnlib",
+        "epsilon": 0.022875816993464054,
+        "spec_index": 3458
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0020",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0020/model.onnx",
+        "vnnlib": "instances/vb_oval21_0020/spec.vnnlib",
+        "meta": "instances/vb_oval21_0020/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img4405-eps0.036732026143790855.vnnlib",
+        "epsilon": 0.036732026143790855,
+        "spec_index": 4405
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0021",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0021/model.onnx",
+        "vnnlib": "instances/vb_oval21_0021/spec.vnnlib",
+        "meta": "instances/vb_oval21_0021/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img7878-eps0.009934640522875817.vnnlib",
+        "epsilon": 0.009934640522875817,
+        "spec_index": 7878
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0022",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0022/model.onnx",
+        "vnnlib": "instances/vb_oval21_0022/spec.vnnlib",
+        "meta": "instances/vb_oval21_0022/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img1052-eps0.010718954248366015.vnnlib",
+        "epsilon": 0.010718954248366015,
+        "spec_index": 1052
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0023",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0023/model.onnx",
+        "vnnlib": "instances/vb_oval21_0023/spec.vnnlib",
+        "meta": "instances/vb_oval21_0023/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img4325-eps0.01673202614379085.vnnlib",
+        "epsilon": 0.01673202614379085,
+        "spec_index": 4325
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0024",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0024/model.onnx",
+        "vnnlib": "instances/vb_oval21_0024/spec.vnnlib",
+        "meta": "instances/vb_oval21_0024/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img4168-eps0.03150326797385621.vnnlib",
+        "epsilon": 0.03150326797385621,
+        "spec_index": 4168
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0025",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0025/model.onnx",
+        "vnnlib": "instances/vb_oval21_0025/spec.vnnlib",
+        "meta": "instances/vb_oval21_0025/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img3062-eps0.007450980392156864.vnnlib",
+        "epsilon": 0.007450980392156864,
+        "spec_index": 3062
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0026",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0026/model.onnx",
+        "vnnlib": "instances/vb_oval21_0026/spec.vnnlib",
+        "meta": "instances/vb_oval21_0026/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img9931-eps0.02496732026143791.vnnlib",
+        "epsilon": 0.02496732026143791,
+        "spec_index": 9931
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0027",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0027/model.onnx",
+        "vnnlib": "instances/vb_oval21_0027/spec.vnnlib",
+        "meta": "instances/vb_oval21_0027/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img8366-eps0.0550326797385621.vnnlib",
+        "epsilon": 0.0550326797385621,
+        "spec_index": 8366
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0028",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0028/model.onnx",
+        "vnnlib": "instances/vb_oval21_0028/spec.vnnlib",
+        "meta": "instances/vb_oval21_0028/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img9845-eps0.009673202614379085.vnnlib",
+        "epsilon": 0.009673202614379085,
+        "spec_index": 9845
+      },
+      "vnncomp_timeout_s": 720.0
+    },
+    {
+      "id": "vb_oval21_0029",
+      "seed": null,
+      "construction": "vnncomp.oval21",
+      "paths": {
+        "onnx": "instances/vb_oval21_0029/model.onnx",
+        "vnnlib": "instances/vb_oval21_0029/spec.vnnlib",
+        "meta": "instances/vb_oval21_0029/meta.json"
+      },
+      "args": {
+        "onnx_basename": "cifar_deep_kw.onnx",
+        "vnnlib_basename": "cifar_deep_kw-img4510-eps0.028235294117647063.vnnlib",
+        "epsilon": 0.028235294117647063,
+        "spec_index": 4510
+      },
+      "vnncomp_timeout_s": 720.0
+    }
+  ]
+}

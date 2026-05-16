@@ -1,0 +1,72 @@
+Restricted license - for non-production use only - expires 2027-11-29
+
+ [!] GlobalSettings:
+	- use_restart                             : True
+	- use_mip_tightening                      : True
+	- use_attack                              : True
+	- attack_interval                         : 10
+	- use_mip_verify                          : True
+	- input_splitting_threshold               : 0.5
+	- hidden_splitting_threshold              : 0.01
+	- safety_num_input_perturbed              : 200
+	- skip_preprocess                         : False
+	- use_save_reasoning_step                 : False
+	- max_iterations                          : 1000000000.0
+	- skip_initial_worst_bound                : -1000000.0
+	- max_domains                             : 1000000000.0
+	- use_decompose                           : False
+	- restart_current_hidden_branches         : 2000
+	- restart_visited_hidden_branches         : 20000
+	- restart_current_input_branches          : 20000
+	- restart_visited_input_branches          : 200000
+	- restart_max_runtime                     : 60.0
+	- restart_max_runtime_percentage          : 0.4
+	- mip_tightening_patience                 : 10
+	- mip_tightening_timeout_per_neuron       : 15.0
+	- mip_tightening_topk                     : 64
+	- use_gpu_tightening                      : False
+	- gpu_tightening_current_hidden_branches  : 1000
+	- gpu_tightening_visited_hidden_branches  : 5000
+	- gpu_tightening_timeout                  : 10.0
+	- gpu_tightening_patience                 : 10
+	- gpu_tightening_topk                     : 500
+	- use_mip_attack                          : False
+	- mip_verify_threshold                    : 2
+	- share_alphas                            : False
+	- backward_batch_size                     : inf
+	- forward_max_dim                         : 10000
+	- forward_dynamic                         : False
+	- use_decompose_incomplete                : False
+	- init_abstraction_method                 : crown-optimized
+	- subverifier_decision_method             : smart
+	- verify_candidate_batch                  : 3
+	- verify_last_timeout                     : 200.0
+	- verify_interm_timeout                   : 20.0
+	- sequential_batch                        : 100
+	- use_sequential_abstract_forward         : False
+	- verify_extra_opts                       : {'sparse_intermediate_bounds': True}
+	- verify_splitting_strategy               : hidden
+	- use_extra_substitution                  : False
+	- verify_max_iteration                    : 4
+	- verify_candidate_num                    : 128
+	- verify_interpolate_factor               : 0.5
+
+ConvertModel(
+  (Gemm_linear): Linear(in_features=50, out_features=100, bias=True)
+  (Relu_relu): ReLU()
+  (Gemm_linear_1): Linear(in_features=100, out_features=100, bias=True)
+  (Relu_relu_1): ReLU()
+  (Gemm_logits): Linear(in_features=100, out_features=5, bias=True)
+)
+INFO     14:29:53     [!] Input shape: (1, 50)
+INFO     14:29:53     [!] Output shape: (1, 5)
+INFO     14:29:53     [!] VNNLIB: 50 inputs, 5 outputs
+INFO     14:29:55     [Failed] RandomAttack(seed=377, device=cpu)
+Attacking PGD F32 iterations=100000 restarts=20 timeout=17.839221477508545 cs.shape=torch.Size([4, 1, 5]) rhs.shape=torch.Size([4, 1])
+INFO     14:29:55     [Success] PGDAttack(seed=430, device=cpu)
+INFO     14:29:55     [!] Iterations: 0
+INFO     14:29:55     adv (first 5): tensor([ 0.1640,  0.8160,  0.1640, -0.5019,  0.0056])
+DEBUG    14:29:55     output: tensor([ 0.0042, -0.0132,  0.0841,  0.0842, -0.0836])
+INFO     14:29:55     [!] Result: sat
+INFO     14:29:55     [!] Runtime: 2.3827
+sat,2.3827

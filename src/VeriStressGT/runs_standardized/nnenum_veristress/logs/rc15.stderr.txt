@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "./verifiers/nnenum/src/nnenum/nnenum.py", line 126, in main
+    network = load_onnx_network_optimized(onnx_filename)
+  File "./verifiers/nnenum/src/nnenum/onnx_network.py", line 313, in load_onnx_network_optimized
+    init = init_map[cur_node.input[1]]
+KeyError: '/selector/Transpose_output_0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/anaconda3/envs/VeriStressGT/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "./verifiers/nnenum/src/nnenum/nnenum.py", line 186, in <module>
+    main()
+  File "./verifiers/nnenum/src/nnenum/nnenum.py", line 129, in main
+    network = load_onnx_network(onnx_filename)
+  File "./verifiers/nnenum/src/nnenum/onnx_network.py", line 764, in load_onnx_network
+    assert o in Settings.ONNX_WHITELIST, f"Onnx model contains node with op {o}, which may not be a linear operation. " + \
+AssertionError: Onnx model contains node with op Transpose, which may not be a linear operation. Updated Settings.WHITELIST if you want to override this.

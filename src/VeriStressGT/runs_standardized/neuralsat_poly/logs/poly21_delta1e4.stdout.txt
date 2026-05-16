@@ -1,0 +1,92 @@
+Restricted license - for non-production use only - expires 2027-11-29
+
+ [!] GlobalSettings:
+	- use_restart                             : True
+	- use_mip_tightening                      : True
+	- use_attack                              : True
+	- attack_interval                         : 10
+	- use_mip_verify                          : True
+	- input_splitting_threshold               : 0.5
+	- hidden_splitting_threshold              : 0.01
+	- safety_num_input_perturbed              : 200
+	- skip_preprocess                         : False
+	- use_save_reasoning_step                 : False
+	- max_iterations                          : 1000000000.0
+	- skip_initial_worst_bound                : -1000000.0
+	- max_domains                             : 1000000000.0
+	- use_decompose                           : False
+	- restart_current_hidden_branches         : 2000
+	- restart_visited_hidden_branches         : 20000
+	- restart_current_input_branches          : 20000
+	- restart_visited_input_branches          : 200000
+	- restart_max_runtime                     : 60.0
+	- restart_max_runtime_percentage          : 0.4
+	- mip_tightening_patience                 : 10
+	- mip_tightening_timeout_per_neuron       : 15.0
+	- mip_tightening_topk                     : 64
+	- use_gpu_tightening                      : False
+	- gpu_tightening_current_hidden_branches  : 1000
+	- gpu_tightening_visited_hidden_branches  : 5000
+	- gpu_tightening_timeout                  : 10.0
+	- gpu_tightening_patience                 : 10
+	- gpu_tightening_topk                     : 500
+	- use_mip_attack                          : False
+	- mip_verify_threshold                    : 2
+	- share_alphas                            : False
+	- backward_batch_size                     : inf
+	- forward_max_dim                         : 10000
+	- forward_dynamic                         : False
+	- use_decompose_incomplete                : False
+	- init_abstraction_method                 : crown-optimized
+	- subverifier_decision_method             : smart
+	- verify_candidate_batch                  : 3
+	- verify_last_timeout                     : 200.0
+	- verify_interm_timeout                   : 20.0
+	- sequential_batch                        : 100
+	- use_sequential_abstract_forward         : False
+	- verify_extra_opts                       : {'sparse_intermediate_bounds': True}
+	- verify_splitting_strategy               : hidden
+	- use_extra_substitution                  : False
+	- verify_max_iteration                    : 4
+	- verify_candidate_num                    : 128
+	- verify_interpolate_factor               : 0.5
+
+ConvertModel(
+  (Transpose_/Transpose_output_0): Transpose()
+  (MatMul_/MatMul_output_0): MatMul()
+  (Add_/Add_output_0): Add()
+  (Constant_/Constant_output_0): Constant(constant=10.0)
+  (Pow_/Pow_output_0): pow()
+  (Transpose_/Transpose_1_output_0): Transpose()
+  (MatMul_/MatMul_1_output_0): MatMul()
+  (Add_output): Add()
+)
+INFO     13:12:18     [!] Input shape: (1, 100)
+INFO     13:12:18     [!] Output shape: (1, 2)
+INFO     13:12:18     [!] VNNLIB: 100 inputs, 2 outputs
+INFO     13:12:21     [Failed] RandomAttack(seed=858, device=cpu)
+Attacking PGD F32 iterations=100000 restarts=20 timeout=17.438210487365723 cs.shape=torch.Size([1, 1, 2]) rhs.shape=torch.Size([1, 1])
+INFO     13:12:39     [Failed] PGDAttack(seed=714, device=cpu)
+INFO     13:12:39     [!] eps=0.039800, perturbed=100
+INFO     13:12:39     [_preprocess] _init_abstractor
+DEBUG    13:12:39     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+DEBUG    13:12:39     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     13:12:39     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='backward'
+INFO     13:12:40     Initial bounds (first 10): tensor([-2011.0201])
+INFO     13:12:40     Remain 1 objectives
+[!] Found unsupported layer: <class 'helper.network.onnx2pytorch.operations.transpose.Transpose'>
+INFO     13:12:40     Params of 1-th run: {'input_split': False, 'abstract_method': 'crown-optimized', 'decision_method': 'smart', 'decision_topk': 10}
+INFO     13:12:40     [_setup_restart] _init_abstractor
+DEBUG    13:12:41     [select_params] Try self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+DEBUG    13:12:41     [_init_module] Try bound_opts={'conv_mode': 'patches', 'verbosity': 0}
+INFO     13:12:43     [select_params] Success: self.input_split=False Settings.backward_batch_size=inf extra_opts={} mode='patches' method='crown-optimized'
+INFO     13:12:43     Try batch size 1000
+INFO     13:12:43     Initial bounds (first 10): tensor([-2011.0201])
+INFO     13:13:45     Initial optimized bounds (first 10): tensor([-907.1852])
+INFO     13:13:46     [Hidden splitting]     Iteration: 1          Remaining: 2          Visited: 2          Bound: -907.203247     Time elapsed (s): 87.98      Iteration elapsed (s): 0.71       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:13:48     [Hidden splitting]     Iteration: 2          Remaining: 4          Visited: 4          Bound: -907.203247     Time elapsed (s): 89.31      Iteration elapsed (s): 1.26       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:13:49     [Hidden splitting]     Iteration: 3          Remaining: 8          Visited: 8          Bound: -907.203247     Time elapsed (s): 90.55      Iteration elapsed (s): 1.14       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:13:57     [Hidden splitting]     Iteration: 4          Remaining: 16         Visited: 16         Bound: -907.203247     Time elapsed (s): 98.84      Iteration elapsed (s): 8.22       GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:14:09     [Hidden splitting]     Iteration: 5          Remaining: 32         Visited: 32         Bound: -907.203247     Time elapsed (s): 110.53     Iteration elapsed (s): 11.63      GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:14:28     [Hidden splitting]     Iteration: 6          Remaining: 64         Visited: 64         Bound: -907.203247     Time elapsed (s): 130.11     Iteration elapsed (s): 19.50      GPU Mem (%): 0.00      Batch: 1000      Restart: 1         
+INFO     13:14:49     [Hidden splitting]     Iteration: 7          Remaining: 128        Visited: 128        Bound: -907.203247     Time elapsed (s): 151.07     Iteration elapsed (s): 20.91      GPU Mem (%): 0.00      Batch: 1000      Restart: 1         

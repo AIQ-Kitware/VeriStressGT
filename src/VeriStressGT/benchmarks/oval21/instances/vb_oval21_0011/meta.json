@@ -1,0 +1,14 @@
+{
+  "id": "vb_oval21_0011",
+  "construction": "vnncomp.oval21",
+  "source_benchmark": "oval21",
+  "source_onnx": "onnx/cifar_wide_kw.onnx",
+  "source_vnnlib": "vnnlib/cifar_wide_kw-img7564-eps0.04183006535947713.vnnlib",
+  "args": {
+    "onnx_basename": "cifar_wide_kw.onnx",
+    "vnnlib_basename": "cifar_wide_kw-img7564-eps0.04183006535947713.vnnlib",
+    "epsilon": 0.04183006535947713,
+    "spec_index": 7564
+  },
+  "vnncomp_timeout_s": 720.0
+}

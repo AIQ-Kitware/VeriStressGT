@@ -1,0 +1,16 @@
+Running analysis with 1 processes, domains = ['con_z'], scorer = better
+
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 2, Remaining: 3
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 3, Remaining: 4
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 3, Remaining: 4
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 4, Remaining: 5
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 5, Remaining: 4
+Safe_volume: 50.0000% |███████████████               | Time: 00:00 s, Done: 6, Remaining: 3
+Safe_volume: 75.0000% |██████████████████████▌       | Time: 00:00 s, Done: 7, Remaining: 2
+Safe_volume: 87.5000% |██████████████████████████▎   | Time: 00:00 s, Done: 8, Remaining: 1
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:00 s, Done: 8, Remaining: 1
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:00 s, Done: 9, Remaining: 0
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:00 s, Done: 9, Remaining: 0
+Result = True, Time = 0.24 s, Safe space = 100.00 %, number of analysis = 9

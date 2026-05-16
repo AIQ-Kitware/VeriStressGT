@@ -1,0 +1,50 @@
+{
+  "id": "poly22_combo_deg18_delta1e3",
+  "construction": "polynomial.algebraic_boundary",
+  "seed": 122,
+  "paths": {
+    "onnx": "instances/poly22_combo_deg18_delta1e3/model.onnx",
+    "vnnlib": "instances/poly22_combo_deg18_delta1e3/spec.vnnlib",
+    "meta": "instances/poly22_combo_deg18_delta1e3/meta.json"
+  },
+  "sha256": {
+    "onnx": "588c56482cbb74e66166ed6a7dd64be66b0109eb53525cb704a1c59e5cbc0fc3",
+    "vnnlib": "c345a2e0c9b103eec18e707586f6d7067a642b5d222024c475a9b7f0e66c4f8d"
+  },
+  "args": {
+    "input_dim": 100,
+    "hidden_dim": 100,
+    "degree": 18,
+    "num_outputs": 2,
+    "init_mode": "fanin",
+    "eps_normal": 0.02,
+    "delta_prime": 0.001,
+    "num_lines": 1800,
+    "center_scale": 2.0,
+    "line_t_min": -10.0,
+    "line_t_max": 10.0,
+    "line_grid_points": 240,
+    "boundary_tol": 1e-06,
+    "boundary_rel_tol": 1e-10,
+    "unique_tol": 0.0001,
+    "max_candidates": 5,
+    "candidate_margin_tol": 1e-08,
+    "grad_tol": 1e-12,
+    "nbc_num_restarts": 75,
+    "nbc_max_iter": 500,
+    "nbc_boundary_tol": 1e-10,
+    "nbc_ftol": 1e-15,
+    "nbc_gtol": 1e-10,
+    "weight_scale": 1.0,
+    "bias_scale": 1.0,
+    "output_weight_scale": 1.0,
+    "output_bias_scale": 1.0,
+    "bias_base_scale": 0.1,
+    "output_bias_base_scale": 0.1,
+    "opset": 13,
+    "quiet": true,
+    "seed": 122,
+    "onnx_path": "benchmarks/polynomial_stress_22/instances/poly22_combo_deg18_delta1e3/model.onnx",
+    "vnnlib_path": "benchmarks/polynomial_stress_22/instances/poly22_combo_deg18_delta1e3/spec.vnnlib"
+  }
+}

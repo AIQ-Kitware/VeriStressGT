@@ -1,0 +1,11 @@
+general:
+  device: cpu
+  save_adv_example: true
+attack:
+  pgd_order: input_bab
+  cex_path: ./test_cex.txt
+solver:
+  alpha-crown:
+    max_time: 1000000000.0
+bab:
+  timeout: 3000000.0

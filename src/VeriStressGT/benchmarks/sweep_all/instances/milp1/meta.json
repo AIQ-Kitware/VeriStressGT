@@ -1,0 +1,30 @@
+{
+  "id": "milp1",
+  "construction": "mlp_relu.milp.exact_radius",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/milp1/model.onnx",
+    "vnnlib": "instances/milp1/spec.vnnlib",
+    "meta": "instances/milp1/meta.json"
+  },
+  "sha256": {
+    "onnx": "d53f62c521576199e72d3bb5c92a970a5e9eaf016c93bdd31eed1df72b9ca2f0",
+    "vnnlib": "84b4c2d8974a26531ee2abaf8b25e6378e6b0ffc6623967c1f9c77cd830e3a4f"
+  },
+  "args": {
+    "seed": 0,
+    "input_dim": 50,
+    "h1": 20,
+    "h2": 10,
+    "num_outputs": 5,
+    "epsilon_frac": 0.5,
+    "rmax": 2.0,
+    "time_limit": 240.0,
+    "mip_gap": null,
+    "epsilon_mode": "safe",
+    "save_x0": false,
+    "save_json": false,
+    "onnx_path": "benchmarks/sweep_all_marabou/instances/milp1/model.onnx",
+    "vnnlib_path": "benchmarks/sweep_all_marabou/instances/milp1/spec.vnnlib"
+  }
+}

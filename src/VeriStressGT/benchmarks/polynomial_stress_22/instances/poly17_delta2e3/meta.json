@@ -1,0 +1,50 @@
+{
+  "id": "poly17_delta2e3",
+  "construction": "polynomial.algebraic_boundary",
+  "seed": 117,
+  "paths": {
+    "onnx": "instances/poly17_delta2e3/model.onnx",
+    "vnnlib": "instances/poly17_delta2e3/spec.vnnlib",
+    "meta": "instances/poly17_delta2e3/meta.json"
+  },
+  "sha256": {
+    "onnx": "8896ddf41a09ee5a59707ac07d5cf454fc8c8c084f587a4671a2dfe4651bd446",
+    "vnnlib": "59e72339e21b3b4f267d9db11db745e74426b0de5c5483ddf14b1b44be59f6e4"
+  },
+  "args": {
+    "input_dim": 100,
+    "hidden_dim": 100,
+    "degree": 10,
+    "num_outputs": 2,
+    "init_mode": "fanin",
+    "eps_normal": 0.02,
+    "delta_prime": 0.002,
+    "num_lines": 1400,
+    "center_scale": 2.0,
+    "line_t_min": -10.0,
+    "line_t_max": 10.0,
+    "line_grid_points": 240,
+    "boundary_tol": 1e-06,
+    "boundary_rel_tol": 1e-10,
+    "unique_tol": 0.0001,
+    "max_candidates": 5,
+    "candidate_margin_tol": 1e-08,
+    "grad_tol": 1e-12,
+    "nbc_num_restarts": 50,
+    "nbc_max_iter": 500,
+    "nbc_boundary_tol": 1e-10,
+    "nbc_ftol": 1e-15,
+    "nbc_gtol": 1e-10,
+    "weight_scale": 1.0,
+    "bias_scale": 1.0,
+    "output_weight_scale": 1.0,
+    "output_bias_scale": 1.0,
+    "bias_base_scale": 0.1,
+    "output_bias_base_scale": 0.1,
+    "opset": 13,
+    "quiet": true,
+    "seed": 117,
+    "onnx_path": "benchmarks/polynomial_stress_22/instances/poly17_delta2e3/model.onnx",
+    "vnnlib_path": "benchmarks/polynomial_stress_22/instances/poly17_delta2e3/spec.vnnlib"
+  }
+}

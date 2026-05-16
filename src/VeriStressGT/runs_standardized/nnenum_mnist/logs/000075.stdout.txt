@@ -1,0 +1,34 @@
+Running single-threaded
+(0.8 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+Overapprox Round 1/3 has 1 set(s)
+Layer 1/11: FullyConnectedLayer (zono shape: (256, 812))... 0.003 sec
+Layer 2/11: ReluLayer (zono shape: (256, 812))... 0.003 sec
+Layer 3/11: FullyConnectedLayer (zono shape: (256, 875))... 0.008 sec
+Layer 4/11: ReluLayer (zono shape: (256, 875))... 0.003 sec
+Layer 5/11: FullyConnectedLayer (zono shape: (256, 906))... 0.002 sec
+Layer 6/11: ReluLayer (zono shape: (256, 906))... 0.002 sec
+Layer 7/11: FullyConnectedLayer (zono shape: (256, 928))... 0.003 sec
+Layer 8/11: ReluLayer (zono shape: (256, 928))... 0.001 sec
+Layer 9/11: FullyConnectedLayer (zono shape: (256, 929))... 0.003 sec
+Layer 10/11: ReluLayer (zono shape: (256, 929))... 0.001 sec
+Layer 11/11: FullyConnectedLayer (zono shape: (256, 932))... 0.001 sec
+
+
+
+Total Stars: 1 (0 exact, 1 approx)
+Runtime: 0.8 sec
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is SAFE
+Enumerate_network Time (1 calls): 0.82 sec
+  From_init_box Time (1 calls): 0.21 sec (25.7%)
+    Make bm Time (1 calls): 0.20 sec (96.6%)
+    Star Time (1 calls): 0.01 sec (2.7%)
+    Other (From_init_box): 0.00 sec (0.7%)
+  Propagate_up_to_split Time (1 calls): 0.01 sec (1.0%)
+  Push_init Time (1 calls): 0.00 sec (0.0%)
+  Run workers Time (1 calls): 0.04 sec (4.4%)
+  Other (Enumerate_network): 0.57 sec (68.8%)

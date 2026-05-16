@@ -1,0 +1,5 @@
+Network: ./benchmarks/oval21/instances/vb_oval21_0025/model.onnx
+Property: ./benchmarks/oval21/instances/vb_oval21_0025/spec.vnnlib
+
+Engine::processInputQuery: Input query (before preprocessing): 6766 equations, 16594 variables
+unsat

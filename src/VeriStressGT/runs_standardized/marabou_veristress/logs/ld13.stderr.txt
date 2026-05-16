@@ -1,0 +1,3 @@
+[libprotobuf FATAL ./google/protobuf/repeated_ptr_field.h:856] CHECK failed: (index) < (current_size_): 
+terminate called after throwing an instance of 'google::protobuf::FatalException'
+  what():  CHECK failed: (index) < (current_size_): 

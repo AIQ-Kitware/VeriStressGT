@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "VeriStressGT"
+version = "0.1.0"
+description = "Neural network verification benchmark framework with provably robust instances."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Anonymous"}]
+
+# ── Minimal core: enough to parse specs, read ONNX/VNNLIB, run CLI ──────────
+# A fresh user can `pip install .` and get the CLI + doctor without torch.
+dependencies = [
+  "numpy>=1.23",
+  "pyyaml>=6.0",
+  "packaging>=23.0",
+]
+
+[project.optional-dependencies]
+# Generate benchmark instances (all constructions need torch + onnx)
+generate = [
+  "torch>=2.0",
+  "onnx>=1.14",
+  "onnxruntime>=1.16",
+  "onnxscript>=0.1",
+  "onnx2pytorch>=0.4",
+  "onnxsim>=0.4",
+]
+
+# MILP-based constructions additionally need Gurobi's Python bindings
+milp = [
+  "VeriStressGT[generate]",
+  "gurobipy>=10.0",
+]
+
+# NOTE: auto_LiRPA is provided by the α-β-CROWN conda environment (environment.yaml),
+# not via pip. There is no [abcrown] extra. Run: make install-abcrown
+
+# Development / testing
+dev = [
+  "VeriStressGT[generate]",
+  "pytest>=7.0",
+  "ruff>=0.4.0",
+]
+
+# Everything pip can install (does NOT include Marabou/NNV/NeuralSAT binaries)
+all = [
+  "VeriStressGT[generate,milp,dev]",
+]
+
+[project.scripts]
+VeriStressGT-export-onnx = "VeriStressGT.cli_run:main_export_onnx"
+VeriStressGT-verify       = "VeriStressGT.cli_run:main_verify"
+VeriStressGT-doctor       = "VeriStressGT.cli.doctor:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

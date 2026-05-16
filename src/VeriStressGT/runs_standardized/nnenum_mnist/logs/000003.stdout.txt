@@ -1,0 +1,99 @@
+Running single-threaded
+(0.5 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+Overapprox Round 1/3 has 1 set(s)
+Layer 1/3: FullyConnectedLayer (zono shape: (256, 795))... 0.003 sec
+Layer 2/3: ReluLayer (zono shape: (256, 795))... 0.003 sec
+Layer 3/3: FullyConnectedLayer (zono shape: (256, 880))... 0.001 sec
+Overapprox Round 2/3 has 3 set(s)
+Layer 1/3: FullyConnectedLayer (zono shape: (256, 795))... 0.005 sec
+Layer 2/3: ReluLayer (zono shape: (256, 795))... 0.087 sec
+Layer 3/3: FullyConnectedLayer (zono shape: (256, 837))... 0.002 sec
+Overapprox Round 3/3 has 4 set(s)
+Layer 1/3: FullyConnectedLayer (zono shape: (256, 795))... 0.015 sec
+Layer 2/3: ReluLayer (zono shape: (256, 795))...
+Using LP to check 42/256 potential ReLU splits... 1.195 sec
+Layer 3/3: FullyConnectedLayer (zono shape: (256, 819))... 0.003 sec
+(3.0 sec) Q: 0, Sets: 0/2  (0.0%) ETA: - (expected 1 stars)   
+Found unsafe from second concrete execution of abstract counterexample
+
+violation star found a confirmed counterexample.
+
+Unsafe Base Branch: + (Mode: 0)
+(6.6 sec) Q: 0, Sets: 0/3  (0.0%) ETA: - (expected 1 stars)   
+
+
+Total Stars: 0 (0 exact, 0 approx)
+Runtime: 6.6 sec
+Completed work frac: 0.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is UNSAFE with confirmed counterexample in result.cinput and result.coutput
+Output: [0.0007672049105167389, 0.005310967564582825, 0.013159453868865967, -0.0005064904689788818, 0.4179777204990387, 0.004362747073173523, 0.004720613360404968, -0.030068740248680115, 0.004246510565280914, 0.5742881298065186]
+Enumerate_network Time (1 calls): 6.65 sec
+  From_init_box Time (1 calls): 0.15 sec (2.2%)
+  Propagate_up_to_split Time (1 calls): 0.01 sec (0.2%)
+  Push_init Time (1 calls): 0.00 sec (0.0%)
+  Run workers Time (1 calls): 6.16 sec (92.6%)
+    Worker_func Time (1 calls): 6.15 sec (100.0%)
+      Get_global_queue Time (1 calls): 0.00 sec (0.0%)
+      Update_shared_variables Time (3 calls): 0.00 sec (0.0%)
+      Print_progress Time (3 calls): 0.00 sec (0.0%)
+      Do_overapprox_rounds Time (2 calls): 5.73 sec (93.1%)
+        Execute fully connected Time (4 calls): 0.00 sec (0.0%)
+        Execute relu Time (2 calls): 0.00 sec (0.0%)
+        Assign_zeros Time (28 calls): 0.00 sec (0.0%)
+        Relu_update Time (28 calls): 0.09 sec (1.5%)
+        Stack_new_generators Time (28 calls): 0.03 sec (0.6%)
+        Transform_linear Time (12 calls): 0.23 sec (4.1%)
+        Zono.box_bounds Time (14 calls): 0.08 sec (1.4%)
+        Make_split_indices Time (7 calls): 0.00 sec (0.0%)
+        Sort_splits Time (6 calls): 0.00 sec (0.0%)
+        Overapprox_check_round Time (6 calls): 1.03 sec (17.9%)
+          Zono_might_violate_spec Time (38 calls): 0.05 sec (5.0%)
+          Get_violation_star Time (10 calls): 0.92 sec (89.7%)
+            Glp_copy_prob Time (10 calls): 0.21 sec (23.2%)
+            Copy init bm bias Time (10 calls): 0.04 sec (3.8%)
+            Add_dense_row Time (10 calls): 0.05 sec (5.9%)
+            Other (Get_violation_star): 0.62 sec (67.0%)
+          Other (Overapprox_check_round): 0.05 sec (5.3%)
+        Glp_copy_prob Time (2 calls): 0.00 sec (0.0%)
+        Copy init bm bias Time (2 calls): 0.00 sec (0.1%)
+        Execute_relus_overapprox Time (4 calls): 0.95 sec (16.6%)
+          Split_overapprox Time (62 calls): 0.94 sec (98.6%)
+            Add_dense_row Time (124 calls): 0.93 sec (99.6%)
+            Other (Split_overapprox): 0.00 sec (0.4%)
+          Overapprox bm update Time (4 calls): 0.00 sec (0.2%)
+          Other (Execute_relus_overapprox): 0.01 sec (1.2%)
+        Update_bounds_lp Time (2 calls): 3.22 sec (56.2%)
+          Minimize_output Time (90 calls): 3.22 sec (99.9%)
+          Other (Update_bounds_lp): 0.00 sec (0.1%)
+        Try_abstract_violation Time (2 calls): 0.08 sec (1.4%)
+        Update_shared Time (1 calls): 0.00 sec (0.0%)
+        Other (Do_overapprox_rounds): 0.01 sec (0.2%)
+      Advance Time (2 calls): 0.42 sec (6.9%)
+        Do_first_relu_split Time (2 calls): 0.42 sec (100.0%)
+          Split_enumerate Time (2 calls): 0.42 sec (100.0%)
+            Glp_copy_prob Time (2 calls): 0.00 sec (0.0%)
+            Copy init bm bias Time (2 calls): 0.02 sec (3.5%)
+            Check child feasible Time (2 calls): 0.00 sec (0.6%)
+            Add_dense_row Time (2 calls): 0.01 sec (1.9%)
+            Prefilter_split_relu Time (2 calls): 0.40 sec (93.7%)
+              Witness_lp Time (4 calls): 0.01 sec (1.9%)
+              Recompute_bounds Time (4 calls): 0.39 sec (98.0%)
+                Zono.update_output_bounds Time (4 calls): 0.00 sec (0.3%)
+                Update_bounds_lp Time (4 calls): 0.39 sec (99.7%)
+                  Minimize_output Time (36 calls): 0.39 sec (99.8%)
+                  Other (Update_bounds_lp): 0.00 sec (0.2%)
+                Sort_splits Time (4 calls): 0.00 sec (0.0%)
+                Other (Recompute_bounds): 0.00 sec (0.1%)
+              Assign_zeros Time (4 calls): 0.00 sec (0.0%)
+              Other (Prefilter_split_relu): 0.00 sec (0.1%)
+            Other (Split_enumerate): 0.00 sec (0.2%)
+          Other (Do_first_relu_split): 0.00 sec (0.0%)
+        Other (Advance): 0.00 sec (0.0%)
+      Post_loop Time (1 calls): 0.00 sec (0.0%)
+      Other (Worker_func): 0.00 sec (0.0%)
+    Other (Run workers): 0.00 sec (0.0%)
+  Other (Enumerate_network): 0.33 sec (5.0%)

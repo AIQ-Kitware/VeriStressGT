@@ -1,0 +1,20 @@
+Running in parallel with 32 processes
+Found unsafe from first concrete execution of abstract counterexample
+
+violation star found a confirmed counterexample.
+
+Unsafe Base Branch: ++--+-+-+-+-+ (Mode: 0)
+(0.0 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+(0.2 sec) Q: 1, Sets: 2/8  (3.125%) ETA: 4.9 sec (expected 64 stars)   
+(0.3 sec) Q: 5, Sets: 39/63  (43.506%) ETA: 0.3 sec (expected 90 stars)   
+
+
+Total Stars: 109 (3 exact, 106 approx)
+Runtime: 0.4 sec
+Completed work frac: 0.8031005859375
+Num Stars Copied Between Processes: 61
+Num Lps During Enumeration: 205
+Total Num Lps: 205
+
+Result: network is UNSAFE with confirmed counterexample in result.cinput and result.coutput
+Output: [0.24804136157035828, 0.24804134666919708, -0.0741288959980011, -0.19347068667411804, 0.22854244709014893]

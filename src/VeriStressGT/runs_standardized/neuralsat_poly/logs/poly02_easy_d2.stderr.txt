@@ -1,0 +1,23 @@
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/anaconda3/envs/VeriStressGT/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "./verifiers/neuralsat/src/main.py", line 101, in <module>
+    status = verifier.verify(objectives, timeout=timeout, force_split=args.force_split)
+  File "<@beartype(verifier.verifier.Verifier.verify) at 0x7f362fbff370>", line 113, in verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 73, in verify
+    self.status = self._verify(
+  File "<@beartype(verifier.verifier.Verifier._verify) at 0x7f362fbff5b0>", line 113, in _verify
+  File "./verifiers/neuralsat/src/verifier/verifier.py", line 93, in _verify
+    dnf_objectives, reference_bounds = self._preprocess(dnf_objectives, force_split=force_split)
+  File "<@beartype(verifier.utils._preprocess) at 0x7f362fbfd510>", line 54, in _preprocess
+  File "./verifiers/neuralsat/src/verifier/utils.py", line 203, in _preprocess
+    if None in self.abstractor.split_points:
+  File "./verifiers/neuralsat/src/abstractor/abstractor.py", line 50, in split_points
+    self._split_points = [self.net.split_activations[k.name][0][0].get_split_point() for k in self.net.split_nodes]
+  File "./verifiers/neuralsat/src/abstractor/abstractor.py", line 50, in <listcomp>
+    self._split_points = [self.net.split_activations[k.name][0][0].get_split_point() for k in self.net.split_nodes]
+  File "./verifiers/neuralsat/src/abstractor/auto_LiRPA/operators/activation_base.py", line 142, in get_split_point
+    raise NotImplementedError(f'get_split_point is not implemented for {self}.')
+NotImplementedError: get_split_point is not implemented for BoundSqr(name=/9/sqr, inputs=[/8], perturbed=True).

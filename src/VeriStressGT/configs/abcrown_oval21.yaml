@@ -1,0 +1,11 @@
+general:
+  device: cpu
+  save_adv_example: true
+solver:
+  batch_size: 2000
+  beta-crown:
+    lr_beta: 0.01
+  start_save_best: -1
+attack:
+  pgd_order: after
+  cex_path: ./test_cex.txt

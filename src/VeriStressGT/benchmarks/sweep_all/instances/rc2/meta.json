@@ -1,0 +1,32 @@
+{
+  "id": "rc2",
+  "construction": "mlp_relu.corners",
+  "seed": 2,
+  "paths": {
+    "onnx": "instances/rc2/model.onnx",
+    "vnnlib": "instances/rc2/spec.vnnlib",
+    "meta": "instances/rc2/meta.json"
+  },
+  "sha256": {
+    "onnx": "43f70e1de0a0425df1b403f16556a1e4952ce0b621a3bcdcd006f22f3b488e16",
+    "vnnlib": "b4c12ecd51261abc7dc35b5ceba8f21964fa971302476524c7f23af5af4d0aac"
+  },
+  "args": {
+    "seed": 2,
+    "input_dim": 100,
+    "num_outputs": 10,
+    "hinge_l1": 0.0001,
+    "num_hinges": 16,
+    "epsilon": 0.2,
+    "label": 0,
+    "active_dim": 8,
+    "hinge_density": 1.0,
+    "pattern_density": 0.5,
+    "coeff_scale": 1.0,
+    "tau": 0.0001,
+    "big_m": 2.0,
+    "quiet": false,
+    "onnx_path": "benchmarks/sweep_all_marabou/instances/rc2/model.onnx",
+    "vnnlib_path": "benchmarks/sweep_all_marabou/instances/rc2/spec.vnnlib"
+  }
+}

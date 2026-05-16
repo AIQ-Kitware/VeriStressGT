@@ -1,0 +1,13 @@
+{
+  "benchmark": "./benchmarks/oval21",
+  "manifest_construction": "vnncomp.oval21",
+  "verifier": "abcrown",
+  "conda_env": "alpha-beta-crown",
+  "timeout": 360.0,
+  "jobs": 1,
+  "git_commit": "a5c16df057d8831cb17931939c16b2dfdb1011b1",
+  "verifier_args": {
+    "abcrown_config": "./configs/abcrown_oval21.yaml",
+    "device": "cpu"
+  }
+}

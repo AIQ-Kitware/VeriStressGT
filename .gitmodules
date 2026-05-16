@@ -1,0 +1,18 @@
+[submodule "src/VeriStressGT/verifiers/nnenum"]
+	path = src/VeriStressGT/verifiers/nnenum
+	url = https://github.com/stanleybak/nnenum.git
+[submodule "src/VeriStressGT/verifiers/alpha-beta-CROWN"]
+	path = src/VeriStressGT/verifiers/alpha-beta-CROWN
+	url = https://github.com/Verified-Intelligence/alpha-beta-CROWN.git
+[submodule "src/VeriStressGT/verifiers/neuralsat"]
+	path = src/VeriStressGT/verifiers/neuralsat
+	url = https://github.com/dynaroars/neuralsat.git
+[submodule "src/VeriStressGT/verifiers/nnv"]
+	path = src/VeriStressGT/verifiers/nnv
+	url = https://github.com/verivital/nnv.git
+[submodule "src/VeriStressGT/verifiers/Marabou"]
+	path = src/VeriStressGT/verifiers/Marabou
+	url = https://github.com/NeuralNetworkVerification/Marabou.git
+[submodule "src/VeriStressGT/verifiers/pyrat"]
+	path = src/VeriStressGT/verifiers/pyrat
+	url = https://git.frama-c.com/pub/pyrat.git

@@ -1,0 +1,26 @@
+{
+  "method": "deep_contractive_cnn",
+  "certificate_type": "contraction mapping (global)",
+  "certificate_argument": "f_y(x) >= B - sigma_proj * lambda^D * 2*eps",
+  "certified_margin_B": 0.03340082347387885,
+  "cert_perturbation_bound": 0.0303643849762535,
+  "actual_margin_at_x0": 2.317420482635498,
+  "depth": 6,
+  "contraction_rate": 0.7,
+  "channels": 16,
+  "epsilon": 0.02,
+  "label": 0,
+  "num_classes": 10,
+  "relu_stats": {
+    "total_relus": 7168,
+    "unstable_relus": 5497,
+    "fraction_unstable": 0.7668805803571429
+  },
+  "ibp_worst_margin": 0.03467274084687233,
+  "empirical_verification": {
+    "n_samples": 20000,
+    "all_correct": true,
+    "min_margin_over_samples": 2.317404270172119
+  },
+  "seed": 0
+}

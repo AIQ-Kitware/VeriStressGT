@@ -1,0 +1,13 @@
+{
+  "id": "vb_acasxu_0120",
+  "construction": "vnncomp.acasxu",
+  "source_benchmark": "acasxu",
+  "source_onnx": "onnx/ACASXU_run2a_4_4_batch_2000.onnx",
+  "source_vnnlib": "vnnlib/prop_3.vnnlib",
+  "args": {
+    "onnx_basename": "ACASXU_run2a_4_4_batch_2000.onnx",
+    "vnnlib_basename": "prop_3.vnnlib",
+    "spec_index": 3
+  },
+  "vnncomp_timeout_s": 116.0
+}

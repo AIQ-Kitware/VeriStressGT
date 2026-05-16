@@ -1,0 +1,15 @@
+{
+  "benchmark": "./benchmarks/polynomial_stress_22",
+  "manifest_construction": null,
+  "verifier": "neuralsat",
+  "conda_env": null,
+  "timeout": 600.0,
+  "jobs": 1,
+  "git_commit": "94cf0f9d55b2e129f9d50d221d4c5a9a8eb07e9e",
+  "verifier_args": {
+    "neuralsat_root": null,
+    "neuralsat_python": "python",
+    "neuralsat_force_split": "hidden",
+    "device": "cpu"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "pb_cnn_2",
+  "construction": "cnn.cnn_paired_bias",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/pb_cnn_2/model.onnx",
+    "vnnlib": "instances/pb_cnn_2/spec.vnnlib",
+    "meta": "instances/pb_cnn_2/meta.json"
+  },
+  "sha256": {
+    "onnx": "8297395f3a4eeac21512bfcca7e1f767ff421029caf988e24dd1180b4b9d0934",
+    "vnnlib": "15c52c8b8e72eddbc9d1d18c81ea740e6c277292e25a1b2946e6b16fe7134a26"
+  },
+  "args": {
+    "seed": 0,
+    "num_pairs": 4,
+    "margin": 0.1,
+    "delta": 0.025,
+    "in_channels": 3,
+    "height": 4,
+    "width": 4,
+    "backbone_channels": 2,
+    "num_backbone_layers": 2,
+    "kernel_size": 3,
+    "num_classes": 10,
+    "label": 0,
+    "epsilon": 0.05,
+    "onnx_path": "benchmarks/ep/instances/pb_cnn_2/model.onnx",
+    "vnnlib_path": "benchmarks/ep/instances/pb_cnn_2/spec.vnnlib"
+  }
+}

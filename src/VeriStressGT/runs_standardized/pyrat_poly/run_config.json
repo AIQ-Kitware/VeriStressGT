@@ -1,0 +1,22 @@
+{
+  "benchmark": "./benchmarks/polynomial_stress_22",
+  "manifest_construction": null,
+  "verifier": "pyrat",
+  "conda_env": null,
+  "timeout": null,
+  "jobs": 1,
+  "git_commit": "94cf0f9d55b2e129f9d50d221d4c5a9a8eb07e9e",
+  "verifier_args": {
+    "pyrat_bin": "pyrat",
+    "pyrat_device": "cpu",
+    "pyrat_library": "torch",
+    "pyrat_domains": [
+      "poly"
+    ],
+    "pyrat_timeout": 600,
+    "pyrat_split_relu": false,
+    "pyrat_split": true,
+    "pyrat_split_heuristic": "better",
+    "pyrat_extra": null
+  }
+}

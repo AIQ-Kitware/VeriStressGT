@@ -1,0 +1,80 @@
+Running single-threaded
+(1.5 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+Overapprox Round 1/3 has 1 set(s)
+Layer 1/7: FullyConnectedLayer (zono shape: (256, 817))... 0.003 sec
+Layer 2/7: ReluLayer (zono shape: (256, 817))... 0.002 sec
+Layer 3/7: FullyConnectedLayer (zono shape: (256, 869))... 0.002 sec
+Layer 4/7: ReluLayer (zono shape: (256, 869))... 0.001 sec
+Layer 5/7: FullyConnectedLayer (zono shape: (256, 876))... 0.03 sec
+Layer 6/7: ReluLayer (zono shape: (256, 876))... 0.002 sec
+Layer 7/7: FullyConnectedLayer (zono shape: (256, 987))... 0.001 sec
+Overapprox Round 2/3 has 3 set(s)
+Layer 1/7: FullyConnectedLayer (zono shape: (256, 817))... 0.033 sec
+Layer 2/7: ReluLayer (zono shape: (256, 817))... 0.031 sec
+Layer 3/7: FullyConnectedLayer (zono shape: (256, 869))... 0.061 sec
+Layer 4/7: ReluLayer (zono shape: (256, 869))... 0.004 sec
+Layer 5/7: FullyConnectedLayer (zono shape: (256, 876))... 0.007 sec
+Layer 6/7: ReluLayer (zono shape: (256, 876))... 0.006 sec
+Layer 7/7: FullyConnectedLayer (zono shape: (256, 985))... 0.002 sec
+Overapprox Round 3/3 has 4 set(s)
+Layer 1/7: FullyConnectedLayer (zono shape: (256, 817))... 0.348 sec
+Layer 2/7: ReluLayer (zono shape: (256, 817))...
+Using LP to check 52/256 potential ReLU splits... 7.563 sec
+Layer 3/7: FullyConnectedLayer (zono shape: (256, 860))... 0.012 sec
+Layer 4/7: ReluLayer (zono shape: (256, 860))...
+Using LP to check 4/256 potential ReLU splits... 0.514 sec
+Layer 5/7: FullyConnectedLayer (zono shape: (256, 862))... 0.009 sec
+Layer 6/7: ReluLayer (zono shape: (256, 862))...
+Using LP to check 44/256 potential ReLU splits... 0.506 sec
+Layer 7/7: FullyConnectedLayer (zono shape: (256, 871))... 0.003 sec
+(11.2 sec) Q: 0, Sets: 1/1  (100.0%) ETA: 0.0 sec (expected 1 stars)   
+
+
+
+Total Stars: 1 (0 exact, 1 approx)
+Runtime: 11.2 sec
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is SAFE
+Enumerate_network Time (1 calls): 11.18 sec
+  From_init_box Time (1 calls): 1.02 sec (9.1%)
+    Make bm Time (1 calls): 1.01 sec (98.6%)
+    Star Time (1 calls): 0.01 sec (1.3%)
+    Other (From_init_box): 0.00 sec (0.2%)
+  Propagate_up_to_split Time (1 calls): 0.01 sec (0.1%)
+  Push_init Time (1 calls): 0.00 sec (0.0%)
+  Run workers Time (1 calls): 9.63 sec (86.1%)
+    Worker_func Time (1 calls): 9.63 sec (100.0%)
+      Get_global_queue Time (2 calls): 0.00 sec (0.0%)
+      Update_shared_variables Time (2 calls): 0.00 sec (0.0%)
+      Print_progress Time (2 calls): 0.00 sec (0.0%)
+      Do_overapprox_rounds Time (1 calls): 9.63 sec (100.0%)
+        Execute fully connected Time (4 calls): 0.00 sec (0.0%)
+        Execute relu Time (3 calls): 0.00 sec (0.0%)
+        Assign_zeros Time (28 calls): 0.00 sec (0.0%)
+        Relu_update Time (28 calls): 0.01 sec (0.1%)
+        Stack_new_generators Time (28 calls): 0.01 sec (0.1%)
+        Transform_linear Time (12 calls): 0.51 sec (5.3%)
+        Zono.box_bounds Time (21 calls): 0.05 sec (0.5%)
+        Make_split_indices Time (12 calls): 0.00 sec (0.0%)
+        Sort_splits Time (9 calls): 0.00 sec (0.0%)
+        Overapprox_check_round Time (3 calls): 0.00 sec (0.0%)
+        Glp_copy_prob Time (1 calls): 0.00 sec (0.0%)
+        Copy init bm bias Time (1 calls): 0.00 sec (0.0%)
+        Execute_relus_overapprox Time (4 calls): 0.66 sec (6.8%)
+          Split_overapprox Time (87 calls): 0.65 sec (99.5%)
+            Add_dense_row Time (174 calls): 0.64 sec (98.8%)
+            Other (Split_overapprox): 0.01 sec (1.2%)
+          Overapprox bm update Time (4 calls): 0.00 sec (0.3%)
+          Other (Execute_relus_overapprox): 0.00 sec (0.2%)
+        Update_bounds_lp Time (3 calls): 8.30 sec (86.2%)
+          Minimize_output Time (100 calls): 8.29 sec (100.0%)
+          Other (Update_bounds_lp): 0.00 sec (0.0%)
+        Other (Do_overapprox_rounds): 0.09 sec (1.0%)
+      Post_loop Time (1 calls): 0.00 sec (0.0%)
+      Other (Worker_func): 0.00 sec (0.0%)
+    Other (Run workers): 0.00 sec (0.0%)
+  Other (Enumerate_network): 0.52 sec (4.6%)

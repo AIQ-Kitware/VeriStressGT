@@ -1,0 +1,13 @@
+{
+  "benchmark": "./benchmarks/vnncomp_mnist_fc",
+  "manifest_construction": null,
+  "verifier": "marabou",
+  "conda_env": null,
+  "timeout": 240.0,
+  "jobs": 1,
+  "git_commit": "a5c16df057d8831cb17931939c16b2dfdb1011b1",
+  "verifier_args": {
+    "marabou_bin": "./verifiers/Marabou/build/bin/Marabou",
+    "marabou_timeout": 300
+  }
+}

@@ -1,0 +1,107 @@
+Running analysis with 1 processes, domains = ['con_z'], scorer = better
+
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 0, Remaining: 0
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 1, Remaining: 2
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 2, Remaining: 3
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 3, Remaining: 4
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 3, Remaining: 4
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 4, Remaining: 5
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 5, Remaining: 6
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 6, Remaining: 7
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 6, Remaining: 7
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 7, Remaining: 8
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 8, Remaining: 9
+Safe_volume: 0.0000% |                              | Time: 00:00 s, Done: 9, Remaining: 10
+Safe_volume: 12.5000% |███▊                          | Time: 00:00 s, Done: 9, Remaining: 10
+Safe_volume: 12.5000% |███▊                          | Time: 00:00 s, Done: 10, Remaining: 9
+Safe_volume: 12.5000% |███▊                          | Time: 00:00 s, Done: 11, Remaining: 10
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 12, Remaining: 9 
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 13, Remaining: 10
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 14, Remaining: 11
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 15, Remaining: 12
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 16, Remaining: 13
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 17, Remaining: 14
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 18, Remaining: 15
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 19, Remaining: 16
+Safe_volume: 18.7500% |█████▋                        | Time: 00:00 s, Done: 20, Remaining: 17
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 20, Remaining: 17
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 21, Remaining: 16
+Safe_volume: 25.0000% |███████▌                      | Time: 00:00 s, Done: 22, Remaining: 17
+Safe_volume: 28.1250% |████████▍                     | Time: 00:00 s, Done: 23, Remaining: 16
+Safe_volume: 28.1250% |████████▍                     | Time: 00:00 s, Done: 23, Remaining: 16
+Safe_volume: 28.1250% |████████▍                     | Time: 00:00 s, Done: 24, Remaining: 17
+Safe_volume: 28.1250% |████████▍                     | Time: 00:00 s, Done: 25, Remaining: 18
+Safe_volume: 29.6875% |████████▉                     | Time: 00:00 s, Done: 26, Remaining: 17
+Safe_volume: 29.6875% |████████▉                     | Time: 00:01 s, Done: 27, Remaining: 18
+Safe_volume: 30.4688% |█████████▏                    | Time: 00:01 s, Done: 28, Remaining: 17
+Safe_volume: 31.2500% |█████████▍                    | Time: 00:01 s, Done: 28, Remaining: 17
+Safe_volume: 31.2500% |█████████▍                    | Time: 00:01 s, Done: 29, Remaining: 16
+Safe_volume: 31.2500% |█████████▍                    | Time: 00:01 s, Done: 30, Remaining: 17
+Safe_volume: 32.8125% |█████████▊                    | Time: 00:01 s, Done: 31, Remaining: 16
+Safe_volume: 32.8125% |█████████▊                    | Time: 00:01 s, Done: 32, Remaining: 17
+Safe_volume: 34.3750% |██████████▎                   | Time: 00:01 s, Done: 32, Remaining: 17
+Safe_volume: 34.3750% |██████████▎                   | Time: 00:01 s, Done: 33, Remaining: 16
+Safe_volume: 34.3750% |██████████▎                   | Time: 00:01 s, Done: 34, Remaining: 17
+Safe_volume: 35.1562% |██████████▌                   | Time: 00:01 s, Done: 35, Remaining: 16
+Safe_volume: 47.6562% |██████████████▎               | Time: 00:01 s, Done: 36, Remaining: 15
+Safe_volume: 47.6562% |██████████████▎               | Time: 00:01 s, Done: 36, Remaining: 15
+Safe_volume: 47.6562% |██████████████▎               | Time: 00:01 s, Done: 37, Remaining: 16
+Safe_volume: 47.6562% |██████████████▎               | Time: 00:01 s, Done: 38, Remaining: 17
+Safe_volume: 49.2188% |██████████████▊               | Time: 00:01 s, Done: 39, Remaining: 16
+Safe_volume: 50.0000% |███████████████               | Time: 00:01 s, Done: 40, Remaining: 15
+Safe_volume: 50.0000% |███████████████               | Time: 00:01 s, Done: 41, Remaining: 16
+Safe_volume: 50.0000% |███████████████               | Time: 00:01 s, Done: 42, Remaining: 17
+Safe_volume: 50.3906% |███████████████               | Time: 00:01 s, Done: 43, Remaining: 16
+Safe_volume: 50.3906% |███████████████               | Time: 00:01 s, Done: 44, Remaining: 17
+Safe_volume: 51.9531% |███████████████▌              | Time: 00:01 s, Done: 45, Remaining: 16
+Safe_volume: 51.9531% |███████████████▌              | Time: 00:01 s, Done: 46, Remaining: 17
+Safe_volume: 52.7344% |███████████████▊              | Time: 00:01 s, Done: 47, Remaining: 16
+Safe_volume: 53.1250% |███████████████▉              | Time: 00:01 s, Done: 48, Remaining: 15
+Safe_volume: 53.5156% |████████████████              | Time: 00:01 s, Done: 49, Remaining: 14
+Safe_volume: 53.5156% |████████████████              | Time: 00:01 s, Done: 50, Remaining: 15
+Safe_volume: 59.7656% |█████████████████▉            | Time: 00:01 s, Done: 50, Remaining: 15
+Safe_volume: 59.7656% |█████████████████▉            | Time: 00:01 s, Done: 51, Remaining: 14
+Safe_volume: 66.0156% |███████████████████▊          | Time: 00:01 s, Done: 52, Remaining: 13
+Safe_volume: 72.2656% |█████████████████████▋        | Time: 00:01 s, Done: 53, Remaining: 12
+Safe_volume: 72.4609% |█████████████████████▋        | Time: 00:01 s, Done: 54, Remaining: 11
+Safe_volume: 72.4609% |█████████████████████▋        | Time: 00:01 s, Done: 54, Remaining: 11
+Safe_volume: 72.4609% |█████████████████████▋        | Time: 00:01 s, Done: 55, Remaining: 12
+Safe_volume: 75.5859% |██████████████████████▋       | Time: 00:01 s, Done: 56, Remaining: 11
+Safe_volume: 75.5859% |██████████████████████▋       | Time: 00:01 s, Done: 57, Remaining: 12
+Safe_volume: 75.5859% |██████████████████████▋       | Time: 00:02 s, Done: 58, Remaining: 13
+Safe_volume: 76.3672% |██████████████████████▉       | Time: 00:02 s, Done: 59, Remaining: 12
+Safe_volume: 76.3672% |██████████████████████▉       | Time: 00:02 s, Done: 60, Remaining: 13
+Safe_volume: 76.7578% |███████████████████████       | Time: 00:02 s, Done: 61, Remaining: 12
+Safe_volume: 77.1484% |███████████████████████▏      | Time: 00:02 s, Done: 62, Remaining: 11
+Safe_volume: 77.5391% |███████████████████████▎      | Time: 00:02 s, Done: 63, Remaining: 10
+Safe_volume: 77.6367% |███████████████████████▎      | Time: 00:02 s, Done: 64, Remaining: 9 
+Safe_volume: 77.7344% |███████████████████████▎      | Time: 00:02 s, Done: 65, Remaining: 8
+Safe_volume: 77.7344% |███████████████████████▎      | Time: 00:02 s, Done: 66, Remaining: 9
+Safe_volume: 79.2969% |███████████████████████▊      | Time: 00:02 s, Done: 67, Remaining: 8
+Safe_volume: 79.4922% |███████████████████████▊      | Time: 00:02 s, Done: 68, Remaining: 7
+Safe_volume: 79.6875% |███████████████████████▉      | Time: 00:02 s, Done: 69, Remaining: 6
+Safe_volume: 79.6875% |███████████████████████▉      | Time: 00:02 s, Done: 70, Remaining: 7
+Safe_volume: 80.4688% |████████████████████████▏     | Time: 00:02 s, Done: 71, Remaining: 6
+Safe_volume: 86.7188% |██████████████████████████    | Time: 00:02 s, Done: 71, Remaining: 6
+Safe_volume: 86.7188% |██████████████████████████    | Time: 00:02 s, Done: 72, Remaining: 5
+Safe_volume: 92.9688% |███████████████████████████▉  | Time: 00:02 s, Done: 73, Remaining: 4
+Safe_volume: 93.3594% |████████████████████████████  | Time: 00:02 s, Done: 74, Remaining: 3
+Safe_volume: 93.3594% |████████████████████████████  | Time: 00:02 s, Done: 75, Remaining: 4
+Safe_volume: 93.3594% |████████████████████████████  | Time: 00:02 s, Done: 75, Remaining: 4
+Safe_volume: 93.3594% |████████████████████████████  | Time: 00:02 s, Done: 76, Remaining: 5
+Safe_volume: 93.5547% |████████████████████████████  | Time: 00:02 s, Done: 77, Remaining: 4
+Safe_volume: 96.6797% |█████████████████████████████ | Time: 00:02 s, Done: 78, Remaining: 3
+Safe_volume: 99.8047% |█████████████████████████████▉| Time: 00:02 s, Done: 79, Remaining: 2
+Safe_volume: 99.8047% |█████████████████████████████▉| Time: 00:02 s, Done: 80, Remaining: 3
+Safe_volume: 99.9023% |█████████████████████████████▉| Time: 00:02 s, Done: 81, Remaining: 2
+Safe_volume: 99.9512% |█████████████████████████████▉| Time: 00:02 s, Done: 81, Remaining: 2
+Safe_volume: 99.9512% |█████████████████████████████▉| Time: 00:02 s, Done: 82, Remaining: 1
+Safe_volume: 99.9512% |█████████████████████████████▉| Time: 00:02 s, Done: 83, Remaining: 2
+Safe_volume: 99.9512% |█████████████████████████████▉| Time: 00:02 s, Done: 84, Remaining: 3
+Safe_volume: 99.9756% |█████████████████████████████▉| Time: 00:02 s, Done: 85, Remaining: 2
+Safe_volume: 99.9756% |█████████████████████████████▉| Time: 00:02 s, Done: 86, Remaining: 3
+Safe_volume: 99.9878% |█████████████████████████████▉| Time: 00:02 s, Done: 87, Remaining: 2
+Safe_volume: 99.9939% |█████████████████████████████▉| Time: 00:02 s, Done: 88, Remaining: 1
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:02 s, Done: 89, Remaining: 0
+Safe_volume: 100.0000% |██████████████████████████████| Time: 00:02 s, Done: 89, Remaining: 0
+Result = True, Time = 2.84 s, Safe space = 100.00 %, number of analysis = 89

@@ -1,0 +1,24 @@
+# src/VeriStressGT/configs/abcrownA_activation.yaml
+
+general:
+  device: cpu
+  save_adv_example: true
+
+attack:
+  pgd_order: input_bab
+  cex_path: ./test_cex.txt
+
+solver:
+  batch_size: 2048
+  alpha-crown:
+    max_time: 1000000000.0
+  beta-crown:
+    iteration: 50
+    lr_beta: 0.03
+    enable_opt_interm_bounds: false
+
+bab:
+  timeout: 3000000.0
+  branching:
+    input_split:
+      enable: false

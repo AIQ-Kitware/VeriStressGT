@@ -1,0 +1,26 @@
+verifier,verifier_styles,component,hypothesis_styles,hypothesis_direction,pooled_spearman_rho,pooled_pvalue_approx,pooled_n_used,pooled_verdict,pooled_reason,n_completed_total,n_timeout_total,n_excluded_total,sweep_all_verdict,sweep_all_rho,sweep_all_n,num_benchmark_agree,num_benchmark_contradict,num_benchmark_silent,num_benchmark_unexpected,num_benchmark_expected_null,num_benchmark_insufficient
+abcrown,"D,P",A_tau_local_log,"P,S",higher is harder,0.15465228873431372,0.02794743979107611,203,AGREES,rho=0.15 matches higher is harder,177,26,0,AGREES,0.15465228873431372,203,1,0,0,0,0,0
+abcrown,"D,P",unstable_frac,"P,S,D",higher is harder,0.08692773331327364,0.21665382158628446,203,SILENT,|rho|=0.09 below threshold,177,26,0,SILENT,0.08692773331327364,203,0,0,1,0,0,0
+abcrown,"D,P",effective_grad_dim_mean,"P,S,D",higher is harder,0.05050263264685904,0.4728944800970116,203,SILENT,|rho|=0.05 below threshold,177,26,0,SILENT,0.05050263264685904,203,0,0,1,0,0,0
+abcrown,"D,P",margin_sample_min,"R,D,P,S",higher is easier,0.14015854533881666,0.04636793243011911,203,CONTRADICTS,rho=0.14 opposes higher is easier,177,26,0,CONTRADICTS,0.14015854533881666,203,0,1,0,0,0,0
+abcrown,"D,P",ibp_relative_gap,"R,D,P,S",higher is harder,-0.06002636913362183,0.3935843434136101,203,SILENT,|rho|=0.06 below threshold,177,26,0,SILENT,-0.06002636913362183,203,0,0,1,0,0,0
+marabou,"S,P",A_tau_local_log,"P,S",higher is harder,-0.16483454677182025,0.035904906922283916,163,CONTRADICTS,rho=-0.16 opposes higher is harder,127,41,40,CONTRADICTS,-0.16483454677182025,163,0,1,0,0,0,0
+marabou,"S,P",unstable_frac,"P,S,D",higher is harder,0.20335646537967939,0.009645010439663478,163,AGREES,rho=0.20 matches higher is harder,127,41,40,AGREES,0.20335646537967939,163,1,0,0,0,0,0
+marabou,"S,P",effective_grad_dim_mean,"P,S,D",higher is harder,0.16177145113909516,0.039492722927353764,163,AGREES,rho=0.16 matches higher is harder,127,41,40,AGREES,0.16177145113909516,163,1,0,0,0,0,0
+marabou,"S,P",margin_sample_min,"R,D,P,S",higher is easier,-0.16109636808052155,0.04032313119818054,163,AGREES,rho=-0.16 matches higher is easier,127,41,40,AGREES,-0.16109636808052155,163,1,0,0,0,0,0
+marabou,"S,P",ibp_relative_gap,"R,D,P,S",higher is harder,0.5375738347695072,7.84534700787569e-12,163,AGREES,rho=0.54 matches higher is harder,127,41,40,AGREES,0.5375738347695072,163,1,0,0,0,0,0
+neuralsat,S,A_tau_local_log,"P,S",higher is harder,0.2580168773166396,0.00027294411705807895,200,AGREES,rho=0.26 matches higher is harder,179,23,3,AGREES,0.2580168773166396,200,1,0,0,0,0,0
+neuralsat,S,unstable_frac,"P,S,D",higher is harder,0.16787299042185244,0.01787774345126276,200,AGREES,rho=0.17 matches higher is harder,179,23,3,AGREES,0.16787299042185244,200,1,0,0,0,0,0
+neuralsat,S,effective_grad_dim_mean,"P,S,D",higher is harder,0.274568158668826,0.0001074299002188172,200,AGREES,rho=0.27 matches higher is harder,179,23,3,AGREES,0.274568158668826,200,1,0,0,0,0,0
+neuralsat,S,margin_sample_min,"R,D,P,S",higher is easier,0.12235935148851602,0.0843309554802053,200,SILENT,|rho|=0.12 below threshold,179,23,3,SILENT,0.12235935148851602,200,0,0,1,0,0,0
+neuralsat,S,ibp_relative_gap,"R,D,P,S",higher is harder,0.3420039777536779,1.404987405359463e-06,200,AGREES,rho=0.34 matches higher is harder,179,23,3,AGREES,0.3420039777536779,200,1,0,0,0,0,0
+nnenum,"R,P",A_tau_local_log,"P,S",higher is harder,-0.18031192064784807,0.08542035539247192,92,SILENT,|rho|=0.18 below threshold,86,8,111,SILENT,-0.18031192064784807,92,0,0,1,0,0,0
+nnenum,"R,P",unstable_frac,"P,S,D",higher is harder,0.44011223167005287,2.6897159649588736e-05,92,AGREES,rho=0.44 matches higher is harder,86,8,111,AGREES,0.44011223167005287,92,1,0,0,0,0,0
+nnenum,"R,P",effective_grad_dim_mean,"P,S,D",higher is harder,0.17777812948401192,0.08990565597578679,92,SILENT,|rho|=0.18 below threshold,86,8,111,SILENT,0.17777812948401192,92,0,0,1,0,0,0
+nnenum,"R,P",margin_sample_min,"R,D,P,S",higher is easier,-0.2773062741126875,0.008161132373053239,92,AGREES,rho=-0.28 matches higher is easier,86,8,111,AGREES,-0.2773062741126875,92,1,0,0,0,0,0
+nnenum,"R,P",ibp_relative_gap,"R,D,P,S",higher is harder,0.4748444024902175,5.911634849625483e-06,92,AGREES,rho=0.47 matches higher is harder,86,8,111,AGREES,0.4748444024902175,92,1,0,0,0,0,0
+pyrat,D,A_tau_local_log,"P,S",higher is harder,-0.3285382008277793,1.3865203328932057e-05,176,UNEXPECTED,hypothesis style does not target this verifier,160,16,27,UNEXPECTED,-0.3285382008277793,176,0,0,0,1,0,0
+pyrat,D,unstable_frac,"P,S,D",higher is harder,0.4434329595612604,4.477094892579776e-09,176,AGREES,rho=0.44 matches higher is harder,160,16,27,AGREES,0.4434329595612604,176,1,0,0,0,0,0
+pyrat,D,effective_grad_dim_mean,"P,S,D",higher is harder,0.11100826634753243,0.14196816701369047,176,SILENT,|rho|=0.11 below threshold,160,16,27,SILENT,0.11100826634753243,176,0,0,1,0,0,0
+pyrat,D,margin_sample_min,"R,D,P,S",higher is easier,-0.252889054703485,0.0008217276469393617,176,AGREES,rho=-0.25 matches higher is easier,160,16,27,AGREES,-0.252889054703485,176,1,0,0,0,0,0
+pyrat,D,ibp_relative_gap,"R,D,P,S",higher is harder,0.4460547896993905,3.6306179822228602e-09,176,AGREES,rho=0.45 matches higher is harder,160,16,27,AGREES,0.4460547896993905,176,1,0,0,0,0,0

@@ -1,0 +1,6122 @@
+{
+  "name": "sweep_all",
+  "created_at": "2026-04-14T17:24:22.050529Z",
+  "git_commit": "a5c16df057d8831cb17931939c16b2dfdb1011b1",
+  "common": {
+    "onnx_name": "model.onnx",
+    "vnnlib_name": "spec.vnnlib",
+    "meta_name": "meta.json"
+  },
+  "mode": "spec",
+  "instances": [
+    {
+      "id": "meap1",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap1/model.onnx",
+        "vnnlib": "instances/meap1/spec.vnnlib",
+        "meta": "instances/meap1/meta.json"
+      },
+      "sha256": {
+        "onnx": "1908207558fd486df08286cb99039ecd3eb33527d821fdef6dc0ece6b07b7a6d",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 2,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap2",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap2/model.onnx",
+        "vnnlib": "instances/meap2/spec.vnnlib",
+        "meta": "instances/meap2/meta.json"
+      },
+      "sha256": {
+        "onnx": "8fe67eadddc11e20a2b0b9035b5aa7af78ef7171ab21a027df4581ea91524c42",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap3",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap3/model.onnx",
+        "vnnlib": "instances/meap3/spec.vnnlib",
+        "meta": "instances/meap3/meta.json"
+      },
+      "sha256": {
+        "onnx": "cc640bee0459b5a5bbe181528fa60fb7d9c95529a46ea13627b0744b9de10fbc",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 32,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap4",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap4/model.onnx",
+        "vnnlib": "instances/meap4/spec.vnnlib",
+        "meta": "instances/meap4/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcdfae0d19fd5434c9b79202d3bd539c069096925f61507cc933dc0b4f7f1f55",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 128,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap5",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap5/model.onnx",
+        "vnnlib": "instances/meap5/spec.vnnlib",
+        "meta": "instances/meap5/meta.json"
+      },
+      "sha256": {
+        "onnx": "d9870c7fcf2208bc476ff86e8c42ef0e7f46fce653cc6e7454153b155c38d8ac",
+        "vnnlib": "b10e03ae607d25f577c617a1f6e8fb8e0b6700d63c5b7377505d6bda2c642a0f"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.05,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap6",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap6/model.onnx",
+        "vnnlib": "instances/meap6/spec.vnnlib",
+        "meta": "instances/meap6/meta.json"
+      },
+      "sha256": {
+        "onnx": "8fe67eadddc11e20a2b0b9035b5aa7af78ef7171ab21a027df4581ea91524c42",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap7",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap7/model.onnx",
+        "vnnlib": "instances/meap7/spec.vnnlib",
+        "meta": "instances/meap7/meta.json"
+      },
+      "sha256": {
+        "onnx": "5b3acc6fd42dd395f911b90c2d08d80529d3bb7220225ea7a75de78a55bd08e6",
+        "vnnlib": "65cd6973eeb37121bc9a7eb72274ea9c298f6097ec9dea947afaef12a3f94c71"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.25,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap8",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap8/model.onnx",
+        "vnnlib": "instances/meap8/spec.vnnlib",
+        "meta": "instances/meap8/meta.json"
+      },
+      "sha256": {
+        "onnx": "970d12579d48f691c1b086aab6759168de7dd8020845fbcae5514887dbc16334",
+        "vnnlib": "28310f28c92a63a64b8ad155c61bafe4f8dc4d8444863aee804157e40bde932d"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.5,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap9",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap9/model.onnx",
+        "vnnlib": "instances/meap9/spec.vnnlib",
+        "meta": "instances/meap9/meta.json"
+      },
+      "sha256": {
+        "onnx": "8fe67eadddc11e20a2b0b9035b5aa7af78ef7171ab21a027df4581ea91524c42",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap10",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap10/model.onnx",
+        "vnnlib": "instances/meap10/spec.vnnlib",
+        "meta": "instances/meap10/meta.json"
+      },
+      "sha256": {
+        "onnx": "4cb12dcae3cef4ca6027663c8a01baa506da779acd14a40ca91676003fe5e4f4",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.1,
+        "gamma": 0.0001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap11",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap11/model.onnx",
+        "vnnlib": "instances/meap11/spec.vnnlib",
+        "meta": "instances/meap11/meta.json"
+      },
+      "sha256": {
+        "onnx": "e8c81dfd7a3ab9e1a51d60431161f8db221906d757c196b82027b637b2ae0e4e",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.1,
+        "gamma": 1e-05,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap12",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap12/model.onnx",
+        "vnnlib": "instances/meap12/spec.vnnlib",
+        "meta": "instances/meap12/meta.json"
+      },
+      "sha256": {
+        "onnx": "ff4900fc79f13c173f1276a16bcd335c8be6a2abd330beb669c437aacb408b69",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.1,
+        "gamma": 1,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap13",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap13/model.onnx",
+        "vnnlib": "instances/meap13/spec.vnnlib",
+        "meta": "instances/meap13/meta.json"
+      },
+      "sha256": {
+        "onnx": "1908207558fd486df08286cb99039ecd3eb33527d821fdef6dc0ece6b07b7a6d",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 2,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap14",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap14/model.onnx",
+        "vnnlib": "instances/meap14/spec.vnnlib",
+        "meta": "instances/meap14/meta.json"
+      },
+      "sha256": {
+        "onnx": "b1989f900fba0b1804b5a32c8ff84a1a4083dd82970bdc6197e619a8c3807882",
+        "vnnlib": "934fa10e9211a09ad41db469995b6de34a94d333a6afe442fca84e37ef597e32"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.1,
+        "gamma": 100,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "benchmarks/ep/instances/meap14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/meap14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp1",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp1/model.onnx",
+        "vnnlib": "instances/milp1/spec.vnnlib",
+        "meta": "instances/milp1/meta.json"
+      },
+      "sha256": {
+        "onnx": "01901fe7576570e8f029d7a955d15269649b88ccd412a1846f537427338e56fd",
+        "vnnlib": "84b4c2d8974a26531ee2abaf8b25e6378e6b0ffc6623967c1f9c77cd830e3a4f"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.5,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp2",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp2/model.onnx",
+        "vnnlib": "instances/milp2/spec.vnnlib",
+        "meta": "instances/milp2/meta.json"
+      },
+      "sha256": {
+        "onnx": "01901fe7576570e8f029d7a955d15269649b88ccd412a1846f537427338e56fd",
+        "vnnlib": "63371d5b92e373f08bbd46136948d73b84ac7f6ac122864b2fb09e27a400aa1d"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp3",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp3/model.onnx",
+        "vnnlib": "instances/milp3/spec.vnnlib",
+        "meta": "instances/milp3/meta.json"
+      },
+      "sha256": {
+        "onnx": "01901fe7576570e8f029d7a955d15269649b88ccd412a1846f537427338e56fd",
+        "vnnlib": "c3dda4976b713af130300ca301cb7f33a9f401a33a1e06808703032860b7b2e2"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp4",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp4/model.onnx",
+        "vnnlib": "instances/milp4/spec.vnnlib",
+        "meta": "instances/milp4/meta.json"
+      },
+      "sha256": {
+        "onnx": "01901fe7576570e8f029d7a955d15269649b88ccd412a1846f537427338e56fd",
+        "vnnlib": "006b3592825853c14626e099a370596012a0c6c2d8561c8aedb7960747165914"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp5",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp5/model.onnx",
+        "vnnlib": "instances/milp5/spec.vnnlib",
+        "meta": "instances/milp5/meta.json"
+      },
+      "sha256": {
+        "onnx": "01901fe7576570e8f029d7a955d15269649b88ccd412a1846f537427338e56fd",
+        "vnnlib": "4ef07f3301d9b311ec99495173fcb8a3f5cc4eb8b7462d350f4c796c9d1f4d88"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp6",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp6/model.onnx",
+        "vnnlib": "instances/milp6/spec.vnnlib",
+        "meta": "instances/milp6/meta.json"
+      },
+      "sha256": {
+        "onnx": "01901fe7576570e8f029d7a955d15269649b88ccd412a1846f537427338e56fd",
+        "vnnlib": "696248c81b72087f94f9e68d1c6bbb9b6ecede796f80c0ebdddb2da5ffc709ec"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp7",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp7/model.onnx",
+        "vnnlib": "instances/milp7/spec.vnnlib",
+        "meta": "instances/milp7/meta.json"
+      },
+      "sha256": {
+        "onnx": "01901fe7576570e8f029d7a955d15269649b88ccd412a1846f537427338e56fd",
+        "vnnlib": "056ec22d0b8f148b72ba3efb160127ece936880c7b15358e74bae4f820999f15"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9999999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp8",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp8/model.onnx",
+        "vnnlib": "instances/milp8/spec.vnnlib",
+        "meta": "instances/milp8/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcb57cb069edef1dfd19298530bd570d4fbfa8e48b0f427d48108bdf15ea6299",
+        "vnnlib": "7a642c51cfcf0c97950b4c5d00d688c99b935de2448130a9bfc61c00b76ba4b8"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.5,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp9",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp9/model.onnx",
+        "vnnlib": "instances/milp9/spec.vnnlib",
+        "meta": "instances/milp9/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcb57cb069edef1dfd19298530bd570d4fbfa8e48b0f427d48108bdf15ea6299",
+        "vnnlib": "998ec042cf8990f0a7b4dbd7fa1ea5dd4d4743192cbd8d6ab260cc4d70a630bf"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp10",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp10/model.onnx",
+        "vnnlib": "instances/milp10/spec.vnnlib",
+        "meta": "instances/milp10/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcb57cb069edef1dfd19298530bd570d4fbfa8e48b0f427d48108bdf15ea6299",
+        "vnnlib": "e52abe1fd7818b9d4064399024cf64ba995917350876c5a192206471806f8efa"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp11",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp11/model.onnx",
+        "vnnlib": "instances/milp11/spec.vnnlib",
+        "meta": "instances/milp11/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcb57cb069edef1dfd19298530bd570d4fbfa8e48b0f427d48108bdf15ea6299",
+        "vnnlib": "265f357faef6445bd85350e3073b6e6433d0a0abcccc2acc9a2390d3774a7d6b"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp12",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp12/model.onnx",
+        "vnnlib": "instances/milp12/spec.vnnlib",
+        "meta": "instances/milp12/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcb57cb069edef1dfd19298530bd570d4fbfa8e48b0f427d48108bdf15ea6299",
+        "vnnlib": "79f1afeaf94ff5f77dd73a07e06aefb82f52b4e114b64f23ff075b2cd24d7ddb"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp13",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp13/model.onnx",
+        "vnnlib": "instances/milp13/spec.vnnlib",
+        "meta": "instances/milp13/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcb57cb069edef1dfd19298530bd570d4fbfa8e48b0f427d48108bdf15ea6299",
+        "vnnlib": "b0e24c184620410304d27557708cad5a81e53d1bd8fd1176fc557b6953526401"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp14",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp14/model.onnx",
+        "vnnlib": "instances/milp14/spec.vnnlib",
+        "meta": "instances/milp14/meta.json"
+      },
+      "sha256": {
+        "onnx": "fcb57cb069edef1dfd19298530bd570d4fbfa8e48b0f427d48108bdf15ea6299",
+        "vnnlib": "f0401ae91036cc86fc519ed6ca8d91fb2b05e44a308a42969fdbe8269f91a873"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9999999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp15",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/milp15/model.onnx",
+        "vnnlib": "instances/milp15/spec.vnnlib",
+        "meta": "instances/milp15/meta.json"
+      },
+      "sha256": {
+        "onnx": "59d965e6a310fe848b79bdd64f2b956388b296a21edddd26e44e307a3a4979f6",
+        "vnnlib": "6c8d82ed6a8e7bfa4773196e8ca36960a917e348b7f4e37d9fd2dd4d05126925"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.5,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp15/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp15/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp16",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/milp16/model.onnx",
+        "vnnlib": "instances/milp16/spec.vnnlib",
+        "meta": "instances/milp16/meta.json"
+      },
+      "sha256": {
+        "onnx": "59d965e6a310fe848b79bdd64f2b956388b296a21edddd26e44e307a3a4979f6",
+        "vnnlib": "eab73631c8d71059277323e074e0ba125509eb2c2ee33ad3e6020eb4040b304b"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp16/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp16/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp17",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/milp17/model.onnx",
+        "vnnlib": "instances/milp17/spec.vnnlib",
+        "meta": "instances/milp17/meta.json"
+      },
+      "sha256": {
+        "onnx": "59d965e6a310fe848b79bdd64f2b956388b296a21edddd26e44e307a3a4979f6",
+        "vnnlib": "54ef963f3cf217da8829d4cc281e9c29df31a8771be7b7601a66b8c7cd6ace74"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp17/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp17/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp18",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/milp18/model.onnx",
+        "vnnlib": "instances/milp18/spec.vnnlib",
+        "meta": "instances/milp18/meta.json"
+      },
+      "sha256": {
+        "onnx": "59d965e6a310fe848b79bdd64f2b956388b296a21edddd26e44e307a3a4979f6",
+        "vnnlib": "b60dd35f0fe005fe9c9232a1ad528a93d326e80f6e5767ee37e064f47a1e75c7"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp18/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp18/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp19",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/milp19/model.onnx",
+        "vnnlib": "instances/milp19/spec.vnnlib",
+        "meta": "instances/milp19/meta.json"
+      },
+      "sha256": {
+        "onnx": "59d965e6a310fe848b79bdd64f2b956388b296a21edddd26e44e307a3a4979f6",
+        "vnnlib": "5066ea353aea9591fce529f5b61a63addc94caf7fec28d19de388af50e0cf847"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp19/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp19/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp20",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/milp20/model.onnx",
+        "vnnlib": "instances/milp20/spec.vnnlib",
+        "meta": "instances/milp20/meta.json"
+      },
+      "sha256": {
+        "onnx": "59d965e6a310fe848b79bdd64f2b956388b296a21edddd26e44e307a3a4979f6",
+        "vnnlib": "a56651385abfcb02a1e09d465a4e4d13d0b7009dfd19266c12744d0d46764d81"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp20/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp20/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp21",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/milp21/model.onnx",
+        "vnnlib": "instances/milp21/spec.vnnlib",
+        "meta": "instances/milp21/meta.json"
+      },
+      "sha256": {
+        "onnx": "59d965e6a310fe848b79bdd64f2b956388b296a21edddd26e44e307a3a4979f6",
+        "vnnlib": "4205e4bfb0ea2459a1c2ec1bb252f190878e79461326105797983db031b32a4e"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9999999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp21/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp21/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp22",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp22/model.onnx",
+        "vnnlib": "instances/milp22/spec.vnnlib",
+        "meta": "instances/milp22/meta.json"
+      },
+      "sha256": {
+        "onnx": "00a99c63520f371445fa9a0964bda532590b1474976646aa5c702fb355bea41c",
+        "vnnlib": "52c2b7e8ec8f9e65159649b3fa879520bcdf7a5862b2e9a52eca46feb5c48d47"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 5,
+        "h2": 5,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp22/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp22/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp23",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp23/model.onnx",
+        "vnnlib": "instances/milp23/spec.vnnlib",
+        "meta": "instances/milp23/meta.json"
+      },
+      "sha256": {
+        "onnx": "f5b1b59a2a78f83b89900df798498619fe64849cdc47a8a60a794589ddfb6b40",
+        "vnnlib": "81b1bc528528f67ab35254a9fb8a842c2e734d0572239720eb0d37d36bb7e337"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 10,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp23/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp23/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp24",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp24/model.onnx",
+        "vnnlib": "instances/milp24/spec.vnnlib",
+        "meta": "instances/milp24/meta.json"
+      },
+      "sha256": {
+        "onnx": "7219b204cbbac81d00ce48b5ae5a5c2476efa553b68f07489aa39b3e4e797dae",
+        "vnnlib": "82c9e1826a6a4f695992fa7d854b4802141b84d0ec2612f8351b98e6341ceb48"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 20,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp24/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp24/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp25",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp25/model.onnx",
+        "vnnlib": "instances/milp25/spec.vnnlib",
+        "meta": "instances/milp25/meta.json"
+      },
+      "sha256": {
+        "onnx": "4e6b65e022f81251f5ca93496f10e13effa1e9086f0216389abdf0b32b5ee5a4",
+        "vnnlib": "b20859c12fe9189a7e0c067334ea6e87368d9f7c86a062cb3f222ada1786545c"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 50,
+        "h2": 50,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp25/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp25/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp26",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp26/model.onnx",
+        "vnnlib": "instances/milp26/spec.vnnlib",
+        "meta": "instances/milp26/meta.json"
+      },
+      "sha256": {
+        "onnx": "cd037dd16e281f35b1d0cea6e74c53743b529841d71836c6cafcc329b8d766b4",
+        "vnnlib": "803210790060a269bb780c10b6b29bde250e4cd4e969b154de67645ef8ac2246"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 100,
+        "h2": 100,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp26/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp26/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp27",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp27/model.onnx",
+        "vnnlib": "instances/milp27/spec.vnnlib",
+        "meta": "instances/milp27/meta.json"
+      },
+      "sha256": {
+        "onnx": "529f15457b02ec701a83ad15b14be281d12b4461d170cfe97e03ab8392898cd0",
+        "vnnlib": "0a51f9a08d9822a06715abb0807de476bb1b443adea9f616b911b0724fa4b3da"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 5,
+        "h2": 5,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp27/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp27/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp28",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp28/model.onnx",
+        "vnnlib": "instances/milp28/spec.vnnlib",
+        "meta": "instances/milp28/meta.json"
+      },
+      "sha256": {
+        "onnx": "2dda10864563a6f76db218cf3bc2d5e933ffea6c51bbbd2ad6eb1bb156def1a7",
+        "vnnlib": "c469a0046a09c004266eb7cf1cea6a9b5a8e9966c86ee9e5fe38cc6c80a8d127"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 10,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp28/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp28/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp29",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp29/model.onnx",
+        "vnnlib": "instances/milp29/spec.vnnlib",
+        "meta": "instances/milp29/meta.json"
+      },
+      "sha256": {
+        "onnx": "cdc73efd7c15df2dd9ab02bf1e197b31da73897a487b8da060a4f13a3278cff1",
+        "vnnlib": "898b2c9c9ea2bd7a527a359e75031f89776641ee31a26c6642f2d4e0c90da260"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 20,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp29/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp29/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp30",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp30/model.onnx",
+        "vnnlib": "instances/milp30/spec.vnnlib",
+        "meta": "instances/milp30/meta.json"
+      },
+      "sha256": {
+        "onnx": "9b5f3ab87734f07f9220371929f6b16cd647a33c56859cab98ddbd2c68e6b956",
+        "vnnlib": "fa49b8cc2d9734471c4017c7767b67ee57f456f8cb71e9b5176b527499ad777d"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 50,
+        "h2": 50,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp30/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp30/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp31",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp31/model.onnx",
+        "vnnlib": "instances/milp31/spec.vnnlib",
+        "meta": "instances/milp31/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9d52bc26115acc90f78d09778257d9a166584406344c481c8055cf6f89dda2a",
+        "vnnlib": "95193fb3493affec2086cd10d21d62f74b49c76cbc08b029a43d01dc42fd01c4"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 100,
+        "h2": 100,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "benchmarks/ep/instances/milp31/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/milp31/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc1",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc1/model.onnx",
+        "vnnlib": "instances/rc1/spec.vnnlib",
+        "meta": "instances/rc1/meta.json"
+      },
+      "sha256": {
+        "onnx": "6c7e60e9fed0ea13e3cb338db246669997a1e4b0b36e3a658b45668458ffe52a",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.0001,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc2",
+      "construction": "mlp_relu.corners",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/rc2/model.onnx",
+        "vnnlib": "instances/rc2/spec.vnnlib",
+        "meta": "instances/rc2/meta.json"
+      },
+      "sha256": {
+        "onnx": "047a1def510699691d340f4c787fb8de82befef6e4d98d2d803ab0da214b1f64",
+        "vnnlib": "b4c12ecd51261abc7dc35b5ceba8f21964fa971302476524c7f23af5af4d0aac"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.0001,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc3",
+      "construction": "mlp_relu.corners",
+      "seed": null,
+      "paths": {
+        "onnx": "instances/rc3/model.onnx",
+        "vnnlib": "instances/rc3/spec.vnnlib",
+        "meta": "instances/rc3/meta.json"
+      },
+      "sha256": {
+        "onnx": "b103f827b0140b69c8e39f56ca0fdae3ffdcf0c627b1b3f9a8d6a56e18e79d83",
+        "vnnlib": "48691ecfb24b142d3ea9f397566135042cb7fcc96dbfc264d55b4851a3db4628"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.0001,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc4",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc4/model.onnx",
+        "vnnlib": "instances/rc4/spec.vnnlib",
+        "meta": "instances/rc4/meta.json"
+      },
+      "sha256": {
+        "onnx": "360ec8c4dda6e8f840fd37e88e9ae801804ccfc8b63a579d7483cc633b4a68da",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.01,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc5",
+      "construction": "mlp_relu.corners",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/rc5/model.onnx",
+        "vnnlib": "instances/rc5/spec.vnnlib",
+        "meta": "instances/rc5/meta.json"
+      },
+      "sha256": {
+        "onnx": "fe9ee6aa75961e570296726a737ff8a89316e7fb43e9f17530d519f90243d564",
+        "vnnlib": "b4c12ecd51261abc7dc35b5ceba8f21964fa971302476524c7f23af5af4d0aac"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.01,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc6",
+      "construction": "mlp_relu.corners",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/rc6/model.onnx",
+        "vnnlib": "instances/rc6/spec.vnnlib",
+        "meta": "instances/rc6/meta.json"
+      },
+      "sha256": {
+        "onnx": "3c9ba00040448825a43eee2c2292e1dd71304831561ef4ae428ae075d40eea21",
+        "vnnlib": "2ef5326547dab99a58fdc236ccc77617ec2e161c4c16c3f1269d05f9dabccdc9"
+      },
+      "args": {
+        "seed": 3,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.01,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc7",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc7/model.onnx",
+        "vnnlib": "instances/rc7/spec.vnnlib",
+        "meta": "instances/rc7/meta.json"
+      },
+      "sha256": {
+        "onnx": "08b49c7d108b3ab99f0f835fe93f4ef39cbb3ac563dbe6aa76eddd7b0b00058c",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 1,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc8",
+      "construction": "mlp_relu.corners",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/rc8/model.onnx",
+        "vnnlib": "instances/rc8/spec.vnnlib",
+        "meta": "instances/rc8/meta.json"
+      },
+      "sha256": {
+        "onnx": "14071ebe0cfe17b09670df345a4648927cec40dd4a3628809c1ff065cc15b66f",
+        "vnnlib": "b4c12ecd51261abc7dc35b5ceba8f21964fa971302476524c7f23af5af4d0aac"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 1,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc9",
+      "construction": "mlp_relu.corners",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/rc9/model.onnx",
+        "vnnlib": "instances/rc9/spec.vnnlib",
+        "meta": "instances/rc9/meta.json"
+      },
+      "sha256": {
+        "onnx": "cd74ca84c9c44f30f5f30fa5b2e6e10509aeb07f23aea27b185cef9ccd70fdf9",
+        "vnnlib": "2ef5326547dab99a58fdc236ccc77617ec2e161c4c16c3f1269d05f9dabccdc9"
+      },
+      "args": {
+        "seed": 3,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 1,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc10",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc10/model.onnx",
+        "vnnlib": "instances/rc10/spec.vnnlib",
+        "meta": "instances/rc10/meta.json"
+      },
+      "sha256": {
+        "onnx": "7dc0cdec4b64f223689e5fdefe6a6cf3801bc5c03487b93179f4f89b239a9f44",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 100,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc11",
+      "construction": "mlp_relu.corners",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/rc11/model.onnx",
+        "vnnlib": "instances/rc11/spec.vnnlib",
+        "meta": "instances/rc11/meta.json"
+      },
+      "sha256": {
+        "onnx": "5eed76881ac961baa787b7ba96091df916a1e2a76e09d55ef33b4fbe55956243",
+        "vnnlib": "b4c12ecd51261abc7dc35b5ceba8f21964fa971302476524c7f23af5af4d0aac"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 100,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc12",
+      "construction": "mlp_relu.corners",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/rc12/model.onnx",
+        "vnnlib": "instances/rc12/spec.vnnlib",
+        "meta": "instances/rc12/meta.json"
+      },
+      "sha256": {
+        "onnx": "e5816046dd21a957ad67232e60c5bb1118ebc174aa05a2da320cce0cc4739038",
+        "vnnlib": "2ef5326547dab99a58fdc236ccc77617ec2e161c4c16c3f1269d05f9dabccdc9"
+      },
+      "args": {
+        "seed": 3,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 100,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc13",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc13/model.onnx",
+        "vnnlib": "instances/rc13/spec.vnnlib",
+        "meta": "instances/rc13/meta.json"
+      },
+      "sha256": {
+        "onnx": "e6117bd5334a67e992e4c224d2ffa72c2efd861dc14af01a1258c97ff61ee76e",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 10000,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc14",
+      "construction": "mlp_relu.corners",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/rc14/model.onnx",
+        "vnnlib": "instances/rc14/spec.vnnlib",
+        "meta": "instances/rc14/meta.json"
+      },
+      "sha256": {
+        "onnx": "99e4dcff100285160889d38c06993b7ce1077f320fd3d152f769166a90ea602d",
+        "vnnlib": "b4c12ecd51261abc7dc35b5ceba8f21964fa971302476524c7f23af5af4d0aac"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 10000,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc15",
+      "construction": "mlp_relu.corners",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/rc15/model.onnx",
+        "vnnlib": "instances/rc15/spec.vnnlib",
+        "meta": "instances/rc15/meta.json"
+      },
+      "sha256": {
+        "onnx": "46d143987d0c047190678294aaa8e92b0e76e5e87f0a6f99a9c80a7fece836f5",
+        "vnnlib": "2ef5326547dab99a58fdc236ccc77617ec2e161c4c16c3f1269d05f9dabccdc9"
+      },
+      "args": {
+        "seed": 3,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 10000,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc15/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc15/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc16",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc16/model.onnx",
+        "vnnlib": "instances/rc16/spec.vnnlib",
+        "meta": "instances/rc16/meta.json"
+      },
+      "sha256": {
+        "onnx": "10376de4d152b35bdd87707e13e888cc2bc5805e5659c9a0330f8bbd9bc0fdbc",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 1000000,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc16/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc16/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc17",
+      "construction": "mlp_relu.corners",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/rc17/model.onnx",
+        "vnnlib": "instances/rc17/spec.vnnlib",
+        "meta": "instances/rc17/meta.json"
+      },
+      "sha256": {
+        "onnx": "bed5ff12f94d1e600656a149daed822cd51a3f5ce69034ac648087ff32e04133",
+        "vnnlib": "b4c12ecd51261abc7dc35b5ceba8f21964fa971302476524c7f23af5af4d0aac"
+      },
+      "args": {
+        "seed": 2,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 1000000,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc17/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc17/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc18",
+      "construction": "mlp_relu.corners",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/rc18/model.onnx",
+        "vnnlib": "instances/rc18/spec.vnnlib",
+        "meta": "instances/rc18/meta.json"
+      },
+      "sha256": {
+        "onnx": "ddab9a1c32e46c53159866206698ead192668f3f1c4ad7875d774f877e12adfb",
+        "vnnlib": "2ef5326547dab99a58fdc236ccc77617ec2e161c4c16c3f1269d05f9dabccdc9"
+      },
+      "args": {
+        "seed": 3,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 1000000,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc18/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc18/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc19",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc19/model.onnx",
+        "vnnlib": "instances/rc19/spec.vnnlib",
+        "meta": "instances/rc19/meta.json"
+      },
+      "sha256": {
+        "onnx": "08b49c7d108b3ab99f0f835fe93f4ef39cbb3ac563dbe6aa76eddd7b0b00058c",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_l1": 1.0,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc19/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc19/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc20",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc20/model.onnx",
+        "vnnlib": "instances/rc20/spec.vnnlib",
+        "meta": "instances/rc20/meta.json"
+      },
+      "sha256": {
+        "onnx": "6cef6ffc3460141d1ed587647c7671ee55a22f6ad8f86cf64c634019d17f6d37",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "num_hinges": 256,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_l1": 1.0,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc20/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc20/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc21",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc21/model.onnx",
+        "vnnlib": "instances/rc21/spec.vnnlib",
+        "meta": "instances/rc21/meta.json"
+      },
+      "sha256": {
+        "onnx": "d717e0099ca354b3c8ac309a29b5c6d18654bdde6b82329ec0f6ae767a5cce1d",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "num_hinges": 1024,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_l1": 1.0,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc21/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc21/spec.vnnlib"
+      }
+    },
+    {
+      "id": "rc22",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/rc22/model.onnx",
+        "vnnlib": "instances/rc22/spec.vnnlib",
+        "meta": "instances/rc22/meta.json"
+      },
+      "sha256": {
+        "onnx": "e2477ba6937999f5b5ea5fb25a08e280f1393bc7d5660783035e84a9270d19b4",
+        "vnnlib": "d9c71dd922879f6c64c3f7843e01a102da870648782aea9587c127a786214995"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "num_hinges": 4096,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_l1": 1.0,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "benchmarks/ep/instances/rc22/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/rc22/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep1",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep1/model.onnx",
+        "vnnlib": "instances/ep1/spec.vnnlib",
+        "meta": "instances/ep1/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 1,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep2",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep2/model.onnx",
+        "vnnlib": "instances/ep2/spec.vnnlib",
+        "meta": "instances/ep2/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 5,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep3",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep3/model.onnx",
+        "vnnlib": "instances/ep3/spec.vnnlib",
+        "meta": "instances/ep3/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 10,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep4",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep4/model.onnx",
+        "vnnlib": "instances/ep4/spec.vnnlib",
+        "meta": "instances/ep4/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 20,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ep5",
+      "construction": "mlp_relu.embedded_projection",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/ep5/model.onnx",
+        "vnnlib": "instances/ep5/spec.vnnlib",
+        "meta": "instances/ep5/meta.json"
+      },
+      "sha256": {
+        "onnx": "b3f361c77e2a59f6904b5ec073349530f9c95e6ee7043f0a2d56a1f8c6ad7602",
+        "vnnlib": "0c3756c85b1674a8b95f8334ebb3c24a8211c60d22b527206b32884f00ba4d2b"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "wide-layers": 50,
+        "output_dim": 10,
+        "epsilon": 0.1,
+        "hidden_dims": null,
+        "num_layers": 5,
+        "width": 256,
+        "wide_layers": 0,
+        "wide_width": 1000,
+        "scale": null,
+        "eta": 0.0,
+        "onnx_path": "benchmarks/ep/instances/ep5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ep5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn1",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn1/model.onnx",
+        "vnnlib": "instances/dc_cnn1/spec.vnnlib",
+        "meta": "instances/dc_cnn1/meta.json"
+      },
+      "sha256": {
+        "onnx": "4779cef86172ffd3ef2948d5421e2f49e408e46dfbaa98cf8c4ad1017846443d",
+        "vnnlib": "1bde69c930b4f303a584f65b6182ed1eaf3d00535b6fed4fd6c308a65ee702f7"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 2,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn2",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn2/model.onnx",
+        "vnnlib": "instances/dc_cnn2/spec.vnnlib",
+        "meta": "instances/dc_cnn2/meta.json"
+      },
+      "sha256": {
+        "onnx": "b7a1a3d674e12777b275dcfc9acdcd2dc922f30c66d7bb3cabbe004e47d3b6c8",
+        "vnnlib": "9998d74f26493fa883478939e1fa3e9be04b13b6a1846592ab128dde7e4bb830"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 4,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn3",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn3/model.onnx",
+        "vnnlib": "instances/dc_cnn3/spec.vnnlib",
+        "meta": "instances/dc_cnn3/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn4",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn4/model.onnx",
+        "vnnlib": "instances/dc_cnn4/spec.vnnlib",
+        "meta": "instances/dc_cnn4/meta.json"
+      },
+      "sha256": {
+        "onnx": "793ffb9f676365adeaf6d2b899562578b99d9c1ba9aa9fed2b3f15431b5c6967",
+        "vnnlib": "3c29203642501a79758eff05e2bc39782004564cba31d98ec6292b037d22cb64"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 8,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn5",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn5/model.onnx",
+        "vnnlib": "instances/dc_cnn5/spec.vnnlib",
+        "meta": "instances/dc_cnn5/meta.json"
+      },
+      "sha256": {
+        "onnx": "8283f5e68d0bcb3acdd64b41cbc23925f8b91bda35f07e5703438393eafa5016",
+        "vnnlib": "0a480ceb0a7b413a75e114160461cbe57540e8982df4570708641bf1afffb9cf"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 10,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn6",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn6/model.onnx",
+        "vnnlib": "instances/dc_cnn6/spec.vnnlib",
+        "meta": "instances/dc_cnn6/meta.json"
+      },
+      "sha256": {
+        "onnx": "c7242284d4cfafcd9be48e91a931e6a31f6b345df6426385fec2769fdf59fbcd",
+        "vnnlib": "fa4d2ad7dc4df65466e8af03e0319cb3360394732744f8b523f02af8d2f9f08e"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 2,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn7",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn7/model.onnx",
+        "vnnlib": "instances/dc_cnn7/spec.vnnlib",
+        "meta": "instances/dc_cnn7/meta.json"
+      },
+      "sha256": {
+        "onnx": "d15d64d0434ee6ed657fa6adaa2821690653f30c11e29c547750760f9a8df6d0",
+        "vnnlib": "a0cb70ec5d0f33023b532fa54a1f26e178fef0ce6e57673f8809f75d83b7b1bb"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 4,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn8",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn8/model.onnx",
+        "vnnlib": "instances/dc_cnn8/spec.vnnlib",
+        "meta": "instances/dc_cnn8/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn9",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn9/model.onnx",
+        "vnnlib": "instances/dc_cnn9/spec.vnnlib",
+        "meta": "instances/dc_cnn9/meta.json"
+      },
+      "sha256": {
+        "onnx": "e8a86fcedebf1820265aeab3f6d2293e4023465abfd0524af1f8b1519d95a1cf",
+        "vnnlib": "7761376d0e3b328c46a3320d8f90f5544e38bed3f98405cb8e3847b606eaec0f"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 8,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn10",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn10/model.onnx",
+        "vnnlib": "instances/dc_cnn10/spec.vnnlib",
+        "meta": "instances/dc_cnn10/meta.json"
+      },
+      "sha256": {
+        "onnx": "7fdfb472a6ba4cc0cff3b6218d2145636de2972d55b67f20059608759943d2b1",
+        "vnnlib": "f1d7ddf7cdae40fbbdb3b386c23c3a2160f5ef91c5994a9dbfcac555f90077e2"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 10,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn11",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn11/model.onnx",
+        "vnnlib": "instances/dc_cnn11/spec.vnnlib",
+        "meta": "instances/dc_cnn11/meta.json"
+      },
+      "sha256": {
+        "onnx": "856c34d50924053ed06db28255349cc1ff09274d34e761ea8d456934fdab78b0",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.7,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn12",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn12/model.onnx",
+        "vnnlib": "instances/dc_cnn12/spec.vnnlib",
+        "meta": "instances/dc_cnn12/meta.json"
+      },
+      "sha256": {
+        "onnx": "aa5ea838e76551670d29d5fd29eef334b8edecae745b2294ef587b74584feade",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.8,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn13",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn13/model.onnx",
+        "vnnlib": "instances/dc_cnn13/spec.vnnlib",
+        "meta": "instances/dc_cnn13/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn14",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn14/model.onnx",
+        "vnnlib": "instances/dc_cnn14/spec.vnnlib",
+        "meta": "instances/dc_cnn14/meta.json"
+      },
+      "sha256": {
+        "onnx": "512d27a9fe957ff7976fe0afe821003cfe7513c0ad1242069f9d589114b126f4",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.95,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn15",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn15/model.onnx",
+        "vnnlib": "instances/dc_cnn15/spec.vnnlib",
+        "meta": "instances/dc_cnn15/meta.json"
+      },
+      "sha256": {
+        "onnx": "3295b21d1a854648c5e20208459cc3a61e7323cd75562b90f0746afede91916f",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.98,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn15/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn15/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn16",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn16/model.onnx",
+        "vnnlib": "instances/dc_cnn16/spec.vnnlib",
+        "meta": "instances/dc_cnn16/meta.json"
+      },
+      "sha256": {
+        "onnx": "86fc9d95d2a941e777a268baca9c3e9e0b00271325b201245876560847b78c9a",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.7,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn16/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn16/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn17",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn17/model.onnx",
+        "vnnlib": "instances/dc_cnn17/spec.vnnlib",
+        "meta": "instances/dc_cnn17/meta.json"
+      },
+      "sha256": {
+        "onnx": "95b867c6521ae13bd8fb9ac0726d94b530f631de43fe02bda1f19826c9e1f027",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.8,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn17/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn17/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn18",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn18/model.onnx",
+        "vnnlib": "instances/dc_cnn18/spec.vnnlib",
+        "meta": "instances/dc_cnn18/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn18/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn18/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn19",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn19/model.onnx",
+        "vnnlib": "instances/dc_cnn19/spec.vnnlib",
+        "meta": "instances/dc_cnn19/meta.json"
+      },
+      "sha256": {
+        "onnx": "71902460d1ce048d2e39fff6afd75c86f7c8b104d0eef8df90b12d7e49711f05",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.95,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn19/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn19/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn20",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn20/model.onnx",
+        "vnnlib": "instances/dc_cnn20/spec.vnnlib",
+        "meta": "instances/dc_cnn20/meta.json"
+      },
+      "sha256": {
+        "onnx": "9cfae1afc13be2f1f86bd0b92638d39dfb515d9a1e0a02ff3b54c95e05b9934d",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.98,
+        "margin": 0.001,
+        "bias_instability_frac\uff1a 0.40": null,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "bias_instability_frac": 0.4,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn20/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn20/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn21",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn21/model.onnx",
+        "vnnlib": "instances/dc_cnn21/spec.vnnlib",
+        "meta": "instances/dc_cnn21/meta.json"
+      },
+      "sha256": {
+        "onnx": "91f544f2770a79ca96faa5c302a7814d0358ffa2afe88b09b96c794d1c130091",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.1,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn21/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn21/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn22",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn22/model.onnx",
+        "vnnlib": "instances/dc_cnn22/spec.vnnlib",
+        "meta": "instances/dc_cnn22/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.01,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn22/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn22/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn23",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn23/model.onnx",
+        "vnnlib": "instances/dc_cnn23/spec.vnnlib",
+        "meta": "instances/dc_cnn23/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn23/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn23/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn24",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn24/model.onnx",
+        "vnnlib": "instances/dc_cnn24/spec.vnnlib",
+        "meta": "instances/dc_cnn24/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.0005,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn24/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn24/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn25",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn25/model.onnx",
+        "vnnlib": "instances/dc_cnn25/spec.vnnlib",
+        "meta": "instances/dc_cnn25/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.0001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn25/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn25/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn26",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn26/model.onnx",
+        "vnnlib": "instances/dc_cnn26/spec.vnnlib",
+        "meta": "instances/dc_cnn26/meta.json"
+      },
+      "sha256": {
+        "onnx": "21869e270f419cc66f05dfdaaa1499ba843715ca28bbb1d479b3f1c2a8dcfbdf",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.1,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn26/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn26/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn27",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn27/model.onnx",
+        "vnnlib": "instances/dc_cnn27/spec.vnnlib",
+        "meta": "instances/dc_cnn27/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.01,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn27/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn27/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn28",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn28/model.onnx",
+        "vnnlib": "instances/dc_cnn28/spec.vnnlib",
+        "meta": "instances/dc_cnn28/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn28/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn28/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn29",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn29/model.onnx",
+        "vnnlib": "instances/dc_cnn29/spec.vnnlib",
+        "meta": "instances/dc_cnn29/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.0005,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn29/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn29/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn30",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn30/model.onnx",
+        "vnnlib": "instances/dc_cnn30/spec.vnnlib",
+        "meta": "instances/dc_cnn30/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.0001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn30/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn30/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn31",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn31/model.onnx",
+        "vnnlib": "instances/dc_cnn31/spec.vnnlib",
+        "meta": "instances/dc_cnn31/meta.json"
+      },
+      "sha256": {
+        "onnx": "2d26e3dee70b5167cf952765d655321627b9572c947fa7dec4ff76eafcf0f2cb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.1,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn31/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn31/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn32",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn32/model.onnx",
+        "vnnlib": "instances/dc_cnn32/spec.vnnlib",
+        "meta": "instances/dc_cnn32/meta.json"
+      },
+      "sha256": {
+        "onnx": "abd24ea0c7dfb149131bffb1b9896515e8cfd484947f35c0335fe67bd8996d3e",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.25,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn32/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn32/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn33",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn33/model.onnx",
+        "vnnlib": "instances/dc_cnn33/spec.vnnlib",
+        "meta": "instances/dc_cnn33/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn33/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn33/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn34",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn34/model.onnx",
+        "vnnlib": "instances/dc_cnn34/spec.vnnlib",
+        "meta": "instances/dc_cnn34/meta.json"
+      },
+      "sha256": {
+        "onnx": "64db6f85abfbc5719aae7c6d7dd1c3ca07983608a1f188b295e8d0fa2b5de516",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.55,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn34/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn34/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn35",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn35/model.onnx",
+        "vnnlib": "instances/dc_cnn35/spec.vnnlib",
+        "meta": "instances/dc_cnn35/meta.json"
+      },
+      "sha256": {
+        "onnx": "e388bef5f34c7ff8cb2f2b8c11ecd2c72160b6cb09e7894edf572db55813b1a9",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.7,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn35/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn35/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn36",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn36/model.onnx",
+        "vnnlib": "instances/dc_cnn36/spec.vnnlib",
+        "meta": "instances/dc_cnn36/meta.json"
+      },
+      "sha256": {
+        "onnx": "870a59916f353701a71ac0795847a0c0b037f99117c34337af2d313fc17cf338",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.1,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn36/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn36/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn37",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn37/model.onnx",
+        "vnnlib": "instances/dc_cnn37/spec.vnnlib",
+        "meta": "instances/dc_cnn37/meta.json"
+      },
+      "sha256": {
+        "onnx": "201a81998b03a30f2626d32b1d05e7a9c83bb30a41c16db63ef08f1fabdb75d0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.25,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn37/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn37/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn38",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn38/model.onnx",
+        "vnnlib": "instances/dc_cnn38/spec.vnnlib",
+        "meta": "instances/dc_cnn38/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn38/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn38/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn39",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn39/model.onnx",
+        "vnnlib": "instances/dc_cnn39/spec.vnnlib",
+        "meta": "instances/dc_cnn39/meta.json"
+      },
+      "sha256": {
+        "onnx": "fbfdef5c5c4a3c31021257a89aa05a296f5b7694a1de7894e32a87e6b1a36425",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.55,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn39/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn39/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn40",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn40/model.onnx",
+        "vnnlib": "instances/dc_cnn40/spec.vnnlib",
+        "meta": "instances/dc_cnn40/meta.json"
+      },
+      "sha256": {
+        "onnx": "589063adc6c705518fa87cf807c2a06e577a6fc37a767898281fe770c18e0338",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.7,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn40/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn40/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn41",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn41/model.onnx",
+        "vnnlib": "instances/dc_cnn41/spec.vnnlib",
+        "meta": "instances/dc_cnn41/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a3dfab5b76b9a828253326052df6423d22448fca5545d4c9403c504548c16ba",
+        "vnnlib": "2d79365ce5b58229997b1875212348f67d065a23f34be7e0975876703391118b"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 4,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn41/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn41/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn42",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn42/model.onnx",
+        "vnnlib": "instances/dc_cnn42/spec.vnnlib",
+        "meta": "instances/dc_cnn42/meta.json"
+      },
+      "sha256": {
+        "onnx": "2954fa158bc1a730e4c6fc4c4145cea61e98a2268ba0d6845bc23c10de6c7352",
+        "vnnlib": "94352d4de80873663460afc226b4596fead3abe9d4daac059c2add6b52a3c62a"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 8,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn42/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn42/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn43",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn43/model.onnx",
+        "vnnlib": "instances/dc_cnn43/spec.vnnlib",
+        "meta": "instances/dc_cnn43/meta.json"
+      },
+      "sha256": {
+        "onnx": "0b3813e93ff462c1b87b5b03f5d66570bfd8b0954e5843183e8cf91a19a7d2bb",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn43/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn43/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn44",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn44/model.onnx",
+        "vnnlib": "instances/dc_cnn44/spec.vnnlib",
+        "meta": "instances/dc_cnn44/meta.json"
+      },
+      "sha256": {
+        "onnx": "86758a91293cc6d1698e5a373869ed6121c2954f8ff23830e0335a9779485927",
+        "vnnlib": "c4ce41a98919c6534a64c6d231e88656f0f2c2bbd84f82e02ac407c16e31994a"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 32,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn44/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn44/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn45",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn45/model.onnx",
+        "vnnlib": "instances/dc_cnn45/spec.vnnlib",
+        "meta": "instances/dc_cnn45/meta.json"
+      },
+      "sha256": {
+        "onnx": "2443ded943fda0b621cb294793fb5682cfe30c8a844539129087346d3e1ac474",
+        "vnnlib": "922425cc61b4b5b9e370e6574686af55838e346556aef11fcafae719d6cbed75"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 64,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn45/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn45/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn46",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn46/model.onnx",
+        "vnnlib": "instances/dc_cnn46/spec.vnnlib",
+        "meta": "instances/dc_cnn46/meta.json"
+      },
+      "sha256": {
+        "onnx": "b2d08ad638022261fae5bda011c20c128daa17ea0d3b1cebde47523f96637dd2",
+        "vnnlib": "0f9193934c4e184002eafd0291c1541672d748ab15e7595ef812fe0802fbcbc7"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 4,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn46/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn46/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn47",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn47/model.onnx",
+        "vnnlib": "instances/dc_cnn47/spec.vnnlib",
+        "meta": "instances/dc_cnn47/meta.json"
+      },
+      "sha256": {
+        "onnx": "be3d57833ad19e2b4e85ccfb10450d27a45b00e4d1f22b263adeb5fbc2f0ef95",
+        "vnnlib": "eeb2244a76bb385f1844b4474fe934b0c5b68fd91535ec019f958327b5c47217"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 8,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn47/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn47/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn48",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn48/model.onnx",
+        "vnnlib": "instances/dc_cnn48/spec.vnnlib",
+        "meta": "instances/dc_cnn48/meta.json"
+      },
+      "sha256": {
+        "onnx": "ca6790d7b16f6476430e65a2f07c6bef55d33e05bdb0cef95488c7cac96af2a0",
+        "vnnlib": "8f7a8e2859112faba81291a979110982b9bd79ebc028393ebf7b0cb9c7b571f3"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn48/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn48/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn49",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn49/model.onnx",
+        "vnnlib": "instances/dc_cnn49/spec.vnnlib",
+        "meta": "instances/dc_cnn49/meta.json"
+      },
+      "sha256": {
+        "onnx": "a0632332dd8a6ef632fca1d7c84036c67bed2ca77fe4a6d1d741c8d1487d5011",
+        "vnnlib": "39d2b7bd592fcb7c1fadf2d0ade369c517460f9ccf983afedd6e7f26e14e1e0d"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 32,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn49/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn49/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn50",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/dc_cnn50/model.onnx",
+        "vnnlib": "instances/dc_cnn50/spec.vnnlib",
+        "meta": "instances/dc_cnn50/meta.json"
+      },
+      "sha256": {
+        "onnx": "1aeaedc5775b9153d0a8b656462aa355dc162b490255e3b8fb8e0e2422f165f6",
+        "vnnlib": "47cc12fd907c09253fb1bcc8e34cb1b95524a24ba629aba9d0aed6180e445bca"
+      },
+      "args": {
+        "seed": 1,
+        "depth": 6,
+        "channels": 64,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "benchmarks/ep/instances/dc_cnn50/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/dc_cnn50/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_1",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_1/model.onnx",
+        "vnnlib": "instances/pb_cnn_1/spec.vnnlib",
+        "meta": "instances/pb_cnn_1/meta.json"
+      },
+      "sha256": {
+        "onnx": "5185cf71891cb65288841fda37be4f5e887aa17bdf052da34fd17c55f6fdab62",
+        "vnnlib": "66e1a28e6c9875f46eb0f81dc4bf78452620908e342f8fa6ad88aed50249ed7c"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 2,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_2",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_2/model.onnx",
+        "vnnlib": "instances/pb_cnn_2/spec.vnnlib",
+        "meta": "instances/pb_cnn_2/meta.json"
+      },
+      "sha256": {
+        "onnx": "8297395f3a4eeac21512bfcca7e1f767ff421029caf988e24dd1180b4b9d0934",
+        "vnnlib": "15c52c8b8e72eddbc9d1d18c81ea740e6c277292e25a1b2946e6b16fe7134a26"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 4,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_3",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_3/model.onnx",
+        "vnnlib": "instances/pb_cnn_3/spec.vnnlib",
+        "meta": "instances/pb_cnn_3/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_4",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_4/model.onnx",
+        "vnnlib": "instances/pb_cnn_4/spec.vnnlib",
+        "meta": "instances/pb_cnn_4/meta.json"
+      },
+      "sha256": {
+        "onnx": "7c302b5155f03ae82fc616b6deadbe09bd047cfa5758be192fe3915fd1a266a5",
+        "vnnlib": "0cec7befd16112b8c998e5bae80692c6874cd0cdc2659163317caacd59e2acb8"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 16,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_5",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_5/model.onnx",
+        "vnnlib": "instances/pb_cnn_5/spec.vnnlib",
+        "meta": "instances/pb_cnn_5/meta.json"
+      },
+      "sha256": {
+        "onnx": "2c90ce779789a4f8670fb47827cd916d558b09b4fcc6a7dea6b119121c72a109",
+        "vnnlib": "abda2b2e4c87a3b62ccedf1e30dade189fe1c548271b93270e595524578cc3e9"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 32,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_6",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_6/model.onnx",
+        "vnnlib": "instances/pb_cnn_6/spec.vnnlib",
+        "meta": "instances/pb_cnn_6/meta.json"
+      },
+      "sha256": {
+        "onnx": "d99c507f94a4045c755148559c7efc1405cf82e2869a2e8b48cec9ca496fa567",
+        "vnnlib": "b40d7c7f46e2209ddfaee16de6961714e5c5f0b47c63e67d367edb7d02aa6fdc"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 2,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_7",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_7/model.onnx",
+        "vnnlib": "instances/pb_cnn_7/spec.vnnlib",
+        "meta": "instances/pb_cnn_7/meta.json"
+      },
+      "sha256": {
+        "onnx": "08ad6855d639dd2041b59c0662ea59539221b6efddc10f45c822b9ec0e07b024",
+        "vnnlib": "48adb5f3cc95f8048b2d86b02f860cee9b3f9c056fcf473907997f2d2842d2a9"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 4,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_8",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_8/model.onnx",
+        "vnnlib": "instances/pb_cnn_8/spec.vnnlib",
+        "meta": "instances/pb_cnn_8/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_9",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_9/model.onnx",
+        "vnnlib": "instances/pb_cnn_9/spec.vnnlib",
+        "meta": "instances/pb_cnn_9/meta.json"
+      },
+      "sha256": {
+        "onnx": "6ea833f050764768ea89f5a8101d5fb80950bb8c6412bcca2b8387409d6c4c65",
+        "vnnlib": "d6aa8d0803d15b8d67578dccd87820257b6ccd80156760d2b11766476b7c8a5f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 16,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_10",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_10/model.onnx",
+        "vnnlib": "instances/pb_cnn_10/spec.vnnlib",
+        "meta": "instances/pb_cnn_10/meta.json"
+      },
+      "sha256": {
+        "onnx": "ce594e6d0ec97d6d74748555bb23ca3a60ca9414478a78c46f446d0006c1c9b2",
+        "vnnlib": "d33fa350f2d006ff54c14f1f45c4e206f3d5019d6501e931979afba8b421dcf5"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 32,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_11",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_11/model.onnx",
+        "vnnlib": "instances/pb_cnn_11/spec.vnnlib",
+        "meta": "instances/pb_cnn_11/meta.json"
+      },
+      "sha256": {
+        "onnx": "223f37b689d37fa3ecbcf087847ee320d8f7e01c7e4c5c9757a51b33af72de2c",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 1.0,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_12",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_12/model.onnx",
+        "vnnlib": "instances/pb_cnn_12/spec.vnnlib",
+        "meta": "instances/pb_cnn_12/meta.json"
+      },
+      "sha256": {
+        "onnx": "415a8f0f81482da0df95a0f089ba915d1c295f7b0f7008c054d12a280407157b",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.5,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_13",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_13/model.onnx",
+        "vnnlib": "instances/pb_cnn_13/spec.vnnlib",
+        "meta": "instances/pb_cnn_13/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_14",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_14/model.onnx",
+        "vnnlib": "instances/pb_cnn_14/spec.vnnlib",
+        "meta": "instances/pb_cnn_14/meta.json"
+      },
+      "sha256": {
+        "onnx": "60e8ec4c05883cf10699fc4a42697c016de42a2ae547e9aa3d70a257e2668c9c",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.05,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_15",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_15/model.onnx",
+        "vnnlib": "instances/pb_cnn_15/spec.vnnlib",
+        "meta": "instances/pb_cnn_15/meta.json"
+      },
+      "sha256": {
+        "onnx": "7938b024ab97057f9140d5ae1e4c48c572b5f32a0e0e4e9b3756001885857644",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.001,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_15/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_15/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_16",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_16/model.onnx",
+        "vnnlib": "instances/pb_cnn_16/spec.vnnlib",
+        "meta": "instances/pb_cnn_16/meta.json"
+      },
+      "sha256": {
+        "onnx": "69d05bdee461f01532dccb04964dc7bee9dcb40ddf486813e21dd832b7afc41a",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 1.0,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_16/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_16/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_17",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_17/model.onnx",
+        "vnnlib": "instances/pb_cnn_17/spec.vnnlib",
+        "meta": "instances/pb_cnn_17/meta.json"
+      },
+      "sha256": {
+        "onnx": "ff2bcc40adaf9d484923c74cd5106f314a5b65f918f560aaf40f50599b435061",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.5,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_17/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_17/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_18",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_18/model.onnx",
+        "vnnlib": "instances/pb_cnn_18/spec.vnnlib",
+        "meta": "instances/pb_cnn_18/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_18/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_18/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_19",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_19/model.onnx",
+        "vnnlib": "instances/pb_cnn_19/spec.vnnlib",
+        "meta": "instances/pb_cnn_19/meta.json"
+      },
+      "sha256": {
+        "onnx": "9f1724198c00c874448a8b40f9152a1d047d0ea7e690e8934b64ff829d278998",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.05,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_19/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_19/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_20",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_20/model.onnx",
+        "vnnlib": "instances/pb_cnn_20/spec.vnnlib",
+        "meta": "instances/pb_cnn_20/meta.json"
+      },
+      "sha256": {
+        "onnx": "6e1c54d63ca39314d8b5fda42344e799af7c087f7f57f158a133c6cc666e1d04",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": "1e-3",
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_20/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_20/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_21",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_21/model.onnx",
+        "vnnlib": "instances/pb_cnn_21/spec.vnnlib",
+        "meta": "instances/pb_cnn_21/meta.json"
+      },
+      "sha256": {
+        "onnx": "f06e89b6b8011d6a42e48458dfc73288b0536c0f3dca17cb3998611e748c17b6",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.005,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_21/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_21/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_22",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_22/model.onnx",
+        "vnnlib": "instances/pb_cnn_22/spec.vnnlib",
+        "meta": "instances/pb_cnn_22/meta.json"
+      },
+      "sha256": {
+        "onnx": "b84fad9175a6367ab2033fb277f043d203525b0e350d0ebe704e177582761e4e",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.01,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_22/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_22/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_23",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_23/model.onnx",
+        "vnnlib": "instances/pb_cnn_23/spec.vnnlib",
+        "meta": "instances/pb_cnn_23/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_23/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_23/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_24",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_24/model.onnx",
+        "vnnlib": "instances/pb_cnn_24/spec.vnnlib",
+        "meta": "instances/pb_cnn_24/meta.json"
+      },
+      "sha256": {
+        "onnx": "85ee73fd34744db4a33862f028e3b4c1f26cc4255f127d19c6607054877e8df4",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.05,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_24/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_24/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_25",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_25/model.onnx",
+        "vnnlib": "instances/pb_cnn_25/spec.vnnlib",
+        "meta": "instances/pb_cnn_25/meta.json"
+      },
+      "sha256": {
+        "onnx": "5d2e9a8e7a49a34224eed7fa28ee5d362276bf923bf87384925965d5c1e74fa6",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_25/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_25/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_26",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_26/model.onnx",
+        "vnnlib": "instances/pb_cnn_26/spec.vnnlib",
+        "meta": "instances/pb_cnn_26/meta.json"
+      },
+      "sha256": {
+        "onnx": "f823bdff600280c1cfd210bb099f5d372a0f7ed10252532f5ebac7fe8eb44187",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.005,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_26/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_26/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_27",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_27/model.onnx",
+        "vnnlib": "instances/pb_cnn_27/spec.vnnlib",
+        "meta": "instances/pb_cnn_27/meta.json"
+      },
+      "sha256": {
+        "onnx": "8854a10aa28cfb70a372cf162e1ed2cc123b3ece42598fedc43d6440f451d0d7",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.01,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_27/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_27/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_28",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_28/model.onnx",
+        "vnnlib": "instances/pb_cnn_28/spec.vnnlib",
+        "meta": "instances/pb_cnn_28/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_28/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_28/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_29",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_29/model.onnx",
+        "vnnlib": "instances/pb_cnn_29/spec.vnnlib",
+        "meta": "instances/pb_cnn_29/meta.json"
+      },
+      "sha256": {
+        "onnx": "a6060ae992d365e9153daad21bec1372b99cf6361baed8a0827be31bbcf29961",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.05,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_29/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_29/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_30",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_30/model.onnx",
+        "vnnlib": "instances/pb_cnn_30/spec.vnnlib",
+        "meta": "instances/pb_cnn_30/meta.json"
+      },
+      "sha256": {
+        "onnx": "23562bb742c86e36e172d506881b091dbda59cfe95bda66ff00664320f098117",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_30/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_30/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_31",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_31/model.onnx",
+        "vnnlib": "instances/pb_cnn_31/spec.vnnlib",
+        "meta": "instances/pb_cnn_31/meta.json"
+      },
+      "sha256": {
+        "onnx": "ef97ca92f835861ec91bcb1edf92185677c837fa1562a1d529fc4516bf654baa",
+        "vnnlib": "7a7dd6ba211d27cf7c02b6313833246fe76f2137b96300e542c040aec44d4260"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_31/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_31/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_32",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_32/model.onnx",
+        "vnnlib": "instances/pb_cnn_32/spec.vnnlib",
+        "meta": "instances/pb_cnn_32/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 2,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_32/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_32/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_33",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_33/model.onnx",
+        "vnnlib": "instances/pb_cnn_33/spec.vnnlib",
+        "meta": "instances/pb_cnn_33/meta.json"
+      },
+      "sha256": {
+        "onnx": "a7a29966ce799cf823bdf7597d014cbfc019ebff54618ea69f0bfc50365cfa3a",
+        "vnnlib": "1967670424f05db0de05ddd2c744e14463666402211854d4d4d4bc126c1b35f8"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 3,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_33/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_33/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_34",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_34/model.onnx",
+        "vnnlib": "instances/pb_cnn_34/spec.vnnlib",
+        "meta": "instances/pb_cnn_34/meta.json"
+      },
+      "sha256": {
+        "onnx": "af92169a2669ee20d7fdb2cbe0715e911c97e64bb4fe161c62169ce04e9322e4",
+        "vnnlib": "fb663a0778f5e8f8d58d9035746888152428954894c8894f367e4fcb0c212a7e"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 4,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_34/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_34/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_35",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_35/model.onnx",
+        "vnnlib": "instances/pb_cnn_35/spec.vnnlib",
+        "meta": "instances/pb_cnn_35/meta.json"
+      },
+      "sha256": {
+        "onnx": "bb8d1a4595ec7169b04f4acb0588ccd71106a6fac5d2d4c2d4847370a1f9912e",
+        "vnnlib": "71a81bf8db212d937da16ab680db8115dea06068dd48f330acb37af1fdecc1a6"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_35/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_35/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_36",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_36/model.onnx",
+        "vnnlib": "instances/pb_cnn_36/spec.vnnlib",
+        "meta": "instances/pb_cnn_36/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 2,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_36/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_36/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_37",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_37/model.onnx",
+        "vnnlib": "instances/pb_cnn_37/spec.vnnlib",
+        "meta": "instances/pb_cnn_37/meta.json"
+      },
+      "sha256": {
+        "onnx": "ed2e334cfbe0629fe0c095908f15c6b5cba5e1f0cb1945eed263e3cdfa25a501",
+        "vnnlib": "0a8ba59f3ad348647357608a4a1896300f0c19afe3af4df5e73a9d1ea7fd76b1"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 3,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_37/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_37/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_38",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_38/model.onnx",
+        "vnnlib": "instances/pb_cnn_38/spec.vnnlib",
+        "meta": "instances/pb_cnn_38/meta.json"
+      },
+      "sha256": {
+        "onnx": "17369d9b1ad70d3bf5fd4614a71ac12990a3320e2b561c87f42b887d5149b5f3",
+        "vnnlib": "c3ab2b180ae02766bed4acc8ca4631c52ee0fa6a0b214dce329f2ece9fcbaf44"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "num_backbone_layers": 4,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_38/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_38/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_39",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_39/model.onnx",
+        "vnnlib": "instances/pb_cnn_39/spec.vnnlib",
+        "meta": "instances/pb_cnn_39/meta.json"
+      },
+      "sha256": {
+        "onnx": "959ba0b51bebb368a4c15a2f58041e4969943b42723c32050c2a4155bfab32b3",
+        "vnnlib": "cfe3d904e87b9395f97cc5a1409273e71a4f628b190375fa1c63af8ad5b024f3"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 4,
+        "width": 4,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_39/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_39/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_40",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_40/model.onnx",
+        "vnnlib": "instances/pb_cnn_40/spec.vnnlib",
+        "meta": "instances/pb_cnn_40/meta.json"
+      },
+      "sha256": {
+        "onnx": "5f4d017037030c3399eaeae4cf3b4d6a17568cc908490c46e586044568fdd347",
+        "vnnlib": "c366e3f19f6b19cc5f249b5740f59a0a550718808474f831a32369bb3cb6a289"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 8,
+        "width": 8,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_40/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_40/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_41",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_41/model.onnx",
+        "vnnlib": "instances/pb_cnn_41/spec.vnnlib",
+        "meta": "instances/pb_cnn_41/meta.json"
+      },
+      "sha256": {
+        "onnx": "1add65954e3264b9c83f127dacc3f01711de0043b26724905ccdf5e582f99f06",
+        "vnnlib": "2ca5522e728dd597989b8834bfd74b753a538dd31359837a4f9a3fc42561a55e"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 12,
+        "width": 12,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_41/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_41/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_42",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_42/model.onnx",
+        "vnnlib": "instances/pb_cnn_42/spec.vnnlib",
+        "meta": "instances/pb_cnn_42/meta.json"
+      },
+      "sha256": {
+        "onnx": "5e93dc76182142f68829018883fc2d247a51fa335fd2a8c498ed73eb03491ac6",
+        "vnnlib": "9bbbbfff1994c9fdc492e854ff85fd17c47683222e05ad9bfa2b234c3a29ddb0"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 16,
+        "width": 16,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_42/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_42/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_43",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_43/model.onnx",
+        "vnnlib": "instances/pb_cnn_43/spec.vnnlib",
+        "meta": "instances/pb_cnn_43/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a533fddfe6411a84caa1be2d2a76ab6f99d84e9ee0b4b375c0149d9336770e",
+        "vnnlib": "b7637799a5b3cb6b7dc2619c46baba31996e2578f4784abdeeb56b427f9ddb9f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 4,
+        "width": 4,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_43/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_43/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_44",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_44/model.onnx",
+        "vnnlib": "instances/pb_cnn_44/spec.vnnlib",
+        "meta": "instances/pb_cnn_44/meta.json"
+      },
+      "sha256": {
+        "onnx": "c5c85d979f8481c7b87b206b8f4efb259ceb3251849ac4d525f51e0f4b6ee9aa",
+        "vnnlib": "caffe38f2a63f6bcf2ab87764b005b2aae8e412557d8d0857df91c0f85617047"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 8,
+        "width": 8,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_44/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_44/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_45",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_45/model.onnx",
+        "vnnlib": "instances/pb_cnn_45/spec.vnnlib",
+        "meta": "instances/pb_cnn_45/meta.json"
+      },
+      "sha256": {
+        "onnx": "407f558531ee9f8b649ee87dbb84affa93a696dab8c751a66b5bbb69f506142a",
+        "vnnlib": "06cc294506ef61d8205cdccd43d7cb4483d87d73000c5963e023038de576987f"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 12,
+        "width": 12,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_45/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_45/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_46",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/pb_cnn_46/model.onnx",
+        "vnnlib": "instances/pb_cnn_46/spec.vnnlib",
+        "meta": "instances/pb_cnn_46/meta.json"
+      },
+      "sha256": {
+        "onnx": "e643501755a16727f39d1f6d8ef46c37ff764f878d6d206da7a9aa694a9e4929",
+        "vnnlib": "afa90fcd4cfafc706c2b9f80ce4a24b8ebf92c57925e18d488647e11ad59856c"
+      },
+      "args": {
+        "seed": 1,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "height": 16,
+        "width": 16,
+        "in_channels": 3,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "benchmarks/ep/instances/pb_cnn_46/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/pb_cnn_46/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld1",
+      "construction": "attention.linear_dominance",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/ld1/model.onnx",
+        "vnnlib": "instances/ld1/spec.vnnlib",
+        "meta": "instances/ld1/meta.json"
+      },
+      "sha256": {
+        "onnx": "62400e4cf3008285a88b44a013fba866cd4749485266cbf06148d24e65a93592",
+        "vnnlib": "9b6cec418c9c60044624dd7efaa104a0b7e3ed43986a0b3238bc9bbe5bf6c357"
+      },
+      "args": {
+        "seed": 1,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.02,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld2",
+      "construction": "attention.linear_dominance",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/ld2/model.onnx",
+        "vnnlib": "instances/ld2/spec.vnnlib",
+        "meta": "instances/ld2/meta.json"
+      },
+      "sha256": {
+        "onnx": "780f5fb37657cf8a904ad218d686853f71afecb8ea355467abea3a022f3f0471",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 1,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld3",
+      "construction": "attention.linear_dominance",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/ld3/model.onnx",
+        "vnnlib": "instances/ld3/spec.vnnlib",
+        "meta": "instances/ld3/meta.json"
+      },
+      "sha256": {
+        "onnx": "101317aa9d1d06c0e0fe99641d0d754b4e5423b799b315f8fef5881be3cb5130",
+        "vnnlib": "a5eb9df9141bace64f7b32124c5b8576f39b4c60cd9c0503bd1e52c56a93275c"
+      },
+      "args": {
+        "seed": 1,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.08,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld4",
+      "construction": "attention.linear_dominance",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/ld4/model.onnx",
+        "vnnlib": "instances/ld4/spec.vnnlib",
+        "meta": "instances/ld4/meta.json"
+      },
+      "sha256": {
+        "onnx": "5a3f95644513547d4e238398fc5e2f60511653a9716bab4c1b5bab68d967319b",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 2,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 1.1,
+        "onnx_path": "benchmarks/ep/instances/ld4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld5",
+      "construction": "attention.linear_dominance",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/ld5/model.onnx",
+        "vnnlib": "instances/ld5/spec.vnnlib",
+        "meta": "instances/ld5/meta.json"
+      },
+      "sha256": {
+        "onnx": "12f5a9d5b5bf660e2fc6cd034a21be256c0ad9f5016e0bdab75b1a15d9e3ca01",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 2,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 1.5,
+        "onnx_path": "benchmarks/ep/instances/ld5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld6",
+      "construction": "attention.linear_dominance",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/ld6/model.onnx",
+        "vnnlib": "instances/ld6/spec.vnnlib",
+        "meta": "instances/ld6/meta.json"
+      },
+      "sha256": {
+        "onnx": "61ddcde593d5d167ae23fc87614647845d1f12bae0cb99361eedb40b3ce5e86c",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 2,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 3.0,
+        "onnx_path": "benchmarks/ep/instances/ld6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld7",
+      "construction": "attention.linear_dominance",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/ld7/model.onnx",
+        "vnnlib": "instances/ld7/spec.vnnlib",
+        "meta": "instances/ld7/meta.json"
+      },
+      "sha256": {
+        "onnx": "b633de7f5da9e408d8914bf5d7c1d805ebded349a41655b8398c807c2210feb8",
+        "vnnlib": "a696fc2ac4b34964037c27f73e286b65678c2df9486162d677a2827c70a88975"
+      },
+      "args": {
+        "seed": 3,
+        "n": 2,
+        "d": 2,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld8",
+      "construction": "attention.linear_dominance",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/ld8/model.onnx",
+        "vnnlib": "instances/ld8/spec.vnnlib",
+        "meta": "instances/ld8/meta.json"
+      },
+      "sha256": {
+        "onnx": "e195c416076fddd2e521660db30c71f1f8c70400ef03d7aae30411e6ac77ec64",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 3,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld9",
+      "construction": "attention.linear_dominance",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/ld9/model.onnx",
+        "vnnlib": "instances/ld9/spec.vnnlib",
+        "meta": "instances/ld9/meta.json"
+      },
+      "sha256": {
+        "onnx": "21d00d51cc3601e8c9cc9c1ce518a5cb8f01f81b38a6b777eb5431cc59430e97",
+        "vnnlib": "1648619c5c93173c9645066d3fceb27dcb676285759b4f2d42257bc984cfa2ee"
+      },
+      "args": {
+        "seed": 3,
+        "n": 6,
+        "d": 6,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld10",
+      "construction": "attention.linear_dominance",
+      "seed": 4,
+      "paths": {
+        "onnx": "instances/ld10/model.onnx",
+        "vnnlib": "instances/ld10/spec.vnnlib",
+        "meta": "instances/ld10/meta.json"
+      },
+      "sha256": {
+        "onnx": "a86b8528d5b7b4d7258280036800c3028e78e59dcaf366f856e5d1044e601553",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 4,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld11",
+      "construction": "attention.linear_dominance",
+      "seed": 4,
+      "paths": {
+        "onnx": "instances/ld11/model.onnx",
+        "vnnlib": "instances/ld11/spec.vnnlib",
+        "meta": "instances/ld11/meta.json"
+      },
+      "sha256": {
+        "onnx": "fc879b343b8d36e68959622ccca2fdb7223b94f364a304f1033f753718b64c13",
+        "vnnlib": "0eb00b480b2de4350bfc4a81553dd2a311949b020312af5c52070ae47eb41015"
+      },
+      "args": {
+        "seed": 4,
+        "n": 4,
+        "d": 8,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld12",
+      "construction": "attention.linear_dominance",
+      "seed": 4,
+      "paths": {
+        "onnx": "instances/ld12/model.onnx",
+        "vnnlib": "instances/ld12/spec.vnnlib",
+        "meta": "instances/ld12/meta.json"
+      },
+      "sha256": {
+        "onnx": "ba41a75cf108ba21c72ed425fe1b46cdeaa0dac5e6b740bb8086b6b2a267923b",
+        "vnnlib": "97fc8cc2fdde25a1b5114720401eaf695505508ddd3a9f557125919e48ec31ec"
+      },
+      "args": {
+        "seed": 4,
+        "n": 4,
+        "d": 12,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld13",
+      "construction": "attention.linear_dominance",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/ld13/model.onnx",
+        "vnnlib": "instances/ld13/spec.vnnlib",
+        "meta": "instances/ld13/meta.json"
+      },
+      "sha256": {
+        "onnx": "e3d56a82b9bb9f0a22579225e1c40d9d8f64c3adf72fb032a40b3a696115db6c",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 5,
+        "n": 4,
+        "d": 4,
+        "d_v": 2,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld14",
+      "construction": "attention.linear_dominance",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/ld14/model.onnx",
+        "vnnlib": "instances/ld14/spec.vnnlib",
+        "meta": "instances/ld14/meta.json"
+      },
+      "sha256": {
+        "onnx": "60882dd452660414687cfdd899955ae385c417fc1621588fb58e331b3a22111d",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 5,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld15",
+      "construction": "attention.linear_dominance",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/ld15/model.onnx",
+        "vnnlib": "instances/ld15/spec.vnnlib",
+        "meta": "instances/ld15/meta.json"
+      },
+      "sha256": {
+        "onnx": "2edcc9d370dd3b6c549dcbe3d309eba3f8c8da009283c5b5b46b9528bf4a9d45",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 5,
+        "n": 4,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld15/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld15/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld16",
+      "construction": "attention.linear_dominance",
+      "seed": 6,
+      "paths": {
+        "onnx": "instances/ld16/model.onnx",
+        "vnnlib": "instances/ld16/spec.vnnlib",
+        "meta": "instances/ld16/meta.json"
+      },
+      "sha256": {
+        "onnx": "974e0552590babd158c8a5c101cc730aa2a0d324644f02358f64c1cd7674e160",
+        "vnnlib": "5b0cd31028049f1f73e0d8111a60739f45138dc06b2c633c781cea41143d2746"
+      },
+      "args": {
+        "seed": 6,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.3,
+        "noise_scale": 0.1,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld16/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld16/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld17",
+      "construction": "attention.linear_dominance",
+      "seed": 6,
+      "paths": {
+        "onnx": "instances/ld17/model.onnx",
+        "vnnlib": "instances/ld17/spec.vnnlib",
+        "meta": "instances/ld17/meta.json"
+      },
+      "sha256": {
+        "onnx": "d8e9367fa7ce521539aadae1733f967d5f69bb1719d72b94e502937c74460bf6",
+        "vnnlib": "0d0c6e2daea707419e56f7897252a6ac74dc280e7407637cba4f538a8c951160"
+      },
+      "args": {
+        "seed": 6,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld17/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld17/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld18",
+      "construction": "attention.linear_dominance",
+      "seed": 6,
+      "paths": {
+        "onnx": "instances/ld18/model.onnx",
+        "vnnlib": "instances/ld18/spec.vnnlib",
+        "meta": "instances/ld18/meta.json"
+      },
+      "sha256": {
+        "onnx": "c85c0c4a45fcfc467d02e9e7acdded85f3a669dba7f08983f3ff06e5b07294ee",
+        "vnnlib": "b35370aad34cb0c74851633c4158adb4d7977459cec4b1ea2bf8ceed41d0dfc3"
+      },
+      "args": {
+        "seed": 6,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.8,
+        "noise_scale": 0.3,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "benchmarks/ep/instances/ld18/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/ld18/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp1",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp1/model.onnx",
+        "vnnlib": "instances/fp1/spec.vnnlib",
+        "meta": "instances/fp1/meta.json"
+      },
+      "sha256": {
+        "onnx": "63de8932cee55cc5f0e58d89ddeb64e0973e8021e91ab21a89e0002247cd0266",
+        "vnnlib": "ada96bbb5a228b5a0290ae01c0d4308f291d349ee9d538717d595a69f51f8e60"
+      },
+      "args": {
+        "seed": 1,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.0005,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp1/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp1/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp2",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp2/model.onnx",
+        "vnnlib": "instances/fp2/spec.vnnlib",
+        "meta": "instances/fp2/meta.json"
+      },
+      "sha256": {
+        "onnx": "d9b2f6b2280c7f7c3abbed0391c6d03be84be6e8703a774ce54ff74333749895",
+        "vnnlib": "70e1e0549b142cf1bc8eec0dde86b21a9abb6d94332ebcc20aedcd7d4936c6b2"
+      },
+      "args": {
+        "seed": 1,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp2/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp2/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp3",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp3/model.onnx",
+        "vnnlib": "instances/fp3/spec.vnnlib",
+        "meta": "instances/fp3/meta.json"
+      },
+      "sha256": {
+        "onnx": "12ff350dba68024b89cf1981c352e6ce6256a448b8f5653fcbbcfa652f4f1cde",
+        "vnnlib": "cac9ad022be5f520c17ec8fcf6d079548d89d806362e8cb1a5f63ae691610799"
+      },
+      "args": {
+        "seed": 1,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp3/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp3/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp4",
+      "construction": "attention.fixed_pattern",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/fp4/model.onnx",
+        "vnnlib": "instances/fp4/spec.vnnlib",
+        "meta": "instances/fp4/meta.json"
+      },
+      "sha256": {
+        "onnx": "9899588d7018cac924f75373e2ef226d990ef48f6a97d269d311f2be92b9af2c",
+        "vnnlib": "ae4cd41a66d43f9bd1b487a137318b767154a8cd5ece63405daf8815c3d0f0a1"
+      },
+      "args": {
+        "seed": 2,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 2.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp4/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp4/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp5",
+      "construction": "attention.fixed_pattern",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/fp5/model.onnx",
+        "vnnlib": "instances/fp5/spec.vnnlib",
+        "meta": "instances/fp5/meta.json"
+      },
+      "sha256": {
+        "onnx": "19975760ab2a7ab73bb8b31fd88984a3a949aed0258ea7bc93fa109f8255ec9a",
+        "vnnlib": "ae4cd41a66d43f9bd1b487a137318b767154a8cd5ece63405daf8815c3d0f0a1"
+      },
+      "args": {
+        "seed": 2,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp5/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp5/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp6",
+      "construction": "attention.fixed_pattern",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/fp6/model.onnx",
+        "vnnlib": "instances/fp6/spec.vnnlib",
+        "meta": "instances/fp6/meta.json"
+      },
+      "sha256": {
+        "onnx": "3eafe0e232502ce408f0282db536a09a12828e5f99a7f34e60125ac47485a2f5",
+        "vnnlib": "ae4cd41a66d43f9bd1b487a137318b767154a8cd5ece63405daf8815c3d0f0a1"
+      },
+      "args": {
+        "seed": 2,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 10.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp6/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp6/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp7",
+      "construction": "attention.fixed_pattern",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/fp7/model.onnx",
+        "vnnlib": "instances/fp7/spec.vnnlib",
+        "meta": "instances/fp7/meta.json"
+      },
+      "sha256": {
+        "onnx": "1b6859bcb7977fbdb2959355e01db33b137f10e8a0a39066e0841b304e560267",
+        "vnnlib": "4e032c6675367812d832f9c2818ef48d8370c6717667df14ac4b98a4643c0c21"
+      },
+      "args": {
+        "seed": 3,
+        "n": 2,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp7/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp7/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp8",
+      "construction": "attention.fixed_pattern",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/fp8/model.onnx",
+        "vnnlib": "instances/fp8/spec.vnnlib",
+        "meta": "instances/fp8/meta.json"
+      },
+      "sha256": {
+        "onnx": "e4a8772a320150ae8a0c93ab2d429ce6ce93155916dd6b19afebbd134aff1448",
+        "vnnlib": "4693c01f0f7b458a5f183918f3bb53e0bc00cb48f976404268a6b8af6e047718"
+      },
+      "args": {
+        "seed": 3,
+        "n": 8,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp8/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp8/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp9",
+      "construction": "attention.fixed_pattern",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/fp9/model.onnx",
+        "vnnlib": "instances/fp9/spec.vnnlib",
+        "meta": "instances/fp9/meta.json"
+      },
+      "sha256": {
+        "onnx": "9d93dc0e043c172e7936d7236716af19ea2f6b5d331b868a96bbbd7149872ab9",
+        "vnnlib": "5b031f7ebc015a7c060b3ca5aaf441ffc97992e18213f2e08df7a28933783343"
+      },
+      "args": {
+        "seed": 3,
+        "n": 32,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp9/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp9/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp10",
+      "construction": "attention.fixed_pattern",
+      "seed": 4,
+      "paths": {
+        "onnx": "instances/fp10/model.onnx",
+        "vnnlib": "instances/fp10/spec.vnnlib",
+        "meta": "instances/fp10/meta.json"
+      },
+      "sha256": {
+        "onnx": "77dc1d32e401102c49e2f05bf71e05ac1f95dd5271fc93858e57ab584f828616",
+        "vnnlib": "6792858dca165d5437518bc537864e87c02fc367fec808b75af384cb92b8a0fc"
+      },
+      "args": {
+        "seed": 4,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp10/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp10/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp11",
+      "construction": "attention.fixed_pattern",
+      "seed": 4,
+      "paths": {
+        "onnx": "instances/fp11/model.onnx",
+        "vnnlib": "instances/fp11/spec.vnnlib",
+        "meta": "instances/fp11/meta.json"
+      },
+      "sha256": {
+        "onnx": "7ef1018b907d6f31c1936514776da7e35ce728bb4381a8883576f5ad3336f107",
+        "vnnlib": "be8c5c9fc0e5b6642779b9898030573995d4128c11ae753bf48d850e68d7c98c"
+      },
+      "args": {
+        "seed": 4,
+        "n": 16,
+        "d": 8,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp11/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp11/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp12",
+      "construction": "attention.fixed_pattern",
+      "seed": 4,
+      "paths": {
+        "onnx": "instances/fp12/model.onnx",
+        "vnnlib": "instances/fp12/spec.vnnlib",
+        "meta": "instances/fp12/meta.json"
+      },
+      "sha256": {
+        "onnx": "8227e7a179f516f27c860cdd4205dea52bf9e31136b8f1617afc4de4bb41d365",
+        "vnnlib": "4a0c7bd8c1ec620886a9426780dab932812f1fe3e9a960a966fae06cb86e39bb"
+      },
+      "args": {
+        "seed": 4,
+        "n": 16,
+        "d": 16,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "benchmarks/ep/instances/fp12/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp12/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp13",
+      "construction": "attention.fixed_pattern",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/fp13/model.onnx",
+        "vnnlib": "instances/fp13/spec.vnnlib",
+        "meta": "instances/fp13/meta.json"
+      },
+      "sha256": {
+        "onnx": "3f464d9d5dcb7d13b78379a9a22ac6106812eb418551ab807b22d8361b78a798",
+        "vnnlib": "3a27d4b2770d980056419abd0585bbd0a4287eabda628792a17e6e4ed74c9dd6"
+      },
+      "args": {
+        "seed": 5,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 5.0,
+        "onnx_path": "benchmarks/ep/instances/fp13/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp13/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp14",
+      "construction": "attention.fixed_pattern",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/fp14/model.onnx",
+        "vnnlib": "instances/fp14/spec.vnnlib",
+        "meta": "instances/fp14/meta.json"
+      },
+      "sha256": {
+        "onnx": "455ad00f12d561310166a66416714fdab445e30d041f61b5541e1153c28d004c",
+        "vnnlib": "3a27d4b2770d980056419abd0585bbd0a4287eabda628792a17e6e4ed74c9dd6"
+      },
+      "args": {
+        "seed": 5,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 2.0,
+        "onnx_path": "benchmarks/ep/instances/fp14/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp14/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp15",
+      "construction": "attention.fixed_pattern",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/fp15/model.onnx",
+        "vnnlib": "instances/fp15/spec.vnnlib",
+        "meta": "instances/fp15/meta.json"
+      },
+      "sha256": {
+        "onnx": "90e0aefaf1ec03681c7c7b2de357c0ff235c8b2a9218b90bdfa70fa1ad290fa2",
+        "vnnlib": "3a27d4b2770d980056419abd0585bbd0a4287eabda628792a17e6e4ed74c9dd6"
+      },
+      "args": {
+        "seed": 5,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.1,
+        "onnx_path": "benchmarks/ep/instances/fp15/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp15/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp16",
+      "construction": "attention.fixed_pattern",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/fp16/model.onnx",
+        "vnnlib": "instances/fp16/spec.vnnlib",
+        "meta": "instances/fp16/meta.json"
+      },
+      "sha256": {
+        "onnx": "83d0f9aa6cafcd3af47271f25c30a7f4de934cfab9bbd43e747bba7505298264",
+        "vnnlib": "3a27d4b2770d980056419abd0585bbd0a4287eabda628792a17e6e4ed74c9dd6"
+      },
+      "args": {
+        "seed": 5,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.001,
+        "onnx_path": "benchmarks/ep/instances/fp16/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp16/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp17",
+      "construction": "attention.fixed_pattern",
+      "seed": 5,
+      "paths": {
+        "onnx": "instances/fp17/model.onnx",
+        "vnnlib": "instances/fp17/spec.vnnlib",
+        "meta": "instances/fp17/meta.json"
+      },
+      "sha256": {
+        "onnx": "3c1489516dbc01885347a3fb92ade29caf81e5aaa3d34d85e0c24a388798762a",
+        "vnnlib": "3a27d4b2770d980056419abd0585bbd0a4287eabda628792a17e6e4ed74c9dd6"
+      },
+      "args": {
+        "seed": 5,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.00001,
+        "onnx_path": "benchmarks/ep/instances/fp17/model.onnx",
+        "vnnlib_path": "benchmarks/ep/instances/fp17/spec.vnnlib"
+      }
+    }
+  ],
+  "spec_path": "configs/sweep_all.yaml",
+  "spec": {
+    "defaults": {
+      "seed": 0
+    }
+  }
+}

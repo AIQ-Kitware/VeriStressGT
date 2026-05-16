@@ -1,0 +1,5 @@
+Network: ./benchmarks/sweep_all/instances/dc_cnn45/model.onnx
+Property: ./benchmarks/sweep_all/instances/dc_cnn45/spec.vnnlib
+
+Engine::processInputQuery: Input query (before preprocessing): 28682 equations, 57418 variables
+unsat

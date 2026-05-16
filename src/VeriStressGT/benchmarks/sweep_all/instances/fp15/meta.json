@@ -1,0 +1,26 @@
+{
+  "id": "fp15",
+  "construction": "attention.fixed_pattern",
+  "seed": 5,
+  "paths": {
+    "onnx": "instances/fp15/model.onnx",
+    "vnnlib": "instances/fp15/spec.vnnlib",
+    "meta": "instances/fp15/meta.json"
+  },
+  "sha256": {
+    "onnx": "90e0aefaf1ec03681c7c7b2de357c0ff235c8b2a9218b90bdfa70fa1ad290fa2",
+    "vnnlib": "3a27d4b2770d980056419abd0585bbd0a4287eabda628792a17e6e4ed74c9dd6"
+  },
+  "args": {
+    "seed": 5,
+    "n": 16,
+    "d": 4,
+    "d_v": 8,
+    "num_classes": 50,
+    "alpha": 5.0,
+    "epsilon": 0.01,
+    "margin_slack": 1.1,
+    "onnx_path": "benchmarks/ep/instances/fp15/model.onnx",
+    "vnnlib_path": "benchmarks/ep/instances/fp15/spec.vnnlib"
+  }
+}

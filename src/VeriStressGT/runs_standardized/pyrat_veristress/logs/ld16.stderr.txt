@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/miniconda3/envs/VeriStressGT/bin/pyrat", line 6, in <module>
+    sys.exit(main())
+  File "./pyrat/main.py", line 84, in main
+  File "/miniconda3/envs/VeriStressGT/lib/python3.10/site-packages/trace_events/profiler.py", line 242, in wrapper
+    return func(*call_args, **call_kwargs)
+  File "./pyrat/analyzer/utils_analyzer.py", line 126, in read_model
+  File "./pyrat/readers/onnx.py", line 510, in read_ONNX
+IndexError: list index out of range

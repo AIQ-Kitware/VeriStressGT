@@ -1,0 +1,17 @@
+Running in parallel with 32 processes
+(0.0 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+(0.2 sec) Q: 1, Sets: 2/8  (3.125%) ETA: 4.9 sec (expected 64 stars)   
+(0.3 sec) Q: 0, Sets: 42/54  (36.719%) ETA: 0.5 sec (expected 114 stars)   
+(0.4 sec) Q: 0, Sets: 111/130  (76.465%) ETA: 0.1 sec (expected 145 stars)   
+(0.5 sec) Q: 0, Sets: 187/193  (98.016%) ETA: 0.0 sec (expected 191 stars)   
+(0.6 sec) Q: 0, Sets: 207/208  (99.994%) ETA: 0.0 sec (expected 207 stars)   
+
+
+Total Stars: 210 (12 exact, 198 approx)
+Runtime: 0.6 sec
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 102
+Num Lps During Enumeration: 587
+Total Num Lps: 587
+
+Result: network is SAFE

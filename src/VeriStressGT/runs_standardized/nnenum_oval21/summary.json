@@ -1,0 +1,9 @@
+{
+  "total": 30,
+  "by_status": {
+    "SAT": 1,
+    "TIMEOUT": 26,
+    "UNSAT": 3
+  },
+  "avg_wall_time_s": 318.2332232395808
+}

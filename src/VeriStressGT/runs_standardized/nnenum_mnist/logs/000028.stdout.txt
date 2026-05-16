@@ -1,0 +1,27 @@
+Running single-threaded
+(0.6 sec) Q: 0, Sets: 0/1  (0.0%) ETA: - (expected 1 stars)   
+
+Pre-overapproximation simulation found a confirmed counterexample.
+
+Unsafe Base Branch:  (Mode: 0)
+
+
+
+Total Stars: 1 (0 exact, 1 approx)
+Runtime: 0.6 sec
+Completed work frac: 1.0
+Num Stars Copied Between Processes: 0
+Num Lps During Enumeration: 0
+Total Num Lps: 0
+
+Result: network is UNSAFE with confirmed counterexample in result.cinput and result.coutput
+Output: [-0.02075742557644844, -0.013966880738735199, 0.02533838152885437, -0.012913048267364502, -0.00613052025437355, -0.002230048179626465, 0.0032660439610481262, -0.0064506977796554565, 0.9946979284286499, -0.005335547029972076]
+Enumerate_network Time (1 calls): 0.61 sec
+  From_init_box Time (1 calls): 0.13 sec (20.7%)
+    Make bm Time (1 calls): 0.12 sec (92.9%)
+    Star Time (1 calls): 0.01 sec (5.9%)
+    Other (From_init_box): 0.00 sec (1.2%)
+  Propagate_up_to_split Time (1 calls): 0.01 sec (1.4%)
+  Push_init Time (1 calls): 0.00 sec (0.0%)
+  Run workers Time (1 calls): 0.00 sec (0.5%)
+  Other (Enumerate_network): 0.47 sec (77.4%)
