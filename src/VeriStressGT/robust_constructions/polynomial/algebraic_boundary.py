@@ -19,6 +19,7 @@ scaled/normalized for numerical stability. There is intentionally no raw
 from __future__ import annotations
 
 import argparse
+import json
 import math
 import time
 from dataclasses import dataclass
@@ -690,9 +691,39 @@ def create_and_export_instance(
         label=int(meta["label"]),
     )
 
+    # Write a .pnn.json sidecar so verify_vnnlib.py (AlgebraicVerification) can
+    # reconstruct the network without parsing the ONNX graph. The sidecar maps
+    # PolynomialNet buffers to the PolynomialNeuralNetwork state_dict layout.
+    def _arr(t) -> Dict[str, Any]:
+        a = t.detach().cpu().numpy().astype(np.float64)
+        return {"shape": list(a.shape), "data": a.flatten().tolist()}
+
+    sidecar = {
+        "arch": {
+            "input_dim": int(cfg.input_dim),
+            "output_dim": int(cfg.num_outputs),
+            "hidden_dims": [int(cfg.hidden_dim)],
+            "act_degree": int(cfg.degree),
+            "homogeneous": True,
+            "bias": True,
+            "trainable": True,
+            "s": 1.0,
+        },
+        "state_dict": {
+            "layers.0.weight": _arr(model.W1),
+            "layers.0.bias": _arr(model.b1),
+            "layers.1.weight": _arr(model.W2),
+            "layers.1.bias": _arr(model.b2),
+            "activations.0.coeffs": {"shape": [1], "data": [1.0]},
+        },
+    }
+    sidecar_path = onnx_path.with_suffix(onnx_path.suffix + ".pnn.json")
+    sidecar_path.write_text(json.dumps(sidecar, indent=2))
+
     result: Dict[str, Any] = {
         "onnx_path": str(onnx_path),
         "vnnlib_path": str(vnnlib_path),
+        "sidecar_path": str(sidecar_path),
         "epsilon": float(meta["epsilon"]),
         "label": int(meta["label"]),
         "x0": meta["x0"],

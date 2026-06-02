@@ -3,6 +3,11 @@
 #
 # Three instances at degree=2 (HC's most reliable regime) with small
 # input_dim to keep generation fast. All instances are UNSAT by construction.
+#
+# eps_normal=0.1, delta_prime=0.08 => eps=0.02 (L_inf box radius).
+# The L2 distance from q to the known boundary point is eps_normal*sqrt(n),
+# while HC's UNSAT threshold is eps*sqrt(n). The 5:1 ratio (0.1/0.02)
+# gives HC comfortable margin to certify UNSAT regardless of input_dim.
 
 name: polynomial_debug
 
@@ -18,8 +23,8 @@ defaults:
   boundary_tol: 1.0e-6
   boundary_rel_tol: 1.0e-10
   unique_tol: 1.0e-4
-  eps_normal: 0.05
-  delta_prime: 0.01
+  eps_normal: 0.1
+  delta_prime: 0.08
   max_candidates: 3
   candidate_margin_tol: 1.0e-8
   grad_tol: 1.0e-12
