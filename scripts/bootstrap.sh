@@ -166,8 +166,8 @@ if ! $SKIP_CONDA; then
     if conda env list 2>/dev/null | grep -q "VeriStressGT"; then
         ok "VeriStressGT conda env already exists"
     else
-        conda create -n VeriStressGT python=3.10 -y --quiet 2>/dev/null && \
-            ok "VeriStressGT conda env created (python 3.10)" || \
+        conda create -n VeriStressGT python=3.11 -y --quiet 2>/dev/null && \
+            ok "VeriStressGT conda env created (python 3.11)" || \
             { err "Failed to create conda env"; exit 1; }
     fi
 

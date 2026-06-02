@@ -112,3 +112,27 @@ src/VeriStressGT/
     verifiers/              git submodules for each verifier
     utils/                  ONNX export + VNNLIB generation
 ```
+
+## AIQ Flow
+After installing julia, run:
+
+### Benchmark Setup
+git clone --recursive  git@github.com:dtroxell19/VeriStressGT.git  
+cd VeriStressGT 
+git fetch origin     
+git checkout -b pnn-algebraic-verifier origin/pnn-algebraic-verifier
+bash scripts/bootstrap.sh
+conda activate VeriStressGT
+### MAGNET + Polynomial Verifier Setup
+pip install git+https://github.com/AIQ-Kitware/aiq-magnet.git
+cd ..
+git clone git@github.com:edwardduanhao/AlgebraicVerification.git
+cd AlgebraicVerification
+pip install -e .
+pip install -r requirements.txt
+julia --project=. -e 'using Pkg; Pkg.instantiate()'
+cd ..
+export ALGEBRAIC_VERIFIER_DIR="$(pwd)/AlgebraicVerification"
+### Run
+cd VeriStressGT
+magnet evaluate cards/polynomial_debug.yaml
