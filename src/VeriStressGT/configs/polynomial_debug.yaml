@@ -1,0 +1,43 @@
+# Small debug spec for the algebraic_pnn verifier against VeriStressGT's
+# polynomial.algebraic_boundary constructor.
+#
+# Three instances at degree=2 (HC's most reliable regime) with small
+# input_dim to keep generation fast. All instances are UNSAT by construction.
+
+name: polynomial_debug
+
+defaults:
+  degree: 2
+  hidden_dim: 8
+  num_outputs: 2
+  num_lines: 200
+  center_scale: 1.0
+  line_t_min: -5.0
+  line_t_max: 5.0
+  line_grid_points: 80
+  boundary_tol: 1.0e-6
+  boundary_rel_tol: 1.0e-10
+  unique_tol: 1.0e-4
+  eps_normal: 0.05
+  delta_prime: 0.01
+  max_candidates: 3
+  candidate_margin_tol: 1.0e-8
+  grad_tol: 1.0e-12
+  nbc_num_restarts: 20
+  nbc_max_iter: 200
+  nbc_boundary_tol: 1.0e-10
+  nbc_ftol: 1.0e-15
+  nbc_gtol: 1.0e-10
+  init_mode: fanin
+  weight_scale: 1.0
+  bias_scale: 1.0
+  output_weight_scale: 1.0
+  output_bias_scale: 1.0
+  bias_base_scale: 0.1
+  output_bias_base_scale: 0.1
+  opset: 13
+
+instances:
+  - { id: poly_debug_n3_d2, construction: polynomial.algebraic_boundary, seed: 1, args: { input_dim: 3 } }
+  - { id: poly_debug_n5_d2, construction: polynomial.algebraic_boundary, seed: 2, args: { input_dim: 5 } }
+  - { id: poly_debug_n10_d2, construction: polynomial.algebraic_boundary, seed: 3, args: { input_dim: 10 } }
