@@ -121,7 +121,7 @@ After installing julia, run:
 git clone --recursive git@github.com:dtroxell19/VeriStressGT.git
 cd VeriStressGT
 git fetch origin
-git checkout -b pnn-algebraic-verifier origin/pnn-algebraic-verifier
+git checkout -b evaluation-card origin/evaluation-card
 bash scripts/bootstrap.sh
 conda activate VeriStressGT
 ```
