@@ -288,7 +288,10 @@ if [ -d "$PYRAT_DIR" ] && [ -n "$(ls -A "$PYRAT_DIR" 2>/dev/null)" ]; then
         fi
     fi
     echo "  Installing PyRAT..."
-    conda run -n pyrat pip install -e "$PYRAT_DIR" --quiet 2>/dev/null && \
+    # Non-editable, --no-deps: the conda env (pyrat_env.yml) already provides every
+    # dependency, and the pinned pip=21.2.4 cannot do a PEP 660 editable install of a
+    # pyproject-only package. This registers the `pyrat` console entry point.
+    conda run -n pyrat pip install --no-deps "$PYRAT_DIR" && \
         ok "PyRAT installed (in conda env 'pyrat')" || \
         warn "PyRAT install had issues"
 else
