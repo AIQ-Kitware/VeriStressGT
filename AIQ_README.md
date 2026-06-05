@@ -57,8 +57,9 @@ magnet evaluate cards/evaluation.yaml
 
 | Verifier | UNSAT | Timeout | Error | SAT |
 |----------|------:|--------:|------:|----:|
-| pyrat    | 46    | 4       | 0     | 0   |
-| nnenum   | 9     | 7       | 34    | 0   |
+| alpha,beta-crown    | 49   | 1      | 0     | 0   |
+| pyrat    | 45    | 4       | 1     | 0   |
+| nnenum   | 13     | 10       | 27    | 0   |
 
 No verifier returned SAT. nnenum errors are structural (unsupported op types on meap, corners, and attention constructions) rather than difficulty-related. pyrat timeouts occur on the hardest `pb_cnn` (large `num_pairs`) and `milp`/`meap` instances at the top of the difficulty range.
 
