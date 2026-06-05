@@ -1,0 +1,50 @@
+# Vendored, dependency-resolution-fixed copy of the PyRAT conda env spec.
+#
+# The PyRAT submodule (git.frama-c.com/pub/pyrat) ships its own pyrat_env.yml,
+# but that copy is unsatisfiable as written: an exact `python=3.10.17` pin forces
+# a newer libzlib that conflicts with torchvision's ffmpeg dependency, and with
+# torchvision left unpinned the solver falls back to torchvision 0.12.0 (which
+# demands pytorch 1.11.0, contradicting the requested pytorch>=2.2 + cuda 11.8).
+#
+# This vendored copy lives in the parent repo so the fix survives a fresh clone
+# (we cannot push to the third-party submodule remote). bootstrap.sh uses this
+# file in preference to the submodule's copy. Keep the two in sync if you edit
+# either one.
+#
+# Changes vs. upstream:
+#   - python=3.10.17  -> python=3.10        (relax exact pin so zlib can resolve)
+#   - torchvision     -> torchvision=0.17.0 (coherent with pytorch 2.2 / cuda 11.8)
+#   - pytorch>=2.2    -> pytorch=2.2.0      (pin the trio for a reproducible solve)
+#   - numpy>=1.22.3   -> numpy>=1.22.3,<2   (torch 2.2.0 crashes under numpy 2.x)
+name: pyrat
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - loguru
+  - tqdm
+  - onnxruntime
+  - pip=21.2.4
+  - onnx
+  - psutil
+  - pytest
+  - pillow
+  - pytorch::torchvision=0.17.0
+  - pytorch::pytorch=2.2.0
+  - pytorch::pytorch-cuda=11.8
+  - gitpython
+  - matplotlib
+  - pyvis
+  - configargparse
+  - pydocstyle
+  - protobuf
+  - numpy>=1.22.3,<2
+  - pip:
+      - tensorflow>=2.7
+      - cvxpy[CBC]>=1.2.0
+      - onnxsim
+      - networkx
+      - pyparsing
+      - trace-events

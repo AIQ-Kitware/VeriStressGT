@@ -268,6 +268,13 @@ fi
 
 # PyRAT
 PYRAT_DIR="$REPO_ROOT/src/VeriStressGT/verifiers/pyrat"
+# Prefer the repo-vendored env spec (scripts/pyrat_env.yml), which fixes an
+# unsatisfiable conda solve in the submodule's own copy. Fall back to the
+# submodule's file only if the vendored one is missing.
+PYRAT_ENV_YML="$SCRIPT_DIR/pyrat_env.yml"
+if [ ! -f "$PYRAT_ENV_YML" ]; then
+    PYRAT_ENV_YML="$PYRAT_DIR/pyrat_env.yml"
+fi
 if [ -d "$PYRAT_DIR" ] && [ -n "$(ls -A "$PYRAT_DIR" 2>/dev/null)" ]; then
     if conda env list 2>/dev/null | grep -q "^pyrat "; then
         ok "pyrat conda env already exists"
@@ -282,8 +289,8 @@ if [ -d "$PYRAT_DIR" ] && [ -n "$(ls -A "$PYRAT_DIR" 2>/dev/null)" ]; then
                 ok "pyrat conda env created (macOS CPU)" || \
                 warn "pyrat conda env creation failed"
         else
-            conda env create -f "$PYRAT_DIR/pyrat_env.yml" 2>&1 && \
-                ok "pyrat conda env created" || \
+            conda env create -f "$PYRAT_ENV_YML" 2>&1 && \
+                ok "pyrat conda env created (from $(basename "$(dirname "$PYRAT_ENV_YML")")/$(basename "$PYRAT_ENV_YML"))" || \
                 warn "pyrat conda env creation failed (see above)"
         fi
     fi
