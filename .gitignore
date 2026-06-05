@@ -18,3 +18,9 @@ dist/
 !examples/toy_weights.pt
 !examples/toy_instance.npz
 !examples/toy_spec.vnnlib
+
+# Benchmark / run artifacts (generated at evaluation time)
+*_bench/
+*_run/
+*_run */
+results.json

@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import List
 
 VERIFIER_NAME = "pyrat"
+CONDA_ENV_DEFAULT = "pyrat"
 
 _PYRAT_RESULT_RE = re.compile(r"(?im)\bResult\s*=\s*(True|False)\b")
 _PYRAT_TIMEOUT_RE = re.compile(r"(?im)\b(timeout|timed out|time limit)\b")

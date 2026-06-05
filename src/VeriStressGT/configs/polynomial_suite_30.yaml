@@ -1,0 +1,80 @@
+# 30-instance suite for cross-verifier evaluation of polynomial.algebraic_boundary.
+#
+# Three tiers of 10 seeds each — all instances are UNSAT by construction
+# (is_robust=True guaranteed by the nearest-boundary certificate).
+#
+# Tier 0 — easy (degree=2): fast for every verifier; establishes baseline correctness.
+# Tier 1 — medium (degree=10): default difficulty range.
+# Tier 2 — hard (degree=18): near the timeout boundary for symbolic/LP backends.
+#
+# Dims kept small (input_dim=10, hidden_dim=16) so generation is fast on every tier.
+# eps_normal=0.1, delta_prime=0.08 (easy/medium) gives a 5:1 margin over the HC
+# UNSAT threshold, keeping algebraic_pnn reliable across all seeds.
+
+name: polynomial_suite_30
+
+defaults:
+  input_dim: 10
+  hidden_dim: 16
+  num_outputs: 2
+  init_mode: fanin
+  center_scale: 1.0
+  line_t_min: -5.0
+  line_t_max: 5.0
+  boundary_tol: 1.0e-6
+  boundary_rel_tol: 1.0e-10
+  unique_tol: 1.0e-4
+  eps_normal: 0.1
+  delta_prime: 0.08
+  max_candidates: 3
+  candidate_margin_tol: 1.0e-8
+  grad_tol: 1.0e-12
+  nbc_num_restarts: 20
+  nbc_max_iter: 200
+  nbc_boundary_tol: 1.0e-10
+  nbc_ftol: 1.0e-15
+  nbc_gtol: 1.0e-10
+  weight_scale: 1.0
+  bias_scale: 1.0
+  output_weight_scale: 1.0
+  output_bias_scale: 1.0
+  bias_base_scale: 0.1
+  output_bias_base_scale: 0.1
+  opset: 13
+
+instances:
+  # ── Tier 0: easy (degree=2) ───────────────────────────────────────────────
+  - { id: suite_easy_01, construction: polynomial.algebraic_boundary, seed: 1,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_02, construction: polynomial.algebraic_boundary, seed: 2,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_03, construction: polynomial.algebraic_boundary, seed: 3,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_04, construction: polynomial.algebraic_boundary, seed: 4,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_05, construction: polynomial.algebraic_boundary, seed: 5,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_06, construction: polynomial.algebraic_boundary, seed: 6,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_07, construction: polynomial.algebraic_boundary, seed: 7,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_08, construction: polynomial.algebraic_boundary, seed: 8,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_09, construction: polynomial.algebraic_boundary, seed: 9,  args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+  - { id: suite_easy_10, construction: polynomial.algebraic_boundary, seed: 10, args: { degree: 2, num_lines: 200, line_grid_points: 80 } }
+
+  # ── Tier 1: medium (degree=10) ────────────────────────────────────────────
+  - { id: suite_med_01, construction: polynomial.algebraic_boundary, seed: 11, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_02, construction: polynomial.algebraic_boundary, seed: 12, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_03, construction: polynomial.algebraic_boundary, seed: 13, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_04, construction: polynomial.algebraic_boundary, seed: 14, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_05, construction: polynomial.algebraic_boundary, seed: 15, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_06, construction: polynomial.algebraic_boundary, seed: 16, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_07, construction: polynomial.algebraic_boundary, seed: 17, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_08, construction: polynomial.algebraic_boundary, seed: 18, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_09, construction: polynomial.algebraic_boundary, seed: 19, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+  - { id: suite_med_10, construction: polynomial.algebraic_boundary, seed: 20, args: { degree: 10, num_lines: 500, line_grid_points: 120 } }
+
+  # ── Tier 2: hard (degree=18) ──────────────────────────────────────────────
+  - { id: suite_hard_01, construction: polynomial.algebraic_boundary, seed: 21, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_02, construction: polynomial.algebraic_boundary, seed: 22, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_03, construction: polynomial.algebraic_boundary, seed: 23, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_04, construction: polynomial.algebraic_boundary, seed: 24, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_05, construction: polynomial.algebraic_boundary, seed: 25, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_06, construction: polynomial.algebraic_boundary, seed: 26, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_07, construction: polynomial.algebraic_boundary, seed: 27, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_08, construction: polynomial.algebraic_boundary, seed: 28, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_09, construction: polynomial.algebraic_boundary, seed: 29, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }
+  - { id: suite_hard_10, construction: polynomial.algebraic_boundary, seed: 30, args: { degree: 18, delta_prime: 0.002, num_lines: 900, line_grid_points: 180, nbc_num_restarts: 30 } }

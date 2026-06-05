@@ -117,14 +117,22 @@ src/VeriStressGT/
 After installing julia, run:
 
 ### Benchmark Setup
-git clone --recursive  git@github.com:dtroxell19/VeriStressGT.git  
-cd VeriStressGT 
-git fetch origin     
+```bash
+git clone --recursive git@github.com:dtroxell19/VeriStressGT.git
+cd VeriStressGT
+git fetch origin
 git checkout -b pnn-algebraic-verifier origin/pnn-algebraic-verifier
 bash scripts/bootstrap.sh
 conda activate VeriStressGT
+```
+
 ### MAGNET + Polynomial Verifier Setup
+```bash
 pip install git+https://github.com/AIQ-Kitware/aiq-magnet.git
+
+# Additional deps needed by NeuralSAT and Gurobi-based constructions
+pip install sortedcontainers coloredlogs termcolor beartype gurobipy
+
 cd ..
 git clone git@github.com:edwardduanhao/AlgebraicVerification.git
 cd AlgebraicVerification
@@ -133,6 +141,41 @@ pip install -r requirements.txt
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
 cd ..
 export ALGEBRAIC_VERIFIER_DIR="$(pwd)/AlgebraicVerification"
-### Run
+```
+
+### α-β-CROWN Environment Variables
+```bash
+export ABCROWN_VNNCOMP2024_DIR="$(pwd)/VeriStressGT/src/VeriStressGT/verifiers/alpha-beta-CROWN"
+export ABCROWN_CONDA_ENV="alpha-beta-crown"
+```
+
+### Run (full evaluation — mini sweep + polynomial suite)
+```bash
 cd VeriStressGT
-magnet evaluate cards/polynomial_debug.yaml
+magnet evaluate cards/evaluation.yaml
+```
+
+This runs both stages sequentially and writes merged results to `results.json`:
+- **Stage 1 — Mini sweep**: 50 instances × {abcrown, pyrat, nnenum}
+- **Stage 2 — Polynomial suite**: 30 algebraic_boundary instances × {algebraic_pnn, neuralsat, abcrown, pyrat, nnenum}
+
+**To run each stage individually:**
+```bash
+# Mini sweep only (abcrown, pyrat, nnenum)
+python aiq/mini_sweep_runner.py \
+  --spec_path src/VeriStressGT/configs/mini_sweep.yaml \
+  --bench_dir ./mini_sweep_bench \
+  --run_dir ./mini_sweep_run \
+  --timeout 300 \
+  --verifiers abcrown pyrat nnenum \
+  --results_fpath ./results.json
+
+# Polynomial suite only (algebraic_pnn, neuralsat, abcrown, pyrat, nnenum)
+python aiq/polynomial_suite_runner.py \
+  --spec_path src/VeriStressGT/configs/polynomial_suite.yaml \
+  --bench_dir ./polynomial_suite_bench \
+  --run_dir ./polynomial_suite_run \
+  --timeout 300 \
+  --verifiers algebraic_pnn neuralsat abcrown pyrat nnenum \
+  --results_fpath ./results.json
+```

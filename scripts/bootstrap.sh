@@ -266,6 +266,35 @@ else
     warn "nnenum submodule not populated — skipping"
 fi
 
+# PyRAT
+PYRAT_DIR="$REPO_ROOT/src/VeriStressGT/verifiers/pyrat"
+if [ -d "$PYRAT_DIR" ] && [ -n "$(ls -A "$PYRAT_DIR" 2>/dev/null)" ]; then
+    if conda env list 2>/dev/null | grep -q "^pyrat "; then
+        ok "pyrat conda env already exists"
+    else
+        echo "  Creating pyrat conda env (this may take a few minutes)..."
+        OS=$(uname -s)
+        if [ "$OS" = "Darwin" ]; then
+            # pyrat_env.yml includes pytorch-cuda which doesn't exist on macOS;
+            # create a plain CPU env and install via requirements.txt instead.
+            conda create -n pyrat python=3.10 -y --quiet 2>/dev/null && \
+                conda run -n pyrat pip install -r "$PYRAT_DIR/requirements.txt" --quiet 2>/dev/null && \
+                ok "pyrat conda env created (macOS CPU)" || \
+                warn "pyrat conda env creation failed"
+        else
+            conda env create -f "$PYRAT_DIR/pyrat_env.yml" 2>&1 && \
+                ok "pyrat conda env created" || \
+                warn "pyrat conda env creation failed (see above)"
+        fi
+    fi
+    echo "  Installing PyRAT..."
+    conda run -n pyrat pip install -e "$PYRAT_DIR" --quiet 2>/dev/null && \
+        ok "PyRAT installed (in conda env 'pyrat')" || \
+        warn "PyRAT install had issues"
+else
+    warn "PyRAT submodule not populated — skipping"
+fi
+
 # ── Step 6: Write .env ───────────────────────────────────────────────
 step 7 "Writing .env"
 

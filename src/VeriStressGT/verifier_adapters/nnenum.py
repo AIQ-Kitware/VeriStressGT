@@ -8,6 +8,7 @@ from typing import List
 from .common import normalize_status_from_text
 
 VERIFIER_NAME = "nnenum"
+CONDA_ENV_DEFAULT = "nnenum"
 
 
 # ---------------------------------------------------------------------
@@ -179,6 +180,9 @@ def build_cmd(
     outfile = workdir / "nnenum_result.txt"
 
     return [
+        "env",
+        "OPENBLAS_NUM_THREADS=1",
+        "OMP_NUM_THREADS=1",
         args.nnenum_python,
         "-m",
         args.nnenum_module,
