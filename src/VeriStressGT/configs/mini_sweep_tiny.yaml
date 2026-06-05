@@ -1,0 +1,18 @@
+# Tiny smoke-test config: 1 instance per construction (7 total).
+# Uses the smallest parameters from each group in mini_sweep.yaml.
+# Good for verifying the full pipeline end-to-end without waiting.
+# Run with: python aiq/mini_sweep_runner.py --spec_path src/VeriStressGT/configs/mini_sweep_tiny.yaml --bench_dir ./mini_sweep_tiny_bench --run_dir ./mini_sweep_tiny_run
+
+name: mini_sweep_tiny
+
+defaults:
+  seed: 0
+
+instances:
+  - { id: meap_01,    construction: mlp_relu.meap,              seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 2,  epsilon: 0.1,    gamma: 0.001 } }
+  - { id: milp_01,    construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50,  h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5 } }
+  - { id: corners_01, construction: mlp_relu.corners,           seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.0001, num_hinges: 16, epsilon: 0.2 } }
+  - { id: dc_cnn_01,  construction: cnn.deep_contractive_cnn,   seed: 0, args: { depth: 2, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+  - { id: pb_cnn_01,  construction: cnn.cnn_paired_bias,        seed: 0, args: { num_pairs: 2, margin: 0.1, delta: 0.025 } }
+  - { id: ld_01,      construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 4, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.02, margin_factor: 2.0 } }
+  - { id: fp_01,      construction: attention.fixed_pattern,    seed: 1, args: { n: 16, d: 4, d_v: 8, num_classes: 50, alpha: 5.0, epsilon: 0.0005, margin_slack: 1.05 } }

@@ -1,28 +1,23 @@
-# UCLA — VeriStressGT Cross-Verifier Evaluation
+# UCLA — VeriStressGT Mini Sweep Evaluation
 #
-# Two-stage evaluation:
-#   1. Mini sweep (50 instances, 7 constructions) — abcrown, pyrat, nnenum
-#   2. Polynomial suite (30 instances, algebraic_boundary) — algebraic_pnn,
-#      neuralsat, abcrown, pyrat, nnenum
+# 50 instances across 7 construction types. All instances are UNSAT by
+# construction. Verifiers: abcrown, pyrat, nnenum.
 #
-# All instances are UNSAT by construction.
-# Claims:
-#   - abcrown achieves >= mini_sweep_threshold on the mini sweep
-#   - algebraic_pnn achieves >= poly_threshold on the polynomial suite
+# After verification, difficulty profiles are computed for every instance
+# (margin_sample_min, ibp_relative_gap, unstable_frac, A_tau_effective_log,
+# effective_grad_dim_mean) and a timeout-AUC heatmap is saved alongside
+# results.json: construction_heatmap.png and timeout_auc_heatmap.png.
+#
+# Claim: abcrown achieves >= threshold correct UNSAT verdicts.
 
-title: "VeriStressGT Cross-Verifier Evaluation (mini sweep + polynomial suite)"
+title: "VeriStressGT Mini Sweep Evaluation (50 instances, 7 constructions)"
 description: |
-  Stage 1 — Mini Sweep: 50 instances across 7 construction types
-  (mlp_relu.meap, milp.exact_radius, corners, cnn.deep_contractive_cnn,
-  cnn.cnn_paired_bias, attention.linear_dominance, attention.fixed_pattern).
-  Verifiers: abcrown, pyrat, nnenum.
-
-  Stage 2 — Polynomial Suite: 30 polynomial.algebraic_boundary instances in
-  three difficulty tiers (degree=2/10/18, 10 seeds each).
-  Verifiers: algebraic_pnn, neuralsat, abcrown, pyrat, nnenum.
-
-  Every instance is guaranteed UNSAT by construction. Results from both stages
-  are merged into a single results.json.
+  Generates 50 instances across 7 construction types (mlp_relu.meap,
+  milp.exact_radius, corners, cnn.deep_contractive_cnn, cnn.cnn_paired_bias,
+  attention.linear_dominance, attention.fixed_pattern). Every instance is
+  guaranteed UNSAT by construction. Runs abcrown, pyrat, and nnenum, then
+  computes difficulty profile components and saves a construction heatmap
+  and timeout-AUC heatmap.
 
 version: 1.0
 
@@ -40,60 +35,38 @@ tags:
   - mlp
   - cnn
   - attention
-  - algebraic
-  - polynomial
-  - homotopy-continuation
 
 links:
   - title: "VeriStressGT"
     url: "https://github.com/dtroxell19/VeriStressGT"
     type: "software"
-  - title: "AlgebraicVerification"
-    url: "https://github.com/edwardduanhao/AlgebraicVerification"
-    type: "software"
 
 claim:
   python: |
-    assert not mini_sweep_per_verifier["abcrown"]["skipped"], (
-      "abcrown was skipped on mini sweep — check ABCROWN_VNNCOMP2024_DIR / conda env"
+    assert not per_verifier["abcrown"]["skipped"], (
+      "abcrown was skipped — check ABCROWN_VNNCOMP2024_DIR / conda env"
     )
-    assert mini_sweep_per_verifier["abcrown"]["correct_fraction"] >= mini_sweep_threshold, (
+    assert per_verifier["abcrown"]["correct_fraction"] >= threshold, (
       f"abcrown matched ground truth on only "
-      f"{mini_sweep_per_verifier['abcrown']['correct']}/{mini_sweep_per_verifier['abcrown']['total']} "
-      f"mini-sweep instances (fraction={mini_sweep_per_verifier['abcrown']['correct_fraction']:.2f}, "
-      f"required >= {mini_sweep_threshold:.2f}). "
-      f"Mini-sweep summary: {mini_sweep_summary['per_verifier_fraction']}"
-    )
-    assert not per_verifier["algebraic_pnn"]["skipped"], (
-      "algebraic_pnn was skipped — check ALGEBRAIC_VERIFIER_DIR"
-    )
-    assert per_verifier["algebraic_pnn"]["correct_fraction"] >= poly_threshold, (
-      f"algebraic_pnn matched ground truth on only "
-      f"{per_verifier['algebraic_pnn']['correct']}/{per_verifier['algebraic_pnn']['total']} "
-      f"polynomial instances (fraction={per_verifier['algebraic_pnn']['correct_fraction']:.2f}, "
-      f"required >= {poly_threshold:.2f}). "
-      f"Polynomial summary: {summary['per_verifier_fraction']}"
+      f"{per_verifier['abcrown']['correct']}/{per_verifier['abcrown']['total']} "
+      f"instances (fraction={per_verifier['abcrown']['correct_fraction']:.2f}, "
+      f"required >= {threshold:.2f}). "
+      f"Summary: {summary['per_verifier_fraction']}"
     )
 
 pipeline:
-  evaluation:
-    executable: 'python -u aiq/evaluation_runner.py'
+  mini_sweep:
+    executable: 'python -u aiq/mini_sweep_runner.py'
     algo_params:
-      mini_sweep_spec: 'src/VeriStressGT/configs/mini_sweep.yaml'
-      mini_sweep_bench_dir: 'mini_sweep_bench'
-      mini_sweep_run_dir: 'mini_sweep_run'
-      poly_spec: 'src/VeriStressGT/configs/polynomial_suite.yaml'
-      poly_bench_dir: 'polynomial_suite_bench'
-      poly_run_dir: 'polynomial_suite_run'
-      timeout: 300
+      spec_path: 'src/VeriStressGT/configs/mini_sweep.yaml'
+      bench_dir: 'mini_sweep_bench'
+      run_dir: 'mini_sweep_run'
+      timeout: 60
       abcrown_config: 'src/VeriStressGT/configs/abcrown_basic.yaml'
     out_paths:
       results_fpath: 'results.json'
 
 symbols:
-  mini_sweep_threshold:
+  threshold:
     type: float
     value: 0.6
-  poly_threshold:
-    type: float
-    value: 0.9

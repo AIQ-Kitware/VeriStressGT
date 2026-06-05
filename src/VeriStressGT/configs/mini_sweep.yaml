@@ -1,15 +1,22 @@
-# Cross-verifier mini sweep — 50 instances, 7 constructions (no polynomial).
+# Cross-verifier mini sweep — 50 instances, 7 constructions.
 # All instances are UNSAT by construction.
 #
-# One knob swept per group, drawn from the same ranges used in sweep_all.yaml.
-# Constructions covered:
-#   mlp_relu.meap               (6)  — num_pairs sweep
-#   mlp_relu.milp.exact_radius  (11) — epsilon_frac x 4 seeds
-#   mlp_relu.corners            (6)  — hinge_l1 / num_hinges
-#   cnn.deep_contractive_cnn    (7)  — depth + contraction_rate
-#   cnn.cnn_paired_bias         (7)  — num_pairs + margin + delta
-#   attention.linear_dominance  (7)  — epsilon + margin_factor
-#   attention.fixed_pattern     (6)  — epsilon + alpha
+# Parameter ranges drawn from sweep_all.yaml. Existing timing data (pyrat/nnenum
+# at 300s timeout) informed the difficulty gradient:
+#   - milp: pyrat 37s at epsilon_frac=0.99; 0.999 expected to challenge at 60s
+#   - pb_cnn: num_pairs=8 → 18s pyrat; num_pairs=16/32 → timeout
+#   - corners/meap: larger num_hinges/num_pairs extends range; all fast for pyrat today
+#   - dc_cnn: channels=32/64 adds stress beyond depth-only variation
+#   - attention: larger n/d from sweep_all range
+#
+# Constructions per group:
+#   mlp_relu.meap               (6)
+#   mlp_relu.milp.exact_radius  (9)
+#   mlp_relu.corners            (6)
+#   cnn.deep_contractive_cnn    (7)
+#   cnn.cnn_paired_bias         (7)
+#   attention.linear_dominance  (7)
+#   attention.fixed_pattern     (8)
 
 name: mini_sweep
 
@@ -18,68 +25,66 @@ defaults:
 
 instances:
 
-  # ── mlp_relu.meap: num_pairs sweep ───────────────────────────────────────
-  - { id: meap_01, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 2,   epsilon: 0.1, gamma: 0.001 } }
-  - { id: meap_02, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 4,   epsilon: 0.1, gamma: 0.001 } }
-  - { id: meap_03, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 16,  epsilon: 0.1, gamma: 0.001 } }
-  - { id: meap_04, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 32,  epsilon: 0.1, gamma: 0.001 } }
-  - { id: meap_05, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 16,  epsilon: 0.05, gamma: 0.001 } }
-  - { id: meap_06, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 16,  epsilon: 0.25, gamma: 0.001 } }
+  # ── mlp_relu.meap: num_pairs sweep (easy → hard) ─────────────────────────
+  - { id: meap_01, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 2,   epsilon: 0.1,  gamma: 0.001 } }
+  - { id: meap_02, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 8,   epsilon: 0.1,  gamma: 0.001 } }
+  - { id: meap_03, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 32,  epsilon: 0.1,  gamma: 0.001 } }
+  - { id: meap_04, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 64,  epsilon: 0.1,  gamma: 0.001 } }
+  - { id: meap_05, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 128, epsilon: 0.1,  gamma: 0.001 } }
+  - { id: meap_06, construction: mlp_relu.meap, seed: 0, args: { input_dim: 100, num_classes: 10, num_pairs: 16,  epsilon: 0.5,  gamma: 0.001 } }
 
-  # ── mlp_relu.milp.exact_radius: epsilon_frac sweep ───────────────────────
+  # ── mlp_relu.milp.exact_radius: epsilon_frac + hidden size sweep ─────────
   - { id: milp_01, construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5   } }
   - { id: milp_02, construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9   } }
   - { id: milp_03, construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99  } }
-  - { id: milp_04, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5   } }
-  - { id: milp_05, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9   } }
-  - { id: milp_06, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99  } }
+  - { id: milp_04, construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.999 } }
+  - { id: milp_05, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5   } }
+  - { id: milp_06, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9   } }
+  - { id: milp_07, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99  } }
+  - { id: milp_08, construction: mlp_relu.milp.exact_radius, seed: 1, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.999 } }
+  - { id: milp_09, construction: mlp_relu.milp.exact_radius, seed: 0, args: { input_dim: 50, h1: 50, h2: 50, num_outputs: 5, epsilon_frac: 0.999 } }
 
-  # ── mlp_relu.corners: hinge_l1 + num_hinges sweep ────────────────────────
-  - { id: corners_01, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.0001, num_hinges: 16,  epsilon: 0.2 } }
-  - { id: corners_02, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.01,   num_hinges: 16,  epsilon: 0.2 } }
-  - { id: corners_03, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 1,      num_hinges: 16,  epsilon: 0.2 } }
-  - { id: corners_04, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 100,    num_hinges: 16,  epsilon: 0.2 } }
-  - { id: corners_05, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.01,   num_hinges: 64,  epsilon: 0.2 } }
-  - { id: corners_06, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.01,   num_hinges: 256, epsilon: 0.2 } }
+  # ── mlp_relu.corners: num_hinges sweep (small → large) ───────────────────
+  - { id: corners_01, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.0001, num_hinges: 16,   epsilon: 0.2 } }
+  - { id: corners_02, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.01,   num_hinges: 16,   epsilon: 0.2 } }
+  - { id: corners_03, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.01,   num_hinges: 64,   epsilon: 0.2 } }
+  - { id: corners_04, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.01,   num_hinges: 256,  epsilon: 0.2 } }
+  - { id: corners_05, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 0.01,   num_hinges: 1024, epsilon: 0.2 } }
+  - { id: corners_06, construction: mlp_relu.corners, seed: 1, args: { input_dim: 100, num_outputs: 10, hinge_l1: 100,    num_hinges: 16,   epsilon: 0.2 } }
 
-  # ── mlp_relu.milp.exact_radius: continued (seeds 2–3)
-  - { id: milp_07, construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5  } }
-  - { id: milp_08, construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9  } }
-  - { id: milp_09, construction: mlp_relu.milp.exact_radius, seed: 2, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.99 } }
-  - { id: milp_10, construction: mlp_relu.milp.exact_radius, seed: 3, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.5  } }
-  - { id: milp_11, construction: mlp_relu.milp.exact_radius, seed: 3, args: { input_dim: 50, h1: 20, h2: 10, num_outputs: 5, epsilon_frac: 0.9  } }
-
-  # ── cnn.deep_contractive_cnn: depth + contraction_rate ───────────────────
+  # ── cnn.deep_contractive_cnn: depth + channels sweep ────────────────────
   - { id: dc_cnn_01, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 2,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
   - { id: dc_cnn_02, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 4,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
   - { id: dc_cnn_03, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
   - { id: dc_cnn_04, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 8,  channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
   - { id: dc_cnn_05, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 10, channels: 16, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
-  - { id: dc_cnn_06, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6,  channels: 16, contraction_rate: 0.70, margin: 0.001, bias_instability_frac: 0.40 } }
-  - { id: dc_cnn_07, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6,  channels: 16, contraction_rate: 0.98, margin: 0.001, bias_instability_frac: 0.40 } }
+  - { id: dc_cnn_06, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6,  channels: 32, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
+  - { id: dc_cnn_07, construction: cnn.deep_contractive_cnn, seed: 0, args: { depth: 6,  channels: 64, contraction_rate: 0.90, margin: 0.001, bias_instability_frac: 0.40 } }
 
-  # ── cnn.cnn_paired_bias: num_pairs + margin + delta ───────────────────────
-  - { id: pb_cnn_01, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 2,  margin: 0.1,   delta: 0.025 } }
-  - { id: pb_cnn_02, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8,  margin: 0.1,   delta: 0.025 } }
-  - { id: pb_cnn_03, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 32, margin: 0.1,   delta: 0.025 } }
-  - { id: pb_cnn_04, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8,  margin: 0.5,   delta: 0.025 } }
-  - { id: pb_cnn_05, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 4,  margin: 0.01,  delta: 0.025 } }
-  - { id: pb_cnn_06, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 4,  margin: 0.1,   delta: 0.005 } }
-  - { id: pb_cnn_07, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 4,  margin: 0.1,   delta: 0.1   } }
+  # ── cnn.cnn_paired_bias: num_pairs sweep + delta/margin variants ─────────
+  - { id: pb_cnn_01, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 2,  margin: 0.1, delta: 0.025 } }
+  - { id: pb_cnn_02, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 4,  margin: 0.1, delta: 0.025 } }
+  - { id: pb_cnn_03, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8,  margin: 0.1, delta: 0.025 } }
+  - { id: pb_cnn_04, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 16, margin: 0.1, delta: 0.025 } }
+  - { id: pb_cnn_05, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 32, margin: 0.1, delta: 0.025 } }
+  - { id: pb_cnn_06, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8,  margin: 0.5, delta: 0.025 } }
+  - { id: pb_cnn_07, construction: cnn.cnn_paired_bias, seed: 0, args: { num_pairs: 8,  margin: 0.1, delta: 0.1   } }
 
-  # ── attention.linear_dominance: epsilon + margin_factor ──────────────────
-  - { id: ld_01, construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 4, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.02, margin_factor: 2.0 } }
-  - { id: ld_02, construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 4, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 2.0 } }
-  - { id: ld_03, construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 4, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.08, margin_factor: 2.0 } }
-  - { id: ld_04, construction: attention.linear_dominance, seed: 2, args: { n: 4, d: 4, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 1.1 } }
-  - { id: ld_05, construction: attention.linear_dominance, seed: 2, args: { n: 4, d: 4, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 3.0 } }
-  - { id: ld_06, construction: attention.linear_dominance, seed: 3, args: { n: 2, d: 2, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 2.0 } }
-  - { id: ld_07, construction: attention.linear_dominance, seed: 3, args: { n: 6, d: 6, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 2.0 } }
+  # ── attention.linear_dominance: epsilon + margin_factor + n/d sweep ──────
+  - { id: ld_01, construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 4,  d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.02, margin_factor: 2.0 } }
+  - { id: ld_02, construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 4,  d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 2.0 } }
+  - { id: ld_03, construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 4,  d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.08, margin_factor: 2.0 } }
+  - { id: ld_04, construction: attention.linear_dominance, seed: 2, args: { n: 4, d: 4,  d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 1.1 } }
+  - { id: ld_05, construction: attention.linear_dominance, seed: 2, args: { n: 4, d: 4,  d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 3.0 } }
+  - { id: ld_06, construction: attention.linear_dominance, seed: 3, args: { n: 6, d: 6,  d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 2.0 } }
+  - { id: ld_07, construction: attention.linear_dominance, seed: 1, args: { n: 4, d: 12, d_v: 4, num_classes: 10, gate_scale: 0.5, noise_scale: 0.2, epsilon: 0.05, margin_factor: 2.0 } }
 
-  # ── attention.fixed_pattern: epsilon + alpha ──────────────────────────────
-  - { id: fp_01, construction: attention.fixed_pattern, seed: 1, args: { n: 16, d: 4, d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.0005, margin_slack: 1.05 } }
-  - { id: fp_02, construction: attention.fixed_pattern, seed: 1, args: { n: 16, d: 4, d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.001,  margin_slack: 1.05 } }
-  - { id: fp_03, construction: attention.fixed_pattern, seed: 1, args: { n: 16, d: 4, d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.01,   margin_slack: 1.05 } }
-  - { id: fp_04, construction: attention.fixed_pattern, seed: 2, args: { n: 16, d: 4, d_v: 8, num_classes: 50, alpha: 2.0,  epsilon: 0.01,   margin_slack: 1.05 } }
-  - { id: fp_05, construction: attention.fixed_pattern, seed: 2, args: { n: 16, d: 4, d_v: 8, num_classes: 50, alpha: 10.0, epsilon: 0.01,   margin_slack: 1.05 } }
-  - { id: fp_06, construction: attention.fixed_pattern, seed: 3, args: { n: 8,  d: 4, d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.001,  margin_slack: 1.05 } }
+  # ── attention.fixed_pattern: epsilon + n/d sweep ─────────────────────────
+  - { id: fp_01, construction: attention.fixed_pattern, seed: 1, args: { n: 16, d: 4,  d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.0005, margin_slack: 1.05 } }
+  - { id: fp_02, construction: attention.fixed_pattern, seed: 1, args: { n: 16, d: 4,  d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.001,  margin_slack: 1.05 } }
+  - { id: fp_03, construction: attention.fixed_pattern, seed: 1, args: { n: 16, d: 4,  d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.01,   margin_slack: 1.05 } }
+  - { id: fp_04, construction: attention.fixed_pattern, seed: 2, args: { n: 16, d: 4,  d_v: 8, num_classes: 50, alpha: 2.0,  epsilon: 0.01,   margin_slack: 1.05 } }
+  - { id: fp_05, construction: attention.fixed_pattern, seed: 2, args: { n: 16, d: 4,  d_v: 8, num_classes: 50, alpha: 10.0, epsilon: 0.01,   margin_slack: 1.05 } }
+  - { id: fp_06, construction: attention.fixed_pattern, seed: 1, args: { n: 8,  d: 4,  d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.001,  margin_slack: 1.05 } }
+  - { id: fp_07, construction: attention.fixed_pattern, seed: 1, args: { n: 32, d: 4,  d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.001,  margin_slack: 1.05 } }
+  - { id: fp_08, construction: attention.fixed_pattern, seed: 1, args: { n: 16, d: 16, d_v: 8, num_classes: 50, alpha: 5.0,  epsilon: 0.001,  margin_slack: 1.05 } }
