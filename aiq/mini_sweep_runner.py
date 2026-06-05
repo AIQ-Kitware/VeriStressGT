@@ -12,6 +12,7 @@ MAGNET's GenericPipelineProcessor lifts each top-level key into a card symbol.
 """
 from __future__ import annotations
 
+import csv
 import json
 import subprocess
 import sys
@@ -341,6 +342,25 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
                     f"{info['timeout']:>7}  {info['error']:>5}  {info['total']:>5}",
                     flush=True,
                 )
+
+        csv_fpath = out_fpath.parent / "mini_sweep_summary.csv"
+        with open(csv_fpath, "w", newline="") as f:
+            w = csv.writer(f)
+            w.writerow(["verifier", "correct", "wrong", "timeout", "unsupported", "error", "skipped", "total", "correct_fraction"])
+            for v in verifiers:
+                info = per_verifier[v]
+                w.writerow([
+                    v,
+                    info["correct"],
+                    info["wrong"],
+                    info["timeout"],
+                    info["unsupported"],
+                    info["error"],
+                    info["skipped"],
+                    info["total"],
+                    info["correct_fraction"],
+                ])
+        print(f"Summary CSV: {csv_fpath}", flush=True)
 
 
 __cli__ = MiniSweepRunnerCLI
