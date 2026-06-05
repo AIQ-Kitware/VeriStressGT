@@ -5,8 +5,10 @@ import argparse
 import json
 import os
 import resource
+import shutil
 import subprocess
 import time
+import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
@@ -167,7 +169,12 @@ def _run_one(
 
     # Auto-wrap in conda env if the verifier declares one.
     if conda_env:
-        cmd = ["conda", "run", "-n", conda_env, "--no-capture-output"] + cmd
+        conda_exe = (
+            os.environ.get("CONDA_EXE")
+            or shutil.which("conda")
+            or "conda"
+        )
+        cmd = [conda_exe, "run", "-n", conda_env, "--no-capture-output"] + cmd
 
     t0 = time.time()
     timed_out = False
@@ -195,7 +202,13 @@ def _run_one(
         stderr = (e.stderr or "") if isinstance(e.stderr, str) else ""
     except Exception as e:
         rc = 1
-        stderr = f"{stderr}\n[verify_benchmark] exception: {repr(e)}\n"
+        stderr = (
+            f"{stderr}\n"
+            f"[verify_benchmark] failed to launch verifier\n"
+            f"  cmd: {cmd}\n"
+            f"  cwd: {workdir}\n"
+            f"{traceback.format_exc()}"
+        )
 
     wall = time.time() - t0
 

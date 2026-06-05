@@ -215,8 +215,8 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
         if not spec_path.exists():
             raise FileNotFoundError(f"build spec not found: {spec_path}")
 
-        bench_dir = Path(config.bench_dir).resolve()
-        run_dir = Path(config.run_dir).resolve()
+        bench_dir = _resolve_under_repo(config.bench_dir)
+        run_dir = _resolve_under_repo(config.run_dir)
 
         verifiers: List[str] = (
             config.verifiers

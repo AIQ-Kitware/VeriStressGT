@@ -76,23 +76,15 @@ claim:
     )
 
 pipeline:
-  mini_sweep:
-    executable: 'python aiq/mini_sweep_runner.py'
+  evaluation:
+    executable: 'python -u aiq/evaluation_runner.py'
     algo_params:
-      spec_path: 'src/VeriStressGT/configs/mini_sweep.yaml'
-      bench_dir: './mini_sweep_bench'
-      run_dir: './mini_sweep_run'
-      timeout: 300
-      abcrown_config: 'src/VeriStressGT/configs/abcrown_basic.yaml'
-    out_paths:
-      results_fpath: 'results.json'
-
-  polynomial_suite:
-    executable: 'python aiq/polynomial_suite_runner.py'
-    algo_params:
-      spec_path: 'src/VeriStressGT/configs/polynomial_suite.yaml'
-      bench_dir: './polynomial_suite_bench'
-      run_dir: './polynomial_suite_run'
+      mini_sweep_spec: 'src/VeriStressGT/configs/mini_sweep.yaml'
+      mini_sweep_bench_dir: 'mini_sweep_bench'
+      mini_sweep_run_dir: 'mini_sweep_run'
+      poly_spec: 'src/VeriStressGT/configs/polynomial_suite.yaml'
+      poly_bench_dir: 'polynomial_suite_bench'
+      poly_run_dir: 'polynomial_suite_run'
       timeout: 300
       abcrown_config: 'src/VeriStressGT/configs/abcrown_basic.yaml'
     out_paths:

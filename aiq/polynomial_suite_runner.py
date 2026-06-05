@@ -235,8 +235,8 @@ class PolynomialSuiteRunnerCLI(scfg.DataConfig):
         if not spec_path.exists():
             raise FileNotFoundError(f"build spec not found: {spec_path}")
 
-        bench_dir = Path(config.bench_dir).resolve()
-        run_dir = Path(config.run_dir).resolve()
+        bench_dir = _resolve_under_repo(config.bench_dir)
+        run_dir = _resolve_under_repo(config.run_dir)
 
         # Inject algebraic verifier dir into env if provided
         env_av_dir = config.algebraic_verifier_dir or os.environ.get(
