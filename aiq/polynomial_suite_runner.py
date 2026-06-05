@@ -32,10 +32,10 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 DEFAULT_VERIFIERS = [
     "algebraic_pnn",
-    "abcrown",
     "neuralsat",
-    "nnenum",
+    "abcrown",
     "pyrat",
+    "nnenum",
 ]
 
 

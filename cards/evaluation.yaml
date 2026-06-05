@@ -83,10 +83,6 @@ pipeline:
       bench_dir: './mini_sweep_bench'
       run_dir: './mini_sweep_run'
       timeout: 300
-      verifiers:
-        - abcrown
-        - pyrat
-        - nnenum
       abcrown_config: 'src/VeriStressGT/configs/abcrown_basic.yaml'
     out_paths:
       results_fpath: 'results.json'
@@ -98,12 +94,6 @@ pipeline:
       bench_dir: './polynomial_suite_bench'
       run_dir: './polynomial_suite_run'
       timeout: 300
-      verifiers:
-        - algebraic_pnn
-        - neuralsat
-        - abcrown
-        - pyrat
-        - nnenum
       abcrown_config: 'src/VeriStressGT/configs/abcrown_basic.yaml'
     out_paths:
       results_fpath: 'results.json'
