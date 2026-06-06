@@ -1,0 +1,26 @@
+{
+  "id": "fp_01",
+  "construction": "attention.fixed_pattern",
+  "seed": 1,
+  "paths": {
+    "onnx": "instances/fp_01/model.onnx",
+    "vnnlib": "instances/fp_01/spec.vnnlib",
+    "meta": "instances/fp_01/meta.json"
+  },
+  "sha256": {
+    "onnx": "1d74bc61b3fe55d1413bf0662a0d9101bf704d8e7baca4f6138ec0833b5ca88f",
+    "vnnlib": "7b204ad5281ba655a9077a8838bb682b3ce18cf306494394921fa4519621fb74"
+  },
+  "args": {
+    "seed": 1,
+    "n": 16,
+    "d": 4,
+    "d_v": 8,
+    "num_classes": 50,
+    "alpha": 5.0,
+    "epsilon": 0.0005,
+    "margin_slack": 1.05,
+    "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_01/model.onnx",
+    "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_01/spec.vnnlib"
+  }
+}

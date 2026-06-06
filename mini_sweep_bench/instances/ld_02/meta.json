@@ -1,0 +1,27 @@
+{
+  "id": "ld_02",
+  "construction": "attention.linear_dominance",
+  "seed": 1,
+  "paths": {
+    "onnx": "instances/ld_02/model.onnx",
+    "vnnlib": "instances/ld_02/spec.vnnlib",
+    "meta": "instances/ld_02/meta.json"
+  },
+  "sha256": {
+    "onnx": "41b039af42243b704e648c38c5b9dab5437c6cc0275ac152cfaf585f9b90b5b1",
+    "vnnlib": "a26bfa7196cd39dee3700b8d1daae6e08918205c98f98269022bd2cacefd0783"
+  },
+  "args": {
+    "seed": 1,
+    "n": 4,
+    "d": 4,
+    "d_v": 4,
+    "num_classes": 10,
+    "gate_scale": 0.5,
+    "noise_scale": 0.2,
+    "epsilon": 0.05,
+    "margin_factor": 2.0,
+    "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_02/model.onnx",
+    "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_02/spec.vnnlib"
+  }
+}

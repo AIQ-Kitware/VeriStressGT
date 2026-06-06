@@ -1,0 +1,1475 @@
+{
+  "name": "mini_sweep",
+  "created_at": "2026-06-05T19:31:15.616581Z",
+  "git_commit": "5fb0549690d3a191100674bd68367254976293e1",
+  "common": {
+    "onnx_name": "model.onnx",
+    "vnnlib_name": "spec.vnnlib",
+    "meta_name": "meta.json"
+  },
+  "mode": "spec",
+  "instances": [
+    {
+      "id": "meap_01",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap_01/model.onnx",
+        "vnnlib": "instances/meap_01/spec.vnnlib",
+        "meta": "instances/meap_01/meta.json"
+      },
+      "sha256": {
+        "onnx": "5396b985ce1943aca47317ded16e1b33fb9203da0b9ca07923ebb410d5691419",
+        "vnnlib": "394247a6d91ffb065ba490f79bf3ee49aeb809ef04a91b36669013a01a44ce51"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 2,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_01/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_01/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap_02",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap_02/model.onnx",
+        "vnnlib": "instances/meap_02/spec.vnnlib",
+        "meta": "instances/meap_02/meta.json"
+      },
+      "sha256": {
+        "onnx": "b28e019273417f96aeebf0bae05ecfbcbae62327b4850bb07cd3a7dbc1620ba1",
+        "vnnlib": "394247a6d91ffb065ba490f79bf3ee49aeb809ef04a91b36669013a01a44ce51"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 8,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_02/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_02/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap_03",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap_03/model.onnx",
+        "vnnlib": "instances/meap_03/spec.vnnlib",
+        "meta": "instances/meap_03/meta.json"
+      },
+      "sha256": {
+        "onnx": "f97a0a66706fc41d24a449c66959a0bd98c1366321dafa54471cc7e0660e77cf",
+        "vnnlib": "394247a6d91ffb065ba490f79bf3ee49aeb809ef04a91b36669013a01a44ce51"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 32,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_03/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_03/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap_04",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap_04/model.onnx",
+        "vnnlib": "instances/meap_04/spec.vnnlib",
+        "meta": "instances/meap_04/meta.json"
+      },
+      "sha256": {
+        "onnx": "e9a1edf927a4b10e03f6e595a5ad404ec29f4ed74da3ea0c05cd01e12cf70b46",
+        "vnnlib": "394247a6d91ffb065ba490f79bf3ee49aeb809ef04a91b36669013a01a44ce51"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 64,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_04/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_04/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap_05",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap_05/model.onnx",
+        "vnnlib": "instances/meap_05/spec.vnnlib",
+        "meta": "instances/meap_05/meta.json"
+      },
+      "sha256": {
+        "onnx": "3a04bc27fcc846dcd403f3b45179f7edc4094c4e08227cab3f8a4b24bb10b52a",
+        "vnnlib": "394247a6d91ffb065ba490f79bf3ee49aeb809ef04a91b36669013a01a44ce51"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 128,
+        "epsilon": 0.1,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_05/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_05/spec.vnnlib"
+      }
+    },
+    {
+      "id": "meap_06",
+      "construction": "mlp_relu.meap",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/meap_06/model.onnx",
+        "vnnlib": "instances/meap_06/spec.vnnlib",
+        "meta": "instances/meap_06/meta.json"
+      },
+      "sha256": {
+        "onnx": "e7f28054f722314f2414ecea1b447540e81e4bf067881c5f33e6a39555bb4087",
+        "vnnlib": "4f46219c44845a6f9645e460b96a988019b4b96874ffc3dbea5ebb77cecede14"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 100,
+        "num_classes": 10,
+        "num_pairs": 16,
+        "epsilon": 0.5,
+        "gamma": 0.001,
+        "weight_scale": 2.0,
+        "label": 0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_06/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_06/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_01",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp_01/model.onnx",
+        "vnnlib": "instances/milp_01/spec.vnnlib",
+        "meta": "instances/milp_01/meta.json"
+      },
+      "sha256": {
+        "onnx": "89bf47c9c5ecc881281fa3331e5a02047e85f5f178b41ad943b959e73e7a6ff4",
+        "vnnlib": "32e658eaefe21d8fba73f13e6a0358cbeb700ff68bd1662830503153884f8a1f"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.5,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_01/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_01/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_02",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp_02/model.onnx",
+        "vnnlib": "instances/milp_02/spec.vnnlib",
+        "meta": "instances/milp_02/meta.json"
+      },
+      "sha256": {
+        "onnx": "89bf47c9c5ecc881281fa3331e5a02047e85f5f178b41ad943b959e73e7a6ff4",
+        "vnnlib": "9d3dd0b84d493f18063ef1cf7ac45c704f87a743c8e4ff097d504dc99865fb8a"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_02/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_02/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_03",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp_03/model.onnx",
+        "vnnlib": "instances/milp_03/spec.vnnlib",
+        "meta": "instances/milp_03/meta.json"
+      },
+      "sha256": {
+        "onnx": "89bf47c9c5ecc881281fa3331e5a02047e85f5f178b41ad943b959e73e7a6ff4",
+        "vnnlib": "756804a6ee34c676806826ea57f6253ec7fbace853ad3679b791ad53df1f928c"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_03/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_03/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_04",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp_04/model.onnx",
+        "vnnlib": "instances/milp_04/spec.vnnlib",
+        "meta": "instances/milp_04/meta.json"
+      },
+      "sha256": {
+        "onnx": "89bf47c9c5ecc881281fa3331e5a02047e85f5f178b41ad943b959e73e7a6ff4",
+        "vnnlib": "dda45e3bb2b6e0a74bcc9ab39f14477673f6045ae73595d2f8cc6ebf3cbf4f07"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_04/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_04/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_05",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp_05/model.onnx",
+        "vnnlib": "instances/milp_05/spec.vnnlib",
+        "meta": "instances/milp_05/meta.json"
+      },
+      "sha256": {
+        "onnx": "ebbf99c94f360d7286d1e3c19fbaee12b26adaa8f1b32a2319d0d072d770884a",
+        "vnnlib": "f93dea558a19a53d5ea75ca02028a5a25dd2decaa87af1df187424c7c86ca94b"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.5,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_05/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_05/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_06",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp_06/model.onnx",
+        "vnnlib": "instances/milp_06/spec.vnnlib",
+        "meta": "instances/milp_06/meta.json"
+      },
+      "sha256": {
+        "onnx": "ebbf99c94f360d7286d1e3c19fbaee12b26adaa8f1b32a2319d0d072d770884a",
+        "vnnlib": "87146154b994ae1231b150f144004719ee6a7c16d4a6b3a903cb8caec4889d00"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.9,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_06/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_06/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_07",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp_07/model.onnx",
+        "vnnlib": "instances/milp_07/spec.vnnlib",
+        "meta": "instances/milp_07/meta.json"
+      },
+      "sha256": {
+        "onnx": "ebbf99c94f360d7286d1e3c19fbaee12b26adaa8f1b32a2319d0d072d770884a",
+        "vnnlib": "5a8becab52bb3e56d470fa808d6d39a4aec66d953c15f31ca42ef42cebb65c92"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.99,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_07/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_07/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_08",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/milp_08/model.onnx",
+        "vnnlib": "instances/milp_08/spec.vnnlib",
+        "meta": "instances/milp_08/meta.json"
+      },
+      "sha256": {
+        "onnx": "ebbf99c94f360d7286d1e3c19fbaee12b26adaa8f1b32a2319d0d072d770884a",
+        "vnnlib": "8556a984b2a5969a1459ff9892c80ba8a76612db55c0cde9f2943086d7d484f8"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 50,
+        "h1": 20,
+        "h2": 10,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_08/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_08/spec.vnnlib"
+      }
+    },
+    {
+      "id": "milp_09",
+      "construction": "mlp_relu.milp.exact_radius",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/milp_09/model.onnx",
+        "vnnlib": "instances/milp_09/spec.vnnlib",
+        "meta": "instances/milp_09/meta.json"
+      },
+      "sha256": {
+        "onnx": "3e120befdca189506a31fd668c36d5a8da25f1020463e86cdb595ec29f56bccc",
+        "vnnlib": "8c4d365bb18c71f1acefe8c0ebce40a277f897e7fa82a6814b0d9a37396d9df2"
+      },
+      "args": {
+        "seed": 0,
+        "input_dim": 50,
+        "h1": 50,
+        "h2": 50,
+        "num_outputs": 5,
+        "epsilon_frac": 0.999,
+        "rmax": 2.0,
+        "time_limit": 240.0,
+        "mip_gap": null,
+        "epsilon_mode": "safe",
+        "save_x0": false,
+        "save_json": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_09/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_09/spec.vnnlib"
+      }
+    },
+    {
+      "id": "corners_01",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/corners_01/model.onnx",
+        "vnnlib": "instances/corners_01/spec.vnnlib",
+        "meta": "instances/corners_01/meta.json"
+      },
+      "sha256": {
+        "onnx": "c4e21272c5c3445d38b9f1676e2a17665edbb2be690e6e31058bd7532e7fcff7",
+        "vnnlib": "7aaa77b1c2457b7ef3e613cb6f1152ddf8a06a20858c384f1f9f24a33d29bd32"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.0001,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_01/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_01/spec.vnnlib"
+      }
+    },
+    {
+      "id": "corners_02",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/corners_02/model.onnx",
+        "vnnlib": "instances/corners_02/spec.vnnlib",
+        "meta": "instances/corners_02/meta.json"
+      },
+      "sha256": {
+        "onnx": "0a37a8d3e2cc21be7ad518f2ca4cc758fc0b0f4325246f212f936cc36298969c",
+        "vnnlib": "7aaa77b1c2457b7ef3e613cb6f1152ddf8a06a20858c384f1f9f24a33d29bd32"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.01,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_02/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_02/spec.vnnlib"
+      }
+    },
+    {
+      "id": "corners_03",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/corners_03/model.onnx",
+        "vnnlib": "instances/corners_03/spec.vnnlib",
+        "meta": "instances/corners_03/meta.json"
+      },
+      "sha256": {
+        "onnx": "e2e0a18352ba8dcc7752cc0d1fde460b352e9d653a724566110aa98d2645a3ee",
+        "vnnlib": "7aaa77b1c2457b7ef3e613cb6f1152ddf8a06a20858c384f1f9f24a33d29bd32"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.01,
+        "num_hinges": 64,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_03/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_03/spec.vnnlib"
+      }
+    },
+    {
+      "id": "corners_04",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/corners_04/model.onnx",
+        "vnnlib": "instances/corners_04/spec.vnnlib",
+        "meta": "instances/corners_04/meta.json"
+      },
+      "sha256": {
+        "onnx": "575c63677d362be9837d78829d70f8068de5ff8f539a4e32ad9be67a89978d07",
+        "vnnlib": "7aaa77b1c2457b7ef3e613cb6f1152ddf8a06a20858c384f1f9f24a33d29bd32"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.01,
+        "num_hinges": 256,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_04/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_04/spec.vnnlib"
+      }
+    },
+    {
+      "id": "corners_05",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/corners_05/model.onnx",
+        "vnnlib": "instances/corners_05/spec.vnnlib",
+        "meta": "instances/corners_05/meta.json"
+      },
+      "sha256": {
+        "onnx": "281a915007d7e0a4d07787b9903a427f30f9d6a1bce86eb1d3b0a8e8bec57023",
+        "vnnlib": "7aaa77b1c2457b7ef3e613cb6f1152ddf8a06a20858c384f1f9f24a33d29bd32"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 0.01,
+        "num_hinges": 1024,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_05/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_05/spec.vnnlib"
+      }
+    },
+    {
+      "id": "corners_06",
+      "construction": "mlp_relu.corners",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/corners_06/model.onnx",
+        "vnnlib": "instances/corners_06/spec.vnnlib",
+        "meta": "instances/corners_06/meta.json"
+      },
+      "sha256": {
+        "onnx": "7d5446e28b63af51b0ad15617b391d324ad691a9872f5e55013203508eb4c6e1",
+        "vnnlib": "7aaa77b1c2457b7ef3e613cb6f1152ddf8a06a20858c384f1f9f24a33d29bd32"
+      },
+      "args": {
+        "seed": 1,
+        "input_dim": 100,
+        "num_outputs": 10,
+        "hinge_l1": 100,
+        "num_hinges": 16,
+        "epsilon": 0.2,
+        "label": 0,
+        "active_dim": 8,
+        "hinge_density": 1.0,
+        "pattern_density": 0.5,
+        "coeff_scale": 1.0,
+        "tau": 0.0001,
+        "big_m": 2.0,
+        "quiet": false,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_06/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_06/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn_01",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn_01/model.onnx",
+        "vnnlib": "instances/dc_cnn_01/spec.vnnlib",
+        "meta": "instances/dc_cnn_01/meta.json"
+      },
+      "sha256": {
+        "onnx": "04ec56564d0d7e9ea8de7d54d5cf889979a35ac853e6a5bc5f35faf538bd0526",
+        "vnnlib": "1bde69c930b4f303a584f65b6182ed1eaf3d00535b6fed4fd6c308a65ee702f7"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 2,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_01/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_01/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn_02",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn_02/model.onnx",
+        "vnnlib": "instances/dc_cnn_02/spec.vnnlib",
+        "meta": "instances/dc_cnn_02/meta.json"
+      },
+      "sha256": {
+        "onnx": "1ee5da382dc6e4bf1094237beb11e6dc739b0c56be01bdfd916ed97f04fb894b",
+        "vnnlib": "9998d74f26493fa883478939e1fa3e9be04b13b6a1846592ab128dde7e4bb830"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 4,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_02/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_02/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn_03",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn_03/model.onnx",
+        "vnnlib": "instances/dc_cnn_03/spec.vnnlib",
+        "meta": "instances/dc_cnn_03/meta.json"
+      },
+      "sha256": {
+        "onnx": "2267cd3fd24eb791f337f110597e7b5f7e85469fe14f872f710d0c97d2493573",
+        "vnnlib": "fedc2406aa9ffd7057ff741277360e5278bed96838cb1f7be684546e02e5c32c"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_03/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_03/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn_04",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn_04/model.onnx",
+        "vnnlib": "instances/dc_cnn_04/spec.vnnlib",
+        "meta": "instances/dc_cnn_04/meta.json"
+      },
+      "sha256": {
+        "onnx": "1f40471000fc5ab0f05c52deaebfbf2e6917ac447ba9203000662bcc665143aa",
+        "vnnlib": "3c29203642501a79758eff05e2bc39782004564cba31d98ec6292b037d22cb64"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 8,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_04/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_04/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn_05",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn_05/model.onnx",
+        "vnnlib": "instances/dc_cnn_05/spec.vnnlib",
+        "meta": "instances/dc_cnn_05/meta.json"
+      },
+      "sha256": {
+        "onnx": "ec6e8eea93f744d65ed064c924bd80f3e719ba8d4a7aba151e6f87cd7ea5d884",
+        "vnnlib": "0a480ceb0a7b413a75e114160461cbe57540e8982df4570708641bf1afffb9cf"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 10,
+        "channels": 16,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_05/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_05/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn_06",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn_06/model.onnx",
+        "vnnlib": "instances/dc_cnn_06/spec.vnnlib",
+        "meta": "instances/dc_cnn_06/meta.json"
+      },
+      "sha256": {
+        "onnx": "595a9ea3c054de25d51dcda28408f7be31f595ffd8ddd35033a34a9cba289470",
+        "vnnlib": "c4ce41a98919c6534a64c6d231e88656f0f2c2bbd84f82e02ac407c16e31994a"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 32,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_06/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_06/spec.vnnlib"
+      }
+    },
+    {
+      "id": "dc_cnn_07",
+      "construction": "cnn.deep_contractive_cnn",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/dc_cnn_07/model.onnx",
+        "vnnlib": "instances/dc_cnn_07/spec.vnnlib",
+        "meta": "instances/dc_cnn_07/meta.json"
+      },
+      "sha256": {
+        "onnx": "e056e0a37da14fa7e07dd2e86d21956b5ce8cacbbd815e7ba284100fbe10f760",
+        "vnnlib": "922425cc61b4b5b9e370e6574686af55838e346556aef11fcafae719d6cbed75"
+      },
+      "args": {
+        "seed": 0,
+        "depth": 6,
+        "channels": 64,
+        "contraction_rate": 0.9,
+        "margin": 0.001,
+        "bias_instability_frac": 0.4,
+        "epsilon": 0.02,
+        "in_channels": 1,
+        "height": 8,
+        "width": 8,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "n_verify_samples": 20000,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_07/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_07/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_01",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_01/model.onnx",
+        "vnnlib": "instances/pb_cnn_01/spec.vnnlib",
+        "meta": "instances/pb_cnn_01/meta.json"
+      },
+      "sha256": {
+        "onnx": "4fcac829ba2fd0e0afe01270d5019d1ed2509074023f758f653b9928b12894f0",
+        "vnnlib": "b978a4393d276dbe2a3f95cf7b52404e9766092ff721b3061024befcb39b0069"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 2,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_01/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_01/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_02",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_02/model.onnx",
+        "vnnlib": "instances/pb_cnn_02/spec.vnnlib",
+        "meta": "instances/pb_cnn_02/meta.json"
+      },
+      "sha256": {
+        "onnx": "baacd838aaf97c4b69e5ce00b1df9504b661f6a29193364b3a26554ad31436ac",
+        "vnnlib": "525b413817db83c93924caca99bbcc02231b2c435caa6fe0ce9929d60842739c"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 4,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_02/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_02/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_03",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_03/model.onnx",
+        "vnnlib": "instances/pb_cnn_03/spec.vnnlib",
+        "meta": "instances/pb_cnn_03/meta.json"
+      },
+      "sha256": {
+        "onnx": "500f3374a6f7d90b1d9e9417bc6cd6a7c991a4ecf3ba29d1f19d644673182c7d",
+        "vnnlib": "9763be8c53000786fefafc98a4520ca6f16f34fcb691fe53f7a6b1270704d3a2"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_03/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_03/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_04",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_04/model.onnx",
+        "vnnlib": "instances/pb_cnn_04/spec.vnnlib",
+        "meta": "instances/pb_cnn_04/meta.json"
+      },
+      "sha256": {
+        "onnx": "83182b892be0bcbb2734f20d2b8a8a56f56942ee7616557b5b8a8574f84daa24",
+        "vnnlib": "0d2a60510cfb1cae899337f78963bf9ce41f941e592b76463e1bbedcfaa68cb2"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 16,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_04/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_04/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_05",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_05/model.onnx",
+        "vnnlib": "instances/pb_cnn_05/spec.vnnlib",
+        "meta": "instances/pb_cnn_05/meta.json"
+      },
+      "sha256": {
+        "onnx": "bd553511731cdff5dde129c11f5eadb269f3d4252a5bc78c251a3e1214162459",
+        "vnnlib": "f00c50c179ce4d927e4f70a5de6f29da88aa48adc8b88e328eab36b42be95fe6"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 32,
+        "margin": 0.1,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_05/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_05/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_06",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_06/model.onnx",
+        "vnnlib": "instances/pb_cnn_06/spec.vnnlib",
+        "meta": "instances/pb_cnn_06/meta.json"
+      },
+      "sha256": {
+        "onnx": "451b6a6683bf4338328287b35db293465a9ad47c4e642e4cbb19c2718455777f",
+        "vnnlib": "9763be8c53000786fefafc98a4520ca6f16f34fcb691fe53f7a6b1270704d3a2"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.5,
+        "delta": 0.025,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_06/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_06/spec.vnnlib"
+      }
+    },
+    {
+      "id": "pb_cnn_07",
+      "construction": "cnn.cnn_paired_bias",
+      "seed": 0,
+      "paths": {
+        "onnx": "instances/pb_cnn_07/model.onnx",
+        "vnnlib": "instances/pb_cnn_07/spec.vnnlib",
+        "meta": "instances/pb_cnn_07/meta.json"
+      },
+      "sha256": {
+        "onnx": "dd079552a01763fe5609fc603e2e9a69f74837295232b20e8a22c8ec36634ad5",
+        "vnnlib": "9763be8c53000786fefafc98a4520ca6f16f34fcb691fe53f7a6b1270704d3a2"
+      },
+      "args": {
+        "seed": 0,
+        "num_pairs": 8,
+        "margin": 0.1,
+        "delta": 0.1,
+        "in_channels": 3,
+        "height": 4,
+        "width": 4,
+        "backbone_channels": 2,
+        "num_backbone_layers": 2,
+        "kernel_size": 3,
+        "num_classes": 10,
+        "label": 0,
+        "epsilon": 0.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_07/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_07/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld_01",
+      "construction": "attention.linear_dominance",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/ld_01/model.onnx",
+        "vnnlib": "instances/ld_01/spec.vnnlib",
+        "meta": "instances/ld_01/meta.json"
+      },
+      "sha256": {
+        "onnx": "d226b1393b023b6ac67a86c8152c425e988d7b6c15de37db1f2ab5ca9d6b0584",
+        "vnnlib": "199127b34c3e3dafbe7e45440f67d6388b695862f6a237aacf2735c472e796f2"
+      },
+      "args": {
+        "seed": 1,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.02,
+        "margin_factor": 2.0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_01/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_01/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld_02",
+      "construction": "attention.linear_dominance",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/ld_02/model.onnx",
+        "vnnlib": "instances/ld_02/spec.vnnlib",
+        "meta": "instances/ld_02/meta.json"
+      },
+      "sha256": {
+        "onnx": "41b039af42243b704e648c38c5b9dab5437c6cc0275ac152cfaf585f9b90b5b1",
+        "vnnlib": "a26bfa7196cd39dee3700b8d1daae6e08918205c98f98269022bd2cacefd0783"
+      },
+      "args": {
+        "seed": 1,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_02/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_02/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld_03",
+      "construction": "attention.linear_dominance",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/ld_03/model.onnx",
+        "vnnlib": "instances/ld_03/spec.vnnlib",
+        "meta": "instances/ld_03/meta.json"
+      },
+      "sha256": {
+        "onnx": "657e08381af60c8bc5e61fab75451a2627ac206d6b739f8255cbbf2eee66ec68",
+        "vnnlib": "4a2a2eb35c19ed2ff781047eae8918a11586dbc2e06a99cd4a0f3b7c8881cd29"
+      },
+      "args": {
+        "seed": 1,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.08,
+        "margin_factor": 2.0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_03/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_03/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld_04",
+      "construction": "attention.linear_dominance",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/ld_04/model.onnx",
+        "vnnlib": "instances/ld_04/spec.vnnlib",
+        "meta": "instances/ld_04/meta.json"
+      },
+      "sha256": {
+        "onnx": "3ec0ff92aca5990d35a4dc189e85c00019c980b610eb2b01861ee4b8a6305b21",
+        "vnnlib": "a26bfa7196cd39dee3700b8d1daae6e08918205c98f98269022bd2cacefd0783"
+      },
+      "args": {
+        "seed": 2,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 1.1,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_04/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_04/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld_05",
+      "construction": "attention.linear_dominance",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/ld_05/model.onnx",
+        "vnnlib": "instances/ld_05/spec.vnnlib",
+        "meta": "instances/ld_05/meta.json"
+      },
+      "sha256": {
+        "onnx": "ddd2c80aff93a96386e5779df1ff084de0f599765c424d56378f64caf3666621",
+        "vnnlib": "a26bfa7196cd39dee3700b8d1daae6e08918205c98f98269022bd2cacefd0783"
+      },
+      "args": {
+        "seed": 2,
+        "n": 4,
+        "d": 4,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 3.0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_05/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_05/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld_06",
+      "construction": "attention.linear_dominance",
+      "seed": 3,
+      "paths": {
+        "onnx": "instances/ld_06/model.onnx",
+        "vnnlib": "instances/ld_06/spec.vnnlib",
+        "meta": "instances/ld_06/meta.json"
+      },
+      "sha256": {
+        "onnx": "bf25869cdbfd89dd87f447180cea20098a2927fe6c15d0afc4d7415e49edb111",
+        "vnnlib": "ab4cefa188f2235d9f5cb20aadd2711202c1510bae4f060ba0261b2ccea211aa"
+      },
+      "args": {
+        "seed": 3,
+        "n": 6,
+        "d": 6,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_06/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_06/spec.vnnlib"
+      }
+    },
+    {
+      "id": "ld_07",
+      "construction": "attention.linear_dominance",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/ld_07/model.onnx",
+        "vnnlib": "instances/ld_07/spec.vnnlib",
+        "meta": "instances/ld_07/meta.json"
+      },
+      "sha256": {
+        "onnx": "7f25719fe1e881a207978dfcbe678bb408ea94b3b790cbc16b692ed72629b533",
+        "vnnlib": "5b27a4084c8ef4cfd564eb782093945e69a82f87d4199a0964a53640a71303b5"
+      },
+      "args": {
+        "seed": 1,
+        "n": 4,
+        "d": 12,
+        "d_v": 4,
+        "num_classes": 10,
+        "gate_scale": 0.5,
+        "noise_scale": 0.2,
+        "epsilon": 0.05,
+        "margin_factor": 2.0,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_07/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/ld_07/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_01",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp_01/model.onnx",
+        "vnnlib": "instances/fp_01/spec.vnnlib",
+        "meta": "instances/fp_01/meta.json"
+      },
+      "sha256": {
+        "onnx": "1d74bc61b3fe55d1413bf0662a0d9101bf704d8e7baca4f6138ec0833b5ca88f",
+        "vnnlib": "7b204ad5281ba655a9077a8838bb682b3ce18cf306494394921fa4519621fb74"
+      },
+      "args": {
+        "seed": 1,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.0005,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_01/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_01/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_02",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp_02/model.onnx",
+        "vnnlib": "instances/fp_02/spec.vnnlib",
+        "meta": "instances/fp_02/meta.json"
+      },
+      "sha256": {
+        "onnx": "4734789f11effd9e1a917ac7c0c38eedeeba822ad3ed4f46a7b219aa5a9e0f7f",
+        "vnnlib": "29b2b903986ac1b98400e410d411e0085ef188ca04feb5feed8409513b0b5b80"
+      },
+      "args": {
+        "seed": 1,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_02/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_02/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_03",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp_03/model.onnx",
+        "vnnlib": "instances/fp_03/spec.vnnlib",
+        "meta": "instances/fp_03/meta.json"
+      },
+      "sha256": {
+        "onnx": "c2d316f4c15a83795813ec82213e8dd8b26d89a1fa301c6d90a79d17dab665f9",
+        "vnnlib": "2ba0ad49e6bf23dbba7194987dc9b9cfa3d985a24536a0ca5d5b9ec1aaf640f4"
+      },
+      "args": {
+        "seed": 1,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_03/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_03/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_04",
+      "construction": "attention.fixed_pattern",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/fp_04/model.onnx",
+        "vnnlib": "instances/fp_04/spec.vnnlib",
+        "meta": "instances/fp_04/meta.json"
+      },
+      "sha256": {
+        "onnx": "911124c8270184c2e91247de03bd71d8b4ca57a8ae2f6c302fd6b447468cf29f",
+        "vnnlib": "95adca9d0c09335081f1b50b5fa66ba51da9441d31b0eb1b3fdd9c960ea24593"
+      },
+      "args": {
+        "seed": 2,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 2.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_04/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_04/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_05",
+      "construction": "attention.fixed_pattern",
+      "seed": 2,
+      "paths": {
+        "onnx": "instances/fp_05/model.onnx",
+        "vnnlib": "instances/fp_05/spec.vnnlib",
+        "meta": "instances/fp_05/meta.json"
+      },
+      "sha256": {
+        "onnx": "12ea839fc0cc816a2af16b18b046e46aaa2555783a05a9032e59ce8f11693fe4",
+        "vnnlib": "95adca9d0c09335081f1b50b5fa66ba51da9441d31b0eb1b3fdd9c960ea24593"
+      },
+      "args": {
+        "seed": 2,
+        "n": 16,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 10.0,
+        "epsilon": 0.01,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_05/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_05/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_06",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp_06/model.onnx",
+        "vnnlib": "instances/fp_06/spec.vnnlib",
+        "meta": "instances/fp_06/meta.json"
+      },
+      "sha256": {
+        "onnx": "d792737accf46ee504ca71c7835ffa878764a681911f86ec58e843e256db2c32",
+        "vnnlib": "fbaf35b16dad956ff0c4ebf5df2c7127968433c5644fe4cf574bdad439c6ab66"
+      },
+      "args": {
+        "seed": 1,
+        "n": 8,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_06/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_06/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_07",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp_07/model.onnx",
+        "vnnlib": "instances/fp_07/spec.vnnlib",
+        "meta": "instances/fp_07/meta.json"
+      },
+      "sha256": {
+        "onnx": "5baa5161828b7c1d80a87ec399cacb689f6fb0f9fe6885ed431ffe92d23451c1",
+        "vnnlib": "57b1ff2709a3223e48fc52ea4b173f4508078a6d1045c16ddc616f2f5c9316e0"
+      },
+      "args": {
+        "seed": 1,
+        "n": 32,
+        "d": 4,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_07/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_07/spec.vnnlib"
+      }
+    },
+    {
+      "id": "fp_08",
+      "construction": "attention.fixed_pattern",
+      "seed": 1,
+      "paths": {
+        "onnx": "instances/fp_08/model.onnx",
+        "vnnlib": "instances/fp_08/spec.vnnlib",
+        "meta": "instances/fp_08/meta.json"
+      },
+      "sha256": {
+        "onnx": "e8fc68ffa7d556d5a40181f839c23c7c9103c4ec4645cab1318033e25c1550a0",
+        "vnnlib": "42057a6c0ef766c922d2a5a26c1abd728411263a948b18514032a379d5245e52"
+      },
+      "args": {
+        "seed": 1,
+        "n": 16,
+        "d": 16,
+        "d_v": 8,
+        "num_classes": 50,
+        "alpha": 5.0,
+        "epsilon": 0.001,
+        "margin_slack": 1.05,
+        "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_08/model.onnx",
+        "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/fp_08/spec.vnnlib"
+      }
+    }
+  ],
+  "spec_path": "/Users/davidtroxell/Desktop/VeriStressGT/src/VeriStressGT/configs/mini_sweep.yaml",
+  "spec": {
+    "defaults": {
+      "seed": 0
+    }
+  }
+}

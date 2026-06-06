@@ -1,0 +1,32 @@
+{
+  "id": "dc_cnn_05",
+  "construction": "cnn.deep_contractive_cnn",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/dc_cnn_05/model.onnx",
+    "vnnlib": "instances/dc_cnn_05/spec.vnnlib",
+    "meta": "instances/dc_cnn_05/meta.json"
+  },
+  "sha256": {
+    "onnx": "ec6e8eea93f744d65ed064c924bd80f3e719ba8d4a7aba151e6f87cd7ea5d884",
+    "vnnlib": "0a480ceb0a7b413a75e114160461cbe57540e8982df4570708641bf1afffb9cf"
+  },
+  "args": {
+    "seed": 0,
+    "depth": 10,
+    "channels": 16,
+    "contraction_rate": 0.9,
+    "margin": 0.001,
+    "bias_instability_frac": 0.4,
+    "epsilon": 0.02,
+    "in_channels": 1,
+    "height": 8,
+    "width": 8,
+    "kernel_size": 3,
+    "num_classes": 10,
+    "label": 0,
+    "n_verify_samples": 20000,
+    "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_05/model.onnx",
+    "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/dc_cnn_05/spec.vnnlib"
+  }
+}

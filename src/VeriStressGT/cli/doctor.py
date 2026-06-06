@@ -88,7 +88,7 @@ def _check_conda_env(env_name: str) -> tuple[bool, str]:
             for env_path in envs:
                 if Path(env_path).name == env_name:
                     return True, _ok(f"conda env '{env_name}' exists → {env_path}")
-            return False, _fail(f"conda env '{env_name}' not found (run: make install-abcrown)")
+            return False, _fail(f"conda env '{env_name}' not found (run: bash scripts/bootstrap.sh)")
         return False, _warn(f"conda env list failed")
     except FileNotFoundError:
         return False, _fail("conda not installed")
@@ -264,9 +264,14 @@ def run_doctor() -> int:
     print(f"\n  {_BOLD}nnenum{_RESET}  [make install-nnenum]")
     ok_sub, msg = _check_submodule("src/VeriStressGT/verifiers/nnenum", "repo")
     print(f"  {msg}")
-    ok_mod, msg = _check_module("nnenum")
+    ok_conda, msg = _check_conda_env("nnenum")
     print(f"  {msg}")
-    if ok_sub and ok_mod:
+    if ok_conda:
+        ok_mod, msg = _check_module_in_conda_env("nnenum", "nnenum")
+        print(f"  {msg}")
+    else:
+        ok_mod = False
+    if ok_sub and ok_conda and ok_mod:
         print(f"    {_GREEN}→ Ready{_RESET}")
     else:
         print(f"    {_YELLOW}→ Not ready{_RESET}")
@@ -302,9 +307,14 @@ def run_doctor() -> int:
     print(f"\n  {_BOLD}PyRAT{_RESET}")
     ok_sub, msg = _check_submodule("src/VeriStressGT/verifiers/pyrat", "repo")
     print(f"  {msg}")
-    ok_mod, msg = _check_module("pyrat")
+    ok_conda, msg = _check_conda_env("pyrat")
     print(f"  {msg}")
-    if ok_sub and ok_mod:
+    if ok_conda:
+        ok_mod, msg = _check_module_in_conda_env("pyrat", "pyrat")
+        print(f"  {msg}")
+    else:
+        ok_mod = False
+    if ok_sub and ok_conda and ok_mod:
         print(f"    {_GREEN}→ Ready{_RESET}")
     else:
         print(f"    {_YELLOW}→ Not ready{_RESET}")

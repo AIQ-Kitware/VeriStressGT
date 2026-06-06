@@ -16,7 +16,7 @@ conda activate VeriStressGT
 pip install git+https://github.com/AIQ-Kitware/aiq-magnet.git
 
 # Additional deps needed by Gurobi-based constructions
-pip install sortedcontainers coloredlogs termcolor beartype gurobipy
+pip install sortedcontainers coloredlogs termcolor beartype gurobipy 
 ```
 
 ### α-β-CROWN Environment Variables

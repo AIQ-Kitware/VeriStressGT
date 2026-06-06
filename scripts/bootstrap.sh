@@ -214,10 +214,27 @@ if [ -d "$ABCROWN_DIR/complete_verifier" ]; then
         ok "α-β-CROWN conda env already exists"
     else
         echo "  Creating conda env (this may take a few minutes)..."
-        conda env create -f "$ABCROWN_DIR/complete_verifier/environment.yaml" \
-            --name alpha-beta-crown 2>&1 && \
-            ok "α-β-CROWN conda env created" || \
-            warn "α-β-CROWN conda env creation failed (see above)"
+        OS=$(uname -s)
+        if [ "$OS" = "Darwin" ]; then
+            # environment.yaml pins Linux-only packages (_libgcc_mutex, _openmp_mutex).
+            # Build a minimal CPU env from scratch instead.
+            conda create -n alpha-beta-crown python=3.11 -y --quiet 2>/dev/null && \
+            conda install -n alpha-beta-crown -c gurobi gurobi -y --quiet 2>/dev/null && \
+            conda run -n alpha-beta-crown pip install --quiet \
+                torch torchvision torchaudio \
+                numpy protobuf pyyaml appdirs sortedcontainers packaging \
+                psutil tqdm pandas pytest rich scikit-learn scipy mpmath pygments \
+                onnx onnxruntime onnxoptimizer onnxsim skl2onnx 2>/dev/null && \
+            conda run -n alpha-beta-crown pip install --quiet --no-deps \
+                "git+https://github.com/Verified-Intelligence/onnx2pytorch.git" 2>/dev/null && \
+                ok "α-β-CROWN conda env created (macOS CPU)" || \
+                warn "α-β-CROWN conda env creation failed (see above)"
+        else
+            conda env create -f "$ABCROWN_DIR/complete_verifier/environment.yaml" \
+                --name alpha-beta-crown 2>&1 && \
+                ok "α-β-CROWN conda env created" || \
+                warn "α-β-CROWN conda env creation failed (see above)"
+        fi
     fi
     # Install VeriStressGT into the abcrown env
     echo "  Installing VeriStressGT in alpha-beta-crown env..."

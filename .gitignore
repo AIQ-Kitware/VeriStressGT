@@ -24,3 +24,7 @@ dist/
 *_run/
 *_run */
 results.json
+
+# Pre-built mini_sweep benchmark committed for reproducibility
+!mini_sweep_bench/
+!mini_sweep_bench/**

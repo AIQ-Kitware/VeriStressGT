@@ -1,0 +1,31 @@
+{
+  "id": "pb_cnn_05",
+  "construction": "cnn.cnn_paired_bias",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/pb_cnn_05/model.onnx",
+    "vnnlib": "instances/pb_cnn_05/spec.vnnlib",
+    "meta": "instances/pb_cnn_05/meta.json"
+  },
+  "sha256": {
+    "onnx": "bd553511731cdff5dde129c11f5eadb269f3d4252a5bc78c251a3e1214162459",
+    "vnnlib": "f00c50c179ce4d927e4f70a5de6f29da88aa48adc8b88e328eab36b42be95fe6"
+  },
+  "args": {
+    "seed": 0,
+    "num_pairs": 32,
+    "margin": 0.1,
+    "delta": 0.025,
+    "in_channels": 3,
+    "height": 4,
+    "width": 4,
+    "backbone_channels": 2,
+    "num_backbone_layers": 2,
+    "kernel_size": 3,
+    "num_classes": 10,
+    "label": 0,
+    "epsilon": 0.05,
+    "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_05/model.onnx",
+    "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/pb_cnn_05/spec.vnnlib"
+  }
+}

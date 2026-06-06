@@ -1,0 +1,32 @@
+{
+  "id": "corners_02",
+  "construction": "mlp_relu.corners",
+  "seed": 1,
+  "paths": {
+    "onnx": "instances/corners_02/model.onnx",
+    "vnnlib": "instances/corners_02/spec.vnnlib",
+    "meta": "instances/corners_02/meta.json"
+  },
+  "sha256": {
+    "onnx": "0a37a8d3e2cc21be7ad518f2ca4cc758fc0b0f4325246f212f936cc36298969c",
+    "vnnlib": "7aaa77b1c2457b7ef3e613cb6f1152ddf8a06a20858c384f1f9f24a33d29bd32"
+  },
+  "args": {
+    "seed": 1,
+    "input_dim": 100,
+    "num_outputs": 10,
+    "hinge_l1": 0.01,
+    "num_hinges": 16,
+    "epsilon": 0.2,
+    "label": 0,
+    "active_dim": 8,
+    "hinge_density": 1.0,
+    "pattern_density": 0.5,
+    "coeff_scale": 1.0,
+    "tau": 0.0001,
+    "big_m": 2.0,
+    "quiet": false,
+    "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_02/model.onnx",
+    "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/corners_02/spec.vnnlib"
+  }
+}

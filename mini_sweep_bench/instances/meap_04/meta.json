@@ -1,0 +1,26 @@
+{
+  "id": "meap_04",
+  "construction": "mlp_relu.meap",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/meap_04/model.onnx",
+    "vnnlib": "instances/meap_04/spec.vnnlib",
+    "meta": "instances/meap_04/meta.json"
+  },
+  "sha256": {
+    "onnx": "e9a1edf927a4b10e03f6e595a5ad404ec29f4ed74da3ea0c05cd01e12cf70b46",
+    "vnnlib": "394247a6d91ffb065ba490f79bf3ee49aeb809ef04a91b36669013a01a44ce51"
+  },
+  "args": {
+    "seed": 0,
+    "input_dim": 100,
+    "num_classes": 10,
+    "num_pairs": 64,
+    "epsilon": 0.1,
+    "gamma": 0.001,
+    "weight_scale": 2.0,
+    "label": 0,
+    "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_04/model.onnx",
+    "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/meap_04/spec.vnnlib"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "milp_04",
+  "construction": "mlp_relu.milp.exact_radius",
+  "seed": 0,
+  "paths": {
+    "onnx": "instances/milp_04/model.onnx",
+    "vnnlib": "instances/milp_04/spec.vnnlib",
+    "meta": "instances/milp_04/meta.json"
+  },
+  "sha256": {
+    "onnx": "89bf47c9c5ecc881281fa3331e5a02047e85f5f178b41ad943b959e73e7a6ff4",
+    "vnnlib": "dda45e3bb2b6e0a74bcc9ab39f14477673f6045ae73595d2f8cc6ebf3cbf4f07"
+  },
+  "args": {
+    "seed": 0,
+    "input_dim": 50,
+    "h1": 20,
+    "h2": 10,
+    "num_outputs": 5,
+    "epsilon_frac": 0.999,
+    "rmax": 2.0,
+    "time_limit": 240.0,
+    "mip_gap": null,
+    "epsilon_mode": "safe",
+    "save_x0": false,
+    "save_json": false,
+    "onnx_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_04/model.onnx",
+    "vnnlib_path": "/Users/davidtroxell/Desktop/VeriStressGT/mini_sweep_bench/instances/milp_04/spec.vnnlib"
+  }
+}
