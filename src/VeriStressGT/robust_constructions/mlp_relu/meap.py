@@ -173,6 +173,12 @@ def rewrite_matmul_add_to_gemm(onnx_in: str, onnx_out: str = None) -> None:
     del g.node[:]
     g.node.extend(final_nodes)
 
+    # Remove initializers no longer referenced by any node (orphaned by Gemm rewrite)
+    used_inputs = {inp for node in g.node for inp in node.input}
+    live_inits = [init for init in g.initializer if init.name in used_inputs]
+    del g.initializer[:]
+    g.initializer.extend(live_inits)
+
     onnx.checker.check_model(m)
     onnx.save(m, onnx_out)
 

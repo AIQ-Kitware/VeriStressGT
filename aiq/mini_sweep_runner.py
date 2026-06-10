@@ -662,7 +662,30 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
             },
         }
 
-        out = {"per_verifier": per_verifier, "summary": summary}
+        def _vf(v: str) -> Dict[str, Any]:
+            return per_verifier.get(v, {})
+
+        out = {
+            "result": {
+                "per_verifier": per_verifier,
+                "summary": summary,
+                # Flat scalars surfaced by MAGNET's simple_view() on the dashboard
+                "abcrown_correct_fraction": _vf("abcrown").get("correct_fraction"),
+                "abcrown_correct":          _vf("abcrown").get("correct", 0),
+                "abcrown_timeout":          _vf("abcrown").get("timeout", 0),
+                "pyrat_correct_fraction":   _vf("pyrat").get("correct_fraction"),
+                "pyrat_correct":            _vf("pyrat").get("correct", 0),
+                "pyrat_timeout":            _vf("pyrat").get("timeout", 0),
+                "nnenum_correct_fraction":  _vf("nnenum").get("correct_fraction"),
+                "nnenum_correct":           _vf("nnenum").get("correct", 0),
+                "nnenum_timeout":           _vf("nnenum").get("timeout", 0),
+                "total_instances":          len(instance_ids),
+                "any_sat":                  any(
+                    per_verifier[v]["wrong"] > 0
+                    for v in verifiers_run
+                ),
+            }
+        }
 
         out_fpath = ub.Path(config.results_fpath)
         out_fpath.parent.ensuredir()
