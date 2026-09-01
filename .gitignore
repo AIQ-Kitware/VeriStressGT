@@ -28,3 +28,9 @@ results.json
 # Pre-built mini_sweep benchmark committed for reproducibility
 !mini_sweep_bench/
 !mini_sweep_bench/**
+
+# Machine-local environment reconstruction, written by scripts/run_veristressgt_native.sh
+# and aiq/run_mini_sweep_env.sh so a cmd_queue worker (which inherits nothing)
+# can find a relocated conda. Never the same on two machines.
+aiq/.conda_root
+aiq/.shim/

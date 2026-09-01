@@ -1,0 +1,182 @@
+# VeriStressGT mini sweep as a kwdagger pipeline.
+#
+# Sibling of cards/evaluation.yaml, which is untouched and still runs. Same
+# benchmark, same runner, same artifact -- what changes is that MAGNET drives a
+# kwdagger DAG from outside, so the node's command is the unit that can be
+# containerized, leased and scheduled on tmux or Slurm.
+#
+# ONE card for the technique. The verifier set, the per-instance timeout and
+# the instance cap are algo_params with defaults, addressable from the matrix
+# or overridden per invocation with `--params`.
+#
+# WARNING -- this card's verdict is hardware dependent. It gates on a
+# per-instance timeout and a timeout scores as INCORRECT, so a busy host can
+# change the answer. abcrown runs on CPU (--device cpu, from abcrown_basic.yaml),
+# so the contention that matters is CPU, not GPU. Pin the host and record it.
+#
+# NO GUROBI. Gurobi builds the 9 mlp_relu.milp.exact_radius instances; they are
+# already built and committed in mini_sweep_bench/. The runner reuses any
+# bench_dir holding a manifest.json unless --rebuild is passed. Do not pass it.
+#
+# No code changed to make this work. mini_sweep_runner.py already writes flat
+# per-verifier scalars at the top level of "result", so pointing the generic
+# loader's metrics path at `result` lifts abcrown_correct_fraction and its
+# siblings into metrics.mini_sweep.* with no custom load_result.
+
+name: veristressgt_mini_sweep
+
+title: "VeriStressGT — verifier soundness on provably-UNSAT instances (kwdagger)"
+
+description: |
+  VeriStressGT generates provably robust ONNX/VNNLIB network+property pairs with
+  known ground-truth UNSAT verdicts, runs third-party verifiers over them, and
+  measures how many UNSAT instances each verifier correctly classifies.
+
+  The mini sweep is 50 instances across 7 construction types. Every instance is
+  UNSAT by construction, so a SAT verdict from any verifier is a soundness
+  error rather than a scoring miss, and the claim checks for it separately.
+
+  The claim gates on abcrown only. pyrat and nnenum are run and reported but do
+  not decide pass/fail.
+
+version: 1.0
+
+organizations:
+  - UCLA
+
+submitter:
+  name: UCLA TA1 Team
+  email: davidtroxell@g.ucla.edu
+
+tags:
+  - neural-network-verification
+  - vnnlib
+  - onnx
+  - soundness
+  - kwdagger
+
+links:
+  - title: "VeriStressGT"
+    url: "https://github.com/dtroxell19/VeriStressGT"
+    type: "software"
+  - title: "alpha-beta-CROWN"
+    url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN"
+    type: "software"
+
+claim:
+  python: |
+    m = metrics.mini_sweep
+    threshold = 0.60
+
+    frac = m.abcrown_correct_fraction
+
+    # A skipped verifier did not test the claim. The original card asserts
+    # abcrown was not skipped, which scores a missing environment as FALSIFIED.
+    # Raise instead: MAGNET maps AssertionError -> FALSIFIED and anything else
+    # -> INCONCLUSIVE, and "abcrown never ran" is inconclusive, not refuted.
+    if frac is None:
+        raise RuntimeError(
+            'abcrown was skipped -- check ABCROWN_VNNCOMP2024_DIR and that the '
+            'alpha-beta-crown conda env is reachable (a relocated conda tree '
+            'has dead shebangs; see SMELL-VST-05)'
+        )
+
+    print(
+        f"[mini_sweep] abcrown={frac:.4f} "
+        f"({m.abcrown_correct}/{m.total_instances}, {m.abcrown_timeout} timeout) "
+        f"pyrat={m.pyrat_correct_fraction} nnenum={m.nnenum_correct_fraction}"
+    )
+
+    # Every instance is UNSAT by construction. A SAT verdict is unsound, and
+    # that is a finding about the verifier, not about this threshold.
+    if m.any_sat:
+        raise RuntimeError(
+            'a verifier returned SAT on a provably-UNSAT instance -- soundness '
+            'error; do not report this run as a pass/fail on the bound'
+        )
+
+    assert frac >= threshold, (
+        f"abcrown correct fraction ({frac:.2f}) is below the required "
+        f"{threshold:.2f} over {m.total_instances} UNSAT instances"
+    )
+
+evidence:
+  scope: requested
+
+symbols:
+  metrics.mini_sweep.abcrown_correct_fraction:
+    metadata:
+      display_name: "abcrown Correct UNSAT Fraction"
+      display: True
+      define_metric:
+        objective: maximize
+        aggregation_strategy:
+          type: 'mean'
+
+  metrics.mini_sweep.pyrat_correct_fraction:
+    metadata:
+      display_name: "pyrat Correct UNSAT Fraction"
+      display: True
+
+  metrics.mini_sweep.nnenum_correct_fraction:
+    metadata:
+      display_name: "nnenum Correct UNSAT Fraction"
+      display: True
+
+  metrics.mini_sweep.total_instances:
+    metadata:
+      display_name: "Instances Verified"
+      display: True
+
+kwdagger:
+  result_node: mini_sweep
+
+  pipeline:
+    nodes:
+      mini_sweep:
+        # Containerized execution is opt-in per node class, and a card that
+        # declares its DAG as data gets kwdagger's YamlProcessNode -- a sibling
+        # of MAGNET's ContainerProcessNode, not a descendant. Without this key
+        # `--container_image` is accepted, stored and never read: a green run
+        # that containerized nothing. Inert until an image is named, so the
+        # same card still runs on the host, which is what it does today.
+        class: magnet.containers.ContainerYamlProcessNode
+        # A wrapper, not the runner directly: a cmd_queue tmux worker inherits
+        # NOTHING from the orchestrator, so the node command has to carry its own
+        # PATH (the conda shim) and PYTHONPATH. Exporting them in the launching
+        # script works on the legacy in-process route and silently does not here.
+        executable: "bash aiq/run_mini_sweep_env.sh"
+        algo_params:
+          spec_path: "src/VeriStressGT/configs/mini_sweep.yaml"
+          abcrown_config: "src/VeriStressGT/configs/abcrown_basic.yaml"
+          # Prebuilt and committed on this branch -- this is what makes Gurobi
+          # unnecessary. Never set rebuild: True here.
+          bench_dir: "mini_sweep_bench"
+          run_dir: "mini_sweep_run"
+          timeout: 60
+        out_paths:
+          results_fpath: results.json
+        primary_out_key: results_fpath
+        # The generic loader takes ONE dotted path, so pointing it at `result`
+        # also drags in `per_verifier` and `summary` -- dict- and list-valued
+        # entries that are not metrics. A list-valued cell additionally crashed
+        # evidence loading (pd.isna of a list is an array; .item() raises).
+        # This loader selects the scalars: abcrown_correct_fraction,
+        # abcrown_correct, abcrown_timeout, pyrat_*, nnenum_*, total_instances,
+        # any_sat -- preserving None so a skipped verifier stays distinguishable
+        # from one that scored zero.
+        load_result: "aiq.kwdagger_result.load_kwdagger_result"
+
+  # NOTE: `verifiers` is deliberately absent. A LIST in algo_params is a
+  # kwdagger GRID AXIS, not one argument -- passing all three built three
+  # mini_sweep instances, each reporting only its own verifier, and the claim
+  # then died on a missing sibling fraction. The runner's default is all three
+  # in one process, which is what the merged run did. See runner_conventions.md
+  # ("one model per card, not a sweep") and SMELL-VST-05.
+  #
+  # Single-valued axes are defaults you override, e.g.
+  #   --params "matrix: {mini_sweep.timeout: [30, 60, 120]}"
+  # Sweeping the timeout is the interesting grid here, because the verdict is a
+  # function of it.
+  matrix:
+    mini_sweep.timeout: 60
