@@ -154,6 +154,12 @@ kwdagger:
           bench_dir: "mini_sweep_bench"
           run_dir: "mini_sweep_run"
           timeout: 60
+          # null = every instance in the bench, which is the card's
+          # measurement. Declared so a smoke can cap it: the runner has always
+          # had --max_instances, but a knob the card does not declare never
+          # reaches the node, and the launcher printed "max_instances: 3" while
+          # all 50 ran.
+          max_instances: null
         out_paths:
           results_fpath: results.json
         primary_out_key: results_fpath

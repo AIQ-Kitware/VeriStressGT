@@ -40,6 +40,10 @@ if [[ -z "$CONDA_ROOT" && -f "$HERE/.conda_root" ]]; then
 fi
 CONDA_ROOT="${CONDA_ROOT:-/data/Public/AIQ/tmp-ben-aiq-dry-run-data/miniconda3}"
 export CONDA_SHIM_ROOT="$CONDA_ROOT"
+# Roots to search, in order. VST_CONDA_ROOTS lets a caller add the
+# interpreter's own prefix, which is where an image may keep verifiers
+# that have no conda env of their own.
+export CONDA_SHIM_ROOTS="${VST_CONDA_ROOTS:-$CONDA_ROOT}"
 
 SHIM_DIR="${VST_SHIM_DIR:-$HERE/.shim}"
 mkdir -p "$SHIM_DIR"
@@ -61,16 +65,46 @@ while [[ $# -gt 0 ]]; do
         *) break ;;
     esac
 done
-PREFIX="${PREFIX:-$CONDA_SHIM_ROOT/envs/$ENV_NAME}"
-[[ -d "$PREFIX" ]] || { echo "[conda-shim] no such env prefix: $PREFIX" >&2; exit 127; }
-export PATH="$PREFIX/bin:$PATH"
-export CONDA_PREFIX="$PREFIX"
-CMD="$1"; shift
-TARGET="$PREFIX/bin/$CMD"
-if [[ -x "$TARGET" ]] && head -1 "$TARGET" | grep -q '^#!.*python'; then
-    exec "$PREFIX/bin/python" "$TARGET" "$@"
+# Search every root, not one. The verifiers do NOT all live in the same conda
+# tree: in the container image alpha-beta-crown has its own prefix
+# (/opt/abcrown-conda) while pyrat and nnenum are pip-installed into the base
+# interpreter (/opt/conda). Resolving them all under one root scored both of
+# them 0/50 with zero timeouts -- every instance errored, which reads like a
+# verifier failure and is really a path.
+if [[ -z "${PREFIX:-}" && -n "$ENV_NAME" ]]; then
+    for _root in ${CONDA_SHIM_ROOTS//:/ }; do
+        if [[ -d "$_root/envs/$ENV_NAME" ]]; then
+            PREFIX="$_root/envs/$ENV_NAME"; break
+        fi
+    done
 fi
-[[ -x "$TARGET" ]] && exec "$TARGET" "$@"
+
+if [[ -n "${PREFIX:-}" && -d "$PREFIX" ]]; then
+    export PATH="$PREFIX/bin:$PATH"
+    export CONDA_PREFIX="$PREFIX"
+else
+    # No env of that name in any root. The package may still be installed into
+    # the interpreter already on PATH, which is how the image carries pyrat and
+    # nnenum. Fall through ONLY if the command actually resolves -- a genuinely
+    # missing verifier must still fail loudly rather than score zero. This is
+    # the SMELL-VST-05 failure mode and it must stay noisy.
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "[conda-shim] no env '$ENV_NAME' under {${CONDA_SHIM_ROOTS}}," >&2
+        echo "[conda-shim] and '$1' is not on PATH either." >&2
+        exit 127
+    fi
+    echo "[conda-shim] no env '$ENV_NAME'; using '$1' from PATH" >&2
+fi
+CMD="$1"; shift
+# `${PREFIX:-}` because the fall-through above leaves it unset, and `set -u`
+# would abort here rather than run the command that was found on PATH.
+TARGET="${PREFIX:-}/bin/$CMD"
+if [[ -n "${PREFIX:-}" && -x "$TARGET" ]]; then
+    if head -1 "$TARGET" | grep -q '^#!.*python'; then
+        exec "$PREFIX/bin/python" "$TARGET" "$@"
+    fi
+    exec "$TARGET" "$@"
+fi
 exec "$CMD" "$@"
 SHIM
     chmod +x "$SHIM_DIR/conda"
