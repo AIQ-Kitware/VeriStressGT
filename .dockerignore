@@ -1,0 +1,19 @@
+# Build context for the Dockerfile at the repository root. The verifier
+# submodules the card uses (alpha-beta-CROWN, nnenum, pyrat) must stay in the
+# context; the ones it does not use are dropped. mini_sweep_bench/ stays: it
+# is the committed 50-instance benchmark.
+.git
+**/.git
+**/__pycache__
+**/*.pyc
+**/*.egg-info
+.venv/
+.DS_Store
+aiq/.conda_root
+aiq/.shim/
+src/VeriStressGT/verifiers/neuralsat
+src/VeriStressGT/verifiers/nnv
+src/VeriStressGT/verifiers/Marabou
+*_run/
+evaluation_runs/
+runs/

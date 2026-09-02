@@ -47,8 +47,14 @@ export CONDA_SHIM_ROOTS="${VST_CONDA_ROOTS:-$CONDA_ROOT}"
 
 SHIM_DIR="${VST_SHIM_DIR:-$HERE/.shim}"
 mkdir -p "$SHIM_DIR"
-if [[ ! -x "$SHIM_DIR/conda" ]]; then
-    cat > "$SHIM_DIR/conda" <<'SHIM'
+# ALWAYS rewritten. Writing it only when absent kept a stale single-root shim
+# from 2026-08-31 alive in the checkout, which the container then mounted and
+# used: abcrown 49/50, pyrat and nnenum 0/50, "no such env prefix" -- the
+# exact defect the multi-root search below had already fixed in this file.
+# The shim is derived from this script, so it must never outlive an edit.
+_shim_tmp="$(mktemp "$SHIM_DIR/conda.XXXXXX")"
+{
+    cat > "$_shim_tmp" <<'SHIM'
 #!/usr/bin/env bash
 set -euo pipefail
 if [[ "${1:-}" != "run" ]]; then
@@ -107,8 +113,9 @@ if [[ -n "${PREFIX:-}" && -x "$TARGET" ]]; then
 fi
 exec "$CMD" "$@"
 SHIM
-    chmod +x "$SHIM_DIR/conda"
-fi
+    chmod 755 "$_shim_tmp"
+    mv -f "$_shim_tmp" "$SHIM_DIR/conda"
+}
 export PATH="$SHIM_DIR:$PATH"
 
 export ABCROWN_VNNCOMP2024_DIR="${ABCROWN_VNNCOMP2024_DIR:-$SUB/src/VeriStressGT/verifiers/alpha-beta-CROWN}"
