@@ -144,8 +144,7 @@ def _load_results_jsonl(path: Path) -> Dict[str, Dict[str, Any]]:
 # Both count against correct_fraction. TIMEOUT does get its own category, but
 # it too is outside the numerator -- see CompleteInLimit on the config class.
 @theory.satisfies('VeriStressGT.Verifier.sound_unsat_robust::h',
-                  note='status == "unsat" IS the premise; this is the one binder the experiment '
-                       'discharges rather than assumes')
+                  note='status == "unsat" IS the premise')
 def _classify(status: str, rec: Optional[Dict[str, Any]]) -> str:
     """Map a raw status + record into one of: correct, wrong, timeout, unsupported, error, missing."""
     s = status.lower()
@@ -188,9 +187,7 @@ def _classify(status: str, rec: Optional[Dict[str, Any]]) -> str:
 # on the fixed-pattern construction (see main), that ambiguity is not
 # hypothetical.
 @theory.approximates('VeriStressGT.Verifier.sound_unsat_robust',
-                     note='correct_fraction is the empirical frequency of run i = unsat over the '
-                          'swept instances at a fixed budget; under soundness it lower-bounds the '
-                          "verifier's recovered-certificate rate, and no theorem entails 0.6")
+                     note='empirical unsat frequency at a fixed budget; 0.6 is not entailed')
 @theory.checks('VeriStressGT.Verifier.sound_unsat_robust::hSound',
                note='a SAT verdict on a by-construction-UNSAT instance is counted as `wrong` and '
                     'surfaced as any_sat, which the card treats as INCONCLUSIVE. One-sided: it '
@@ -214,10 +211,9 @@ def _classify(status: str, rec: Optional[Dict[str, Any]]) -> str:
                      'is the only control point, and no thread pinning is applied. The card '
                      'warns about this in its own header and asks that the host be pinned')
 @theory.approximates('Hygiene.Measurement.measured_score_tracks_construct::hscorer',
-                     note='the scorer is "verdict == UNSAT", which tracks the construct only '
-                          'partly: TIMEOUT, UNKNOWN, ERROR, unsupported-operator and a missing '
-                          'record all leave the numerator identically, so an incomplete verifier, '
-                          'a crashed one and an unsound one are indistinguishable in the fraction')
+                     note='the scorer is "verdict == UNSAT": TIMEOUT, UNKNOWN, ERROR, '
+                          'unsupported-operator and a missing record all leave the numerator '
+                          'identically, so incomplete, crashed and unsound are indistinguishable')
 @theory.ignores('Hygiene.Measurement.measured_score_tracks_construct::hcontam',
                 note='training-set contamination does not apply -- the instances are synthesised, '
                      'not sampled. The analogous exposure is that the benchmark constructions and '
@@ -559,7 +555,7 @@ def _run_difficulty_analysis(
 
 # ── scriptconfig CLI ──────────────────────────────────────────────────────────
 
-# CR-2. beta-CROWN completeness is stated with NO time bound: a robust instance
+# beta-CROWN completeness is stated with NO time bound: a robust instance
 # is eventually decided as the budget grows (`∃ T, ∀ t ≥ T`). `timeout` below
 # fixes t = 60 s, which is not that quantifier, so the verifier this card
 # measures is incomplete by construction and a hard instance times out by
@@ -567,9 +563,7 @@ def _run_difficulty_analysis(
 # but a single-budget run cannot separate "the verifier cannot do this" from
 # "the verifier was not given long enough".
 @theory.approximates('VeriStressGT.Verifier.CompleteInLimit',
-                     note='the card measures runBudget i 60 rather than the limit the definition '
-                          'quantifies over; correct_fraction at a fixed budget lower-bounds the '
-                          'fraction the verifier would eventually decide')
+                     note='measures runBudget i 60, not the limit the definition quantifies over')
 class MiniSweepRunnerCLI(scfg.DataConfig):
     """Build a 50-instance multi-construction benchmark, run all requested verifiers, report results.
 
@@ -656,10 +650,8 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
     # shipped threshold is norm-incoherent but PROVED safe for every shipped
     # config by VeriStressGT.LipschitzMargin.uniform_readout_code_bound_dominates
     # (it dominates the honest all-l2 threshold whenever d <= 4m, and every
-    # shipped config has in_channels = 1, channels >= 16). The earlier
-    # `dccnn-linf-sqrtd-metric` exposure claim was REFUTED by the repository's
-    # own AUDIT4 and must not be reported as a finding. `hg` is `assumes`: the
-    # constructions ship a power-iteration estimate L-hat, power iteration
+    # shipped config has in_channels = 1, channels >= 16). `hg` is `assumes`:
+    # the constructions ship a power-iteration estimate L-hat, power iteration
     # converges from BELOW, and nothing proves L <= L-hat. The repository names
     # this -- `dccnn-L-power-iter` -- as its strongest still-open concern.
     #
@@ -672,22 +664,16 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
     # instances is not in fact robust, a SAT verdict from abcrown would be the
     # verifier being RIGHT, and this card would read it as a soundness error.
     @theory.approximates('VeriStressGT.LipschitzMargin.robust_of_margin_gt',
-                         note='the verifier re-derives the certificate\'s conclusion on the '
-                              'VNN-LIB L-infinity box under a 60 s budget, rather than on the '
-                              'metric ball the theorem quantifies over')
+                         note='re-derived on the L-infinity box at 60 s, not the metric ball')
     @theory.assumes('VeriStressGT.LipschitzMargin.robust_of_margin_gt::hg',
                     note='the shipped constant is a power-iteration estimate of the reshaped-kernel '
                          'spectral norm; power iteration converges from below and nothing proves '
                          'it upper-bounds the true Lipschitz constant (edge dccnn-L-power-iter, '
                          'open)')
     @theory.satisfies('VeriStressGT.LipschitzMargin.robust_of_margin_gt::hmargin',
-                      note='the construction accepts an instance only when the nominal margin '
-                           'clears its certified bound, and uniform_readout_code_bound_dominates '
-                           'proves that bound dominates the honest threshold for every shipped '
-                           'config (d <= 4m)')
+                      note='uniform_readout_code_bound_dominates covers every shipped config')
     @theory.approximates('VeriStressGT.SelfAttention.fixedPattern_robust_derived',
-                         note='same L-infinity-box, fixed-budget re-derivation of the '
-                              "certificate's conclusion")
+                         note='same L-infinity-box, fixed-budget re-derivation')
     @theory.violates('VeriStressGT.SelfAttention.fixedPattern_robust_derived::hmargin',
                      note='CONFIRMED: compute_L_attn pools with n/4 where the machine-checked '
                           'Z_deviation_n2 gives n/2, under-certifying by ~2x in the unsafe '
