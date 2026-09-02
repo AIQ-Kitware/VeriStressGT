@@ -103,6 +103,51 @@ claim:
 evidence:
   scope: requested
 
+# What this card's verdict stands on.
+#
+# Two indexes, because the card leans on two different kinds of thing and
+# conflating them would be the mistake.
+#
+# `veristressgt.yaml` is the UCLA Lean formalization (pin 9cee3d9e, 101
+# audited declarations, zero sorry). It carries the verifier SPECIFICATION the
+# card assumes -- soundness (CR-1) and time-unbounded completeness (CR-2) --
+# and two of the CONSTRUCTION CERTIFICATES that make the benchmark's
+# ground-truth UNSAT labels true. Both layers matter here: the card's
+# denominator is 50 instances whose labels are those theorems' conclusions, so
+# a defect in a construction is a defect in the measurement.
+#
+# `hygiene.yaml` is where the OTHER half goes. The threshold in the claim below
+# is entailed by no theorem -- the formalization says so itself, in
+# `theorem-map.md` ("no theorem entails 60%") -- and saying that precisely is
+# worth more than leaving it unsaid. A resource-bounded measurement still
+# leans on the same premises every measurement leans on, and this card's
+# `hstable` is not a formality: the verdict is a wall-clock function on a
+# shared CPU, which is the warning at the top of this file.
+#
+# `empirical_sources` is read out of the runner with `ast` -- nothing is
+# imported, so auditing this card needs neither a conda environment nor a
+# verifier binary. The annotations sit at the code sites in
+# ../aiq/mini_sweep_runner.py, so they move with the code.
+#
+# The two findings this is meant to surface:
+#
+#   * `hSound` is `checks`, not `satisfies`. any_sat is a genuine runtime
+#     soundness tripwire, but a strictly one-sided one: it can fire and never
+#     clear, and when it fires it cannot say whether the verifier is unsound or
+#     the instance was mislabelled.
+#   * `fixedPattern_robust_derived::hmargin` is `violates`, on the
+#     formalization's own confirmed finding: the shipped compute_L_attn pools
+#     with n/4 where the machine-checked derivation gives n/2. If a
+#     fixed-pattern instance is not in fact robust, a SAT verdict would be the
+#     verifier being RIGHT, and this card would score it as a soundness error.
+theory:
+  indexes:
+    - ../theory/indexes/veristressgt.yaml
+    - ../theory/indexes/hygiene.yaml
+
+  empirical_sources:
+    - ../aiq/mini_sweep_runner.py
+
 symbols:
   metrics.mini_sweep.abcrown_correct_fraction:
     metadata:

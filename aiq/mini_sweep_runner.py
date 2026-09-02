@@ -28,6 +28,17 @@ from typing import Any, Dict, List, Optional, Tuple
 import scriptconfig as scfg
 import ubelt as ub
 
+# Records what this card assumes about the VeriStressGT Lean formalization
+# (theory/indexes/veristressgt.yaml) and about measurement hygiene
+# (theory/indexes/hygiene.yaml), both in the eval superrepo. Every annotation
+# is inert at run time -- the decorators return their target unchanged -- and
+# MAGNET reads them out of the source with `ast`, so an audit never imports
+# this module, let alone a verifier. A sibling import, not `from aiq import`:
+# this file is executed as a script by run_mini_sweep_env.sh, so its own
+# directory is what is on sys.path. Import it as a NAMESPACE -- bare-name calls
+# extract nothing, silently.
+import magnet.theory as theory
+
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -121,6 +132,20 @@ def _load_results_jsonl(path: Path) -> Dict[str, Dict[str, Any]]:
     return verdicts
 
 
+# The premise `h : V.run i = Verdict.unsat` of
+# VeriStressGT.Verifier.sound_unsat_robust, and the only premise of it this
+# card establishes. Everything below reads "the verifier said unsat" off the
+# record; the step from there to "the instance is robust" is the theorem, and
+# the theorem needs `hSound`, which is assumed (see _grade_verifier).
+#
+# Worth noting what is NOT distinguished here: UNKNOWN has no branch and falls
+# through to the final `return "error"`, so an instance the verifier honestly
+# declined to decide is graded identically to one where the process crashed.
+# Both count against correct_fraction. TIMEOUT does get its own category, but
+# it too is outside the numerator -- see CompleteInLimit on the config class.
+@theory.satisfies('VeriStressGT.Verifier.sound_unsat_robust::h',
+                  note='status == "unsat" IS the premise; this is the one binder the experiment '
+                       'discharges rather than assumes')
 def _classify(status: str, rec: Optional[Dict[str, Any]]) -> str:
     """Map a raw status + record into one of: correct, wrong, timeout, unsupported, error, missing."""
     s = status.lower()
@@ -144,6 +169,60 @@ def _classify(status: str, rec: Optional[Dict[str, Any]]) -> str:
     return "error"
 
 
+# Where correct_fraction is formed, and therefore where the card's claim is
+# either grounded or left standing.
+#
+# THE THEOREM. sound_unsat_robust says UNSAT implies robust. The card measures
+# the other direction -- how often a verifier RECOVERS the unsat verdict on
+# instances that are robust by construction -- so `approximates`, not `tests`.
+# Under soundness that frequency lower-bounds the verifier's true recovery
+# rate; the Lean docstring says as much, and adds that the 0.6 threshold is
+# entailed by no theorem.
+#
+# `hSound` is `checks` and not `assumes` because of `wrong`: every instance in
+# the benchmark is UNSAT by construction, so a SAT verdict is a soundness
+# tripwire, and the card raises INCONCLUSIVE on `any_sat` rather than scoring
+# it. It is a genuine runtime check and a strictly one-sided one -- it can fire
+# but never clear, and when it fires it cannot say whether the verifier is
+# unsound or the construction's label is wrong. Given the confirmed n/4 finding
+# on the fixed-pattern construction (see main), that ambiguity is not
+# hypothetical.
+@theory.approximates('VeriStressGT.Verifier.sound_unsat_robust',
+                     note='correct_fraction is the empirical frequency of run i = unsat over the '
+                          'swept instances at a fixed budget; under soundness it lower-bounds the '
+                          "verifier's recovered-certificate rate, and no theorem entails 0.6")
+@theory.checks('VeriStressGT.Verifier.sound_unsat_robust::hSound',
+               note='a SAT verdict on a by-construction-UNSAT instance is counted as `wrong` and '
+                    'surfaced as any_sat, which the card treats as INCONCLUSIVE. One-sided: it '
+                    'cannot clear soundness, and when it fires it cannot separate an unsound '
+                    "verifier from a mislabelled instance")
+# The measurement-hygiene half. The card has no theorem for its threshold and
+# should say so precisely rather than leave it unsaid.
+#
+# `hstable` is the load-bearing gap and is the reason the card carries a
+# hardware warning in its own header. The verdict is a function of a 60 s
+# wall clock on a contended CPU: abcrown's internal timers are deliberately
+# disabled (abcrown adapter passes --timeout 999999, abcrown_basic.yaml sets
+# bab.timeout 3e6), so a Python subprocess kill is the only control point, and
+# a timeout is graded identically to a wrong answer here. Nothing pins cores or
+# caps threads for abcrown or pyrat. A busy host changes the answer without
+# changing any mathematics.
+@theory.tests('Hygiene.Measurement.measured_score_tracks_construct')
+@theory.assumes('Hygiene.Measurement.measured_score_tracks_construct::hstable',
+                note='the verdict is a wall-clock function on a shared CPU and a timeout scores '
+                     'as incorrect; abcrown self-termination is disabled so the subprocess kill '
+                     'is the only control point, and no thread pinning is applied. The card '
+                     'warns about this in its own header and asks that the host be pinned')
+@theory.approximates('Hygiene.Measurement.measured_score_tracks_construct::hscorer',
+                     note='the scorer is "verdict == UNSAT", which tracks the construct only '
+                          'partly: TIMEOUT, UNKNOWN, ERROR, unsupported-operator and a missing '
+                          'record all leave the numerator identically, so an incomplete verifier, '
+                          'a crashed one and an unsound one are indistinguishable in the fraction')
+@theory.ignores('Hygiene.Measurement.measured_score_tracks_construct::hcontam',
+                note='training-set contamination does not apply -- the instances are synthesised, '
+                     'not sampled. The analogous exposure is that the benchmark constructions and '
+                     'the ground-truth labels come from the same team whose verifier-facing claim '
+                     'is being scored, and that is not addressed by this premise')
 def _grade_verifier(
     verifier: str,
     instance_ids: List[str],
@@ -480,6 +559,17 @@ def _run_difficulty_analysis(
 
 # ── scriptconfig CLI ──────────────────────────────────────────────────────────
 
+# CR-2. beta-CROWN completeness is stated with NO time bound: a robust instance
+# is eventually decided as the budget grows (`∃ T, ∀ t ≥ T`). `timeout` below
+# fixes t = 60 s, which is not that quantifier, so the verifier this card
+# measures is incomplete by construction and a hard instance times out by
+# design. The card is right to sweep it -- the verdict is a function of it --
+# but a single-budget run cannot separate "the verifier cannot do this" from
+# "the verifier was not given long enough".
+@theory.approximates('VeriStressGT.Verifier.CompleteInLimit',
+                     note='the card measures runBudget i 60 rather than the limit the definition '
+                          'quantifies over; correct_fraction at a fixed budget lower-bounds the '
+                          'fraction the verifier would eventually decide')
 class MiniSweepRunnerCLI(scfg.DataConfig):
     """Build a 50-instance multi-construction benchmark, run all requested verifiers, report results.
 
@@ -520,7 +610,8 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
 
     max_instances = scfg.Value(
         None,
-        type=int,
+        # Not `type=int`: kwdagger renders a declared null default as the
+        # literal `--max_instances=None`, which int() rejects. Coerced below.
         help="Cap the number of instances verified (takes the first N). None = all.",
         tags=["algo_param"],
     )
@@ -552,6 +643,56 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
         tags=["out_path", "primary"],
     )
 
+    # The benchmark this builds is the card's denominator, and its ground-truth
+    # UNSAT labels are the conclusions of the constructions' certificate
+    # theorems. So the card is also, whether it means to be or not, an
+    # independent test of those labels: abcrown re-derives robustness from the
+    # ONNX and VNN-LIB alone, without the construction's own argument.
+    #
+    # Two constructions carry recorded exposure, and they are recorded
+    # differently because their evidence is different.
+    #
+    # LIPSCHITZ-MARGIN (contractive CNN family). `hmargin` is `satisfies`: the
+    # shipped threshold is norm-incoherent but PROVED safe for every shipped
+    # config by VeriStressGT.LipschitzMargin.uniform_readout_code_bound_dominates
+    # (it dominates the honest all-l2 threshold whenever d <= 4m, and every
+    # shipped config has in_channels = 1, channels >= 16). The earlier
+    # `dccnn-linf-sqrtd-metric` exposure claim was REFUTED by the repository's
+    # own AUDIT4 and must not be reported as a finding. `hg` is `assumes`: the
+    # constructions ship a power-iteration estimate L-hat, power iteration
+    # converges from BELOW, and nothing proves L <= L-hat. The repository names
+    # this -- `dccnn-L-power-iter` -- as its strongest still-open concern.
+    #
+    # FIXED-PATTERN ATTENTION. `hmargin` is `violates`, on the repository's own
+    # confirmed finding: compute_L_attn uses n/4 where the machine-checked
+    # derivation (FixedPatternAttn.Z_deviation_n2) gives n/2, so the shipped
+    # acceptance test clears a budget about half the size of the one the premise
+    # demands, in the unsafe direction. STATUS.md records shipped instances at
+    # margin_slack = 1.05 < 2 as being in the exposed regime. If one of those
+    # instances is not in fact robust, a SAT verdict from abcrown would be the
+    # verifier being RIGHT, and this card would read it as a soundness error.
+    @theory.approximates('VeriStressGT.LipschitzMargin.robust_of_margin_gt',
+                         note='the verifier re-derives the certificate\'s conclusion on the '
+                              'VNN-LIB L-infinity box under a 60 s budget, rather than on the '
+                              'metric ball the theorem quantifies over')
+    @theory.assumes('VeriStressGT.LipschitzMargin.robust_of_margin_gt::hg',
+                    note='the shipped constant is a power-iteration estimate of the reshaped-kernel '
+                         'spectral norm; power iteration converges from below and nothing proves '
+                         'it upper-bounds the true Lipschitz constant (edge dccnn-L-power-iter, '
+                         'open)')
+    @theory.satisfies('VeriStressGT.LipschitzMargin.robust_of_margin_gt::hmargin',
+                      note='the construction accepts an instance only when the nominal margin '
+                           'clears its certified bound, and uniform_readout_code_bound_dominates '
+                           'proves that bound dominates the honest threshold for every shipped '
+                           'config (d <= 4m)')
+    @theory.approximates('VeriStressGT.SelfAttention.fixedPattern_robust_derived',
+                         note='same L-infinity-box, fixed-budget re-derivation of the '
+                              "certificate's conclusion")
+    @theory.violates('VeriStressGT.SelfAttention.fixedPattern_robust_derived::hmargin',
+                     note='CONFIRMED: compute_L_attn pools with n/4 where the machine-checked '
+                          'Z_deviation_n2 gives n/2, under-certifying by ~2x in the unsafe '
+                          'direction; shipped instances at margin_slack = 1.05 < 2 are in the '
+                          'exposed regime, so their UNSAT label is not established')
     @classmethod
     def main(cls, argv=None, **kwargs):
         os.environ["PYTHONUNBUFFERED"] = "1"
@@ -590,7 +731,8 @@ class MiniSweepRunnerCLI(scfg.DataConfig):
         manifest = json.loads(manifest_path.read_text())
         all_instance_ids = [inst["id"] for inst in manifest["instances"]]
 
-        max_n: Optional[int] = config.max_instances
+        raw_max = config.max_instances
+        max_n: Optional[int] = None if raw_max in (None, "", "None", "null") else int(raw_max)
         instance_ids = all_instance_ids[:max_n] if max_n is not None else all_instance_ids
         print(f"Using {len(instance_ids)}/{len(all_instance_ids)} instances.", flush=True)
 

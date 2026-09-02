@@ -1,0 +1,280 @@
+# Theorem index: VeriStressGT formalization (UCLA), pin 9cee3d9e.
+#
+# Transcribed by hand from the Lean source at that pin. Every `declaration:` was
+# read out of the named file and every premise `id:` is the binder name as it
+# appears in the signature.
+#
+# THE STRUCTURAL FACT, stated first because it shapes everything below.
+# VeriStressGT is NOT one theorem with a finite-sample shadow (that is
+# JHU/DKPS, and that is what a reader arriving from `dkps-144de76c.yaml` will
+# expect). Its own `AGENTS.md` says so:
+#
+#     VeriStressGT is a certificate factory -- many small, independent
+#     certificate theorems, one per construction. [...] So there is no single
+#     capstone the way DRSB or DKPS have one; the "capstone" is the set of
+#     per-construction robustness lemmas in each library.
+#
+# So this index carries TWO layers, and the card touches both:
+#
+#   1. the VERIFIER SPEC (`Verifier/Spec.lean`) -- what the card assumes about
+#      alpha-beta-CROWN. This is the layer the repo itself calls "the verifier
+#      soundness / completeness specification the card stands on";
+#   2. two CONSTRUCTION CERTIFICATES -- what makes the benchmark's ground-truth
+#      UNSAT labels true in the first place. The card's denominator is 50
+#      instances whose labels are exactly these theorems' conclusions, so a
+#      defect in a construction is a defect in the measurement, not merely in
+#      the artifact.
+#
+# WHAT IS NOT HERE, deliberately. The card's threshold, `correct_fraction >=
+# 0.6`, is entailed by NO theorem. `theorem-map.md`'s crosswalk records it as
+# `card-threshold-0.6 | (no theorem) | correct_fraction >= 0.6 is an
+# engineering threshold`, and `AGENTS.md` says "This is an *empirical,
+# resource-bounded* measurement; **no theorem entails 60%.**" Inventing an
+# entry for it is exactly the failure this machinery exists to prevent. The
+# card grounds that half on `theory/indexes/hygiene.yaml` instead, which is
+# what that file is for.
+#
+# PROOF STATUS. `STATUS.md` (2026-07-20) reports `bash scripts/check.sh` PASS:
+# `lake build` clean, a no-`sorry`/`admit` scan over every production library,
+# and `#print axioms` over all 101 audited declarations
+# (`AxiomAudit.lean`) showing only `{propext, Classical.choice, Quot.sound}` --
+# no `sorryAx`, `native_decide` or `ofReduceBool`. All four declarations below
+# are in that audited list. `formalization.yaml` additionally records
+# `axioms: []` for `sound_unsat_robust`: it depends on no axioms at all.
+# These are maintainer-reported and recorded as such; no `lake build` was run
+# on this machine (the repo pins toolchain `v4.31.0-rc2`, which is not
+# installed).
+#
+# WHAT THE LEAN DOES NOT DO, in the repo's own words (README.md): "Lean does
+# not read or run the shipped Python / ONNX artifacts, and there is no
+# automated 'the code matches the theorem' check. The correspondence between
+# code and theorem is drawn by hand." The card annotations are that
+# correspondence written down.
+#
+# DRIFT NOTE. Every `card:` field in the formalization's own `edges:` block
+# points at `ta1/VeriStressGT/cards/evaluation.yaml` -- the original card. The
+# string `kwdagger` appears nowhere in the formalization. The kwdagger card is
+# the one that carries the `theory:` block, so the two card edges
+# (`card-verifier-soundness`, `card-timeout-incomplete`) are re-pointed here by
+# annotation rather than by line number.
+
+schema_version: 1
+
+formalization:
+  system: lean4
+  repository: https://github.com/AIQ-Kitware/aiq-veristressgt-formalization
+  revision: 9cee3d9ebfcb42e9a7d7220683eb4969a2b3b31b
+
+entries:
+
+  # ---------------------------------------------------------------------
+  # Layer 1: the verifier specification the card stands on.
+  # ---------------------------------------------------------------------
+
+  - id: VeriStressGT.Verifier.sound_unsat_robust
+    kind: theorem
+    declaration: VeriStressGT.Verifier.sound_unsat_robust
+    source_path: Verifier/Spec.lean
+    statement: >
+      What a ground-truth certificate buys, and what the card measures. If the
+      verifier is `Sound` and returns UNSAT on an instance, that instance is
+      robust.
+
+      CONCLUSION: V.robust i
+
+      STRUCTURAL (data binders, not assumptions -- excluded from premise
+      coverage): ι: the instance type; V: the verifier, a `VerifierSpec ι`
+      pairing a ground-truth robustness predicate `robust : ι -> Prop` with a
+      verdict function `run : ι -> Verdict`, where `Verdict` is
+      `unsat | sat | timeout`; i: the instance.
+
+      NOTE: the proof is one line -- `hSound i h`. The content is entirely in
+      the premises, which is the point of stating it: it makes the two
+      qualifiers the card drops visible as binders rather than as prose
+      footnotes. The Lean docstring says it directly: the card's
+      `correct_fraction >= 0.6` is the empirical frequency of `run i = unsat`
+      over the swept instances at a 60 s budget, which under soundness
+      lower-bounds the verifier's recovered-certificate rate but is entailed by
+      NO theorem.
+
+      PROVENANCE: a specification of Zhang et al. 2018 (CROWN, arXiv:1811.00866)
+      and Wang et al. 2021 (beta-CROWN, arXiv:2103.06624), NOT a formalization
+      of CROWN internals -- that would be a verifier-correctness project of its
+      own. `formalization.yaml` records `sorry_count: 0` and `axioms: []`.
+    premises:
+      - id: hSound
+        type: 'hSound : Sound V'
+        statement: >
+          CR-1 verifier soundness: `∀ i, V.run i = Verdict.unsat → V.robust i`.
+          ASSUMED by the card and never established, and it is exactly what the
+          alpha-beta-CROWN literature finds violated by floating-point tolerance
+          bugs. `Sound` is a definition, not a theorem: nothing in this
+          repository proves the verifier has this property.
+      - id: h
+        type: 'h : V.run i = Verdict.unsat'
+        statement: >
+          the verifier actually returned UNSAT on this instance. Checkable, and
+          checked -- this is the one premise the card establishes by running the
+          experiment.
+
+  - id: VeriStressGT.Verifier.Sound
+    kind: definition
+    declaration: VeriStressGT.Verifier.Sound
+    source_path: Verifier/Spec.lean
+    statement: >
+      CR-1 soundness, as a definition: `Sound V ↔ ∀ i, V.run i = Verdict.unsat →
+      V.robust i`.
+
+      CONCLUSION: none -- a `def ... : Prop`, the spec vocabulary.
+
+      NOTE: listed so the card's soundness edge has something to name that is
+      not a theorem, since it is not one. The repository is explicit that
+      `Sound` and `CompleteInLimit` are definitions and only
+      `sound_unsat_robust` is proved.
+
+  - id: VeriStressGT.Verifier.CompleteInLimit
+    kind: definition
+    declaration: VeriStressGT.Verifier.CompleteInLimit
+    source_path: Verifier/Spec.lean
+    statement: >
+      CR-2 completeness, time-unbounded: `∀ i, robust i → ∃ T, ∀ t ≥ T,
+      runBudget i t = Verdict.unsat`. What beta-CROWN's completeness result
+      actually says.
+
+      CONCLUSION: none -- a `def ... : Prop`.
+
+      NOTE: this is the definition the card's 60-second budget walks away from,
+      and the Lean source says so in its own comment: "The card fixes `t = 60
+      s`, which is NOT `∀ᶠ t`." Completeness holds in the limit of an
+      unbounded budget; at any fixed budget the verifier is incomplete, and a
+      hard instance times out by design. Because the card grades a timeout
+      identically to a wrong answer, `correct_fraction` at 60 s is a
+      lower bound on the fraction the verifier would eventually decide, with no
+      way to tell the two apart from the card's output.
+
+  # ---------------------------------------------------------------------
+  # Layer 2: the construction certificates that make the labels true.
+  # ---------------------------------------------------------------------
+
+  - id: VeriStressGT.LipschitzMargin.robust_of_margin_gt
+    kind: theorem
+    declaration: VeriStressGT.LipschitzMargin.robust_of_margin_gt
+    source_path: LipschitzMargin/Basic.lean
+    statement: >
+      The scalar Lipschitz-margin certificate -- the abstract core the
+      contractive-CNN family's ground-truth labels reduce to. If a real margin
+      function `g` is `K`-Lipschitz and its value at `x₀` exceeds `K·ε`, then
+      `g` stays strictly positive on the whole closed `ε`-ball: the certified
+      class never loses to the competitor anywhere in the perturbation set.
+
+      CONCLUSION: ∀ x, dist x x₀ ≤ ε → 0 < g x
+
+      STRUCTURAL (data binders, not assumptions -- excluded from premise
+      coverage): E: the input space, a pseudometric space; g: the scalar margin
+      (certified logit minus competitor); K: the Lipschitz constant, an `ℝ≥0`;
+      x₀: the nominal input; ε: the perturbation radius.
+
+      NOTE: the DCCNN wrappers `dccnn_robust_via_net_upper` and
+      `dccnn_robust_of_upper_bound` are this theorem with `K` instantiated at
+      the network's spectral-norm product, and they carry `hupper : L ≤ L̂`
+      explicitly BECAUSE the shipped power-iteration estimate is not known to
+      satisfy it. The repository's README names that -- `dccnn-L-power-iter`,
+      "the reshaped-kernel spectral norm is not the true convolution operator
+      norm" -- as its strongest still-open concern.
+
+      NOTE: an earlier reading of the L∞/ℓ² metric mismatch
+      (`dccnn-linf-sqrtd-metric`) claimed a `√d/2` under-certification. That
+      claim was REFUTED by the repository's own AUDIT4 (2026-07-17, J1) and
+      must not be reported as a soundness finding;
+      `uniform_readout_code_bound_dominates` proves the shipped formula
+      dominates the honest all-ℓ² threshold whenever `d ≤ 4m`, which holds for
+      every shipped config.
+
+      PROVENANCE: T1 in the repository's theorem map. In the 101-declaration
+      axiom audit; axioms `{propext, Classical.choice, Quot.sound}`.
+    premises:
+      - id: hg
+        type: 'hg : LipschitzWith K g'
+        statement: >
+          the margin really is `K`-Lipschitz. For a shipped instance this means
+          the constant the construction certified against is a genuine UPPER
+          bound on the true one -- which is the open `dccnn-L-power-iter`
+          question, since power iteration converges from below.
+      - id: hmargin
+        type: 'hmargin : (K : ℝ) * ε < g x₀'
+        statement: >
+          the nominal margin strictly exceeds `K·ε`. This is the condition the
+          construction's acceptance test is supposed to implement, and the one
+          place an off-by-a-factor in the constant becomes an off-by-a-factor
+          in the certificate.
+
+  - id: VeriStressGT.SelfAttention.fixedPattern_robust_derived
+    kind: theorem
+    declaration: VeriStressGT.SelfAttention.fixedPattern_robust_derived
+    source_path: SelfAttention/FixedPatternBlock.lean
+    statement: >
+      The fixed-pattern attention robustness certificate, DERIVED rather than
+      assumed: no Lipschitz constant is taken as input, the softmax contraction
+      is obtained from `ForMathlib.lipschitzWith_softmax`. From per-token score
+      and value deviations and a nominal value bound, if the nominal margin
+      exceeds `2·‖W_head‖·√n·fpK n ρ δV Vmax` against every competitor, the
+      certified class wins throughout the ε-box.
+
+      CONCLUSION: ∀ X, dist X X₀ ≤ ε → ∀ k ≠ y, 0 < A.margin Whead bhead y k X
+
+      STRUCTURAL (data binders, not assumptions -- excluded from premise
+      coverage): A: the fixed-pattern attention block; Whead, bhead: the
+      classification head; y: the certified class; X₀: the nominal token
+      matrix; ε: the perturbation radius; ρ, δV, Vmax: the score-deviation,
+      value-deviation and nominal-value budgets.
+
+      NOTE: `fpK m ρ δV Vmax = √m · (½ρ) · (Vmax + δV) + δV`, and with the
+      code's `ρ = √n·B_S·ε` the leading coefficient is `√n·½·√n = n/2`. This is
+      the honest coefficient, exhibited explicitly by
+      `VeriStressGT.SelfAttention.FixedPatternAttn.Z_deviation_n2`.
+
+      NOTE (CONFIRMED FINDING, `attn-Lattn-n4-pooling`): the shipped
+      `compute_L_attn` uses `n/4`, not `n/2` -- see
+      `src/VeriStressGT/robust_constructions/attention/fixed_pattern.py`, which
+      computes `(n / 4.0) * B_S * V0_inf + ...`. The code under-certifies
+      `L_attn` by about 2x, which is the unsafe direction, and the
+      repository's `STATUS.md` records that shipped fixed-pattern instances at
+      `margin_slack = 1.05 < 2` are in the exposed regime. This is a defect in
+      the BENCHMARK LABEL, not in any verifier, and it is invisible to the card
+      unless a verifier returns SAT.
+
+      PROVENANCE: T2 in the repository's theorem map. In the 101-declaration
+      axiom audit; axioms `{propext, Classical.choice, Quot.sound}`.
+    premises:
+      - id: hρ0
+        type: 'hρ0 : 0 ≤ ρ'
+        statement: the score-deviation budget is non-negative
+      - id: hδV0
+        type: 'hδV0 : 0 ≤ δV'
+        statement: the value-deviation budget is non-negative
+      - id: hVmax0
+        type: 'hVmax0 : 0 ≤ Vmax'
+        statement: the nominal value bound is non-negative
+      - id: hρ
+        type: 'hρ : ∀ X, dist X X₀ ≤ ε → ∀ i, ‖A.score X i - A.score X₀ i‖ ≤ ρ'
+        statement: >
+          the attention scores move by at most `ρ` anywhere in the ε-box. The
+          code's seam for this is `B_S·ε`.
+      - id: hδV
+        type: 'hδV : ∀ X, dist X X₀ ≤ ε → ∀ j, ‖A.V X j - A.V X₀ j‖ ≤ δV'
+        statement: >
+          the value vectors move by at most `δV` anywhere in the ε-box. The
+          code's seam is `√d·σ_V·ε`.
+      - id: hVmax
+        type: 'hVmax : ∀ j, ‖A.V X₀ j‖ ≤ Vmax'
+        statement: the nominal value vectors are bounded by `Vmax`
+      - id: hmargin
+        type: >-
+          hmargin : ∀ k, k ≠ y →
+          2 * ‖Whead‖ * (Real.sqrt n * fpK n ρ δV Vmax) < A.margin Whead bhead y k X₀
+        statement: >
+          the nominal margin clears twice the head-weighted, pooled deviation
+          budget. This is the acceptance test the construction is supposed to
+          implement, and it is the binder the confirmed `n/4` finding lands on:
+          the shipped check uses a budget about half the size of the one this
+          premise demands.
