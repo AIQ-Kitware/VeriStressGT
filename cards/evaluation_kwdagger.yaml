@@ -180,12 +180,12 @@ kwdagger:
     nodes:
       mini_sweep:
         # Containerized execution is opt-in per node class, and a card that
-        # declares its DAG as data gets kwdagger's YamlProcessNode -- a sibling
-        # of MAGNET's ContainerProcessNode, not a descendant. Without this key
+        # declares its DAG as data gets kwdagger's plain YamlProcessNode unless
+        # it names MAGNET's MagnetProcessNode here. Without this key
         # `--container_image` is accepted, stored and never read: a green run
         # that containerized nothing. Inert until an image is named, so the
         # same card still runs on the host, which is what it does today.
-        class: magnet.containers.ContainerYamlProcessNode
+        class: magnet.process_node.MagnetProcessNode
         # A wrapper, not the runner directly: a cmd_queue tmux worker inherits
         # NOTHING from the orchestrator, so the node command has to carry its own
         # PATH (the conda shim) and PYTHONPATH. Exporting them in the launching

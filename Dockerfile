@@ -16,8 +16,8 @@
 #   docker build -t veristressgt-gpu .
 #
 # MAGNET_REF is the aiq-magnet commit the evaluator runs against. It is
-# published on AIQ-Kitware/aiq-magnet before 2026-09-05; until then
-# `--build-arg MAGNET_REF=main` builds against the public main branch.
+# on AIQ-Kitware/aiq-magnet main (the kwdagger execution merge, PR #94);
+# `--build-arg MAGNET_REF=main` builds against the tip of main instead.
 #
 # KNOWN GAP: alpha-beta-CROWN gets its own conda env here. pyrat and nnenum are
 # plain pip installs of their submodule directories. In the last build checked
@@ -50,7 +50,7 @@ RUN --mount=type=cache,target=/opt/conda/pkgs \
 # ── Stage 2: the node image ───────────────────────────────────────────────────
 FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-devel AS final
 
-ARG MAGNET_REF=4b1f07d3cc92ac68aee3c1aad6e995651173adfc
+ARG MAGNET_REF=5c92d9fc180e1d5deb1c5ec7cd8dc3a64e328e13
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
