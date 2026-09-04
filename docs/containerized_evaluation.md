@@ -35,11 +35,12 @@ The image is large (about 10 GB): a second conda tree holds the
 alpha-beta-CROWN environment, because alpha-beta-CROWN invokes itself through
 `conda run -n alpha-beta-crown`.
 
-`MAGNET_REF` pins the aiq-magnet commit the evaluator uses. It is published on
-`AIQ-Kitware/aiq-magnet` before Friday 2026-09-05. Until then:
+`MAGNET_VERSION` in the Dockerfile is the aiq-magnet release the evaluator uses,
+from PyPI (0.1.0, which also brings aiq-magnet-theory). To build against
+another release:
 
 ```bash
-docker build --build-arg MAGNET_REF=main -t veristressgt-gpu .
+docker build --build-arg MAGNET_VERSION=0.1.0 -t veristressgt-gpu .
 ```
 
 ### Known gap: pyrat, and nnenum until it is run
@@ -69,7 +70,7 @@ On the host you need the same aiq-magnet, docker with the NVIDIA container
 toolkit, and tmux:
 
 ```bash
-pip install "aiq-magnet[optional] @ git+https://github.com/AIQ-Kitware/aiq-magnet@5c92d9fc180e1d5deb1c5ec7cd8dc3a64e328e13"
+pip install "aiq-magnet[optional]==0.1.0"
 export PYTHONPATH=$REPO/src:$REPO
 ```
 

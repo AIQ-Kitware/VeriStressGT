@@ -13,7 +13,7 @@ conda activate VeriStressGT
 
 ### MAGNET Setup
 ```bash
-pip install git+https://github.com/AIQ-Kitware/aiq-magnet.git
+pip install "aiq-magnet[optional]==0.1.0"
 
 # Additional deps needed by Gurobi-based constructions
 pip install sortedcontainers coloredlogs termcolor beartype gurobipy 
